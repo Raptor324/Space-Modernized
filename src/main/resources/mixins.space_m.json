@@ -1,0 +1,10 @@
+{
+  "package": "com.space_m.mixin",
+  "compatibilityLevel": "JAVA_${java}",
+  "mixins": [],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

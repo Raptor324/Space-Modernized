@@ -1,0 +1,12 @@
+# Template for local.properties (copy to local.properties and adjust).
+# Values here override gradle.properties for this machine only.
+#
+# hbm.local.path — absolute path to a local HBM-Modernized clone.
+# When set, the build links against jars from
+#   <hbm.local.path>/versions/<mc-loader>/build/libs/
+# instead of pulling the Modrinth maven artifact.
+# Requires running a build in that clone first:
+#   ./gradlew :1.20.1-forge:build   (or the matching version project)
+# Use forward slashes, even on Windows.
+# Leave empty or remove to fall back to the Modrinth dependency (CI default).
+hbm.local.path=

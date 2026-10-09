@@ -1,0 +1,26 @@
+plugins {
+	`kotlin-dsl`
+}
+
+gradlePlugin {
+	plugins {
+		register("modPlatform") {
+			id = "mod-platform"
+			implementationClass = "ModPlatformPlugin"
+		}
+	}
+}
+
+repositories {
+	mavenLocal()
+	mavenCentral()
+	gradlePluginPortal()
+	maven("https://maven.neoforged.net/releases/") { name = "NeoForged" }
+	maven("https://maven.kikugie.dev/releases") { name = "KikuGie Releases" }
+}
+
+dependencies {
+	implementation(libs.kikugie.stonecutter)
+	implementation(libs.mod.publish.plugin)
+	implementation(libs.foojay.resolver)
+}

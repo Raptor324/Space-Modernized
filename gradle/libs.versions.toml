@@ -1,0 +1,17 @@
+[versions]
+stonecutter = "0.8"
+neoforge-moddev = "2.0.120"
+foojay = "1.0.0"
+mod-publish = "1.1.0"
+mixin = "0.8.5"
+
+[libraries]
+kikugie-stonecutter = { module = "dev.kikugie:stonecutter", version.ref = "stonecutter" }
+foojay-resolver = { module = "org.gradle.toolchains:foojay-resolver", version.ref = "foojay" }
+mod-publish-plugin = { module = "me.modmuss50:mod-publish-plugin", version.ref = "mod-publish" }
+
+[plugins]
+stonecutter = { id = "dev.kikugie.stonecutter", version.ref = "stonecutter" }
+neoforged-moddev = { id = "net.neoforged.moddev", version.ref = "neoforge-moddev" }
+legacyforge-moddev = { id = "net.neoforged.moddev.legacyforge", version.ref = "neoforge-moddev" }
+mod-publish-plugin = { id = "me.modmuss50.mod-publish-plugin", version.ref = "mod-publish" }
