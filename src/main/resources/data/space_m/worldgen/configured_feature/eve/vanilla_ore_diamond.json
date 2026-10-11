@@ -1,0 +1,16 @@
+{
+  "type": "space_m:celestial_ore",
+  "config": {
+    "ore": {
+      "Name": "space_m:ore_diamond_eve"
+    },
+    "target": {
+      "Name": "space_m:eve_rock"
+    },
+    "count": 1,
+    "size": 7,
+    "min_y": 0,
+    "range": 16,
+    "distribution": "vanilla"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "space_m:celestial_ore",
+  "config": {
+    "ore": {
+      "Name": "hbm_m:alexandrite_ore"
+    },
+    "target": {
+      "Name": "hbm_m:basalt"
+    },
+    "count": 1,
+    "size": 3,
+    "min_y": 10,
+    "range": 5,
+    "chance": "hbm_m:alexandriteSpawn"
+  }
+}

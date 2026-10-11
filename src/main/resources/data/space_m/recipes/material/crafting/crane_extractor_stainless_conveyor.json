@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CPC",
+    "CBC"
+  ],
+  "key": {
+    "C": {
+      "tag": "hbm_m:oredict/ingot/stainless_steel"
+    },
+    "B": {
+      "item": "hbm_m:conveyor"
+    },
+    "P": {
+      "item": "hbm_m:part_generic_piston_pneumatic"
+    }
+  },
+  "result": {
+    "item": "hbm_m:crane_extractor",
+    "count": 8
+  }
+}

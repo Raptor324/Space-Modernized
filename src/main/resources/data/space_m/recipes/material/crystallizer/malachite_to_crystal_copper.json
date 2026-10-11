@@ -1,0 +1,15 @@
+{
+  "type": "hbm_m:crystallizer",
+  "ingredient": {
+    "tag": "hbm_m:oredict/ingot/malachite"
+  },
+  "result": {
+    "item": "hbm_m:crystal_copper"
+  },
+  "duration": 600,
+  "productivity": 0.1,
+  "acid": {
+    "fluid": "space_m:coppersulfate",
+    "amount": 350
+  }
+}

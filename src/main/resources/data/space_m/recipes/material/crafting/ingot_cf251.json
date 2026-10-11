@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "space_m:nugget_cf251"
+    }
+  },
+  "result": {
+    "item": "space_m:ingot_cf251"
+  }
+}

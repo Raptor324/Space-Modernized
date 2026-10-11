@@ -1,0 +1,18 @@
+{
+  "type": "space_m:duna",
+  "generator": {
+    "type": "space_m:celestial",
+    "body": "duna",
+    "biome_source": {
+      "type": "space_m:celestial",
+      "body": "duna",
+      "biomes": [
+        "space_m:duna",
+        "space_m:duna_lowlands",
+        "space_m:duna_polar",
+        "space_m:duna_hills",
+        "space_m:duna_polar_hills"
+      ]
+    }
+  }
+}

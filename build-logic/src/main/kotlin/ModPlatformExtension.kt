@@ -50,12 +50,15 @@ abstract class Dependency @Inject constructor(val name: String) {
 	abstract val versionRange: Property<String>
 	abstract val forgeVersionRange: Property<String>
 	abstract val environment: Property<String>
+	/** Load order relative to this mod: NONE, BEFORE or AFTER (mods.toml "ordering"). */
+	abstract val ordering: Property<String>
 
 	init {
 		modid.convention(name)
 		versionRange.convention("*")
 		forgeVersionRange.convention("(,]")
 		environment.convention("both")
+		ordering.convention("NONE")
 	}
 
 	fun slug(slug: String) {

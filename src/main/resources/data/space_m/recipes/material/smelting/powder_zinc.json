@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "space_m:powder_zinc"
+  },
+  "result": "space_m:ingot_zinc",
+  "experience": 1.0,
+  "cookingtime": 200
+}

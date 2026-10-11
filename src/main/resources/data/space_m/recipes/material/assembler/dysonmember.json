@@ -1,0 +1,42 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 200,
+  "power": 100,
+  "ingredients": [
+    {
+      "tag": "hbm_m:oredict/plate_sextuple/tungsten",
+      "count": 1
+    },
+    {
+      "tag": "hbm_m:oredict/ingot/any_hard_plastic",
+      "count": 2
+    },
+    {
+      "item": "space_m:beryllium_mirror",
+      "count": 1
+    },
+    {
+      "tag": "hbm_m:oredict/wire_dense/gold",
+      "count": 2
+    },
+    {
+      "tag": "hbm_m:oredict/wire_fine/mingrade",
+      "count": 32
+    },
+    {
+      "tag": "hbm_m:oredict/plate/stainless_steel",
+      "count": 4
+    },
+    {
+      "item": "hbm_m:capacitor_board",
+      "count": 2
+    },
+    {
+      "item": "space_m:hfchip",
+      "count": 1
+    }
+  ],
+  "output": {
+    "item": "space_m:swarm_member"
+  }
+}

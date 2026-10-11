@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "L L",
+    "S S"
+  ],
+  "key": {
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "S": {
+      "tag": "hbm_m:oredict/ingot/steel"
+    }
+  },
+  "result": {
+    "item": "space_m:heavy_boots"
+  }
+}

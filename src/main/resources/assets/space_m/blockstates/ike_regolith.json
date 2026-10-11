@@ -1,0 +1,18 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "space_m:block/ike_regolith"
+      },
+      {
+        "model": "space_m:block/ike_regolith2"
+      },
+      {
+        "model": "space_m:block/ike_regolith3"
+      },
+      {
+        "model": "space_m:block/ike_regolith4"
+      }
+    ]
+  }
+}

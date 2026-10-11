@@ -1,0 +1,32 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 1600,
+  "power": 25000,
+  "ingredients": [
+    {
+      "item": "hbm_m:item_expensive_circuit",
+      "count": 2
+    },
+    {
+      "item": "space_m:capacitor_lanthanium",
+      "count": 16
+    },
+    {
+      "item": "space_m:avionics",
+      "count": 4
+    },
+    {
+      "item": "hbm_m:part_generic_glass_polarized",
+      "count": 32
+    }
+  ],
+  "output": {
+    "item": "space_m:item_expensive_avionics"
+  },
+  "fluid_inputs": [
+    {
+      "fluid": "hbm_m:perfluoromethyl",
+      "amount": 2000
+    }
+  ]
+}

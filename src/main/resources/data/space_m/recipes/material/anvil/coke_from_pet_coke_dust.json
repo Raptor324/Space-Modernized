@@ -1,0 +1,18 @@
+{
+  "type": "hbm_m:anvil",
+  "kind": "construction",
+  "inputs": [
+    {
+      "tag": "hbm_m:oredict/dust/pet_coke",
+      "count": 1
+    }
+  ],
+  "outputs": [
+    {
+      "item": "hbm_m:coke_petroleum"
+    }
+  ],
+  "overlay": "smithing",
+  "sort": 0,
+  "tier": "oil"
+}

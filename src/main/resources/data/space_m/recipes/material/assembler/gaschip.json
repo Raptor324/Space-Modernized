@@ -1,0 +1,22 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 50,
+  "power": 250,
+  "ingredients": [
+    {
+      "item": "hbm_m:plate_polymer",
+      "count": 1
+    },
+    {
+      "item": "space_m:gaas",
+      "count": 1
+    },
+    {
+      "tag": "hbm_m:oredict/wire_fine/gold",
+      "count": 1
+    }
+  ],
+  "output": {
+    "item": "space_m:gaschip"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "space_m:celestial_ore",
+  "config": {
+    "ore": {
+      "Name": "space_m:ore_iron_dres"
+    },
+    "target": {
+      "Name": "space_m:dres_rock"
+    },
+    "count": "hbm_m:copperSpawn",
+    "size": 9,
+    "min_y": 4,
+    "range": 27
+  }
+}

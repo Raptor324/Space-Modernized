@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "space_m:block/laythe_glowgrass",
+    "particle": "space_m:block/laythe_glowgrass"
+  },
+  "render_type": "minecraft:cutout"
+}

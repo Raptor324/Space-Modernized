@@ -1,0 +1,63 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "space_m:item/rbmk_pellet_mecm",
+    "layer1": "hbm_m:item/rbmk_pellet_overlay_e0"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "hbm_m:pellet_state": 1.0
+      },
+      "model": "space_m:item/rbmk_pellet_mecm_1"
+    },
+    {
+      "predicate": {
+        "hbm_m:pellet_state": 2.0
+      },
+      "model": "space_m:item/rbmk_pellet_mecm_2"
+    },
+    {
+      "predicate": {
+        "hbm_m:pellet_state": 3.0
+      },
+      "model": "space_m:item/rbmk_pellet_mecm_3"
+    },
+    {
+      "predicate": {
+        "hbm_m:pellet_state": 4.0
+      },
+      "model": "space_m:item/rbmk_pellet_mecm_4"
+    },
+    {
+      "predicate": {
+        "hbm_m:pellet_state": 5.0
+      },
+      "model": "space_m:item/rbmk_pellet_mecm_5"
+    },
+    {
+      "predicate": {
+        "hbm_m:pellet_state": 6.0
+      },
+      "model": "space_m:item/rbmk_pellet_mecm_6"
+    },
+    {
+      "predicate": {
+        "hbm_m:pellet_state": 7.0
+      },
+      "model": "space_m:item/rbmk_pellet_mecm_7"
+    },
+    {
+      "predicate": {
+        "hbm_m:pellet_state": 8.0
+      },
+      "model": "space_m:item/rbmk_pellet_mecm_8"
+    },
+    {
+      "predicate": {
+        "hbm_m:pellet_state": 9.0
+      },
+      "model": "space_m:item/rbmk_pellet_mecm_9"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "hbm_m:blast_furnace",
+  "duration": 400,
+  "nt": true,
+  "ingredients": [
+    {
+      "tag": "hbm_m:oredict/ingot/steel"
+    },
+    {
+      "tag": "hbm_m:oredict/ingot/nickel_pure"
+    }
+  ],
+  "output": {
+    "item": "space_m:ingot_stainless",
+    "count": 2
+  }
+}

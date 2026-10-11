@@ -1,0 +1,15 @@
+{
+  "type": "space_m:celestial_ore",
+  "config": {
+    "ore": {
+      "Name": "space_m:ore_schrabidium_eve"
+    },
+    "target": {
+      "Name": "space_m:eve_rock"
+    },
+    "count": 1,
+    "size": 4,
+    "min_y": 1,
+    "range": 16
+  }
+}

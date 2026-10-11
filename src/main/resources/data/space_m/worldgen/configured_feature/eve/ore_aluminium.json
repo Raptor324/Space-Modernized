@@ -1,0 +1,15 @@
+{
+  "type": "space_m:celestial_ore",
+  "config": {
+    "ore": {
+      "Name": "space_m:ore_aluminium_eve"
+    },
+    "target": {
+      "Name": "space_m:eve_rock"
+    },
+    "count": "hbm_m:aluminiumSpawn",
+    "size": 6,
+    "min_y": 5,
+    "range": 40
+  }
+}

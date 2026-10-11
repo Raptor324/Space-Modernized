@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "L",
+    "L"
+  ],
+  "key": {
+    "L": {
+      "item": "space_m:pvc_planks"
+    }
+  },
+  "result": {
+    "item": "space_m:stick_pvc",
+    "count": 3
+  }
+}

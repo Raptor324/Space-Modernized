@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "space_m:ingot_australium_lesser"
+    }
+  },
+  "result": {
+    "item": "hbm_m:nugget_australium_lesser",
+    "count": 9
+  }
+}

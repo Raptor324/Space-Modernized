@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BSB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "space_m:blade_syngas"
+    },
+    "S": {
+      "tag": "hbm_m:oredict/ingot/stainless_steel"
+    }
+  },
+  "result": {
+    "item": "space_m:turbine_syngas"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hbm_m:billet_australium_greater"
+    },
+    {
+      "item": "hbm_m:billet_australium_greater"
+    },
+    {
+      "item": "hbm_m:billet_australium_greater"
+    }
+  ],
+  "result": {
+    "item": "space_m:ingot_australium_greater",
+    "count": 2
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "space_m:block/planet_ore",
+  "textures": {
+    "stone": "space_m:block/duna_rock",
+    "ore": "space_m:block/cluster_iron"
+  }
+}

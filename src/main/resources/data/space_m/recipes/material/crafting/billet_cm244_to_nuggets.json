@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "space_m:billet_cm244"
+    }
+  ],
+  "result": {
+    "item": "space_m:nugget_cm244",
+    "count": 6
+  }
+}

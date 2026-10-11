@@ -1,0 +1,19 @@
+{
+  "type": "space_m:ore_layer_3d",
+  "config": {
+    "block": {
+      "Name": "hbm_m:stone_resource_bauxite"
+    },
+    "target": {
+      "Name": "space_m:minmus_stone"
+    },
+    "id": 1,
+    "scale_h": 0.03,
+    "scale_v": 0.15,
+    "threshold": 300,
+    "enabled": "hbm_m:enableBauxite",
+    "id_after": [
+      "hbm_m:enableHematite"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "space_m:ore_cobalt_tekto"
+  },
+  "result": "hbm_m:cobalt_ingot",
+  "experience": 2.0,
+  "cookingtime": 200
+}

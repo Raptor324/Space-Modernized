@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "space_m:nugget_cm242"
+    }
+  },
+  "result": {
+    "item": "space_m:billet_cm242"
+  }
+}

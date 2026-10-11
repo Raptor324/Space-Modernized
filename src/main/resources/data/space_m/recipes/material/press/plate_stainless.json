@@ -1,0 +1,14 @@
+{
+  "type": "hbm_m:press",
+  "ingredients": [
+    {
+      "tag": "hbm_m:stamps/plate"
+    },
+    {
+      "tag": "hbm_m:oredict/ingot/stainless_steel"
+    }
+  ],
+  "output": {
+    "item": "space_m:plate_stainless"
+  }
+}

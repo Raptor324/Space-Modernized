@@ -1,0 +1,131 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "space_m:bean_raw",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "space_m:crop_coffee",
+                  "properties": {
+                    "age": "2"
+                  }
+                }
+              ],
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "space_m:bean_raw",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "space_m:crop_coffee",
+                  "properties": {
+                    "age": "3"
+                  }
+                }
+              ],
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "space_m:bean_raw",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "space_m:crop_coffee",
+                  "properties": {
+                    "age": "4"
+                  }
+                }
+              ],
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "space_m:bean_raw",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "space_m:crop_coffee",
+                  "properties": {
+                    "age": "5"
+                  }
+                }
+              ],
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "space_m:bean_raw",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "space_m:crop_coffee",
+                  "properties": {
+                    "age": "6"
+                  }
+                }
+              ],
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 3
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "space_m:bean_raw",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "space_m:crop_coffee",
+                  "properties": {
+                    "age": "7"
+                  }
+                }
+              ],
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "space_m:blocks/crop_coffee"
+}

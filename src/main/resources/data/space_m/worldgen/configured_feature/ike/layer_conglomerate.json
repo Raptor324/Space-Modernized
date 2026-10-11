@@ -1,0 +1,20 @@
+{
+  "type": "space_m:ore_layer_3d",
+  "config": {
+    "block": {
+      "Name": "space_m:stone_resource_conglomerate"
+    },
+    "target": {
+      "Name": "space_m:ike_stone"
+    },
+    "id": 4,
+    "scale_h": 0.04,
+    "scale_v": 0.25,
+    "threshold": 220,
+    "id_after": [
+      "hbm_m:enableHematite",
+      "hbm_m:enableBauxite",
+      "hbm_m:enableMalachite"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "space_m:celestial_decorator",
+  "config": {
+    "stone": {
+      "Name": "space_m:eve_rock"
+    },
+    "lava_count": 20
+  }
+}

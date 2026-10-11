@@ -1,7 +1,16 @@
 {
+  "required": true,
+  "minVersion": "0.8",
   "package": "com.space_m.mixin",
   "compatibilityLevel": "JAVA_${java}",
-  "mixins": [],
+  "refmap": "mixins.space_m.refmap.json",
+  "mixins": [
+    "DimensionTypeTimeMixin",
+    "DunaDayMixin",
+    "LevelTimeMixin",
+    "LivingEntityAccessor",
+    "ServerLevelTimeMixin"
+  ],
   "client": [],
   "server": [],
   "injectors": {

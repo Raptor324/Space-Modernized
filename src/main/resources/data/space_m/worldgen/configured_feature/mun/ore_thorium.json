@@ -1,0 +1,15 @@
+{
+  "type": "space_m:celestial_ore",
+  "config": {
+    "ore": {
+      "Name": "space_m:ore_thorium_mun"
+    },
+    "target": {
+      "Name": "space_m:moon_rock"
+    },
+    "count": "hbm_m:thoriumSpawn",
+    "size": 5,
+    "min_y": 5,
+    "range": 25
+  }
+}

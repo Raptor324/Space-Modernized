@@ -1,0 +1,7 @@
+{
+  "parent": "space_m:block/planet_ore",
+  "textures": {
+    "stone": "space_m:block/minmus_stone",
+    "ore": "space_m:block/ore_copper"
+  }
+}

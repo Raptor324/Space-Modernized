@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AA",
+    "TC",
+    "RR"
+  ],
+  "key": {
+    "A": {
+      "tag": "hbm_m:oredict/plate/aluminum"
+    },
+    "T": {
+      "item": "hbm_m:tank_steel"
+    },
+    "C": {
+      "item": "hbm_m:integrated_circuit"
+    },
+    "R": {
+      "tag": "hbm_m:oredict/ingot/rubber"
+    }
+  },
+  "result": {
+    "item": "space_m:oxy_plss"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "hbm_m:ntm",
+  "dimension": 413020,
+  "biomes": [
+    "space_m:moho_crag",
+    "space_m:moho_basalt",
+    "space_m:moho_lava_sea",
+    "space_m:moho_plateau"
+  ],
+  "spawn_overrides": {},
+  "step": "surface_structures",
+  "terrain_adaptation": "none"
+}

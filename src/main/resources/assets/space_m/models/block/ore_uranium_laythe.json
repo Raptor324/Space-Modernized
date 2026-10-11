@@ -1,0 +1,7 @@
+{
+  "parent": "space_m:block/planet_ore",
+  "textures": {
+    "stone": "minecraft:block/stone",
+    "ore": "space_m:block/ore_uranium"
+  }
+}

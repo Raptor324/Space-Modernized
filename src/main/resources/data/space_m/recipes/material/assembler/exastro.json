@@ -1,0 +1,32 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 2000,
+  "power": 100000,
+  "ingredients": [
+    {
+      "item": "space_m:item_expensive_avionics",
+      "count": 2
+    },
+    {
+      "item": "hbm_m:controller_advanced",
+      "count": 1
+    },
+    {
+      "item": "space_m:molychip",
+      "count": 32
+    },
+    {
+      "item": "space_m:gaschip",
+      "count": 16
+    }
+  ],
+  "output": {
+    "item": "space_m:item_expensive_astro"
+  },
+  "fluid_inputs": [
+    {
+      "fluid": "space_m:argon",
+      "amount": 1000
+    }
+  ]
+}

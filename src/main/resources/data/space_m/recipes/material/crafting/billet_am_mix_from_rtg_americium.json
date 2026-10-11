@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "space_m:pellet_rtg_depleted_americium"
+    }
+  ],
+  "result": {
+    "item": "hbm_m:billet_am_mix",
+    "count": 3
+  }
+}

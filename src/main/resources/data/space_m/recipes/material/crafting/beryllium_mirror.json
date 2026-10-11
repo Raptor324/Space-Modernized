@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBN",
+    "BNB",
+    "NBB"
+  ],
+  "key": {
+    "B": {
+      "item": "hbm_m:billet_beryllium"
+    },
+    "N": {
+      "tag": "hbm_m:oredict/wire_dense/neodymium"
+    }
+  },
+  "result": {
+    "item": "space_m:beryllium_mirror"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "hbm_m:anvil",
+  "kind": "construction",
+  "inputs": [
+    {
+      "tag": "hbm_m:oredict/dust/lignite_coke",
+      "count": 1
+    }
+  ],
+  "outputs": [
+    {
+      "item": "hbm_m:lignite_coke"
+    }
+  ],
+  "overlay": "smithing",
+  "sort": 0,
+  "tier": "oil"
+}

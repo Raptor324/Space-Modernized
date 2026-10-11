@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "hbm_m:lanthanium_ingot"
+    }
+  },
+  "result": {
+    "item": "space_m:nugget_lanthanium",
+    "count": 9
+  }
+}

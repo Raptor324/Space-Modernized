@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "space_m:block/machines/machine_atmo_vent",
+      "y": 0
+    },
+    "facing=south": {
+      "model": "space_m:block/machines/machine_atmo_vent",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "space_m:block/machines/machine_atmo_vent",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "space_m:block/machines/machine_atmo_vent",
+      "y": 90
+    }
+  }
+}

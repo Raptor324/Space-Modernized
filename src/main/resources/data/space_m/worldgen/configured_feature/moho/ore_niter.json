@@ -1,0 +1,15 @@
+{
+  "type": "space_m:celestial_ore",
+  "config": {
+    "ore": {
+      "Name": "space_m:ore_niter_moho"
+    },
+    "target": {
+      "Name": "space_m:moho_stone"
+    },
+    "count": "hbm_m:niterSpawn",
+    "size": 6,
+    "min_y": 5,
+    "range": 30
+  }
+}

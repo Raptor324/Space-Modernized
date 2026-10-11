@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "space_m:flour"
+  },
+  "result": "minecraft:bread",
+  "experience": 1.0,
+  "cookingtime": 200
+}

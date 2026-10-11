@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "space_m:billet_cf251"
+    },
+    {
+      "item": "space_m:billet_cf251"
+    },
+    {
+      "item": "space_m:billet_cf251"
+    },
+    {
+      "tag": "hbm_m:oredict/plate/nickel_pure"
+    }
+  ],
+  "result": {
+    "item": "space_m:pellet_rtg_cf251"
+  }
+}

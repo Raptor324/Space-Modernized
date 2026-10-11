@@ -1,0 +1,16 @@
+{
+  "type": "space_m:celestial_decorator",
+  "config": {
+    "stone": {
+      "Name": "space_m:ike_stone"
+    },
+    "generate_lakes": false,
+    "lake_chance": 8,
+    "lake_block": {
+      "Name": "space_m:bromine_block",
+      "Properties": {
+        "level": "0"
+      }
+    }
+  }
+}

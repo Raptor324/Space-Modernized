@@ -1,0 +1,32 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 600,
+  "power": 20000,
+  "ingredients": [
+    {
+      "tag": "hbm_m:oredict/plate_sextuple/stainless_steel",
+      "count": 8
+    },
+    {
+      "tag": "hbm_m:oredict/plate_triple/aluminum",
+      "count": 8
+    },
+    {
+      "tag": "hbm_m:oredict/plate_triple/titanium",
+      "count": 4
+    },
+    {
+      "tag": "hbm_m:oredict/bolt/steel",
+      "count": 32
+    }
+  ],
+  "output": {
+    "item": "space_m:item_expensive_stainless_beam"
+  },
+  "fluid_inputs": [
+    {
+      "fluid": "space_m:krypton",
+      "amount": 1000
+    }
+  ]
+}

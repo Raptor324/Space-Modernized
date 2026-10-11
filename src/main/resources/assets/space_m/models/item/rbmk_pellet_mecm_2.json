@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "space_m:item/rbmk_pellet_mecm",
+    "layer1": "hbm_m:item/rbmk_pellet_overlay_e2"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "hbm_m:crystallizer",
+  "ingredient": {
+    "item": "space_m:mineral_dust"
+  },
+  "result": {
+    "item": "space_m:clump_nitric"
+  },
+  "duration": 300,
+  "productivity": 0.0,
+  "acid": {
+    "fluid": "hbm_m:nitric_acid",
+    "amount": 500
+  }
+}

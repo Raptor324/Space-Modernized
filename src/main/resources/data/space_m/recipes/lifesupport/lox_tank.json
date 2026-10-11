@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " S ",
+    "BKB",
+    " S "
+  ],
+  "key": {
+    "S": {
+      "tag": "hbm_m:oredict/plate/steel"
+    },
+    "B": {
+      "tag": "hbm_m:oredict/bolt/steel"
+    },
+    "K": {
+      "type": "hbm_m:fluid_container",
+      "amount": 1000,
+      "fluid": "hbm_m:oxygen"
+    }
+  },
+  "result": {
+    "item": "space_m:lox_tank"
+  }
+}

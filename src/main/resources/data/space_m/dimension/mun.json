@@ -1,0 +1,14 @@
+{
+  "type": "space_m:mun",
+  "generator": {
+    "type": "space_m:celestial",
+    "body": "mun",
+    "biome_source": {
+      "type": "space_m:celestial",
+      "body": "mun",
+      "biomes": [
+        "space_m:mun"
+      ]
+    }
+  }
+}

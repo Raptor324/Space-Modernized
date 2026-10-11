@@ -1,0 +1,20 @@
+{
+  "type": "space_m:ore_layer_3d",
+  "config": {
+    "block": {
+      "Name": "space_m:minmus_regolith"
+    },
+    "target": {
+      "Name": "space_m:minmus_stone"
+    },
+    "id": 5,
+    "scale_h": 0.06,
+    "scale_v": 0.25,
+    "threshold": 220,
+    "id_after": [
+      "hbm_m:enableHematite",
+      "hbm_m:enableBauxite",
+      "hbm_m:enableMalachite"
+    ]
+  }
+}

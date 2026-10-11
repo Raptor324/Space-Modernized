@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "moisture=0": {
+      "model": "space_m:block/rubber_farmland"
+    },
+    "moisture=1": {
+      "model": "space_m:block/rubber_farmland"
+    },
+    "moisture=2": {
+      "model": "space_m:block/rubber_farmland"
+    },
+    "moisture=3": {
+      "model": "space_m:block/rubber_farmland"
+    },
+    "moisture=4": {
+      "model": "space_m:block/rubber_farmland"
+    },
+    "moisture=5": {
+      "model": "space_m:block/rubber_farmland"
+    },
+    "moisture=6": {
+      "model": "space_m:block/rubber_farmland"
+    },
+    "moisture=7": {
+      "model": "space_m:block/rubber_farmland_moist"
+    }
+  }
+}

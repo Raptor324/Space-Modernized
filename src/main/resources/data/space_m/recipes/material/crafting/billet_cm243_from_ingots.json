@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "space_m:ingot_cm243"
+    }
+  },
+  "result": {
+    "item": "space_m:billet_cm243",
+    "count": 3
+  }
+}

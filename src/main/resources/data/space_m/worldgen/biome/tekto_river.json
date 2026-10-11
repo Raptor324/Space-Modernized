@@ -1,0 +1,66 @@
+{
+  "has_precipitation": true,
+  "temperature": 1.0,
+  "downfall": 0.5,
+  "creature_spawn_probability": 0.1,
+  "effects": {
+    "sky_color": 7842303,
+    "fog_color": 12638463,
+    "water_color": 5963930,
+    "water_fog_color": 329011
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "space_m:tekto/vanilla_ore_iron",
+      "space_m:tekto/vanilla_ore_gold",
+      "space_m:tekto/vanilla_ore_redstone",
+      "space_m:tekto/vanilla_ore_diamond",
+      "space_m:tekto/ore_alexandrite",
+      "space_m:tekto/depth_iron",
+      "space_m:tekto/depth_titanium",
+      "space_m:tekto/depth_tungsten",
+      "space_m:tekto/depth_cinnebar",
+      "space_m:tekto/depth_zirconium",
+      "space_m:tekto/depth_borax",
+      "space_m:tekto/ore_uranium",
+      "space_m:tekto/ore_thorium",
+      "space_m:tekto/ore_titanium",
+      "space_m:tekto/ore_sulfur",
+      "space_m:tekto/ore_aluminium",
+      "space_m:tekto/ore_copper",
+      "space_m:tekto/ore_nickel",
+      "space_m:tekto/ore_zinc",
+      "space_m:tekto/ore_fluorite",
+      "space_m:tekto/ore_niter",
+      "space_m:tekto/ore_tungsten",
+      "space_m:tekto/ore_lead",
+      "space_m:tekto/ore_beryllium",
+      "space_m:tekto/ore_rare",
+      "space_m:tekto/ore_cinnebar",
+      "space_m:tekto/ore_cobalt",
+      "space_m:tekto/cluster_iron",
+      "space_m:tekto/cluster_titanium",
+      "space_m:tekto/cluster_aluminium",
+      "space_m:tekto/cluster_copper",
+      "space_m:tekto/limestone",
+      "space_m:tekto/keyhole"
+    ],
+    [],
+    [],
+    [
+      "space_m:tekto/rubber_plants"
+    ],
+    [
+      "space_m:tekto/tekto_decorator"
+    ]
+  ]
+}

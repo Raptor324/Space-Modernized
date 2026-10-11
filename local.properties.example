@@ -6,7 +6,9 @@
 #   <hbm.local.path>/versions/<mc-loader>/build/libs/
 # instead of pulling the Modrinth maven artifact.
 # Requires running a build in that clone first:
-#   ./gradlew :1.20.1-forge:build   (or the matching version project)
+#   ./gradlew :1.20.1-forge:reobfJar   (Forge: SRG jar in build/libs)
+#   ./gradlew :1.21.1-neoforge:jar
+# Only the jar matching the clone's mod.version is used (else the newest, with a warning).
 # Use forward slashes, even on Windows.
 # Leave empty or remove to fall back to the Modrinth dependency (CI default).
 hbm.local.path=

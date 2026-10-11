@@ -1,0 +1,15 @@
+{
+  "type": "space_m:celestial_ore",
+  "config": {
+    "ore": {
+      "Name": "hbm_m:basalt"
+    },
+    "target": {
+      "Name": "space_m:moho_stone"
+    },
+    "count": 10,
+    "size": 32,
+    "min_y": 0,
+    "range": 128
+  }
+}

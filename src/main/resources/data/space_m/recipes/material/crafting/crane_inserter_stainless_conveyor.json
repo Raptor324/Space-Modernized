@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "C C",
+    "CBC"
+  ],
+  "key": {
+    "C": {
+      "tag": "hbm_m:oredict/ingot/stainless_steel"
+    },
+    "B": {
+      "item": "hbm_m:conveyor"
+    }
+  },
+  "result": {
+    "item": "hbm_m:crane_inserter",
+    "count": 8
+  }
+}

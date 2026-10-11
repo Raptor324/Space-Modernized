@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "hbm_m:oredict/tiny/cm244"
+    },
+    {
+      "tag": "hbm_m:oredict/tiny/cm244"
+    },
+    {
+      "tag": "hbm_m:oredict/tiny/cm245"
+    },
+    {
+      "tag": "hbm_m:oredict/tiny/cm245"
+    },
+    {
+      "tag": "hbm_m:oredict/tiny/cm245"
+    },
+    {
+      "tag": "hbm_m:oredict/tiny/cm245"
+    }
+  ],
+  "result": {
+    "item": "space_m:billet_cm_mix"
+  }
+}

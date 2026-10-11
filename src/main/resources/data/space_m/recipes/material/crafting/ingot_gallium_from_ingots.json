@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "space_m:ingot_gallium"
+    }
+  },
+  "result": {
+    "item": "space_m:nugget_gallium",
+    "count": 9
+  }
+}

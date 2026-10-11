@@ -1,0 +1,11 @@
+{
+  "type": "space_m:keyhole",
+  "config": {
+    "state": {
+      "Name": "hbm_m:stone_keyhole"
+    },
+    "target": {
+      "Name": "space_m:duna_rock"
+    }
+  }
+}

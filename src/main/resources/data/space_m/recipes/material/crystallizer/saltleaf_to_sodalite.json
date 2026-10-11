@@ -1,0 +1,16 @@
+{
+  "type": "hbm_m:crystallizer",
+  "ingredient": {
+    "item": "space_m:saltleaf"
+  },
+  "result": {
+    "item": "hbm_m:gem_sodalite"
+  },
+  "duration": 600,
+  "productivity": 0.0,
+  "acid": {
+    "fluid": "space_m:scutterblood",
+    "amount": 1000
+  },
+  "count": 5
+}

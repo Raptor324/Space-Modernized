@@ -1,0 +1,17 @@
+{
+  "type": "space_m:moho",
+  "generator": {
+    "type": "space_m:celestial",
+    "body": "moho",
+    "biome_source": {
+      "type": "space_m:celestial",
+      "body": "moho",
+      "biomes": [
+        "space_m:moho_crag",
+        "space_m:moho_basalt",
+        "space_m:moho_lava_sea",
+        "space_m:moho_plateau"
+      ]
+    }
+  }
+}

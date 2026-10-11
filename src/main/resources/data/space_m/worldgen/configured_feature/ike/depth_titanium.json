@@ -1,0 +1,19 @@
+{
+  "type": "space_m:depth_deposit",
+  "config": {
+    "ore": {
+      "Name": "hbm_m:cluster_depth_titanium"
+    },
+    "target": {
+      "Name": "space_m:ike_stone"
+    },
+    "filler": {
+      "Name": "hbm_m:stone_depth"
+    },
+    "min_y": 0,
+    "y_dev": 3,
+    "size": 5,
+    "fill": 0.6,
+    "chance": 32
+  }
+}

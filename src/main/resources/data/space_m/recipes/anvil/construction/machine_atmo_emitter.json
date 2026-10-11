@@ -1,0 +1,31 @@
+{
+  "type": "hbm_m:anvil",
+  "inputs": [
+    {
+      "count": 6,
+      "tag": "hbm_m:oredict/ntmpipe/steel"
+    },
+    {
+      "count": 8,
+      "tag": "hbm_m:oredict/plate_triple/stainless_steel"
+    },
+    {
+      "count": 4,
+      "tag": "hbm_m:oredict/ingot/any_plastic"
+    },
+    {
+      "comparable": true,
+      "count": 1,
+      "item": "hbm_m:turbine_titanium"
+    }
+  ],
+  "kind": "construction",
+  "outputs": [
+    {
+      "item": "space_m:machine_atmo_emitter"
+    }
+  ],
+  "overlay": "construction",
+  "sort": 90,
+  "tier": "steel"
+}

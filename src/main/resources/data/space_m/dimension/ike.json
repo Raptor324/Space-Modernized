@@ -1,0 +1,14 @@
+{
+  "type": "space_m:ike",
+  "generator": {
+    "type": "space_m:celestial",
+    "body": "ike",
+    "biome_source": {
+      "type": "space_m:celestial",
+      "body": "ike",
+      "biomes": [
+        "space_m:ike"
+      ]
+    }
+  }
+}

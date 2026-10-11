@@ -1,0 +1,15 @@
+{
+  "type": "space_m:celestial_ore",
+  "config": {
+    "ore": {
+      "Name": "hbm_m:tungsten_ore"
+    },
+    "target": {
+      "Name": "hbm_m:sellafield_slaked"
+    },
+    "count": "hbm_m:tungstenSpawn",
+    "size": 8,
+    "min_y": 5,
+    "range": 30
+  }
+}

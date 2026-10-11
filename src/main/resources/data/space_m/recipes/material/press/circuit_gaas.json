@@ -1,0 +1,14 @@
+{
+  "type": "hbm_m:press",
+  "ingredients": [
+    {
+      "tag": "hbm_m:stamps/circuit"
+    },
+    {
+      "tag": "hbm_m:oredict/billet/gallium_arsenide"
+    }
+  ],
+  "output": {
+    "item": "space_m:gaas"
+  }
+}

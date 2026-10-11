@@ -1,0 +1,9 @@
+{
+  "type": "hbm_m:shredding",
+  "ingredient": {
+    "item": "minecraft:wheat"
+  },
+  "result": {
+    "item": "space_m:flour"
+  }
+}

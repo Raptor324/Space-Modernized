@@ -1,0 +1,18 @@
+{
+  "type": "space_m:ore_cave",
+  "config": {
+    "ore": {
+      "Name": "hbm_m:basalt"
+    },
+    "ore_name": "hbm:basalt",
+    "ore_meta": 0,
+    "target": {
+      "Name": "space_m:eve_silt"
+    },
+    "threshold": 0.15,
+    "range_mult": 40,
+    "y_level": 54,
+    "max_range": 24,
+    "ignore_water": true
+  }
+}

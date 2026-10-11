@@ -1,0 +1,24 @@
+{
+  "type": "space_m:ore_cave",
+  "config": {
+    "ore": {
+      "Name": "hbm_m:stone_resource_sulfur"
+    },
+    "ore_name": "hbm:stone_resource",
+    "ore_meta": 0,
+    "target": {
+      "Name": "space_m:ike_stone"
+    },
+    "threshold": 1.5,
+    "range_mult": 20,
+    "y_level": 30,
+    "max_range": 20,
+    "stalactite": {
+      "Name": "hbm_m:stalactite_sulfur"
+    },
+    "stalagmite": {
+      "Name": "hbm_m:stalagmite_sulfur"
+    },
+    "enabled": "hbm_m:enableSulfurCave"
+  }
+}

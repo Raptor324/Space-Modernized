@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "space_m:block/air_scrubber" },
+    "facing=south": { "model": "space_m:block/air_scrubber" },
+    "facing=west": { "model": "space_m:block/air_scrubber" },
+    "facing=east": { "model": "space_m:block/air_scrubber" }
+  }
+}

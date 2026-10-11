@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "PCP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "space_m:powder_wd2004_tiny"
+    },
+    "C": {
+      "item": "hbm_m:dineutronium_powder"
+    }
+  },
+  "result": {
+    "item": "space_m:powder_wd2004"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "space_m:billet_cm243"
+    },
+    {
+      "item": "space_m:billet_cm243"
+    },
+    {
+      "item": "space_m:billet_cm243"
+    }
+  ],
+  "result": {
+    "item": "space_m:ingot_cm243",
+    "count": 2
+  }
+}

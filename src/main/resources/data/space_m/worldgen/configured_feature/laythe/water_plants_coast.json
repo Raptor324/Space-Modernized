@@ -1,0 +1,7 @@
+{
+  "type": "space_m:water_plants",
+  "config": {
+    "count": 16,
+    "sea_level": 63
+  }
+}

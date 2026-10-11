@@ -1,0 +1,15 @@
+{
+  "type": "space_m:dres",
+  "generator": {
+    "type": "space_m:celestial",
+    "body": "dres",
+    "biome_source": {
+      "type": "space_m:celestial",
+      "body": "dres",
+      "biomes": [
+        "space_m:dres",
+        "space_m:dres_basins"
+      ]
+    }
+  }
+}

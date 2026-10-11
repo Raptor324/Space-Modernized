@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "space_m:ore_uranium_laythe"
+  },
+  "result": "hbm_m:uranium_ingot",
+  "experience": 6.0,
+  "cookingtime": 200
+}

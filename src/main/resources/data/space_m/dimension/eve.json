@@ -1,0 +1,18 @@
+{
+  "type": "space_m:eve",
+  "generator": {
+    "type": "space_m:celestial",
+    "body": "eve",
+    "biome_source": {
+      "type": "space_m:celestial",
+      "body": "eve",
+      "biomes": [
+        "space_m:eve_plains",
+        "space_m:eve_ocean",
+        "space_m:eve_mountains",
+        "space_m:eve_seismic_plains",
+        "space_m:eve_river"
+      ]
+    }
+  }
+}

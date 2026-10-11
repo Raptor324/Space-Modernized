@@ -1,0 +1,10 @@
+{
+  "type": "hbm_m:shredding",
+  "ingredient": {
+    "item": "space_m:ore_glowstone_moho"
+  },
+  "result": {
+    "item": "minecraft:glowstone_dust",
+    "count": 4
+  }
+}

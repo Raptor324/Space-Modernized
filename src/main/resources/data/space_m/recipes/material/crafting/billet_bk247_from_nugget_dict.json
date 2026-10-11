@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "hbm_m:oredict/nugget/berkelium247"
+    },
+    {
+      "tag": "hbm_m:oredict/nugget/berkelium247"
+    },
+    {
+      "tag": "hbm_m:oredict/nugget/berkelium247"
+    },
+    {
+      "tag": "hbm_m:oredict/nugget/berkelium247"
+    },
+    {
+      "tag": "hbm_m:oredict/nugget/berkelium247"
+    },
+    {
+      "tag": "hbm_m:oredict/nugget/berkelium247"
+    }
+  ],
+  "result": {
+    "item": "space_m:billet_bk247"
+  }
+}

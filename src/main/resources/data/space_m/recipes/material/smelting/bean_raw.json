@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "space_m:bean_raw"
+  },
+  "result": "space_m:bean_roast",
+  "experience": 1.0,
+  "cookingtime": 200
+}

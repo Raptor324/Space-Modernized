@@ -1,0 +1,10 @@
+{
+  "type": "hbm_m:shredding",
+  "ingredient": {
+    "item": "space_m:ore_aluminium_dres"
+  },
+  "result": {
+    "item": "hbm_m:cryolite_chunk",
+    "count": 2
+  }
+}

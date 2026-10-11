@@ -1,0 +1,7 @@
+{
+  "parent": "space_m:block/planet_ore",
+  "textures": {
+    "stone": "space_m:block/dresbase",
+    "ore": "space_m:block/ore_tungsten"
+  }
+}

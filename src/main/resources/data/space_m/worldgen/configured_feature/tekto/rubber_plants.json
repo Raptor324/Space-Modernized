@@ -1,0 +1,7 @@
+{
+  "type": "space_m:rubber_plants",
+  "config": {
+    "count": 64,
+    "sea_level": 63
+  }
+}

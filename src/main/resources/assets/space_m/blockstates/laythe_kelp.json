@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "top=false": {
+      "model": "space_m:block/laythe_kelp"
+    },
+    "top=true": {
+      "model": "space_m:block/laythe_kelp_top"
+    }
+  }
+}

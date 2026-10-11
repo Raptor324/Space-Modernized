@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "space_m:block/rubber_plant_shrub"
+  },
+  "render_type": "minecraft:cutout"
+}

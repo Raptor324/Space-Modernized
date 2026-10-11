@@ -1,0 +1,22 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "sun": "space_m:misc/space/kerbol",
+    "particle": "space_m:misc/space/kerbol"
+  },
+  "elements": [
+    {
+      "from": [4, 4, 4],
+      "to": [12, 12, 12],
+      "shade": false,
+      "faces": {
+        "north": { "uv": [6, 6, 10, 10], "texture": "#sun" },
+        "south": { "uv": [6, 6, 10, 10], "texture": "#sun" },
+        "east":  { "uv": [6, 6, 10, 10], "texture": "#sun" },
+        "west":  { "uv": [6, 6, 10, 10], "texture": "#sun" },
+        "up":    { "uv": [6, 6, 10, 10], "texture": "#sun" },
+        "down":  { "uv": [6, 6, 10, 10], "texture": "#sun" }
+      }
+    }
+  ]
+}

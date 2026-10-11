@@ -1,0 +1,26 @@
+{
+  "values": [
+    "hbm_m:entity_cyber_crab",
+    "hbm_m:entity_tesla_crab",
+    "hbm_m:entity_taint_crab",
+    "hbm_m:entity_ntm_test_dummy",
+    "hbm_m:entity_ntm_fbi",
+    "hbm_m:entity_ntm_fbi_drone",
+    "hbm_m:entity_mob_hunter_chopper",
+    "hbm_m:maskman",
+    "hbm_m:parasite_maggot",
+    "hbm_m:entity_plastic_bag",
+    "hbm_m:rad_beast",
+    "hbm_m:ufo",
+    "hbm_m:entity_ntm_siege_craft",
+    "hbm_m:glyphid",
+    "hbm_m:glyphid_brawler",
+    "hbm_m:glyphid_behemoth",
+    "hbm_m:glyphid_brenda",
+    "hbm_m:glyphid_bombardier",
+    "hbm_m:glyphid_blaster",
+    "hbm_m:glyphid_scout",
+    "hbm_m:glyphid_nuclear",
+    "hbm_m:glyphid_digger"
+  ]
+}

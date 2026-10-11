@@ -1,0 +1,15 @@
+{
+  "type": "space_m:celestial_ore",
+  "config": {
+    "ore": {
+      "Name": "hbm_m:stone_resource_limestone"
+    },
+    "target": {
+      "Name": "minecraft:stone"
+    },
+    "count": "hbm_m:limestoneSpawn",
+    "size": 12,
+    "min_y": 25,
+    "range": 30
+  }
+}

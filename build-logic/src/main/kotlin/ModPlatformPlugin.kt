@@ -41,13 +41,52 @@ fun RepositoryHandler.strictMaven(
  * Returns the root directory of a local HBM-Modernized clone if [hbm.local.path] is set
  * in [local.properties], or null otherwise.
  */
-fun Project.hbmLocalPath(): File? =
-	(findProperty("hbm.local.path") as? String)?.ifBlank { null }?.let { File(it) }
+fun Project.hbmLocalPath(): File? {
+	// settings.gradle.kts copies local.properties into gradle.extra - that is NOT visible to
+	// Project.findProperty, so check -P/gradle.properties, then gradle.extra, then the file itself.
+	val fromProject = findProperty("hbm.local.path") as? String
+	val gradleExtra = gradle.extensions.extraProperties
+	val fromGradle = if (gradleExtra.has("hbm.local.path")) gradleExtra.get("hbm.local.path") as? String else null
+	val fromFile = rootProject.file("local.properties").takeIf(File::isFile)?.let { f ->
+		Properties().also { p -> f.inputStream().use(p::load) }.getProperty("hbm.local.path")
+	}
+	return listOf(fromProject, fromGradle, fromFile).firstNotNullOfOrNull { it?.trim()?.ifBlank { null } }?.let { File(it) }
+}
+
+/**
+ * Expected jar name of the local HBM-Modernized clone for [stonecutterProject], named the same
+ * way as its ModPlatformPlugin does: `hbm_m-<mod.version><mod.channel_tag>+<deps.minecraft>-<loader>.jar`.
+ * Values come from `<clone>/gradle.properties`, overridden by `<clone>/versions/<project>/gradle.properties`.
+ * Returns null if mod.version cannot be read.
+ */
+fun hbmExpectedJarName(localRoot: File, stonecutterProject: String): String? {
+	val props = Properties()
+	listOf(File(localRoot, "gradle.properties"), File(localRoot, "versions/$stonecutterProject/gradle.properties"))
+		.filter(File::isFile)
+		.forEach { f -> f.inputStream().use { props.load(it) } }
+	val modId = props.getProperty("mod.id")?.trim()?.ifBlank { null } ?: "hbm_m"
+	val version = props.getProperty("mod.version")?.trim()?.ifBlank { null } ?: return null
+	val channel = props.getProperty("mod.channel_tag")?.trim().orEmpty()
+	val mc = props.getProperty("deps.minecraft")?.trim()?.ifBlank { null } ?: stonecutterProject.substringBefore('-')
+	val loader = stonecutterProject.substringAfter('-')
+	return "$modId-$version$channel+$mc-$loader.jar"
+}
+
+/**
+ * Task in the HBM-Modernized clone that writes the consumable jar into build/libs:
+ * legacy Forge (MDG) puts the plain `jar` (mojmap) into build/devlibs and the SRG jar
+ * from `reobfJar` into build/libs; NeoForge's `jar` goes straight to build/libs.
+ */
+/** Pseudo group of the local HBM-Modernized jar (only served by the flat-dir repository). */
+const val HBM_LOCAL_GROUP = "hbm_local"
+
+fun hbmJarTask(stonecutterProject: String): String =
+	if (stonecutterProject.endsWith("-forge")) "reobfJar" else "jar"
 
 /**
  * Resolves the HBM-Modernized dependency:
- *  - a local [fileTree] from `<hbm.local.path>/versions/<stonecutterProject>/build/libs/`
- *    when [hbm.local.path] is set in [local.properties];
+ *  - exactly one local jar from `<hbm.local.path>/versions/<stonecutterProject>/build/libs/`
+ *    (the one matching the clone's mod.version, else the newest) when [hbm.local.path] is set in [local.properties];
  *  - otherwise the Modrinth coordinates `maven.modrinth:hbms-nuclear-tech-modernized:<deps.hbm_m>`.
  *
  * @param stonecutterProject the value of `stonecutter.current.project` (e.g. "1.20.1-forge")
@@ -75,14 +114,42 @@ fun Project.hbmDependency(stonecutterProject: String): Any {
 	val candidateJars = libsDir.listFiles(File::isFile)?.filter { it.extension == "jar" && !isAuxJar(it) }
 
 	if (candidateJars != null && candidateJars.isNotEmpty()) {
-		return fileTree(libsDir) {
-			include("*.jar")
-			exclude("*-sources.jar", "*-javadoc.jar", "*-dev.jar", "*-reobf.jar")
+		// build/libs keeps every jar ever built (0.1.3 ... 0.3.5) - putting all of them on the
+		// classpath gives duplicate classes and a random hbm_m version at runtime.
+		// Pick exactly one: the jar matching the clone's current mod.version, else the newest one.
+		val expected = hbmExpectedJarName(localRoot, stonecutterProject)
+		val exact = expected?.let { name -> candidateJars.firstOrNull { it.name == name } }
+		val chosen = exact ?: candidateJars.maxByOrNull { it.lastModified() }!!
+		if (exact == null) {
+			logger.warn(
+				"[Space-Modernized] No HBM-Modernized jar named '${expected ?: "?"}' in ${libsDir.absolutePath} " +
+				"(mod.version of the local clone). Using the newest jar instead: ${chosen.name}. " +
+				"Build the clone first (:$stonecutterProject:${hbmJarTask(stonecutterProject)})."
+			)
+		} else {
+			logger.lifecycle("[Space-Modernized] Using local HBM-Modernized jar: ${chosen.absolutePath}")
 		}
+		if (candidateJars.size > 1) {
+			logger.info("[Space-Modernized] Ignoring ${candidateJars.size - 1} other jar(s) in ${libsDir.absolutePath}")
+		}
+		// Served as a module from a flat-dir repository, not as files(): legacy Forge's
+		// modImplementation (SRG -> mojmap remapping) only accepts module dependencies
+		// ("Cannot convert the provided notation to an object of type DependencyConstraint: file collection").
+		val localRepo = repositories.flatDir {
+			name = "HbmModernizedLocal"
+			dirs(libsDir)
+		}
+		repositories.exclusiveContent {
+			forRepositories(localRepo)
+			filter { includeGroup(HBM_LOCAL_GROUP) }
+		}
+		val base = chosen.nameWithoutExtension
+		return if (base.startsWith("hbm_m-")) "$HBM_LOCAL_GROUP:hbm_m:${base.removePrefix("hbm_m-")}"
+		else "$HBM_LOCAL_GROUP:$base"
 	}
 	logger.warn(
 		"[Space-Modernized] hbm.local.path is set, but no usable jar was found in " +
-		"${libsDir.absolutePath}. Run './gradlew :$stonecutterProject:build' in the " +
+		"${libsDir.absolutePath}. Run './gradlew :$stonecutterProject:${hbmJarTask(stonecutterProject)}' in the " +
 		"HBM-Modernized clone, or clear hbm.local.path to use the Modrinth artifact. " +
 		"Falling back to Modrinth (deps.hbm_m=${prop("deps.hbm_m")})."
 	)
@@ -171,7 +238,11 @@ abstract class ModPlatformPlugin @Inject constructor() : Plugin<Project> {
 				into("META-INF")
 			}
 
-			filesMatching("*.mixins.json") { expand("java" to "JAVA_${requiredJava.majorVersion}") }
+			// Template "JAVA_${java}" in mixins.<mod_id>.json (the old pattern "*.mixins.json" never matched it,
+			// and the value carried a second "JAVA_" prefix -> Mixin rejected "JAVA_${JAVA}").
+			filesMatching(listOf("*.mixins.json", prop("mod.mixin_config")).filter(String::isNotBlank)) {
+				expand("java" to requiredJava.majorVersion)
+			}
 
 			val authors = prop("mod.authors")
 			val contributors = prop("mod.contributors")
@@ -180,9 +251,12 @@ abstract class ModPlatformPlugin @Inject constructor() : Plugin<Project> {
 
 			val dependencies = buildDependenciesBlock(modId, extension.dependencies)
 
-			val javafmlRange = prop("deps.javafml_range").ifBlank { "[47,)" }
+			// NeoForge 21.x ships FML 4.x - "[47,)" (Forge 1.20.1) makes it reject the mod file.
+			val javafmlRange = prop("deps.javafml_range").ifBlank { if (isNeoForge) "[4,)" else "[47,)" }
 			val forgeDepRange = prop("deps.forge_dependency_range").ifBlank { "[1,)" }
-			val minecraftDepRange = prop("deps.minecraft_dependency_range").ifBlank { "[$mcVersion,1.21)" }
+			// Old default "[$mcVersion,1.21)" is an invalid range on 1.21.1 ("Range defies version ordering"),
+			// NeoForge then drops space_m from the mod list. Default to the exact version like hbm_m does.
+			val minecraftDepRange = prop("deps.minecraft_dependency_range").ifBlank { "[$mcVersion]" }
 
 			val props = mapOf(
 				"version" to modVersion,
@@ -238,6 +312,7 @@ abstract class ModPlatformPlugin @Inject constructor() : Plugin<Project> {
 					modId = "${it.modid.get()}"
 					side = "${it.environment.get().uppercase(Locale.getDefault())}"
                     versionRange = "${it.forgeVersionRange.get()}"
+                    ordering = "${it.ordering.get()}"
 					mandatory = ${if (type == "required") "true" else "false"}
                     type = "$type"
 					""".replace("                  ", "").trimIndent()

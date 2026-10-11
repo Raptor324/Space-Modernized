@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IGI",
+    "ICI",
+    "IDI"
+  ],
+  "key": {
+    "I": {
+      "tag": "hbm_m:oredict/plate/iron"
+    },
+    "G": {
+      "item": "minecraft:iron_bars"
+    },
+    "C": {
+      "item": "hbm_m:tank_steel"
+    },
+    "D": {
+      "item": "minecraft:dispenser"
+    }
+  },
+  "result": {
+    "item": "space_m:air_vent"
+  }
+}

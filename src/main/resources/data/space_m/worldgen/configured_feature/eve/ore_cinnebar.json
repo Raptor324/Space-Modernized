@@ -1,0 +1,15 @@
+{
+  "type": "space_m:celestial_ore",
+  "config": {
+    "ore": {
+      "Name": "space_m:ore_cinnebar_eve"
+    },
+    "target": {
+      "Name": "space_m:eve_rock"
+    },
+    "count": "hbm_m:cinnebarSpawn",
+    "size": 4,
+    "min_y": 8,
+    "range": 16
+  }
+}

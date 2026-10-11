@@ -1,0 +1,15 @@
+{
+  "type": "space_m:celestial_ore",
+  "config": {
+    "ore": {
+      "Name": "space_m:ore_cobalt_ike"
+    },
+    "target": {
+      "Name": "space_m:ike_stone"
+    },
+    "count": "hbm_m:cobaltSpawn",
+    "size": 4,
+    "min_y": 4,
+    "range": 8
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "ingredient": {
+    "item": "space_m:dres_rock"
+  },
+  "result": "minecraft:stone",
+  "experience": 0.1,
+  "cookingtime": 200
+}

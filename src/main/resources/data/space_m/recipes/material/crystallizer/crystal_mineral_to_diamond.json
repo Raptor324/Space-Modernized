@@ -1,0 +1,15 @@
+{
+  "type": "hbm_m:crystallizer",
+  "ingredient": {
+    "item": "space_m:crystal_mineral"
+  },
+  "result": {
+    "item": "hbm_m:crystal_diamond"
+  },
+  "duration": 600,
+  "productivity": 0.05,
+  "acid": {
+    "fluid": "hbm_m:peroxide",
+    "amount": 500
+  }
+}

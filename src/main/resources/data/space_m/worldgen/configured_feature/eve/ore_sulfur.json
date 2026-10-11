@@ -1,0 +1,15 @@
+{
+  "type": "space_m:celestial_ore",
+  "config": {
+    "ore": {
+      "Name": "space_m:ore_sulfur_eve"
+    },
+    "target": {
+      "Name": "space_m:eve_rock"
+    },
+    "count": "hbm_m:sulfurSpawn",
+    "size": 8,
+    "min_y": 5,
+    "range": 30
+  }
+}

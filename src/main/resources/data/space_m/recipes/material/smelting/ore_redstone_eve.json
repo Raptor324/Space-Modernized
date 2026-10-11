@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "space_m:ore_redstone_eve"
+  },
+  "result": "minecraft:redstone",
+  "experience": 0.7,
+  "cookingtime": 200
+}

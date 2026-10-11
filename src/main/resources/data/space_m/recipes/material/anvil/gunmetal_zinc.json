@@ -1,0 +1,20 @@
+{
+  "type": "hbm_m:anvil",
+  "kind": "smithing",
+  "left": {
+    "tag": "hbm_m:oredict/ingot/copper",
+    "count": 1
+  },
+  "right": {
+    "tag": "hbm_m:oredict/ingot/zinc",
+    "count": 1
+  },
+  "outputs": [
+    {
+      "item": "hbm_m:gunmetal_ingot"
+    }
+  ],
+  "overlay": "smithing",
+  "sort": 0,
+  "tier": "iron"
+}

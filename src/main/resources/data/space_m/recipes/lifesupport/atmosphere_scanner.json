@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "QCQ",
+    "WBW",
+    "SSS"
+  ],
+  "key": {
+    "Q": {
+      "item": "hbm_m:glass_quartz"
+    },
+    "C": {
+      "item": "hbm_m:integrated_circuit"
+    },
+    "W": {
+      "tag": "hbm_m:oredict/wire_fine/gold"
+    },
+    "B": {
+      "item": "hbm_m:controller_chassis"
+    },
+    "S": {
+      "tag": "hbm_m:oredict/plate/stainless"
+    }
+  },
+  "result": {
+    "item": "space_m:atmosphere_scanner"
+  }
+}

@@ -10,18 +10,9 @@ description="""
 ${mod_description}
 """
 
-[[dependencies.${mod_id}]]
-modId="neoforge"
-type="required"
-versionRange="[1,)"
-ordering="NONE"
-side="BOTH"
-
-[[dependencies.${mod_id}]]
-modId="minecraft"
-type="required"
-versionRange="${minecraft_version_range}"
-ordering="NONE"
-side="BOTH"
-
+# Abhaengigkeiten (minecraft, neoforge, architectury, hbm_m) erzeugt das mod-platform-Plugin aus build.neoforge.gradle.kts.
 ${dependencies}
+
+# Mixin-Konfiguration: NeoForge 1.21+ liest Mixins nur aus [[mixins]] (Forge: Manifest MixinConfigs).
+[[mixins]]
+config = "${mixin_config}"

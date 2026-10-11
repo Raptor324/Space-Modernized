@@ -1,0 +1,16 @@
+{
+  "type": "space_m:celestial_ore",
+  "config": {
+    "ore": {
+      "Name": "minecraft:gold_ore"
+    },
+    "target": {
+      "Name": "hbm_m:sellafield_slaked"
+    },
+    "count": 2,
+    "size": 8,
+    "min_y": 0,
+    "range": 32,
+    "distribution": "vanilla"
+  }
+}

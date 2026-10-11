@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "space_m:ore_beryllium_minmus"
+  },
+  "result": "hbm_m:beryllium_ingot",
+  "experience": 2.0,
+  "cookingtime": 200
+}

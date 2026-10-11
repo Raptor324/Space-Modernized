@@ -1,0 +1,22 @@
+{
+  "type": "hbm_m:arc_welder",
+  "duration": 250,
+  "consumption": 25000,
+  "ingredients": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "hbm_m:oredict/plate_triple/aluminum"
+      }
+    },
+    {
+      "count": 2,
+      "ingredient": {
+        "item": "space_m:aero"
+      }
+    }
+  ],
+  "result": {
+    "item": "space_m:avionics"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "space_m:block/planet_ore",
+  "textures": {
+    "stone": "hbm_m:block/basalt",
+    "ore": "space_m:block/cluster_aluminium"
+  }
+}

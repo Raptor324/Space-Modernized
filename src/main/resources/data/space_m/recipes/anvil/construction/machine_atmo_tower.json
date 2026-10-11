@@ -1,0 +1,32 @@
+{
+  "type": "hbm_m:anvil",
+  "inputs": [
+    {
+      "count": 6,
+      "tag": "hbm_m:oredict/shell/steel"
+    },
+    {
+      "count": 8,
+      "tag": "hbm_m:oredict/plate/stainless_steel"
+    },
+    {
+      "comparable": true,
+      "count": 4,
+      "item": "hbm_m:concrete_smooth"
+    },
+    {
+      "comparable": true,
+      "count": 1,
+      "item": "hbm_m:heatex"
+    }
+  ],
+  "kind": "construction",
+  "outputs": [
+    {
+      "item": "space_m:machine_atmo_tower"
+    }
+  ],
+  "overlay": "construction",
+  "sort": 90,
+  "tier": "steel"
+}

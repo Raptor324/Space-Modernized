@@ -18,7 +18,11 @@ platform {
 		}
 		required("hbm_m") {
 			slug("hbms-nuclear-tech-modernized")
-			forgeVersionRange = "[${prop("deps.hbm_m")},)"
+			// mods.toml compares against hbm_m's own version ("0.2.2-alpha"), not the artifact
+			// version "0.2.2-alpha+1.20.1-forge" - that one sorts higher and would reject the match.
+			forgeVersionRange = "[${prop("deps.hbm_m").substringBefore('+')},)"
+			// Space content builds on hbm_m registries/events -> always load after it.
+			ordering = "AFTER"
 		}
 	}
 }
@@ -50,6 +54,15 @@ neoForge {
 			jvmArguments.addAll("-Xmx4G", "-Xms2G", "-Dfile.encoding=UTF-8",
 				"-Duser.language=en", "-Duser.country=US")
 		}
+		// Headless server start without eula.txt (GameTestServer bypasses Main): loads hbm_m + space_m,
+		// runs the space_m game tests (none yet) and exits. ./gradlew :1.21.1-neoforge:runGameTestServer
+		register("gameTestServer") {
+			type = "gameTestServer"
+			gameDirectory = file("run/")
+			ideName = "NeoForge GameTest (${stonecutter.active?.version})"
+			systemProperty("neoforge.enabledGameTestNamespaces", prop("mod.id"))
+			jvmArguments.addAll("-Xmx4G", "-Xms2G", "-Dfile.encoding=UTF-8")
+		}
 		// Datagen is 1.20.1 Forge-only. NeoForge picks up the already generated
 		// resources from src/generated/resources and remaps them via processResources (see below).
 	}
@@ -80,6 +93,9 @@ dependencies {
 	val hbmDep = hbmDependency(stonecutter.current.project)
 	"compileOnly"(hbmDep)
 	"runtimeOnly"(hbmDep)
+
+	// JEI (nur Compile, R2-C Atmo-Maschinen: Space-Kategorien auf Basis der HBM-JEI-Kategorien). Version wie HBM deps.jei.
+	"compileOnly"("maven.modrinth:u6dRKJwZ:LtwmFHuF")
 }
 
 tasks.named("createMinecraftArtifacts") {
@@ -248,6 +264,23 @@ tasks.named<ProcessResources>("processResources") {
 					file.writeText(text.replace("\"minecraft:grass\"", "\"minecraft:short_grass\""))
 				}
 			}
+
+		// R1-B (Space-Dimensionen): IntProvider (dimension_type monster_spawn_light_level) hat ab 1.20.5 kein
+		// "value" mehr. Biom-"carvers" bleibt in 1.21.1 die Map {air, liquid} (HolderSet-Liste erst ab 1.21.2).
+		dataDir.listFiles()!!.filter { it.isDirectory }.forEach { nsDir ->
+			File(nsDir, "dimension_type").takeIf(File::isDirectory)?.walkTopDown()
+				?.filter { it.isFile && it.extension == "json" }?.forEach { file ->
+					@Suppress("UNCHECKED_CAST")
+					val tree = groovy.json.JsonSlurper().parse(file) as MutableMap<String, Any?>
+					val light = tree["monster_spawn_light_level"]
+					if (light is Map<*, *> && light["value"] is Map<*, *>) {
+						val flat = linkedMapOf<String, Any?>("type" to light["type"])
+						(light["value"] as Map<*, *>).forEach { (k, v) -> flat[k.toString()] = v }
+						tree["monster_spawn_light_level"] = flat
+						file.writeText(groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(tree)))
+					}
+				}
+		}
 	}
 }
 

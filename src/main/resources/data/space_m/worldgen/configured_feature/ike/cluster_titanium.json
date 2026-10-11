@@ -1,0 +1,15 @@
+{
+  "type": "space_m:celestial_ore",
+  "config": {
+    "ore": {
+      "Name": "space_m:cluster_titanium_ike"
+    },
+    "target": {
+      "Name": "space_m:ike_stone"
+    },
+    "count": "hbm_m:titaniumClusterSpawn",
+    "size": 6,
+    "min_y": 15,
+    "range": 30
+  }
+}

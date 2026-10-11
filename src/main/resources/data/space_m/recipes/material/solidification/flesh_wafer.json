@@ -1,0 +1,11 @@
+{
+  "type": "hbm_m:solidification",
+  "fluid": {
+    "fluid": "hbm_m:blood",
+    "amount": 1280
+  },
+  "result": {
+    "item": "space_m:flesh_wafer",
+    "count": 8
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "space_m:billet_gaas"
+    }
+  ],
+  "result": {
+    "item": "space_m:nugget_gaas",
+    "count": 6
+  }
+}

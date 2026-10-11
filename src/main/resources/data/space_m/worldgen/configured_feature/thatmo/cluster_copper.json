@@ -1,0 +1,15 @@
+{
+  "type": "space_m:celestial_ore",
+  "config": {
+    "ore": {
+      "Name": "hbm_m:cluster_copper"
+    },
+    "target": {
+      "Name": "hbm_m:sellafield_slaked"
+    },
+    "count": "hbm_m:copperClusterSpawn",
+    "size": 6,
+    "min_y": 15,
+    "range": 20
+  }
+}

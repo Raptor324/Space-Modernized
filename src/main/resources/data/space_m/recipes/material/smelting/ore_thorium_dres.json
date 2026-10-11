@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "space_m:ore_thorium_dres"
+  },
+  "result": "hbm_m:th232_ingot",
+  "experience": 3.0,
+  "cookingtime": 200
+}

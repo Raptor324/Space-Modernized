@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "space_m:flesh_wafer"
+  },
+  "result": "space_m:grilled_flesh",
+  "experience": 1.0,
+  "cookingtime": 200
+}

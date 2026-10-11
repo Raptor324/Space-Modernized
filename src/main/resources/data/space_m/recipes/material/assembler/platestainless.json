@@ -1,0 +1,15 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 60,
+  "power": 100,
+  "ingredients": [
+    {
+      "tag": "hbm_m:oredict/ingot/stainless_steel",
+      "count": 1
+    }
+  ],
+  "output": {
+    "item": "space_m:plate_stainless"
+  },
+  "blueprint_pool": "alt.plates"
+}

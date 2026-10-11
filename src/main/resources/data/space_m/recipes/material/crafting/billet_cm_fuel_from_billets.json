@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hbm_m:billet_u238"
+    },
+    {
+      "item": "hbm_m:billet_u238"
+    },
+    {
+      "item": "space_m:billet_cm_mix"
+    }
+  ],
+  "result": {
+    "item": "space_m:billet_cm_fuel",
+    "count": 3
+  }
+}

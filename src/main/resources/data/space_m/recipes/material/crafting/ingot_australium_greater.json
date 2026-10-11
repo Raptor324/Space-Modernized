@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "hbm_m:nugget_australium_greater"
+    }
+  },
+  "result": {
+    "item": "space_m:ingot_australium_greater"
+  }
+}

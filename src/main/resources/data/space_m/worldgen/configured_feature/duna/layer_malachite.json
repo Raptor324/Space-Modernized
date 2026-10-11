@@ -1,0 +1,20 @@
+{
+  "type": "space_m:ore_layer_3d",
+  "config": {
+    "block": {
+      "Name": "hbm_m:stone_resource_malachite"
+    },
+    "target": {
+      "Name": "space_m:duna_rock"
+    },
+    "id": 2,
+    "scale_h": 0.1,
+    "scale_v": 0.15,
+    "threshold": 275,
+    "enabled": "hbm_m:enableMalachite",
+    "id_after": [
+      "hbm_m:enableHematite",
+      "hbm_m:enableBauxite"
+    ]
+  }
+}

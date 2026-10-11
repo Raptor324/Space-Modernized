@@ -1,0 +1,20 @@
+{
+  "type": "space_m:ore_layer_3d",
+  "config": {
+    "block": {
+      "Name": "space_m:minmus_smooth"
+    },
+    "target": {
+      "Name": "space_m:minmus_stone"
+    },
+    "id": 6,
+    "scale_h": 0.05,
+    "scale_v": 0.15,
+    "threshold": 280,
+    "id_after": [
+      "hbm_m:enableHematite",
+      "hbm_m:enableBauxite",
+      "hbm_m:enableMalachite"
+    ]
+  }
+}

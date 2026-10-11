@@ -1,0 +1,16 @@
+{
+  "type": "hbm_m:crystallizer",
+  "ingredient": {
+    "item": "space_m:rubber_leaves"
+  },
+  "result": {
+    "item": "hbm_m:rubber_ingot"
+  },
+  "duration": 600,
+  "productivity": 0.0,
+  "acid": {
+    "fluid": "space_m:hcl",
+    "amount": 500
+  },
+  "count": 64
+}

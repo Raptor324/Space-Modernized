@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "space_m:ore_copper_ike"
+  },
+  "result": "minecraft:copper_ingot",
+  "experience": 2.5,
+  "cookingtime": 200
+}

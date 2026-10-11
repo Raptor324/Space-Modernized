@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "space_m:crystal_nickel"
+  },
+  "result": {
+    "item": "space_m:ingot_nickel",
+    "count": 2
+  },
+  "experience": 2.0,
+  "cookingtime": 200
+}

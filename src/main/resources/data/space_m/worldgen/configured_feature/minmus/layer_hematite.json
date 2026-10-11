@@ -1,0 +1,16 @@
+{
+  "type": "space_m:ore_layer_3d",
+  "config": {
+    "block": {
+      "Name": "hbm_m:stone_resource_hematite"
+    },
+    "target": {
+      "Name": "space_m:minmus_stone"
+    },
+    "id": 0,
+    "scale_h": 0.04,
+    "scale_v": 0.25,
+    "threshold": 230,
+    "enabled": "hbm_m:enableHematite"
+  }
+}

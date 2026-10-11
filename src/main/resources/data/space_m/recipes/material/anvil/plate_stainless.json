@@ -1,0 +1,18 @@
+{
+  "type": "hbm_m:anvil",
+  "kind": "construction",
+  "inputs": [
+    {
+      "tag": "hbm_m:oredict/ingot/stainless_steel",
+      "count": 1
+    }
+  ],
+  "outputs": [
+    {
+      "item": "space_m:plate_stainless"
+    }
+  ],
+  "overlay": "smithing",
+  "sort": 0,
+  "tier": "oil"
+}

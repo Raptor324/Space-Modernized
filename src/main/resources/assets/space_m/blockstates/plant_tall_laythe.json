@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "space_m:block/plant_tall_laythe_lower"
+    },
+    "half=upper": {
+      "model": "space_m:block/plant_tall_laythe_upper"
+    }
+  }
+}

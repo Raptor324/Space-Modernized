@@ -1,0 +1,15 @@
+{
+  "type": "space_m:celestial_ore",
+  "config": {
+    "ore": {
+      "Name": "space_m:cluster_aluminium_tekto"
+    },
+    "target": {
+      "Name": "hbm_m:basalt"
+    },
+    "count": "hbm_m:aluminiumClusterSpawn",
+    "size": 6,
+    "min_y": 15,
+    "range": 35
+  }
+}

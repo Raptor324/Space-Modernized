@@ -1,0 +1,71 @@
+{
+  "type": "hbm_m:assembler",
+  "conditions": [
+    {
+      "type": "forge:item_exists",
+      "item": "space_m:saltleaf"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "space_m:saltleaf"
+    }
+  ],
+  "duration": 100,
+  "hbm_variants": [
+    {
+      "flags": [
+        "expensive"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 100,
+        "ingredients": [
+          {
+            "item": "space_m:item_expensive_stainless_beam",
+            "count": 1
+          },
+          {
+            "item": "space_m:saltleaf",
+            "count": 24
+          },
+          {
+            "item": "hbm_m:fence_metal",
+            "count": 4
+          }
+        ],
+        "output": {
+          "item": "space_m:algae_film"
+        },
+        "power": 100
+      }
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "hbm_m:oredict/plate/aluminum",
+      "count": 8
+    },
+    {
+      "item": "space_m:saltleaf",
+      "count": 16
+    },
+    {
+      "item": "hbm_m:fan",
+      "count": 1
+    },
+    {
+      "item": "hbm_m:steel_beam",
+      "count": 4
+    },
+    {
+      "item": "hbm_m:fence_metal",
+      "count": 2
+    }
+  ],
+  "output": {
+    "item": "space_m:algae_film"
+  },
+  "power": 100
+}

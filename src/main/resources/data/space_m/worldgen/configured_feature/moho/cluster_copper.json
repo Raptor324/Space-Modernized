@@ -1,0 +1,15 @@
+{
+  "type": "space_m:celestial_ore",
+  "config": {
+    "ore": {
+      "Name": "space_m:cluster_copper_moho"
+    },
+    "target": {
+      "Name": "space_m:moho_stone"
+    },
+    "count": "hbm_m:copperClusterSpawn",
+    "size": 6,
+    "min_y": 15,
+    "range": 20
+  }
+}

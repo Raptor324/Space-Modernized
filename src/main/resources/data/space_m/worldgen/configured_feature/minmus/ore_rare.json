@@ -1,0 +1,15 @@
+{
+  "type": "space_m:celestial_ore",
+  "config": {
+    "ore": {
+      "Name": "space_m:ore_rare_minmus"
+    },
+    "target": {
+      "Name": "space_m:minmus_stone"
+    },
+    "count": "hbm_m:rareSpawn",
+    "size": 5,
+    "min_y": 5,
+    "range": 20
+  }
+}

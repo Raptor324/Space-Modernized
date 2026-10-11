@@ -1,0 +1,18 @@
+{
+  "type": "space_m:tekto",
+  "generator": {
+    "type": "space_m:celestial",
+    "body": "tekto",
+    "biome_source": {
+      "type": "space_m:celestial",
+      "body": "tekto",
+      "biomes": [
+        "space_m:tekto_polyvinyl_plains",
+        "space_m:tekto_halogen_hills",
+        "space_m:tekto_river",
+        "space_m:tekto_forest",
+        "space_m:tekto_vinyl_sands"
+      ]
+    }
+  }
+}

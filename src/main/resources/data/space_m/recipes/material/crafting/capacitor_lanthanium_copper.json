@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I",
+    "N",
+    "W"
+  ],
+  "key": {
+    "I": {
+      "item": "hbm_m:plate_polymer"
+    },
+    "N": {
+      "tag": "hbm_m:oredict/nugget/lanthanum"
+    },
+    "W": {
+      "tag": "hbm_m:oredict/wire_fine/copper"
+    }
+  },
+  "result": {
+    "item": "space_m:capacitor_lanthanium"
+  }
+}

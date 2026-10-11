@@ -1,0 +1,14 @@
+{
+  "type": "space_m:thatmo",
+  "generator": {
+    "type": "space_m:celestial",
+    "body": "thatmo",
+    "biome_source": {
+      "type": "space_m:celestial",
+      "body": "thatmo",
+      "biomes": [
+        "space_m:thatmo"
+      ]
+    }
+  }
+}

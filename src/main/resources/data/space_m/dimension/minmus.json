@@ -1,0 +1,15 @@
+{
+  "type": "space_m:minmus",
+  "generator": {
+    "type": "space_m:celestial",
+    "body": "minmus",
+    "biome_source": {
+      "type": "space_m:celestial",
+      "body": "minmus",
+      "biomes": [
+        "space_m:minmus_hills",
+        "space_m:minmus_basins"
+      ]
+    }
+  }
+}

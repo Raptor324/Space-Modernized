@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "space_m:ingot_gaas"
+    }
+  },
+  "result": {
+    "item": "space_m:billet_gaas",
+    "count": 3
+  }
+}
