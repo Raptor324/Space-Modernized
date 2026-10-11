@@ -18,7 +18,11 @@ platform {
 		}
 		required("hbm_m") {
 			slug("hbms-nuclear-tech-modernized")
-			forgeVersionRange = "[${prop("deps.hbm_m")},)"
+			// mods.toml compares against hbm_m's own version ("0.2.2-alpha"), not the artifact
+			// version "0.2.2-alpha+1.20.1-forge" - that one sorts higher and would reject the match.
+			forgeVersionRange = "[${prop("deps.hbm_m").substringBefore('+')},)"
+			// Space content builds on hbm_m registries/events -> always load after it.
+			ordering = "AFTER"
 		}
 	}
 }
@@ -51,6 +55,15 @@ legacyForge {
 			jvmArguments.addAll("-Xmx4G", "-Xms2G", "-Dfile.encoding=UTF-8",
 				"-Duser.language=en", "-Duser.country=US")
 		}
+		// Headless server start without eula.txt (GameTestServer bypasses Main): loads hbm_m + space_m,
+		// runs the space_m game tests (none yet) and exits. ./gradlew :1.20.1-forge:runGameTestServer
+		register("gameTestServer") {
+			type = "gameTestServer"
+			gameDirectory = file("run/")
+			ideName = "Forge GameTest (${stonecutter.active?.version})"
+			systemProperty("forge.enabledGameTestNamespaces", prop("mod.id"))
+			jvmArguments.addAll("-Xmx4G", "-Xms2G", "-Dfile.encoding=UTF-8")
+		}
 		register("data") {
 			data()
 			gameDirectory = file("run/")
@@ -65,6 +78,9 @@ legacyForge {
 			programArgument(datagenOutput.absolutePath)
 			programArgument("--existing")
 			programArgument(existingResources.absolutePath)
+			// Modelle/Texturen von HBM-Modernized (Eltern-Modelle, gemeinsame Texturen) fuer den ExistingFileHelper.
+			programArgument("--existing-mod")
+			programArgument("hbm_m")
 		}
 	}
 
@@ -100,6 +116,9 @@ dependencies {
 	// If hbm.local.path is set in local.properties, a local jar is used;
 	// otherwise it is pulled from Modrinth (for CI and other developers).
 	"modImplementation"(hbmDependency(stonecutter.current.project))
+
+	// JEI (nur Compile, R2-C Atmo-Maschinen: Space-Kategorien auf Basis der HBM-JEI-Kategorien). Version wie HBM deps.jei.
+	"modCompileOnly"("curse.maven:jei-238222:7270446")
 }
 
 sourceSets {
