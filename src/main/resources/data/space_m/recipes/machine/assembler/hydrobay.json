@@ -1,0 +1,79 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 200,
+  "hbm_variants": [
+    {
+      "flags": [
+        "expensive"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 200,
+        "fluid_inputs": [
+          {
+            "amount": 16000,
+            "fluid": "hbm_m:water"
+          }
+        ],
+        "ingredients": [
+          {
+            "item": "space_m:item_expensive_stainless_beam",
+            "count": 2
+          },
+          {
+            "tag": "hbm_m:oredict/ntmpipe/steel",
+            "count": 6
+          },
+          {
+            "tag": "hbm_m:oredict/block/glass_colorless",
+            "count": 8
+          },
+          {
+            "item": "minecraft:dirt",
+            "count": 8
+          },
+          {
+            "tag": "hbm_m:oredict/ingot/any_plastic",
+            "count": 4
+          }
+        ],
+        "output": {
+          "item": "space_m:hydrobay"
+        },
+        "power": 100
+      }
+    }
+  ],
+  "fluid_inputs": [
+    {
+      "amount": 16000,
+      "fluid": "hbm_m:water"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "hbm_m:oredict/plate/stainless_steel",
+      "count": 16
+    },
+    {
+      "tag": "hbm_m:oredict/ntmpipe/steel",
+      "count": 6
+    },
+    {
+      "tag": "hbm_m:oredict/block/glass_colorless",
+      "count": 8
+    },
+    {
+      "item": "minecraft:dirt",
+      "count": 8
+    },
+    {
+      "tag": "hbm_m:oredict/ingot/any_plastic",
+      "count": 2
+    }
+  ],
+  "output": {
+    "item": "space_m:hydrobay"
+  },
+  "power": 100
+}

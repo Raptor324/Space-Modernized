@@ -1,0 +1,14 @@
+{
+  "type": "hbm_m:ntm",
+  "dimension": 413024,
+  "biomes": [
+    "space_m:tekto_polyvinyl_plains",
+    "space_m:tekto_halogen_hills",
+    "space_m:tekto_forest",
+    "space_m:tekto_vinyl_sands",
+    "space_m:tekto_river"
+  ],
+  "spawn_overrides": {},
+  "step": "surface_structures",
+  "terrain_adaptation": "none"
+}

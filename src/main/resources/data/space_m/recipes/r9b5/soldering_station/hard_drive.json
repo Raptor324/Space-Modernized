@@ -1,0 +1,32 @@
+{
+  "type": "hbm_m:soldering_station",
+  "consumption": 250,
+  "duration": 200,
+  "pcb": [
+    {
+      "count": 16,
+      "ingredient": {
+        "item": "hbm_m:pcb"
+      }
+    }
+  ],
+  "result": {
+    "item": "space_m:hard_drive"
+  },
+  "solder": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "hbm_m:oredict/wire_fine/mingrade"
+      }
+    }
+  ],
+  "toppings": [
+    {
+      "count": 2,
+      "ingredient": {
+        "item": "hbm_m:microchip"
+      }
+    }
+  ]
+}

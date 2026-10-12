@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "hbm_m:persistent_nbt"
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ],
+          "name": "space_m:machine_cryo_distill"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "space_m:blocks/machine_cryo_distill"
+}

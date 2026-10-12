@@ -1,0 +1,15 @@
+{
+  "type": "hbm_m:fraction_tower",
+  "input": {
+    "amount": 100,
+    "fluid": "space_m:conglomera"
+  },
+  "output_a": {
+    "amount": 25,
+    "fluid": "space_m:brine"
+  },
+  "output_b": {
+    "amount": 75,
+    "fluid": "space_m:aqueous_nickel"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 600,
+  "power": 100,
+  "ingredients": [
+    {
+      "tag": "hbm_m:oredict/plate/saturnite",
+      "count": 24
+    },
+    {
+      "item": "hbm_m:motor_bismuth",
+      "count": 2
+    },
+    {
+      "item": "hbm_m:advanced_circuit",
+      "count": 8
+    },
+    {
+      "type": "hbm_m:fluid_container",
+      "fluid": "hbm_m:kerosene",
+      "amount": 16000,
+      "count": 1
+    },
+    {
+      "item": "hbm_m:thruster_small",
+      "count": 1
+    },
+    {
+      "tag": "hbm_m:oredict/wire_dense/bscco",
+      "count": 64
+    },
+    {
+      "item": "hbm_m:battery_pack_battery_lithium",
+      "count": 1
+    }
+  ],
+  "output": {
+    "item": "space_m:sat_dyson_relay"
+  }
+}

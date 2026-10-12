@@ -1,3 +1,4 @@
+// neo-pendant: Datagen laeuft nur auf Forge; NeoForge nutzt dieselben src/generated-Daten (processResources)
 //? if forge {
 package com.space_m.datagen;
 
@@ -49,8 +50,24 @@ public final class SpaceTagProviders {
             tag(net.minecraftforge.common.Tags.Blocks.COBBLESTONE).add(com.space_m.dim.duna.DunaBlocks.DUNA_COBBLE.get(), com.space_m.dim.dres.DresBlocks.DRES_ROCK.get());
             // R2-C: Atmo-Maschinen (Original Material.iron -> Spitzhacke)
             for (var b : com.space_m.machine.atmo.AtmoMachines.pickaxeBlocks()) tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(b.get());
+            // R5-C: Transporter-Rampe, Kampfkapsel (Material.iron -> Spitzhacke)
+            tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(com.space_m.block.SpaceBlocks.TRANSPORTER_ROCKET.get(), com.space_m.block.SpaceBlocks.COMBAT_DROP.get());
+            // R6-A: Stationsport (Material.iron -> Spitzhacke)
+            tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(com.space_m.orbit.OrbitBlocks.ORBITAL_STATION_PORT.get());
+            // R6-B: Stationsantrieb/-computer/-launcher (Material.iron -> Spitzhacke)
+            for (var b : com.space_m.orbit.propulsion.PropulsionBlocks.pickaxeBlocks()) tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(b.get());
+            for (var b : com.space_m.machine.chem.ChemMachines.pickaxeBlocks()) tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(b.get());
+            for (var b : com.space_m.machine.mining.MiningMachines.pickaxeBlocks()) tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(b.get());
+            for (var b : com.space_m.machine.mining.DishMachines.pickaxeBlocks()) tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(b.get());
+            // R7-A: Dyson-System, Solar/Stardar/Radiator/Raumofen/War-Controller/deco_stainless (Material.iron/rock -> Spitzhacke)
+            for (var b : com.space_m.machine.dyson.DysonBlocks.pickaxeBlocks()) tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(b.get());
+            for (var b : com.space_m.machine.misc.MiscBlocks.pickaxeBlocks()) tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(b.get());
+            // R9-B1: Bomben/Einzelbloecke (Material.iron -> Spitzhacke, salted_fallout Material.snow -> Schaufel)
+            for (var b : com.space_m.bomb.SpaceBombs.pickaxeBlocks()) tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(b.get());
+            for (var b : com.space_m.bomb.SpaceBombs.shovelBlocks()) tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_SHOVEL).add(b.get());
             // R4-B: Gummi-Ackerboden + Feldfruechte
             com.space_m.item.SpaceItemTags.addBlockTags((k, b) -> tag(k).add(b));
+            com.space_m.deco.SpaceDeco.addBlockTags((k, b) -> tag(k).add(b)); // R9-B2
         }
     }
 
@@ -77,6 +94,7 @@ public final class SpaceTagProviders {
             copy(net.minecraftforge.common.Tags.Blocks.SAND, net.minecraftforge.common.Tags.Items.SAND); // R3-2 duna_sands
             // R4-B: OreDictManager (Space) -> hbm_m:oredict/* + forge:-Formen
             com.space_m.item.SpaceItemTags.addItemTags((k, i) -> tag(k).add(i));
+            com.space_m.deco.SpaceDeco.addItemTags((k, i) -> tag(k).add(i)); // R9-B2
         }
     }
 
@@ -89,7 +107,11 @@ public final class SpaceTagProviders {
         protected void addTags(HolderLookup.Provider provider) {
             tag(SpaceTags.SUFFOCATION_IMMUNE);
             // R2-A: HBM-Mobs mit ISuffocationImmune
+            // R8-A: Space-Mobs mit ISuffocationImmune
+            for (String id : com.space_m.entity.mob.SpaceMobs.SUFFOCATION_IMMUNE) tag(SpaceTags.SUFFOCATION_IMMUNE).addOptional(new net.minecraft.resources.ResourceLocation(id));
             for (String id : com.space_m.atmosphere.AtmosphereTagData.SUFFOCATION_IMMUNE) tag(SpaceTags.SUFFOCATION_IMMUNE).add(net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.ENTITY_TYPE, new net.minecraft.resources.ResourceLocation(id)));
+            // R8-B: EntitySiegeUFO (ueber EntityUFOBase) und EntityWarBehemoth implementieren ISuffocationImmune
+            tag(SpaceTags.SUFFOCATION_IMMUNE).add(com.space_m.war.WarEntities.SIEGE_UFO.get(), com.space_m.war.WarEntities.WAR_BEHEMOTH.get());
         }
     }
 }

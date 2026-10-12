@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "space_m:block/machine_htr3"
+    },
+    "facing=south": {
+      "model": "space_m:block/machine_htr3"
+    },
+    "facing=west": {
+      "model": "space_m:block/machine_htr3"
+    },
+    "facing=east": {
+      "model": "space_m:block/machine_htr3"
+    }
+  }
+}

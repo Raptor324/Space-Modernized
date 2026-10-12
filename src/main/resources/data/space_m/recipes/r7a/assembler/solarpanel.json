@@ -1,0 +1,26 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 100,
+  "ingredients": [
+    {
+      "tag": "hbm_m:oredict/plate/stainless_steel",
+      "count": 4
+    },
+    {
+      "item": "hbm_m:photo_panel",
+      "count": 4
+    },
+    {
+      "tag": "hbm_m:oredict/ingot/any_plastic",
+      "count": 2
+    },
+    {
+      "tag": "hbm_m:oredict/wire_fine/mingrade",
+      "count": 8
+    }
+  ],
+  "output": {
+    "item": "space_m:machine_solar"
+  },
+  "power": 100
+}

@@ -1,0 +1,23 @@
+{
+  "type": "hbm_m:chemical_plant",
+  "duration": 50,
+  "fluid_inputs": [
+    {
+      "amount": 500,
+      "fluid": "hbm_m:hydrogen"
+    },
+    {
+      "amount": 500,
+      "fluid": "hbm_m:chlorine"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 1000,
+      "fluid": "space_m:hcl"
+    }
+  ],
+  "item_inputs": [],
+  "item_outputs": [],
+  "power": 100
+}

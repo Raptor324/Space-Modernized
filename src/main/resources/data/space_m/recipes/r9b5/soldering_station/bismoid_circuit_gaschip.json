@@ -1,0 +1,103 @@
+{
+  "type": "hbm_m:soldering_station",
+  "consumption": 10000,
+  "duration": 400,
+  "hbm_variants": [
+    {
+      "flags": [
+        "lbsm_crafting"
+      ],
+      "recipe": {
+        "type": "hbm_m:soldering_station",
+        "consumption": 10000,
+        "duration": 400,
+        "fluid": {
+          "amount": 1000,
+          "fluid": "space_m:polythylene"
+        },
+        "pcb": [
+          {
+            "count": 6,
+            "ingredient": {
+              "item": "hbm_m:pcb"
+            }
+          }
+        ],
+        "result": {
+          "item": "hbm_m:bismoid_circuit"
+        },
+        "solder": [
+          {
+            "count": 12,
+            "ingredient": {
+              "tag": "forge:wires_fine/lead"
+            }
+          }
+        ],
+        "toppings": [
+          {
+            "count": 4,
+            "ingredient": {
+              "item": "hbm_m:bismoid_chip"
+            }
+          },
+          {
+            "count": 1,
+            "ingredient": {
+              "item": "space_m:gaschip"
+            }
+          },
+          {
+            "count": 2,
+            "ingredient": {
+              "item": "hbm_m:capacitor"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 1000,
+    "fluid": "space_m:polythylene"
+  },
+  "pcb": [
+    {
+      "count": 6,
+      "ingredient": {
+        "item": "hbm_m:pcb"
+      }
+    }
+  ],
+  "result": {
+    "item": "hbm_m:bismoid_circuit"
+  },
+  "solder": [
+    {
+      "count": 12,
+      "ingredient": {
+        "tag": "forge:wires_fine/lead"
+      }
+    }
+  ],
+  "toppings": [
+    {
+      "count": 4,
+      "ingredient": {
+        "item": "hbm_m:bismoid_chip"
+      }
+    },
+    {
+      "count": 4,
+      "ingredient": {
+        "item": "space_m:gaschip"
+      }
+    },
+    {
+      "count": 8,
+      "ingredient": {
+        "item": "hbm_m:capacitor"
+      }
+    }
+  ]
+}

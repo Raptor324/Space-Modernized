@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hbm_m:powder_desh_mix"
+    },
+    {
+      "item": "hbm_m:nugget_mercury"
+    },
+    {
+      "item": "hbm_m:nugget_mercury"
+    },
+    {
+      "tag": "hbm_m:oredict/dust/any_coke"
+    }
+  ],
+  "result": {
+    "item": "hbm_m:desh_ready_powder"
+  }
+}

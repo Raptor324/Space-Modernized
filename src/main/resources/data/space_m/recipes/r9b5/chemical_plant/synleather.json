@@ -1,0 +1,64 @@
+{
+  "type": "hbm_m:chemical_plant",
+  "duration": 200,
+  "fluid_inputs": [
+    {
+      "amount": 250,
+      "fluid": "hbm_m:peroxide"
+    }
+  ],
+  "fluid_outputs": [],
+  "item_inputs": [
+    {
+      "count": 1,
+      "tag": "hbm_m:oredict/ingot/any_plastic"
+    },
+    {
+      "count": 4,
+      "item": "minecraft:string"
+    }
+  ],
+  "item_outputs": [
+    {
+      "count": 1,
+      "item": "minecraft:leather"
+    }
+  ],
+  "power": 500,
+  "hbm_variants": [
+    {
+      "flags": [
+        "528_pressurized"
+      ],
+      "recipe": {
+        "type": "hbm_m:chemical_plant",
+        "duration": 200,
+        "fluid_inputs": [
+          {
+            "amount": 250,
+            "fluid": "hbm_m:peroxide",
+            "pressure": 1
+          }
+        ],
+        "fluid_outputs": [],
+        "item_inputs": [
+          {
+            "count": 1,
+            "tag": "hbm_m:oredict/ingot/any_plastic"
+          },
+          {
+            "count": 4,
+            "item": "minecraft:string"
+          }
+        ],
+        "item_outputs": [
+          {
+            "count": 1,
+            "item": "minecraft:leather"
+          }
+        ],
+        "power": 500
+      }
+    }
+  ]
+}

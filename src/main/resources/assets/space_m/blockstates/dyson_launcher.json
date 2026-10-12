@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "space_m:block/dyson_launcher"
+    },
+    "facing=south": {
+      "model": "space_m:block/dyson_launcher"
+    },
+    "facing=west": {
+      "model": "space_m:block/dyson_launcher"
+    },
+    "facing=east": {
+      "model": "space_m:block/dyson_launcher"
+    }
+  }
+}

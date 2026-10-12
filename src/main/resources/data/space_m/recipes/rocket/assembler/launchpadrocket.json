@@ -1,0 +1,84 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 400,
+  "hbm_variants": [
+    {
+      "flags": [
+        "528"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 400,
+        "ingredients": [
+          {
+            "item": "hbm_m:plate_welded_steel",
+            "count": 12
+          },
+          {
+            "item": "hbm_m:pipe_aluminum",
+            "count": 24
+          },
+          {
+            "tag": "hbm_m:oredict/any/concrete",
+            "count": 64
+          },
+          {
+            "tag": "hbm_m:oredict/any/concrete",
+            "count": 64
+          },
+          {
+            "tag": "hbm_m:oredict/ingot/any_plastic",
+            "count": 16
+          },
+          {
+            "item": "hbm_m:steel_scaffold",
+            "count": 64
+          },
+          {
+            "item": "space_m:aero",
+            "count": 4
+          }
+        ],
+        "output": {
+          "item": "space_m:launch_pad_rocket"
+        },
+        "power": 100,
+        "blueprint_pool": "528.aluminium"
+      }
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "hbm_m:plate_welded_steel",
+      "count": 12
+    },
+    {
+      "item": "hbm_m:pipe_aluminum",
+      "count": 24
+    },
+    {
+      "tag": "hbm_m:oredict/any/concrete",
+      "count": 64
+    },
+    {
+      "tag": "hbm_m:oredict/any/concrete",
+      "count": 64
+    },
+    {
+      "tag": "hbm_m:oredict/ingot/any_plastic",
+      "count": 16
+    },
+    {
+      "item": "hbm_m:steel_scaffold",
+      "count": 64
+    },
+    {
+      "item": "space_m:aero",
+      "count": 4
+    }
+  ],
+  "output": {
+    "item": "space_m:launch_pad_rocket"
+  },
+  "power": 100
+}

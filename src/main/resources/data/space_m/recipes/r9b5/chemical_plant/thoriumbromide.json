@@ -1,0 +1,33 @@
+{
+  "type": "hbm_m:chemical_plant",
+  "duration": 200,
+  "fluid_inputs": [
+    {
+      "amount": 4000,
+      "fluid": "hbm_m:hydrogen"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 4000,
+      "fluid": "space_m:thorium_bromide"
+    }
+  ],
+  "item_inputs": [
+    {
+      "count": 1,
+      "item": "hbm_m:billet_th232"
+    },
+    {
+      "count": 1,
+      "item": "hbm_m:bromide_powder"
+    },
+    {
+      "count": 1,
+      "tag": "hbm_m:oredict/ingot/asbestos"
+    }
+  ],
+  "item_outputs": [],
+  "power": 1000,
+  "icon_fluid": "space_m:thorium_bromide"
+}

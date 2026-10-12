@@ -1,0 +1,54 @@
+{
+  "type": "hbm_m:chemical_plant",
+  "duration": 50,
+  "fluid_inputs": [
+    {
+      "amount": 500,
+      "fluid": "hbm_m:water"
+    },
+    {
+      "amount": 1000,
+      "fluid": "space_m:ammonia"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 1000,
+      "fluid": "hbm_m:nitric_acid"
+    }
+  ],
+  "item_inputs": [],
+  "item_outputs": [],
+  "power": 1000,
+  "hbm_variants": [
+    {
+      "flags": [
+        "528_pressurized"
+      ],
+      "recipe": {
+        "type": "hbm_m:chemical_plant",
+        "duration": 50,
+        "fluid_inputs": [
+          {
+            "amount": 500,
+            "fluid": "hbm_m:water"
+          },
+          {
+            "amount": 1000,
+            "fluid": "space_m:ammonia",
+            "pressure": 1
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 1000,
+            "fluid": "hbm_m:nitric_acid"
+          }
+        ],
+        "item_inputs": [],
+        "item_outputs": [],
+        "power": 1000
+      }
+    }
+  ]
+}

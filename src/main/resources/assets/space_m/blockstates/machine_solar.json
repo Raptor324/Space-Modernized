@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "space_m:block/machine_solar"
+    },
+    "facing=south": {
+      "model": "space_m:block/machine_solar"
+    },
+    "facing=west": {
+      "model": "space_m:block/machine_solar"
+    },
+    "facing=east": {
+      "model": "space_m:block/machine_solar"
+    }
+  }
+}

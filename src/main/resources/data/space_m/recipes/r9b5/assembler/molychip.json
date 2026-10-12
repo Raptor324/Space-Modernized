@@ -1,0 +1,22 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 100,
+  "ingredients": [
+    {
+      "count": 1,
+      "item": "hbm_m:molysite"
+    },
+    {
+      "count": 1,
+      "tag": "hbm_m:oredict/billet/mingrade"
+    },
+    {
+      "count": 1,
+      "tag": "hbm_m:oredict/wire_fine/gold"
+    }
+  ],
+  "output": {
+    "item": "space_m:molychip"
+  },
+  "power": 1500
+}

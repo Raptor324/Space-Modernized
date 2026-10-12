@@ -1,0 +1,24 @@
+{
+  "type": "hbm_m:chemical_plant",
+  "duration": 50,
+  "fluid_inputs": [
+    {
+      "amount": 350,
+      "fluid": "hbm_m:steam"
+    }
+  ],
+  "fluid_outputs": [],
+  "item_inputs": [
+    {
+      "count": 4,
+      "item": "space_m:mint_leaves"
+    }
+  ],
+  "item_outputs": [
+    {
+      "count": 2,
+      "item": "space_m:ingot_menthol"
+    }
+  ],
+  "power": 100
+}

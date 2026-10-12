@@ -1,0 +1,59 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 200,
+  "hbm_variants": [
+    {
+      "flags": [
+        "expensive"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 200,
+        "ingredients": [
+          {
+            "item": "hbm_m:item_expensive_steel_plating",
+            "count": 2
+          },
+          {
+            "tag": "hbm_m:oredict/ingot/any_rubber",
+            "count": 4
+          },
+          {
+            "item": "hbm_m:thruster_small",
+            "count": 1
+          },
+          {
+            "item": "space_m:item_expensive_avionics",
+            "count": 1
+          }
+        ],
+        "output": {
+          "item": "space_m:gas_dock"
+        },
+        "power": 100
+      }
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "hbm_m:oredict/plate_sextuple/steel",
+      "count": 5
+    },
+    {
+      "tag": "hbm_m:oredict/ingot/any_rubber",
+      "count": 4
+    },
+    {
+      "item": "hbm_m:thruster_small",
+      "count": 1
+    },
+    {
+      "item": "space_m:avionics",
+      "count": 1
+    }
+  ],
+  "output": {
+    "item": "space_m:gas_dock"
+  },
+  "power": 100
+}

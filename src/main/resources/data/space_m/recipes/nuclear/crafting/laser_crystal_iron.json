@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "QGQ",
+    "CSC",
+    "QGQ"
+  ],
+  "key": {
+    "Q": {
+      "item": "hbm_m:glass_quartz"
+    },
+    "G": {
+      "tag": "forge:ingots/gallium_arsenide"
+    },
+    "C": {
+      "item": "hbm_m:crystal_iron"
+    },
+    "S": {
+      "item": "hbm_m:egg_balefire_shard"
+    }
+  },
+  "result": {
+    "item": "space_m:laser_crystal_iron"
+  }
+}

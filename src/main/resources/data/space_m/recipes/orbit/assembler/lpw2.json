@@ -1,0 +1,79 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 600,
+  "hbm_variants": [
+    {
+      "flags": [
+        "expensive"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 600,
+        "ingredients": [
+          {
+            "item": "hbm_m:item_expensive_heavy_frame",
+            "count": 8
+          },
+          {
+            "tag": "hbm_m:oredict/shell/titanium",
+            "count": 8
+          },
+          {
+            "item": "hbm_m:motor_desh",
+            "count": 4
+          },
+          {
+            "tag": "hbm_m:oredict/ingot/any_hard_plastic",
+            "count": 8
+          },
+          {
+            "item": "hbm_m:item_expensive_circuit",
+            "count": 4
+          }
+        ],
+        "output": {
+          "item": "hbm_m:lpw2"
+        },
+        "power": 100
+      }
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "hbm_m:oredict/plate_sextuple/steel",
+      "count": 16
+    },
+    {
+      "tag": "hbm_m:oredict/bolt/steel",
+      "count": 32
+    },
+    {
+      "tag": "hbm_m:oredict/shell/titanium",
+      "count": 8
+    },
+    {
+      "item": "hbm_m:motor_desh",
+      "count": 2
+    },
+    {
+      "item": "hbm_m:coil_gold",
+      "count": 8
+    },
+    {
+      "tag": "hbm_m:oredict/ingot/any_hard_plastic",
+      "count": 8
+    },
+    {
+      "item": "hbm_m:advanced_circuit",
+      "count": 2
+    },
+    {
+      "tag": "hbm_m:oredict/ntmpipe/copper",
+      "count": 4
+    }
+  ],
+  "output": {
+    "item": "hbm_m:lpw2"
+  },
+  "power": 100
+}

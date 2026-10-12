@@ -9,7 +9,22 @@
     "water_color": 4159204,
     "water_fog_color": 329011
   },
-  "spawners": {},
+  "spawners": {
+    "creature": [
+      {
+        "type": "space_m:entity_tankbot",
+        "weight": 6,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
+        "type": "space_m:entity_moon_cow",
+        "weight": 10,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ]
+  },
   "spawn_costs": {},
   "carvers": {},
   "features": [

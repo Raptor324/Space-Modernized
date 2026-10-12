@@ -1,0 +1,140 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 400,
+  "hbm_variants": [
+    {
+      "flags": [
+        "528",
+        "expensive"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 400,
+        "ingredients": [
+          {
+            "tag": "hbm_m:oredict/plate_sextuple/stainless_steel",
+            "count": 4
+          },
+          {
+            "item": "hbm_m:item_expensive_steel_plating",
+            "count": 4
+          },
+          {
+            "item": "hbm_m:capacitor",
+            "count": 8
+          },
+          {
+            "item": "hbm_m:catalyst_clay",
+            "count": 12
+          },
+          {
+            "item": "hbm_m:coil_tungsten",
+            "count": 8
+          }
+        ],
+        "output": {
+          "item": "space_m:machine_alkylation"
+        },
+        "power": 100,
+        "blueprint_pool": "528.stainless"
+      }
+    },
+    {
+      "flags": [
+        "528"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 400,
+        "ingredients": [
+          {
+            "tag": "hbm_m:oredict/plate/stainless_steel",
+            "count": 12
+          },
+          {
+            "tag": "hbm_m:oredict/shell/steel",
+            "count": 6
+          },
+          {
+            "item": "hbm_m:capacitor",
+            "count": 8
+          },
+          {
+            "item": "hbm_m:catalyst_clay",
+            "count": 12
+          },
+          {
+            "item": "hbm_m:coil_tungsten",
+            "count": 8
+          }
+        ],
+        "output": {
+          "item": "space_m:machine_alkylation"
+        },
+        "power": 100,
+        "blueprint_pool": "528.stainless"
+      }
+    },
+    {
+      "flags": [
+        "expensive"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 400,
+        "ingredients": [
+          {
+            "tag": "hbm_m:oredict/plate_sextuple/stainless_steel",
+            "count": 4
+          },
+          {
+            "item": "hbm_m:item_expensive_steel_plating",
+            "count": 4
+          },
+          {
+            "item": "hbm_m:capacitor",
+            "count": 8
+          },
+          {
+            "item": "hbm_m:catalyst_clay",
+            "count": 12
+          },
+          {
+            "item": "hbm_m:coil_tungsten",
+            "count": 8
+          }
+        ],
+        "output": {
+          "item": "space_m:machine_alkylation"
+        },
+        "power": 100
+      }
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "hbm_m:oredict/plate/stainless_steel",
+      "count": 12
+    },
+    {
+      "tag": "hbm_m:oredict/shell/steel",
+      "count": 6
+    },
+    {
+      "item": "hbm_m:capacitor",
+      "count": 8
+    },
+    {
+      "item": "hbm_m:catalyst_clay",
+      "count": 12
+    },
+    {
+      "item": "hbm_m:coil_tungsten",
+      "count": 8
+    }
+  ],
+  "output": {
+    "item": "space_m:machine_alkylation"
+  },
+  "power": 100
+}

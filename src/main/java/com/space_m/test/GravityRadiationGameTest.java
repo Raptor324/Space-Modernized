@@ -60,12 +60,12 @@ public final class GravityRadiationGameTest {
         return new BlockPos(x, level.getMaxBuildHeight() - 40, z);
     }
 
-    /** Laesst ein Schwein {@code ticks} Ticks fallen (Schwerkraft-Tick + Vanilla-Tick), Rueckgabe: Fallstrecke. */
+    /** Laesst ein Schwein {@code ticks} Ticks fallen (Schwerkraft-Tick + Vanilla-{@code travel}), Rueckgabe: Fallstrecke. */
     private static double fall(Pig pig, float gravity, int ticks) {
         double y0 = pig.getY();
         for (int i = 0; i < ticks; i++) {
             CelestialGravity.tick(pig, gravity);
-            pig.tick();
+            pig.travel(net.minecraft.world.phys.Vec3.ZERO); // Vanilla-Bewegung mit Schwerkraftattribut
         }
         return y0 - pig.getY();
     }
@@ -74,7 +74,7 @@ public final class GravityRadiationGameTest {
         Pig pig = EntityType.PIG.create(level);
         check(pig != null, "Schwein");
         pig.moveTo(pos.getX() + 0.5D, pos.getY(), pos.getZ() + 0.5D, 0, 0);
-        pig.setNoAi(true);
+        // kein NoAI: Mob.isEffectiveAi() waere false und travel() rechnet nicht (KI laeuft hier ohnehin nicht)
         pig.tickCount = 100; // Original: erst nach 20 Ticks
         return pig;
     }
@@ -113,7 +113,7 @@ public final class GravityRadiationGameTest {
         double dKerbin = fall(kerbinPig, gKerbin, 12);
         double ratio = dMun / dKerbin;
         double factor = Math.max(gMun, 0.2F) / AstronomyUtil.STANDARD_GRAVITY;
-        check(dKerbin > 1.0D, "Kerbin-Schwein faellt, " + dKerbin);
+        check(dKerbin > 1.0D, "Kerbin-Schwein faellt, " + dKerbin + " (Mun " + dMun + ")");
         check(Math.abs(ratio - factor) < 0.02D, "Fallstrecke Mun/Kerbin " + ratio + " statt " + factor);
 
         // Ersten 20 Ticks, Wasser: unveraendert; Huhn nie; Wassermob Standardschwere
@@ -175,14 +175,21 @@ public final class GravityRadiationGameTest {
         // Tag erzwingen (Ortszeit Mun bzw. Oberwelt), Himmelshelligkeit neu rechnen
         long oldTime = realMun ? CelestialTime.getLocalTime(level) : level.getDayTime();
         boolean day = false;
-        double dayLength = realMun ? CelestialTime.getDayLength(body("mun")) : 24000D;
+        // Oberwelt = Kerbin: Tageslaenge ebenfalls aus dem Koerper (R1-D), Wetter klar
+        double dayLength = CelestialTime.getDayLength(body(realMun ? "mun" : "kerbin"));
+        if (!realMun) {
+            level.setWeatherParameters(6000, 0, false, false);
+            level.setRainLevel(0F);
+            level.setThunderLevel(0F);
+        }
         for (int k = 0; k < 64 && !day; k++) {
             long t = (long) (dayLength * k / 64D);
             if (realMun) CelestialTime.setLocalTime(level, t); else level.setDayTime(t);
             level.updateSkyBrightness();
             day = level.getSkyDarken() == 0 && !level.isRaining();
         }
-        check(day, "kein Tag gefunden");
+        check(day, "kein Tag gefunden: darken " + level.getSkyDarken() + ", rain " + level.getRainLevel(1F) + ", thunder "
+                + level.getThunderLevel(1F) + ", Tageslaenge " + dayLength + ", timeOfDay " + level.getTimeOfDay(1F) + ", dayTime " + level.getDayTime());
 
         int x = realMun ? 40 : helper.absolutePos(BlockPos.ZERO).getX() + 40;
         int z = realMun ? 40 : helper.absolutePos(BlockPos.ZERO).getZ() + 40;

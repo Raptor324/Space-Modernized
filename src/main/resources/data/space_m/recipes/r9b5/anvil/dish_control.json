@@ -1,0 +1,37 @@
+{
+  "type": "hbm_m:anvil",
+  "inputs": [
+    {
+      "count": 6,
+      "tag": "minecraft:planks"
+    },
+    {
+      "count": 8,
+      "tag": "hbm_m:oredict/plate/steel"
+    },
+    {
+      "comparable": true,
+      "count": 1,
+      "item": "hbm_m:analog_circuit"
+    },
+    {
+      "comparable": true,
+      "count": 8,
+      "item": "hbm_m:vacuum_tube"
+    },
+    {
+      "comparable": true,
+      "count": 1,
+      "item": "hbm_m:pole_satellite_receiver"
+    }
+  ],
+  "kind": "construction",
+  "outputs": [
+    {
+      "item": "space_m:dish_control"
+    }
+  ],
+  "overlay": "construction",
+  "sort": 90,
+  "tier": "oil"
+}

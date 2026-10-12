@@ -1,0 +1,51 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 200,
+  "hbm_variants": [
+    {
+      "flags": [
+        "expensive"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 200,
+        "ingredients": [
+          {
+            "item": "space_m:orbital_station_port",
+            "count": 1
+          },
+          {
+            "tag": "hbm_m:oredict/plate_triple/aluminum",
+            "count": 4
+          },
+          {
+            "item": "space_m:item_expensive_avionics",
+            "count": 1
+          }
+        ],
+        "output": {
+          "item": "space_m:rp_sc_20"
+        },
+        "power": 100
+      }
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "space_m:orbital_station_port",
+      "count": 1
+    },
+    {
+      "tag": "hbm_m:oredict/plate_triple/aluminum",
+      "count": 4
+    },
+    {
+      "item": "space_m:avionics",
+      "count": 1
+    }
+  ],
+  "output": {
+    "item": "space_m:rp_sc_20"
+  },
+  "power": 100
+}

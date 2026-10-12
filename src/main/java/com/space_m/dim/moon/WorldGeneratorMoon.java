@@ -57,16 +57,7 @@ public final class WorldGeneratorMoon {
     }
 
     private static void registerStructures() {
-        // WorldGeneratorCelestial: meteor_dungeon fuer alle Space-Dimensionen (im Original vor WorldGeneratorMoon
-        // angemeldet). HBM meldet dieselbe SpawnCondition fuer die Oberwelt an; hier dieselbe Instanz fuer die Mun.
-        try {
-            SpawnCondition meteor = NBTStructure.getStructure("meteor_dungeon");
-            if (meteor != null) NBTStructure.registerStructure(MOON_DIMENSION_ID, meteor);
-            else LOGGER.warn("[space_m] HBM meteor_dungeon not found, Mun gets no meteor dungeons");
-        } catch (RuntimeException e) {
-            LOGGER.error("[space_m] meteor_dungeon registration for Mun failed", e);
-        }
-
+        // meteor_dungeon (WorldGeneratorCelestial, alle Space-Dimensionen) meldet com.space_m.dim.SpaceStructures vorher an.
         try {
             JigsawPiece munBase = new JigsawPiece("mun_base", load("base.nbt")) {{ alignToTerrain = true; heightOffset = -1; }};
             JigsawPiece munFlag = new JigsawPiece("mun_flag", load("flag.nbt")) {{ alignToTerrain = true; heightOffset = -1; }};

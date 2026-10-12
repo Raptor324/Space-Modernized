@@ -1,0 +1,20 @@
+{
+  "type": "space_m:cryo_distill",
+  "input": "space_m:ngas",
+  "output1": {
+    "fluid": "hbm_m:gas",
+    "amount": 45
+  },
+  "output2": {
+    "fluid": "space_m:ammonia",
+    "amount": 25
+  },
+  "output3": {
+    "fluid": "hbm_m:unsaturateds",
+    "amount": 15
+  },
+  "output4": {
+    "fluid": "hbm_m:xenon",
+    "amount": 15
+  }
+}

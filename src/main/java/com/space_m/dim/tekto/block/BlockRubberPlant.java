@@ -15,8 +15,16 @@ import net.minecraft.world.phys.shapes.VoxelShape;
  * und {@code BlockRubberCacti} ({@code rubber_tall}/spike_cacti CACT/BUSH/FLOWER, "Tall Rubber Plant"): je Sorte ein
  * Block. Haelt nur auf den Original-Boeden ({@code canPlaceBlockOn}), sonst faellt er ab; keine Kollision, voller
  * Auswahlrahmen wie das Original. Beute ueber die Loot-Tabellen (Rubber-Plant: nichts, Kakteen: sich selbst,
- * Blume: Paraffin-Samen - noch nicht portiert).
+ * Blume: Paraffin-Samen, R9-B2).
+ *
+ * <p>{@code RenderRubberCactus}: OBJ {@code plant_spike} mit der Blocktextur der Sorte ({@code rubber_tall_<sorte>}),
+ * im Blockmodell {@code space_m:block/rubber_tall_<sorte>} ({@code forge:obj}). Das Original zeichnet das Modell zweimal
+ * (Drehung -PI und 0); die OBJ-Eckpunkte sind unter 180 Grad punktsymmetrisch, der zweite Durchgang deckt sich also
+ * mit dem ersten. {@code ResourceManager.spike_plant_tex} ({@code textures/models/rubber_cacti.png}) wird im Original
+ * nirgends benutzt.
  */
+// Original-Klasse: BlockRubberCacti
+// Original-Klasse: RenderRubberCactus
 public class BlockRubberPlant extends BushBlock {
 
     private final Predicate<BlockState> soil;

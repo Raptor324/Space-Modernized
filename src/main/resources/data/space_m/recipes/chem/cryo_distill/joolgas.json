@@ -1,0 +1,20 @@
+{
+  "type": "space_m:cryo_distill",
+  "input": "space_m:joolgas",
+  "output1": {
+    "fluid": "hbm_m:helium3",
+    "amount": 40
+  },
+  "output2": {
+    "fluid": "hbm_m:hydrogen",
+    "amount": 30
+  },
+  "output3": {
+    "fluid": "hbm_m:chlorine",
+    "amount": 20
+  },
+  "output4": {
+    "fluid": "space_m:neon",
+    "amount": 10
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "hbm_m:chemical_plant",
+  "duration": 50,
+  "fluid_inputs": [
+    {
+      "amount": 600,
+      "fluid": "space_m:nitrogen"
+    },
+    {
+      "amount": 1000,
+      "fluid": "hbm_m:water"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 800,
+      "fluid": "space_m:ammonia"
+    }
+  ],
+  "item_inputs": [],
+  "item_outputs": [],
+  "power": 100
+}

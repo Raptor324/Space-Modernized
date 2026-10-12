@@ -1,0 +1,19 @@
+{
+  "type": "hbm_m:hydrotreater",
+  "hydrogen": {
+    "amount": 10,
+    "fluid": "hbm_m:hydrogen"
+  },
+  "input": {
+    "amount": 100,
+    "fluid": "space_m:cbenz"
+  },
+  "output": {
+    "amount": 50,
+    "fluid": "hbm_m:xylene"
+  },
+  "sour_gas": {
+    "amount": 40,
+    "fluid": "hbm_m:chlorine"
+  }
+}

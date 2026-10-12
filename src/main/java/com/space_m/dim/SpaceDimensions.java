@@ -20,6 +20,8 @@ import net.minecraft.world.level.dimension.DimensionType;
  * <p>Der Pfad entspricht dem Namen des Himmelskoerpers ({@code CelestialBody.name}), die Orbit-Dimension heisst
  * {@code orbit}. Zuordnung Koerper - Dimension: {@code com.space_m.celestial.CelestialBody#getBody(Level)}.
  */
+// Original-Klasse: PlanetGen (Dimensions-/Generator-Registrierung -> Datapack-Dimensionen + CelestialGenerators)
+// Original-Klasse: ModBiomes (BiomeDictionary -> Biom-Tags data/forge/tags/worldgen/biome/is_*.json)
 public final class SpaceDimensions {
     private SpaceDimensions() {}
 

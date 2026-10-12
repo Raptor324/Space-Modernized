@@ -1,0 +1,55 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 600,
+  "hbm_variants": [
+    {
+      "flags": [
+        "expensive"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 600,
+        "ingredients": [
+          {
+            "item": "hbm_m:item_expensive_steel_plating",
+            "count": 4
+          },
+          {
+            "item": "hbm_m:motor",
+            "count": 4
+          },
+          {
+            "tag": "hbm_m:oredict/ntmpipe/steel",
+            "count": 8
+          }
+        ],
+        "output": {
+          "item": "space_m:machine_milk_reformer"
+        },
+        "power": 100
+      }
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "hbm_m:oredict/plate_triple/steel",
+      "count": 14
+    },
+    {
+      "tag": "hbm_m:oredict/ingot/steel",
+      "count": 2
+    },
+    {
+      "item": "hbm_m:motor",
+      "count": 2
+    },
+    {
+      "tag": "hbm_m:oredict/ntmpipe/steel",
+      "count": 8
+    }
+  ],
+  "output": {
+    "item": "space_m:machine_milk_reformer"
+  },
+  "power": 100
+}

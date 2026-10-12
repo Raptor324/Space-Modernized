@@ -1,0 +1,30 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 400,
+  "power": 100,
+  "ingredients": [
+    {
+      "item": "hbm_m:seg_20",
+      "count": 1
+    },
+    {
+      "tag": "hbm_m:oredict/ntmpipe/steel",
+      "count": 1
+    },
+    {
+      "tag": "hbm_m:oredict/ingot/tungsten",
+      "count": 16
+    },
+    {
+      "tag": "hbm_m:oredict/plate/steel",
+      "count": 12
+    },
+    {
+      "tag": "hbm_m:oredict/ingot/desh",
+      "count": 6
+    }
+  ],
+  "output": {
+    "item": "space_m:mp_thruster_20_methalox_triple"
+  }
+}

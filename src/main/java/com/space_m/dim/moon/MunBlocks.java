@@ -63,7 +63,8 @@ public final class MunBlocks {
     public static final RegistrySupplier<Block> ORE_SHALE = PlanetOres.ore("ore_shale", BODY, 1.5F, 10.0F);
 
     // ── ChunkProviderMoon: Sole-Blasen (BlockOreFluid BRINE, leer -> ore_brine_empty) ──
-    public static final RegistrySupplier<Block> ORE_BRINE = PlanetOres.ore("ore_brine", BODY, 5.0F, 10.0F);
+    public static final RegistrySupplier<Block> ORE_BRINE = PlanetOres.ore("ore_brine", BODY,
+            p -> new com.space_m.resources.BlockOreFluid(p, () -> MunBlocks.ORE_BRINE_EMPTY.get(), com.hbm_m.api.space.SpaceResources.ReserveType.BRINE, com.space_m.celestial.SolarSystem.Body.MUN), 5.0F, 10.0F) /* R8-B: BlockOreFluid */;
     public static final RegistrySupplier<Block> ORE_BRINE_EMPTY = PlanetOres.ore("ore_brine_empty", BODY, 5.0F, 10.0F);
 
     /** Erzwingt das Laden der Klasse (Registrierung vor {@code SpaceBlocks.init()}). */

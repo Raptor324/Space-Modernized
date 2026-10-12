@@ -1,0 +1,16 @@
+{
+  "type": "space_m:alkylation",
+  "input": "space_m:chloroethane",
+  "acid": {
+    "fluid": "hbm_m:unsaturateds",
+    "amount": 60
+  },
+  "output1": {
+    "fluid": "space_m:cbenz",
+    "amount": 70
+  },
+  "output2": {
+    "fluid": "space_m:chloromethane",
+    "amount": 10
+  }
+}

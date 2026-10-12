@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "space_m:block/machine_htrf4neo"
+    },
+    "facing=south": {
+      "model": "space_m:block/machine_htrf4neo"
+    },
+    "facing=west": {
+      "model": "space_m:block/machine_htrf4neo"
+    },
+    "facing=east": {
+      "model": "space_m:block/machine_htrf4neo"
+    }
+  }
+}

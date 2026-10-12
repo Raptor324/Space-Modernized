@@ -1,0 +1,34 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 200,
+  "power": 100,
+  "ingredients": [
+    {
+      "tag": "hbm_m:oredict/shell/aluminum",
+      "count": 4
+    },
+    {
+      "tag": "hbm_m:oredict/plate/stainless_steel",
+      "count": 8
+    },
+    {
+      "tag": "hbm_m:oredict/ingot/fiberglass",
+      "count": 4
+    },
+    {
+      "tag": "hbm_m:oredict/ingot/any_plastic",
+      "count": 2
+    },
+    {
+      "item": "space_m:avionics",
+      "count": 1
+    },
+    {
+      "item": "hbm_m:thruster_small",
+      "count": 4
+    }
+  ],
+  "output": {
+    "item": "space_m:rp_pod_20"
+  }
+}

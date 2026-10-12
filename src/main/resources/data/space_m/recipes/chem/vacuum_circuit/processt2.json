@@ -1,0 +1,31 @@
+{
+  "type": "space_m:vacuum_circuit",
+  "wafer": [
+    {
+      "ingredient": {
+        "item": "space_m:gaschip"
+      },
+      "count": 16
+    }
+  ],
+  "pcb": [
+    {
+      "ingredient": {
+        "item": "hbm_m:integrated_circuit"
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "item": "hbm_m:capacitor"
+      },
+      "count": 32
+    }
+  ],
+  "output": {
+    "item": "space_m:processt2",
+    "count": 1
+  },
+  "duration": 400,
+  "consumption": 1000
+}

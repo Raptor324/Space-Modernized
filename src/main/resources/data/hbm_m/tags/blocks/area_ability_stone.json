@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "space_m:duna_rock",
+    "space_m:duna_cobble",
+    "space_m:dres_rock",
+    "space_m:ike_regolith",
+    "space_m:ike_stone",
+    "space_m:eve_rock",
+    "space_m:moho_regolith",
+    "space_m:moho_stone",
+    "space_m:moon_rock",
+    "space_m:minmus_regolith",
+    "space_m:minmus_smooth",
+    "space_m:minmus_stone",
+    "hbm_m:basalt",
+    "hbm_m:basalt_smooth"
+  ]
+}

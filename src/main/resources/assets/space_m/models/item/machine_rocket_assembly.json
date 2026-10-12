@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:builtin/entity",
+  "textures": {
+    "particle": "hbm_m:block/machine_missile_assembly"
+  }
+}

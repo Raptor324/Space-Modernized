@@ -174,7 +174,8 @@ public final class EveBlocks {
 
     // ── ChunkProviderEve: Erdgas-Blasen (BlockOreFluid GAS, leer -> ore_gas_empty) ──
     /** {@code ore_gas = new BlockOreFluid(Material.rock, ore_gas_empty, ReserveType.GAS)} 5.0/10.0. */
-    public static final RegistrySupplier<Block> ORE_GAS = PlanetOres.ore("ore_gas", BODY, 5.0F, 10.0F);
+    public static final RegistrySupplier<Block> ORE_GAS = PlanetOres.ore("ore_gas", BODY,
+            p -> new com.space_m.resources.BlockOreFluid(p, () -> EveBlocks.ORE_GAS_EMPTY.get(), com.hbm_m.api.space.SpaceResources.ReserveType.GAS, com.space_m.celestial.SolarSystem.Body.EVE), 5.0F, 10.0F) /* R8-B: BlockOreFluid */;
     /** {@code ore_gas_empty = new BlockOre(Material.rock).setBlockTextureName("ore_oil_empty")} 5.0/10.0. */
     public static final RegistrySupplier<Block> ORE_GAS_EMPTY = PlanetOres.ore("ore_gas_empty", BODY, 5.0F, 10.0F);
 

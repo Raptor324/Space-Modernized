@@ -20,14 +20,12 @@ import net.minecraft.world.item.ItemStack;
 /**
  * 1:1 NTM Space {@code HazardTypeNeutron} ({@code HazardRegistry.NEUTRON}): Neutronenstrahlung aus Curium/Californium/
  * Einsteinium. Pro Tick {@code rad = level * Stapel / 20 * Strahlungsmod} (Reacher wie bei Strahlung), aktiviert die
- * Gegenstaende im Spielerinventar (NBT {@code ntmNeutron} += rad / Stapel / 10, hier vorerst aus) und erhoeht die Umgebungsstrahlung
+ * Gegenstaende im Spielerinventar (NBT {@code ntmNeutron} += rad / Stapel / 10) und erhoeht die Umgebungsstrahlung
  * (Original {@code ContaminationUtil.contaminate(NEUTRON)}: {@code radEnv += rad * 10}). Tooltip
- * {@code [trait.neutron]} + {@code RAD/s^2}.
+ * {@code [trait.neutron]} + {@code RAD/s^2}. Wie im Original standardmaessig aus ({@code HAZ_01_disableNeutrons = true}).
  *
- * <p>Abweichung (technisch noetig, Wunsch W-R4b-2): die Neutronenaktivierung des Koerpers
- * ({@code HbmLivingProps.incrementNeutronActivation}) und die Strahlung aktivierter Gegenstaende
- * ({@code HazardTransformerRadiationNBT}) gibt es in HBM-Modernized nicht; Raptors Strahlungssystem wird nicht
- * veraendert. Bis dahin wirkt nur der Umgebungsanteil.
+ * <p>R9-B: Inventar-Aktivierung, Koerperaktivierung ({@code HbmLivingProps.incrementNeutronActivation}), Zerfall und
+ * Strahlung aktivierter Gegenstaende ueber {@link NeutronEffects} (sAPI-Haken, Raptors Strahlungssystem unveraendert).
  */
 public class HazardTypeNeutron extends HazardTypeBase {
 
@@ -37,6 +35,7 @@ public class HazardTypeNeutron extends HazardTypeBase {
 
     @Override
     public void onUpdate(LivingEntity target, float level, ItemStack stack) {
+        if (com.space_m.config.SpaceConfig.get().disableNeutron) return;
         boolean reacher = false;
         if (target instanceof Player player && !com.hbm_m.config.GeneralConfig.enable528)
             reacher = player.getInventory().contains(new ItemStack(ModItems.REACHER.get()));
@@ -52,11 +51,15 @@ public class HazardTypeNeutron extends HazardTypeBase {
                 rad = (float) BobMathUtil.squirt(rad);
             }
 
-            // Original: Inventar-Aktivierung (apply) - erst mit HBM-Gegenstueck (W-R4b-2), sonst nur NBT-Ballast,
-            // der Stapel trennt und nirgends wirkt.
+            if (target instanceof Player player) {
+                for (ItemStack s : player.getInventory().items) apply(s, rad);
+                for (ItemStack s : player.getInventory().armor) apply(s, rad);
+            }
 
+            // ContaminationUtil.contaminate(target, NEUTRON, CREATIVE, rad): Umgebungswert + Koerperaktivierung (R9-B)
             float radEnv = HbmLivingProps.getRadEnv(target);
             HbmLivingProps.setRadEnv(target, radEnv + rad * 10);
+            NeutronEffects.contaminateNeutron(target, rad);
         }
     }
 
@@ -66,7 +69,7 @@ public class HazardTypeNeutron extends HazardTypeBase {
     @Override
     public void addHazardInformation(Player player, List<Component> list, float level, ItemStack stack, List<HazardModifier> modifiers) {
         level = HazardModifier.evalAllModifiers(stack, player, level, modifiers);
-        if (level < 1e-5) return;
+        if (level < 1e-5 || com.space_m.config.SpaceConfig.get().disableNeutron) return;
 
         addBracketedTrait(list, "trait.neutron", ChatFormatting.BLUE);
         String neut = "" + (Math.floor(level * 1000) / 1000);

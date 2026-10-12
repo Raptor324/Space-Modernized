@@ -18,6 +18,7 @@ import net.minecraft.world.phys.Vec3;
  * (Vollhell wie {@code setLightmapTextureCoords(240, 240)}, additiv {@code GL_SRC_ALPHA, GL_ONE}).
  * Original-Klasse: OrreryPronter
  */
+// Original-Klasse: RenderUtil (renderBlock)
 public final class OrreryPronter {
     private OrreryPronter() {}
 

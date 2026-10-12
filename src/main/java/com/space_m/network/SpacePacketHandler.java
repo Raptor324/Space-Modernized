@@ -48,6 +48,20 @@ public final class SpacePacketHandler {
     // R3-2 Duna: Staubsturmstaerke (Original WorldProviderDuna.serialize ueber PermaSyncHandler)
     public static final ResourceLocation DUNA_DUST_STORM = s2c("duna_dust_storm");
 
+    // R5-C Transporter-Linker: gespeicherte Rampen an den Client (Original TransporterLinkerPacket)
+    public static final ResourceLocation TRANSPORTER_LINKER = s2c("transporter_linker");
+
+    // R6-C Satelliten: Satelliten je Himmelskoerper (Original PermaSyncHandler, Abschnitt SATELLITES)
+    public static final ResourceLocation SATELLITES = s2c("satellites");
+
+    // R6-A Orbit/Station: Station unter dem Spieler (Original TileEntityOrbitalStation.networkPackNT / EntityRideableRocket-Buf)
+    public static final ResourceLocation ORBITAL_STATION = s2c("orbital_station");
+
+    // R8-B Krieg: Nuklear-Erschuetterungen je Koerper (Original PermaSyncHandler / CelestialNukeShockHandler.writeSync)
+    // und Kriegsprojektil-Fortschritt (Original PermaSyncHandler, Abschnitt CBT_War: flashtime/traveltime je Tick)
+    public static final ResourceLocation NUKE_SHOCKS = s2c("nuke_shocks");
+    public static final ResourceLocation WAR_PROJECTILES = s2c("war_projectiles");
+
     private SpacePacketHandler() {}
 
     public static ResourceLocation s2c(String path) {
@@ -65,6 +79,8 @@ public final class SpacePacketHandler {
         registered = true;
 
         // ── C2S ──
+        com.space_m.rocket.menu.GuiLayerPacket.register(); // R5-A Mehrebenen-GUI (Original GuiLayerPacket)
+        com.space_m.satellite.SatSettingsPacket.register(); // R6-C Satelliten-Einstellungen (Original NBTItemControlPacket)
 
         //? if >= 1.21.1 {
         /*if (!SpacePlatform.isClient()) {

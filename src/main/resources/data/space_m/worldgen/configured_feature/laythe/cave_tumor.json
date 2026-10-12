@@ -1,0 +1,23 @@
+{
+  "type": "space_m:ore_cave",
+  "config": {
+    "ore": {
+      "Name": "space_m:tumor"
+    },
+    "ore_name": "hbm:tumor",
+    "ore_meta": 0,
+    "target": {
+      "Name": "minecraft:stone"
+    },
+    "threshold": 0.3,
+    "range_mult": 20,
+    "y_level": 25,
+    "max_range": 70,
+    "stalactite": {
+      "Name": "space_m:stalactite_flesh"
+    },
+    "stalagmite": {
+      "Name": "space_m:stalagmite_flesh"
+    }
+  }
+}

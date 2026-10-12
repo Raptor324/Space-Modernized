@@ -1,0 +1,28 @@
+{
+  "type": "hbm_m:chemical_plant",
+  "duration": 100,
+  "fluid_inputs": [
+    {
+      "amount": 4000,
+      "fluid": "hbm_m:water"
+    }
+  ],
+  "fluid_outputs": [],
+  "item_inputs": [
+    {
+      "count": 1,
+      "item": "space_m:ammonium_nitrate"
+    },
+    {
+      "count": 8,
+      "item": "minecraft:gravel"
+    }
+  ],
+  "item_outputs": [
+    {
+      "count": 8,
+      "item": "minecraft:dirt"
+    }
+  ],
+  "power": 1000
+}

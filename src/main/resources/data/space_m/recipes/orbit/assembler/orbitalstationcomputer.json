@@ -1,0 +1,148 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 200,
+  "hbm_variants": [
+    {
+      "flags": [
+        "528",
+        "expensive"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 200,
+        "ingredients": [
+          {
+            "tag": "hbm_m:oredict/plate_triple/aluminum",
+            "count": 4
+          },
+          {
+            "tag": "hbm_m:oredict/plate_triple/stainless_steel",
+            "count": 4
+          },
+          {
+            "item": "hbm_m:item_expensive_plastic",
+            "count": 2
+          },
+          {
+            "tag": "hbm_m:oredict/dust/nether_quartz",
+            "count": 16
+          },
+          {
+            "item": "space_m:item_expensive_astro",
+            "count": 2
+          }
+        ],
+        "output": {
+          "item": "space_m:orbital_station_computer"
+        },
+        "power": 100,
+        "blueprint_pool": "528.stainless"
+      }
+    },
+    {
+      "flags": [
+        "528"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 200,
+        "ingredients": [
+          {
+            "tag": "hbm_m:oredict/plate_triple/aluminum",
+            "count": 4
+          },
+          {
+            "tag": "hbm_m:oredict/plate/stainless_steel",
+            "count": 4
+          },
+          {
+            "tag": "hbm_m:oredict/ingot/any_hard_plastic",
+            "count": 2
+          },
+          {
+            "tag": "hbm_m:oredict/dust/nether_quartz",
+            "count": 4
+          },
+          {
+            "item": "space_m:molychip",
+            "count": 4
+          },
+          {
+            "item": "space_m:aero",
+            "count": 4
+          }
+        ],
+        "output": {
+          "item": "space_m:orbital_station_computer"
+        },
+        "power": 100,
+        "blueprint_pool": "528.stainless"
+      }
+    },
+    {
+      "flags": [
+        "expensive"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 200,
+        "ingredients": [
+          {
+            "tag": "hbm_m:oredict/plate_triple/aluminum",
+            "count": 4
+          },
+          {
+            "tag": "hbm_m:oredict/plate_triple/stainless_steel",
+            "count": 4
+          },
+          {
+            "item": "hbm_m:item_expensive_plastic",
+            "count": 2
+          },
+          {
+            "tag": "hbm_m:oredict/dust/nether_quartz",
+            "count": 16
+          },
+          {
+            "item": "space_m:item_expensive_astro",
+            "count": 2
+          }
+        ],
+        "output": {
+          "item": "space_m:orbital_station_computer"
+        },
+        "power": 100
+      }
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "hbm_m:oredict/plate_triple/aluminum",
+      "count": 4
+    },
+    {
+      "tag": "hbm_m:oredict/plate/stainless_steel",
+      "count": 4
+    },
+    {
+      "tag": "hbm_m:oredict/ingot/any_hard_plastic",
+      "count": 2
+    },
+    {
+      "tag": "hbm_m:oredict/dust/nether_quartz",
+      "count": 4
+    },
+    {
+      "item": "space_m:molychip",
+      "count": 4
+    },
+    {
+      "item": "space_m:aero",
+      "count": 4
+    }
+  ],
+  "output": {
+    "item": "space_m:orbital_station_computer"
+  },
+  "power": 100
+}

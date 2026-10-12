@@ -1,0 +1,28 @@
+{
+  "type": "hbm_m:arc_welder",
+  "duration": 150,
+  "consumption": 30000,
+  "ingredients": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "space_m:plate_welded_stainless"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "space_m:rp_f_20_1"
+      }
+    },
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "hbm_m:oredict/shell/titanium"
+      }
+    }
+  ],
+  "result": {
+    "item": "space_m:rp_f_20_3"
+  }
+}

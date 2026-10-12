@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "space_m:block/stalagmite_flesh"
+  },
+  "render_type": "minecraft:cutout"
+}

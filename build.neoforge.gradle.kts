@@ -61,6 +61,11 @@ neoForge {
 			gameDirectory = file("run/")
 			ideName = "NeoForge GameTest (${stonecutter.active?.version})"
 			systemProperty("neoforge.enabledGameTestNamespaces", prop("mod.id"))
+			// R9-C: der NeoForge-GameTestServer baut seine Welt nur aus dem Flachland-Preset (WorldDimensions.bake mit
+			// leerer LEVEL_STEM-Liste) und verwirft Datapack-Dimensionen. Dieser Schalter laesst das Addon (nur in diesem
+			// Lauf) den Testpack "gametest_dimensions" anmelden, dessen minecraft:flat-Preset die space_m-Dimensionen
+			// enthaelt (wird unten in processResources aus data/space_m/dimension erzeugt).
+			systemProperty("space_m.gametestDimensions", "true")
 			jvmArguments.addAll("-Xmx4G", "-Xms2G", "-Dfile.encoding=UTF-8")
 		}
 		// Datagen is 1.20.1 Forge-only. NeoForge picks up the already generated
@@ -110,6 +115,26 @@ tasks.named("createMinecraftArtifacts") {
 // format, so we normalize resources on processResources output instead of
 // touching datagen.
 tasks.named<ProcessResources>("processResources") {
+	// R9-C: Testpack fuer den GameTestServer (nur mit -Dspace_m.gametestDimensions=true aktiv, s. runs.gameTestServer):
+	// minecraft:flat = Vanilla-Flachland + alle Dimensionen aus data/space_m/dimension (bleibt so automatisch synchron).
+	doLast {
+		val dimDir = File(destinationDir, "data/space_m/dimension")
+		if (!dimDir.isDirectory) return@doLast
+		val packDir = File(destinationDir, "gametest_dimensions")
+		packDir.deleteRecursively()
+		val nl = "\n"
+		val dims = dimDir.listFiles()!!.filter { it.isFile && it.extension == "json" }.sortedBy { it.name }
+			.joinToString("," + nl) { "\"space_m:" + it.nameWithoutExtension + "\": " + it.readText().trim() }
+		val vanilla = listOf(
+			"\"minecraft:overworld\": { \"type\": \"minecraft:overworld\", \"generator\": { \"type\": \"minecraft:flat\", \"settings\": { \"biome\": \"minecraft:plains\", \"features\": false, \"lakes\": false, \"layers\": [ { \"block\": \"minecraft:bedrock\", \"height\": 1 }, { \"block\": \"minecraft:dirt\", \"height\": 2 }, { \"block\": \"minecraft:grass_block\", \"height\": 1 } ], \"structure_overrides\": [ \"minecraft:strongholds\", \"minecraft:villages\" ] } } }",
+			"\"minecraft:the_end\": { \"type\": \"minecraft:the_end\", \"generator\": { \"type\": \"minecraft:noise\", \"biome_source\": { \"type\": \"minecraft:the_end\" }, \"settings\": \"minecraft:end\" } }",
+			"\"minecraft:the_nether\": { \"type\": \"minecraft:the_nether\", \"generator\": { \"type\": \"minecraft:noise\", \"biome_source\": { \"type\": \"minecraft:multi_noise\", \"preset\": \"minecraft:nether\" }, \"settings\": \"minecraft:nether\" } }"
+		).joinToString("," + nl)
+		val preset = File(packDir, "data/minecraft/worldgen/world_preset/flat.json")
+		preset.parentFile.mkdirs()
+		preset.writeText("{ \"dimensions\": {" + nl + vanilla + "," + nl + dims + nl + "} }" + nl)
+		File(packDir, "pack.mcmeta").writeText("{ \"pack\": { \"description\": \"space_m GameTest dimensions\", \"pack_format\": 48 } }" + nl)
+	}
 	doLast {
 		val dataDir = File(destinationDir, "data")
 		if (!dataDir.isDirectory) return@doLast

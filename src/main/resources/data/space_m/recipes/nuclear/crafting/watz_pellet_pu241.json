@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I ",
+    "IGI",
+    " I "
+  ],
+  "key": {
+    "I": {
+      "tag": "forge:ingots/pu241"
+    },
+    "G": {
+      "tag": "forge:ingots/graphite"
+    }
+  },
+  "result": {
+    "item": "space_m:watz_pellet_pu241"
+  }
+}

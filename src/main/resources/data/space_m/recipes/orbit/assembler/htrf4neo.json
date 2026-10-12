@@ -1,0 +1,140 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 1200,
+  "hbm_variants": [
+    {
+      "flags": [
+        "528",
+        "expensive"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 1200,
+        "ingredients": [
+          {
+            "item": "hbm_m:item_expensive_ferro_plating",
+            "count": 16
+          },
+          {
+            "item": "hbm_m:item_expensive_plastic",
+            "count": 16
+          },
+          {
+            "item": "space_m:item_expensive_stainless_beam",
+            "count": 16
+          },
+          {
+            "item": "space_m:gaschip",
+            "count": 64
+          }
+        ],
+        "output": {
+          "item": "space_m:machine_htrf4neo"
+        },
+        "power": 100,
+        "blueprint_pool": "528.gaschip"
+      }
+    },
+    {
+      "flags": [
+        "528"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 1200,
+        "ingredients": [
+          {
+            "tag": "hbm_m:oredict/plate_sextuple/any_resistant_alloy",
+            "count": 16
+          },
+          {
+            "tag": "hbm_m:oredict/plate_sextuple/copper",
+            "count": 64
+          },
+          {
+            "tag": "hbm_m:oredict/wire_dense/schrabidate",
+            "count": 64
+          },
+          {
+            "tag": "hbm_m:oredict/plate_sextuple/stainless_steel",
+            "count": 16
+          },
+          {
+            "item": "hbm_m:bismoid_circuit",
+            "count": 2
+          },
+          {
+            "item": "space_m:gaschip",
+            "count": 4
+          }
+        ],
+        "output": {
+          "item": "space_m:machine_htrf4neo"
+        },
+        "power": 100,
+        "blueprint_pool": "528.gaschip"
+      }
+    },
+    {
+      "flags": [
+        "expensive"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 1200,
+        "ingredients": [
+          {
+            "item": "hbm_m:item_expensive_ferro_plating",
+            "count": 16
+          },
+          {
+            "item": "hbm_m:item_expensive_plastic",
+            "count": 16
+          },
+          {
+            "item": "space_m:item_expensive_stainless_beam",
+            "count": 16
+          },
+          {
+            "item": "space_m:gaschip",
+            "count": 64
+          }
+        ],
+        "output": {
+          "item": "space_m:machine_htrf4neo"
+        },
+        "power": 100
+      }
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "hbm_m:oredict/plate_sextuple/any_resistant_alloy",
+      "count": 16
+    },
+    {
+      "tag": "hbm_m:oredict/plate_sextuple/copper",
+      "count": 64
+    },
+    {
+      "tag": "hbm_m:oredict/wire_dense/schrabidate",
+      "count": 64
+    },
+    {
+      "tag": "hbm_m:oredict/plate_sextuple/stainless_steel",
+      "count": 16
+    },
+    {
+      "item": "hbm_m:bismoid_circuit",
+      "count": 2
+    },
+    {
+      "item": "space_m:gaschip",
+      "count": 4
+    }
+  ],
+  "output": {
+    "item": "space_m:machine_htrf4neo"
+  },
+  "power": 100
+}

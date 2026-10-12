@@ -1,0 +1,22 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:clump_peroxide"
+  },
+  "results": [
+    {
+      "item": "hbm_m:niobium_powder",
+      "count": 4
+    },
+    {
+      "item": "hbm_m:cobalt_powder",
+      "count": 2
+    },
+    {
+      "item": "hbm_m:zirconium_powder"
+    },
+    {
+      "item": "hbm_m:beryllium_powder"
+    }
+  ]
+}

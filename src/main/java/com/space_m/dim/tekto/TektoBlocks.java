@@ -105,6 +105,8 @@ public final class TektoBlocks {
     /** {@code vinyl_log = BlockLogNT}, 0.5/2.5. */
     public static final RegistrySupplier<Block> VINYL_LOG = tag(SpaceBlocks.registerWithItem("vinyl_log",
             () -> new RotatedPillarBlock(wood(0.5F, 1.5F)), SpaceCreativeTabs.Tab.BLOCKS), BlockTags.MINEABLE_WITH_AXE, BlockTags.LOGS);
+    // Original-Klasse: BlockRubberLeaves (LeavesBlock ohne Biomfarbe; Beute leaf_rubber/leaf_pet + 30 % Zusatzblatt,
+    // davon 50 % Setzling, nie mit Schere - Loot-Tabellen rubber_leaves/pet_leaves)
     /** {@code rubber_leaves = BlockRubberLeaves}, 0.5/2.5. */
     public static final RegistrySupplier<Block> RUBBER_LEAVES = tag(SpaceBlocks.registerWithItem("rubber_leaves",
             () -> new LeavesBlock(leaves()), SpaceCreativeTabs.Tab.BLOCKS), BlockTags.MINEABLE_WITH_HOE, BlockTags.LEAVES);
@@ -141,8 +143,14 @@ public final class TektoBlocks {
     /** {@code BlockRubberCacti.EnumBushType}. */
     public static final String[] RUBBER_CACTI = {"cact", "bush", "flower"};
 
-    private static final Predicate<BlockState> RUBBER_SOIL = s -> s.is(RUBBER_GRASS.get()) || s.is(RUBBER_SILT.get());
-    private static final Predicate<BlockState> CACTI_SOIL = s -> s.is(VINYL_SAND.get()) || s.is(RUBBER_GRASS.get()) || s.is(RUBBER_SILT.get());
+    // Original-Block: rubber_plant (je Sorte rubber_plant_<sorte>)
+    // Original-Block: rubber_tall (Feld spike_cacti, je Sorte rubber_tall_<sorte>)
+    // Original-Block: sapling (Feld sapling_pvc, je Sorte sapling_vinyl/sapling_pvc)
+    // R9-B2: Original canPlaceBlockOn nennt auch rubber_farmland (BlockRubberPlant und BlockRubberCacti)
+    private static final Predicate<BlockState> RUBBER_SOIL = s -> s.is(RUBBER_GRASS.get()) || s.is(RUBBER_SILT.get())
+            || s.is(com.space_m.item.SpaceCrops.RUBBER_FARMLAND.get());
+    private static final Predicate<BlockState> CACTI_SOIL = s -> s.is(VINYL_SAND.get()) || s.is(RUBBER_GRASS.get()) || s.is(RUBBER_SILT.get())
+            || s.is(com.space_m.item.SpaceCrops.RUBBER_FARMLAND.get());
 
     /** {@code rubber_plant} (Material.vine, Haerte 0, Gras-Klang), Registry {@code rubber_plant_<sorte>}. */
     public static final Map<String, RegistrySupplier<Block>> RUBBER_PLANT = new LinkedHashMap<>();
@@ -182,12 +190,13 @@ public final class TektoBlocks {
     // ── Erze (generateVanillaOres + generateNTMOres im Basalt, Metadatum TEKTO) ──
     public static final CelestialOreSet ORES = CelestialOreSet.create(BODY, true, true);
     /** ChunkProviderTekto: {@code ore_tekto} (BlockOreFluid OIL -> Tekto-Rohoel + Wasserstoffgas), 5.0/10.0. */
-    public static final RegistrySupplier<Block> ORE_TEKTO = PlanetOres.ore("ore_tekto", BODY, 5.0F, 10.0F);
+    public static final RegistrySupplier<Block> ORE_TEKTO = PlanetOres.ore("ore_tekto", BODY,
+            p -> new com.space_m.resources.BlockOreFluid(p, () -> TektoBlocks.ORE_TEKTO_EMPTY.get(), com.hbm_m.api.space.SpaceResources.ReserveType.OIL, com.space_m.celestial.SolarSystem.Body.TEKTO), 5.0F, 10.0F) /* R8-B: BlockOreFluid */;
     /** {@code ore_tekto_empty = BlockOre} (Textur {@code ore_oil_empty}), 5.0/10.0. */
     public static final RegistrySupplier<Block> ORE_TEKTO_EMPTY = PlanetOres.ore("ore_tekto_empty", BODY, 5.0F, 10.0F);
     /** MapGenBedrockOil: {@code ore_bedrock_oil} (unzerstoerbar, Widerstand 1 000 000) mit Metadatum TEKTO. */
     public static final RegistrySupplier<Block> ORE_BEDROCK_OIL = PlanetOres.ore("ore_bedrock_oil", BODY,
-            p -> new Block(p.strength(-1.0F, 600_000F).noLootTable().isValidSpawn((s, l, pos, t) -> false)), -1.0F, 1_000_000F);
+            p -> new com.space_m.resources.BlockOreFluid(p.strength(-1.0F, 600_000F).noLootTable().isValidSpawn((s, l, pos, t) -> false), null, com.hbm_m.api.space.SpaceResources.ReserveType.OIL, com.space_m.celestial.SolarSystem.Body.TEKTO), -1.0F, 1_000_000F) /* R8-B: BlockOreFluid */;
 
     // ── Items ──
     /** {@code leaf_rubber} ("rubber_leaves", partsTab). */

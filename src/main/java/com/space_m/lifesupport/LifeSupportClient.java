@@ -87,6 +87,8 @@ public final class LifeSupportClient {
     }
 
     /** Original {@code getLoopedSound("hbm:player.plss_breathing", entity, 0.1F, 5.0F, 1.0F, 10)}: folgt dem Spieler, 10 Ticks Keep-Alive. */
+    // Original-Klasse: AudioDynamicEntity (an ein Entity gebundener Schleifenklang von getLoopedSound(sound, entity, ...);
+    // ebenso OrbitClient.HumSound fuer misc.stationhum)
     static final class BreathingSound extends AbstractTickableSoundInstance {
         private final LocalPlayer player;
         private int keepAlive;

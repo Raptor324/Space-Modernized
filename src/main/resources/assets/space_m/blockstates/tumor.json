@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "space_m:block/tumor" },
+      { "model": "space_m:block/tumor_2" },
+      { "model": "space_m:block/tumor_3" },
+      { "model": "space_m:block/tumor_4" }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "type": "space_m:vacuum_circuit",
+  "wafer": [
+    {
+      "ingredient": {
+        "item": "hbm_m:microchip"
+      },
+      "count": 8
+    }
+  ],
+  "pcb": [
+    {
+      "ingredient": {
+        "item": "hbm_m:pcb"
+      },
+      "count": 2
+    },
+    {
+      "ingredient": {
+        "item": "hbm_m:capacitor"
+      },
+      "count": 4
+    }
+  ],
+  "output": {
+    "item": "space_m:processt1",
+    "count": 1
+  },
+  "duration": 200,
+  "consumption": 250
+}

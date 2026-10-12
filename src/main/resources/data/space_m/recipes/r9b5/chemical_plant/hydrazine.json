@@ -1,0 +1,58 @@
+{
+  "type": "hbm_m:chemical_plant",
+  "duration": 250,
+  "fluid_inputs": [
+    {
+      "amount": 2000,
+      "fluid": "hbm_m:nitric_acid"
+    },
+    {
+      "amount": 1000,
+      "fluid": "space_m:ammonia"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 800,
+      "fluid": "space_m:hydrazine"
+    }
+  ],
+  "item_inputs": [],
+  "item_outputs": [],
+  "power": 1000,
+  "hbm_variants": [
+    {
+      "flags": [
+        "528_pressurized"
+      ],
+      "recipe": {
+        "type": "hbm_m:chemical_plant",
+        "duration": 250,
+        "fluid_inputs": [
+          {
+            "amount": 2000,
+            "fluid": "hbm_m:nitric_acid"
+          },
+          {
+            "amount": 1000,
+            "fluid": "space_m:ammonia",
+            "pressure": 1
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 800,
+            "fluid": "space_m:hydrazine"
+          }
+        ],
+        "item_inputs": [],
+        "item_outputs": [],
+        "power": 1000
+      }
+    }
+  ],
+  "icon_item": {
+    "item": "hbm_m:canister_full"
+  },
+  "icon_fluid": "space_m:hydrazine"
+}

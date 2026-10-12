@@ -1,0 +1,40 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 400,
+  "hbm_variants": [
+    {
+      "flags": [
+        "528"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "blueprint_pool": "528.controller",
+        "duration": 400,
+        "ingredients": [
+          { "tag": "hbm_m:oredict/plate/stainless_steel", "count": 16 },
+          { "tag": "hbm_m:oredict/wire_fine/mingrade", "count": 32 },
+          { "item": "space_m:ingot_hafnium", "count": 2 },
+          { "item": "hbm_m:analog_circuit", "count": 1 },
+          { "item": "space_m:billet_gaas", "count": 1 },
+          { "item": "hbm_m:magnetron", "count": 4 }
+        ],
+        "output": {
+          "item": "space_m:nuke_antimatter"
+        },
+        "power": 100
+      }
+    }
+  ],
+  "ingredients": [
+    { "tag": "hbm_m:oredict/plate/stainless_steel", "count": 16 },
+    { "tag": "hbm_m:oredict/wire_fine/mingrade", "count": 32 },
+    { "item": "space_m:ingot_hafnium", "count": 2 },
+    { "item": "hbm_m:analog_circuit", "count": 1 },
+    { "item": "space_m:billet_gaas", "count": 1 },
+    { "item": "hbm_m:magnetron", "count": 4 }
+  ],
+  "output": {
+    "item": "space_m:nuke_antimatter"
+  },
+  "power": 100
+}

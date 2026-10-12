@@ -1,0 +1,11 @@
+{
+  "type": "hbm_m:pyro_oven",
+  "duration": 60,
+  "fluid_input": {
+    "amount": 14000,
+    "fluid": "space_m:polythylene"
+  },
+  "item_output": {
+    "item": "hbm_m:solid_fuel"
+  }
+}

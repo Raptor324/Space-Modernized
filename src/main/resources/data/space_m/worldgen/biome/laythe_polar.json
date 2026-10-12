@@ -9,7 +9,22 @@
     "water_color": 12711167,
     "water_fog_color": 329011
   },
-  "spawners": {},
+  "spawners": {
+    "water_creature": [
+      {
+        "type": "space_m:entity_scutterfish",
+        "weight": 10,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "space_m:entity_siftereel",
+        "weight": 10,
+        "minCount": 1,
+        "maxCount": 3
+      }
+    ]
+  },
   "spawn_costs": {},
   "carvers": {},
   "features": [
@@ -20,6 +35,11 @@
     [],
     [],
     [
+      "space_m:laythe/cave_sulfur",
+      "space_m:laythe/cave_asbestos",
+      "space_m:laythe/cave_tumor",
+      "space_m:laythe/cave_silt_6",
+      "space_m:laythe/cave_silt_3",
       "space_m:laythe/vanilla_biome_ores",
       "space_m:laythe/laythe_asbestos",
       "space_m:laythe/laythe_beryllium",

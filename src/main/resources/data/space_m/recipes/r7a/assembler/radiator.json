@@ -1,0 +1,26 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 400,
+  "ingredients": [
+    {
+      "tag": "hbm_m:oredict/plate_triple/aluminum",
+      "count": 6
+    },
+    {
+      "tag": "hbm_m:oredict/plate/stainless_steel",
+      "count": 6
+    },
+    {
+      "tag": "hbm_m:oredict/ntmpipe/copper",
+      "count": 4
+    },
+    {
+      "item": "hbm_m:thermo_element",
+      "count": 3
+    }
+  ],
+  "output": {
+    "item": "space_m:machine_radiator"
+  },
+  "power": 100
+}

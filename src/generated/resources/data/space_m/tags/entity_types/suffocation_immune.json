@@ -1,5 +1,29 @@
 {
   "values": [
+    {
+      "id": "space_m:entity_moon_cow",
+      "required": false
+    },
+    {
+      "id": "space_m:entity_tankbot",
+      "required": false
+    },
+    {
+      "id": "space_m:entity_war_behemoth",
+      "required": false
+    },
+    {
+      "id": "space_m:entity_ntm_bfa",
+      "required": false
+    },
+    {
+      "id": "space_m:entity_meme_ufo",
+      "required": false
+    },
+    {
+      "id": "space_m:entity_micro_ufo",
+      "required": false
+    },
     "hbm_m:entity_cyber_crab",
     "hbm_m:entity_tesla_crab",
     "hbm_m:entity_taint_crab",
@@ -21,6 +45,8 @@
     "hbm_m:glyphid_blaster",
     "hbm_m:glyphid_scout",
     "hbm_m:glyphid_nuclear",
-    "hbm_m:glyphid_digger"
+    "hbm_m:glyphid_digger",
+    "space_m:entity_meme_ufo",
+    "space_m:entity_war_behemoth"
   ]
 }

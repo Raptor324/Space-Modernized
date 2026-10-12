@@ -1,0 +1,38 @@
+{
+  "type": "hbm_m:soldering_station",
+  "consumption": 1000,
+  "duration": 300,
+  "pcb": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "hbm_m:advanced_circuit"
+      }
+    },
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "hbm_m:oredict/ingot/rubber"
+      }
+    }
+  ],
+  "result": {
+    "item": "space_m:aero"
+  },
+  "solder": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "forge:wires_fine/lead"
+      }
+    }
+  ],
+  "toppings": [
+    {
+      "count": 3,
+      "ingredient": {
+        "item": "hbm_m:microchip"
+      }
+    }
+  ]
+}

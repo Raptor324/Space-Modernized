@@ -1,0 +1,19 @@
+{
+  "type": "hbm_m:catalytic_reformer",
+  "input": {
+    "amount": 100,
+    "fluid": "space_m:hgas"
+  },
+  "output_a": {
+    "amount": 60,
+    "fluid": "hbm_m:aromatics"
+  },
+  "output_b": {
+    "amount": 25,
+    "fluid": "space_m:chloromethane"
+  },
+  "output_c": {
+    "amount": 10,
+    "fluid": "space_m:hcl"
+  }
+}

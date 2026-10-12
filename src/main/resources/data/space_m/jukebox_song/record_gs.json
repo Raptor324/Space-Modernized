@@ -1,0 +1,8 @@
+{
+  "comparator_output": 1,
+  "description": {
+    "translate": "item.space_m.record_gs.desc"
+  },
+  "length_in_seconds": 353.15,
+  "sound_event": "space_m:music.recordgodspeed"
+}

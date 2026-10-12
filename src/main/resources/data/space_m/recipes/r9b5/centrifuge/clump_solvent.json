@@ -1,0 +1,22 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:clump_solvent"
+  },
+  "results": [
+    {
+      "item": "hbm_m:cobalt_powder",
+      "count": 4
+    },
+    {
+      "item": "space_m:powder_gallium",
+      "count": 2
+    },
+    {
+      "item": "hbm_m:niobium_powder"
+    },
+    {
+      "item": "hbm_m:powder_coltan"
+    }
+  ]
+}

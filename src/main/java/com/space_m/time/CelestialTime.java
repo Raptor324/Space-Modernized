@@ -41,6 +41,7 @@ import net.minecraft.world.level.dimension.DimensionType;
  * Die Gesamtzeit ({@code getGameTime}, Bahnen der Himmelskoerper) bleibt wie im Original global (Overworld).
  * Mixins: {@code LevelTimeMixin}, {@code ServerLevelTimeMixin}, {@code DimensionTypeTimeMixin}.
  */
+// Original-Klasse: WorldProviderEarth (Kerbin-Tageslauf; Himmel in client.sky.SkyRegistration)
 public final class CelestialTime {
     private CelestialTime() {}
 

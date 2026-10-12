@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "space_m:block/nuke_antimatter"
+    },
+    "facing=south": {
+      "model": "space_m:block/nuke_antimatter"
+    },
+    "facing=east": {
+      "model": "space_m:block/nuke_antimatter"
+    },
+    "facing=west": {
+      "model": "space_m:block/nuke_antimatter"
+    }
+  }
+}

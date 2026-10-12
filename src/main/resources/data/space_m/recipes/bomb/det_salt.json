@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "PIP",
+    "DCD",
+    "PIP"
+  ],
+  "key": {
+    "P": {
+      "tag": "hbm_m:oredict/ingot/cobalt"
+    },
+    "D": {
+      "item": "space_m:billet_gaas"
+    },
+    "C": {
+      "item": "hbm_m:det_nuke"
+    },
+    "I": {
+      "item": "hbm_m:plate_cast_tcalloy"
+    }
+  },
+  "result": {
+    "item": "space_m:det_salt"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "hbm_m:plasma_forge",
+  "duration": 125,
+  "fluid_inputs": [],
+  "group": "autoswitch.weldPlates",
+  "ignition_temp": 500000,
+  "item_inputs": [
+    {
+      "count": 2,
+      "item": "space_m:plate_cast_stainless"
+    }
+  ],
+  "power": 20000,
+  "result": {
+    "item": "space_m:plate_welded_stainless"
+  }
+}

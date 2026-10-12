@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "space_m:block/machine_drive_processor"
+    },
+    "facing=south": {
+      "model": "space_m:block/machine_drive_processor"
+    },
+    "facing=west": {
+      "model": "space_m:block/machine_drive_processor"
+    },
+    "facing=east": {
+      "model": "space_m:block/machine_drive_processor"
+    }
+  }
+}

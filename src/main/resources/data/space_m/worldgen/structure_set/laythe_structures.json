@@ -1,0 +1,13 @@
+{
+  "structures": [
+    {
+      "structure": "space_m:laythe_structures",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "hbm_m:ntm_grid",
+    "salt": 996996996,
+    "dimension": 413022
+  }
+}

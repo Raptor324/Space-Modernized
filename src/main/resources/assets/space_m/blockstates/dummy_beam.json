@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "space_m:block/dummy_beam"
+    },
+    "lit=true": {
+      "model": "space_m:block/dummy_beam"
+    }
+  }
+}

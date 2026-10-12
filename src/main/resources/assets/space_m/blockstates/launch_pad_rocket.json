@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "space_m:block/launch_pad_rocket"
+    },
+    "facing=south": {
+      "model": "space_m:block/launch_pad_rocket"
+    },
+    "facing=west": {
+      "model": "space_m:block/launch_pad_rocket"
+    },
+    "facing=east": {
+      "model": "space_m:block/launch_pad_rocket"
+    }
+  }
+}

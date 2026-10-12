@@ -1,0 +1,23 @@
+{
+  "type": "hbm_m:silex",
+  "fluid_consumed": 100,
+  "fluid_produced": 900,
+  "ingredient": {
+    "item": "space_m:ingot_cm_mix"
+  },
+  "laser": 2,
+  "outputs": [
+    {
+      "result": {
+        "item": "space_m:nugget_cm244"
+      },
+      "weight": 3
+    },
+    {
+      "result": {
+        "item": "space_m:nugget_cm245"
+      },
+      "weight": 6
+    }
+  ]
+}

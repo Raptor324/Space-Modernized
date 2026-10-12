@@ -1,0 +1,20 @@
+{
+  "type": "space_m:cryo_distill",
+  "input": "space_m:eveair",
+  "output1": {
+    "fluid": "space_m:kmno4",
+    "amount": 40
+  },
+  "output2": {
+    "fluid": "hbm_m:mercury",
+    "amount": 35
+  },
+  "output3": {
+    "fluid": "hbm_m:xenon",
+    "amount": 15
+  },
+  "output4": {
+    "fluid": "space_m:ammonia",
+    "amount": 10
+  }
+}

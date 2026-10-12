@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "space_m:ike_pyramid",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 1,
+    "separation": 0,
+    "salt": 14357621
+  }
+}

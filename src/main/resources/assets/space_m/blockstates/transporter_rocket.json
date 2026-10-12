@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "space_m:block/machines/transporter_rocket",
+      "y": 0
+    },
+    "facing=south": {
+      "model": "space_m:block/machines/transporter_rocket",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "space_m:block/machines/transporter_rocket",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "space_m:block/machines/transporter_rocket",
+      "y": 90
+    }
+  }
+}

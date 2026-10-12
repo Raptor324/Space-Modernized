@@ -1,0 +1,13 @@
+{
+  "type": "hbm_m:ntm",
+  "dimension": 413022,
+  "biomes": [
+    "space_m:laythe_ocean",
+    "space_m:laythe_islands",
+    "space_m:laythe_coast",
+    "space_m:laythe_polar"
+  ],
+  "spawn_overrides": {},
+  "step": "surface_structures",
+  "terrain_adaptation": "none"
+}

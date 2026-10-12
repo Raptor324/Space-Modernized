@@ -20,8 +20,11 @@ import net.minecraft.world.level.block.state.properties.DirectionProperty;
  *
  * <p>{@code RenderCoral}: gekreuzte Flaechen, ausgerichtet am ersten festen Nachbarn in der Reihenfolge
  * N, S, W, O, oben, unten (sonst unten) -> Eigenschaft {@link #ATTACH} + gedrehte Kreuzmodelle.
- * Beute {@code powder_calcium} (in HBM-Modernized noch nicht portiert -> Wunsch, bis dahin keine Beute).
+ * Beute {@code powder_calcium} = {@code hbm_m:calcium_powder} (Loot-Tabelle, R4-B).
  */
+// Original-Klasse: RenderCoral
+// Original-Block: laythe_coral (je Sorte laythe_coral_<sorte>, LaytheBlocks)
+// Original-Block: laythe_coral_block (je Sorte laythe_coral_block_<sorte>, LaytheBlocks)
 public class BlockCoral extends BlockWaterPlant {
 
     public static final DirectionProperty ATTACH = BlockStateProperties.FACING;

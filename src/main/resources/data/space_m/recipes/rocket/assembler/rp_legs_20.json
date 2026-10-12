@@ -1,0 +1,22 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 100,
+  "power": 100,
+  "ingredients": [
+    {
+      "tag": "hbm_m:oredict/ntmpipe/steel",
+      "count": 4
+    },
+    {
+      "tag": "hbm_m:oredict/plate/aluminum",
+      "count": 8
+    },
+    {
+      "item": "hbm_m:motor",
+      "count": 4
+    }
+  ],
+  "output": {
+    "item": "space_m:rp_l_20"
+  }
+}

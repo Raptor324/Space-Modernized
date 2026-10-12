@@ -1,0 +1,22 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:clump_nitric"
+  },
+  "results": [
+    {
+      "item": "space_m:powder_gallium",
+      "count": 4
+    },
+    {
+      "item": "hbm_m:beryllium_powder",
+      "count": 2
+    },
+    {
+      "item": "hbm_m:niobium_powder"
+    },
+    {
+      "item": "hbm_m:fragment_lanthanium"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:clump_schrabidic"
+  },
+  "results": [
+    {
+      "item": "hbm_m:co60_powder"
+    },
+    {
+      "item": "hbm_m:nugget_bismuth"
+    },
+    {
+      "item": "hbm_m:asbestos_powder",
+      "count": 6
+    },
+    {
+      "item": "hbm_m:nugget_technetium"
+    }
+  ]
+}

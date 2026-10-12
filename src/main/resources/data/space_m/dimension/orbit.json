@@ -1,0 +1,13 @@
+{
+  "type": "space_m:orbit",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "space_m:orbit",
+      "layers": [],
+      "lakes": false,
+      "features": false,
+      "structure_overrides": []
+    }
+  }
+}

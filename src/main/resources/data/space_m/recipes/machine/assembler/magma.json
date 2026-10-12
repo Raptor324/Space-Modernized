@@ -1,0 +1,148 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 400,
+  "hbm_variants": [
+    {
+      "flags": [
+        "528",
+        "expensive"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 400,
+        "ingredients": [
+          {
+            "item": "space_m:item_expensive_stainless_beam",
+            "count": 6
+          },
+          {
+            "tag": "hbm_m:oredict/plate_sextuple/tungsten",
+            "count": 4
+          },
+          {
+            "item": "hbm_m:drill_titanium",
+            "count": 1
+          },
+          {
+            "item": "hbm_m:motor_bismuth",
+            "count": 4
+          },
+          {
+            "item": "space_m:gaschip",
+            "count": 24
+          }
+        ],
+        "output": {
+          "item": "space_m:machine_magma"
+        },
+        "power": 100,
+        "blueprint_pool": "528.gaschip"
+      }
+    },
+    {
+      "flags": [
+        "528"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 400,
+        "ingredients": [
+          {
+            "item": "hbm_m:steel_scaffold",
+            "count": 8
+          },
+          {
+            "tag": "hbm_m:oredict/plate_sextuple/tungsten",
+            "count": 2
+          },
+          {
+            "tag": "hbm_m:oredict/plate/steel",
+            "count": 32
+          },
+          {
+            "item": "hbm_m:drill_titanium",
+            "count": 1
+          },
+          {
+            "item": "hbm_m:motor_bismuth",
+            "count": 1
+          },
+          {
+            "item": "space_m:gaschip",
+            "count": 8
+          }
+        ],
+        "output": {
+          "item": "space_m:machine_magma"
+        },
+        "power": 100,
+        "blueprint_pool": "528.gaschip"
+      }
+    },
+    {
+      "flags": [
+        "expensive"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 400,
+        "ingredients": [
+          {
+            "item": "space_m:item_expensive_stainless_beam",
+            "count": 6
+          },
+          {
+            "tag": "hbm_m:oredict/plate_sextuple/tungsten",
+            "count": 4
+          },
+          {
+            "item": "hbm_m:drill_titanium",
+            "count": 1
+          },
+          {
+            "item": "hbm_m:motor_bismuth",
+            "count": 4
+          },
+          {
+            "item": "space_m:gaschip",
+            "count": 24
+          }
+        ],
+        "output": {
+          "item": "space_m:machine_magma"
+        },
+        "power": 100
+      }
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "hbm_m:steel_scaffold",
+      "count": 8
+    },
+    {
+      "tag": "hbm_m:oredict/plate_sextuple/tungsten",
+      "count": 2
+    },
+    {
+      "tag": "hbm_m:oredict/plate/steel",
+      "count": 32
+    },
+    {
+      "item": "hbm_m:drill_titanium",
+      "count": 1
+    },
+    {
+      "item": "hbm_m:motor_bismuth",
+      "count": 1
+    },
+    {
+      "item": "space_m:gaschip",
+      "count": 8
+    }
+  ],
+  "output": {
+    "item": "space_m:machine_magma"
+  },
+  "power": 100
+}

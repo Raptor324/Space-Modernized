@@ -1,0 +1,148 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 400,
+  "hbm_variants": [
+    {
+      "flags": [
+        "528",
+        "expensive"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 400,
+        "blueprint_pool": "528.stainless",
+        "ingredients": [
+          {
+            "item": "space_m:item_expensive_stainless_beam",
+            "count": 8
+          },
+          {
+            "item": "hbm_m:motor",
+            "count": 4
+          },
+          {
+            "tag": "hbm_m:oredict/block/glass_colorless",
+            "count": 8
+          },
+          {
+            "tag": "hbm_m:oredict/ingot/any_plastic",
+            "count": 8
+          },
+          {
+            "item": "hbm_m:item_expensive_circuit",
+            "count": 2
+          }
+        ],
+        "output": {
+          "item": "space_m:orbital_station_port"
+        },
+        "power": 100
+      }
+    },
+    {
+      "flags": [
+        "528"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 400,
+        "blueprint_pool": "528.stainless",
+        "ingredients": [
+          {
+            "item": "hbm_m:plate_welded_titanium",
+            "count": 6
+          },
+          {
+            "item": "hbm_m:motor",
+            "count": 4
+          },
+          {
+            "tag": "hbm_m:oredict/block/glass_colorless",
+            "count": 8
+          },
+          {
+            "tag": "hbm_m:oredict/ingot/any_plastic",
+            "count": 8
+          },
+          {
+            "item": "hbm_m:integrated_circuit",
+            "count": 4
+          },
+          {
+            "tag": "hbm_m:oredict/plate/stainless_steel",
+            "count": 4
+          }
+        ],
+        "output": {
+          "item": "space_m:orbital_station_port"
+        },
+        "power": 100
+      }
+    },
+    {
+      "flags": [
+        "expensive"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 400,
+        "ingredients": [
+          {
+            "item": "space_m:item_expensive_stainless_beam",
+            "count": 8
+          },
+          {
+            "item": "hbm_m:motor",
+            "count": 4
+          },
+          {
+            "tag": "hbm_m:oredict/block/glass_colorless",
+            "count": 8
+          },
+          {
+            "tag": "hbm_m:oredict/ingot/any_plastic",
+            "count": 8
+          },
+          {
+            "item": "hbm_m:item_expensive_circuit",
+            "count": 2
+          }
+        ],
+        "output": {
+          "item": "space_m:orbital_station_port"
+        },
+        "power": 100
+      }
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "hbm_m:plate_welded_titanium",
+      "count": 6
+    },
+    {
+      "item": "hbm_m:motor",
+      "count": 4
+    },
+    {
+      "tag": "hbm_m:oredict/block/glass_colorless",
+      "count": 8
+    },
+    {
+      "tag": "hbm_m:oredict/ingot/any_plastic",
+      "count": 8
+    },
+    {
+      "item": "hbm_m:integrated_circuit",
+      "count": 4
+    },
+    {
+      "tag": "hbm_m:oredict/plate/stainless_steel",
+      "count": 4
+    }
+  ],
+  "output": {
+    "item": "space_m:orbital_station_port"
+  },
+  "power": 100
+}

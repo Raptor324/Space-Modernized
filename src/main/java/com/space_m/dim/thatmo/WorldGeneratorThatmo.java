@@ -16,8 +16,7 @@ import com.space_m.dim.laythe.WorldGeneratorLaythe;
  * {@code assets/space_m/structures/} (thatmotestmo, thatmo2, trenches, intersection, road, curve, tshapeintersex,
  * block1, block2, pfmfactory).
  *
- * <p>Abweichung bei Aktivierung: {@code trenches.blockTable} ({@code brick_concrete_cracked -> ConcreteBricks}) ist
- * in HBM-Modernized paketprivat ({@code Component.ConcreteBricks}) - ohne Austausch.
+ * <p>{@code trenches.blockTable} ({@code brick_concrete_cracked -> ConcreteBricks}) 1:1 (HBM W-D3: oeffentlich).
  */
 public final class WorldGeneratorThatmo {
 
@@ -53,6 +52,9 @@ public final class WorldGeneratorThatmo {
 		NBTStructure.registerStructure(THATMO_DIMENSION_ID, new SpawnCondition("trenches") {{
 			JigsawPiece rupture = new JigsawPiece("trenches", trenches, -1);
 			rupture.conformToTerrain = true;
+			rupture.blockTable = new HashMap<net.minecraft.world.level.block.Block, com.hbm_m.world.gen.nbt.BlockSelector>() {{
+				put(com.hbm_m.block.ModBlocks.BRICK_CONCRETE_CRACKED.get(), new com.hbm_m.world.gen.component.Component.ConcreteBricks());
+			}};
 			spawnWeight = 2;
 			canSpawn = biome -> heightVariation(biome) < 0.1F;
 			structure = rupture;

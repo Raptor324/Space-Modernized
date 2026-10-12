@@ -40,6 +40,7 @@ import net.minecraft.world.level.LightLayer;
  * Koerperkennung: Kerbin (Overworld) = {@link SpaceEnvironment#EARTH} (damit HBM-eigene Erd-Ressourcen gelten),
  * sonst {@code space_m:<name>}.
  */
+// Original-Klasse: WorldProviderCelestial (Umweltabfragen; Himmel/Zeit/Generator in client.sky, time, dim)
 public class CelestialEnvironment implements SpaceEnvironment {
 
     /**
@@ -210,6 +211,18 @@ public class CelestialEnvironment implements SpaceEnvironment {
     /** Original {@code provider instanceof WorldProviderCelestial || WorldProviderOrbit}: Overworld (Kerbin) + Space-Dimensionen. */
     public static boolean isCelestialOrOrbit(Level level) {
         return level.dimension() == Level.OVERWORLD || SpaceDimensions.isSpaceDimension(level.dimension());
+    }
+
+    /** R9-B: Neutronenaktivierung des Koerpers (Original {@code EntityEffectHandler.handleRadiation}, vor der Chunk-Strahlung). */
+    @Override
+    public void onLivingTick(net.minecraft.world.entity.LivingEntity entity) {
+        com.space_m.item.NeutronEffects.tick(entity);
+    }
+
+    /** R9-B: Original {@code TileEntityDecon.deconNeutron}. */
+    @Override
+    public void onDecontaminate(net.minecraft.world.entity.LivingEntity entity) {
+        com.space_m.item.NeutronEffects.decontaminate(entity);
     }
 
     // ───────────────────────────── Sonne / Himmel / Koerper ─────────────────────────────

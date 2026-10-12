@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "S",
+    "C",
+    "P"
+  ],
+  "key": {
+    "S": {
+      "item": "hbm_m:crt_display"
+    },
+    "C": {
+      "item": "hbm_m:integrated_circuit"
+    },
+    "P": {
+      "tag": "hbm_m:oredict/plate/aluminum"
+    }
+  },
+  "result": {
+    "item": "space_m:transporter_linker"
+  }
+}

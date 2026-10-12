@@ -19,9 +19,7 @@ import net.minecraft.world.level.block.Block;
  * R4-B: Ore-Dictionary-Eintraege von NTM Space ({@code OreDictManager}, Space-Zuwachs) als Item-Tags im Schema von
  * HBM-Modernized: {@code hbm_m:oredict/<praefix>/<material>} (Praefix/Material in snake_case, z. B.
  * {@code plateTripleStainlessSteel} -> {@code hbm_m:oredict/plate_triple/stainless_steel}). Jeder DictFrame-Name
- * zaehlt (Curium-242 = {@code curium242} + {@code cm242}). Zusaetzlich die {@code forge:}-Formen-Tags
- * ({@code forge:ingots/nickel_pure} ...), ueber die HBMs {@code Mats.getShape} fremde Formen-Items erkennt
- * (NeoForge: {@code c:} per processResources). Erzeugt im Datagen ({@code SpaceTagProviders}).
+ * zaehlt (Curium-242 = {@code curium242} + {@code cm242}). Erzeugt im Datagen ({@code SpaceTagProviders}).
  */
 public final class SpaceItemTags {
 
@@ -33,13 +31,27 @@ public final class SpaceItemTags {
         return TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("hbm_m", "oredict/" + path));
     }
 
-    private static TagKey<Item> forge(String path) {
+
+    /**
+     * Kompatibilitaets-Ordner der {@code forge:}-Formen-Tags je Ore-Dictionary-Praefix (= {@code MaterialShapes.tagFolders}
+     * von HBM; auf NeoForge 1.21 benennt processResources {@code forge:} in {@code c:} um). W-R4b-1: HBM erkennt die
+     * Addon-Formen direkt ({@code Mats.registerShapeItem}), die Tags zaehlen daher nicht doppelt.
+     */
+    private static final java.util.Map<String, String> COMPAT_FOLDERS = java.util.Map.of(
+            "nugget", "nuggets", "ingot", "ingots", "dust", "dusts", "plate", "plates", "wire_fine", "wires_fine",
+            "dust_tiny", "tiny_dusts", "gem", "gems", "block", "storage_blocks", "ore", "ores", "bolt", "bolts");
+
+    public static TagKey<Item> forgeTag(String path) {
         return TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("forge", path));
     }
 
-    /** Eintraege {@code <praefix>/<name>} fuer alle Namen. */
+    /** Eintraege {@code <praefix>/<name>} fuer alle Namen (+ {@code forge:<ordner>/<name>} fuer Formen-Praefixe). */
     private static void od(String prefix, String[] names, Supplier<? extends ItemLike> item) {
-        for (String n : names) out.accept(oredict(prefix + "/" + n), item.get().asItem());
+        String folder = COMPAT_FOLDERS.get(prefix);
+        for (String n : names) {
+            out.accept(oredict(prefix + "/" + n), item.get().asItem());
+            if (folder != null) out.accept(forgeTag(folder + "/" + n), item.get().asItem());
+        }
     }
 
     private static String[] n(String... s) { return s; }
@@ -130,32 +142,10 @@ public final class SpaceItemTags {
         out.accept(oredict("stick_wood"), SpaceMaterialItems.STICK_PVC.get());
         out.accept(oredict("stick_wood"), SpaceMaterialItems.STICK_VINYL.get());
 
-        // ── forge:-Formen fuer HBMs Mats.getShape (Material-Name snake_case) ──
-        shapeTag("ingots", "nickel_pure", SpaceMaterialItems.INGOT_NICKEL);
-        shapeTag("nuggets", "nickel_pure", SpaceMaterialItems.NUGGET_NICKEL);
-        shapeTag("dusts", "nickel_pure", SpaceMaterialItems.POWDER_NICKEL);
-        shapeTag("plates", "nickel_pure", SpaceMaterialItems.PLATE_NICKEL);
-        shapeTag("ingots", "zinc", SpaceMaterialItems.INGOT_ZINC);
-        shapeTag("nuggets", "zinc", SpaceMaterialItems.NUGGET_ZINC);
-        shapeTag("dusts", "zinc", SpaceMaterialItems.POWDER_ZINC);
-        shapeTag("wires_fine", "zinc", SpaceMaterialItems.WIRE_ZINC);
-        shapeTag("ingots", "gallium", SpaceMaterialItems.INGOT_GALLIUM);
-        shapeTag("nuggets", "gallium", SpaceMaterialItems.NUGGET_GALLIUM);
-        shapeTag("dusts", "gallium", SpaceMaterialItems.POWDER_GALLIUM);
-        shapeTag("tiny_dusts", "gallium", SpaceMaterialItems.POWDER_GALLIUM_TINY);
-        shapeTag("ingots", "hafnium", SpaceMaterialItems.INGOT_HAFNIUM);
-        shapeTag("nuggets", "hafnium", SpaceMaterialItems.NUGGET_HAFNIUM);
-        shapeTag("ingots", "iridium", SpaceMaterialItems.INGOT_IRIDIUM);
-        shapeTag("ingots", "gallium_arsenide", SpaceMaterialItems.INGOT_GAAS);
-        shapeTag("nuggets", "gallium_arsenide", SpaceMaterialItems.NUGGET_GAAS);
-        shapeTag("ingots", "stainless_steel", SpaceMaterialItems.INGOT_STAINLESS);
-        shapeTag("plates", "stainless_steel", SpaceMaterialItems.PLATE_STAINLESS);
-        shapeTag("ingots", "rich_magma", SpaceMaterialItems.INGOT_MAGMA);
+        // forge:-Formen-Tags (od, COMPAT_FOLDERS): seit W-R4b-1 kennt HBM die Addon-Formen direkt (Mats.registerShapeItem),
+        // Schmelzwert bleibt einfach (72 Quanten/Barren).
     }
 
-    private static void shapeTag(String folder, String mat, Supplier<? extends ItemLike> item) {
-        out.accept(forge(folder + "/" + mat), item.get().asItem());
-    }
 
     private static void nugget(String[] names, Supplier<? extends ItemLike> item) {
         od("nugget", names, item);

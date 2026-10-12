@@ -1,0 +1,8 @@
+{
+  "comparator_output": 1,
+  "description": {
+    "translate": "item.space_m.record_gp.desc"
+  },
+  "length_in_seconds": 240.79,
+  "sound_event": "space_m:music.recordgoop"
+}

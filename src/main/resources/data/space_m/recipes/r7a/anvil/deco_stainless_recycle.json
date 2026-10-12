@@ -1,0 +1,17 @@
+{
+  "type": "hbm_m:anvil",
+  "inputs": [
+    {
+      "item": "space_m:deco_stainless",
+      "count": 4,
+      "comparable": true
+    }
+  ],
+  "kind": "construction",
+  "outputs": [
+    {
+      "item": "space_m:ingot_stainless"
+    }
+  ],
+  "tier": "iron"
+}

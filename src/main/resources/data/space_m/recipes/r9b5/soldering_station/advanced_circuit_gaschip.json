@@ -1,0 +1,91 @@
+{
+  "type": "hbm_m:soldering_station",
+  "consumption": 1000,
+  "duration": 300,
+  "hbm_variants": [
+    {
+      "flags": [
+        "lbsm_crafting"
+      ],
+      "recipe": {
+        "type": "hbm_m:soldering_station",
+        "consumption": 1000,
+        "duration": 300,
+        "fluid": {
+          "amount": 250,
+          "fluid": "space_m:polythylene"
+        },
+        "pcb": [
+          {
+            "count": 4,
+            "ingredient": {
+              "item": "hbm_m:pcb"
+            }
+          }
+        ],
+        "result": {
+          "item": "hbm_m:advanced_circuit"
+        },
+        "solder": [
+          {
+            "count": 8,
+            "ingredient": {
+              "tag": "forge:wires_fine/lead"
+            }
+          }
+        ],
+        "toppings": [
+          {
+            "count": 1,
+            "ingredient": {
+              "item": "space_m:gaschip"
+            }
+          },
+          {
+            "count": 2,
+            "ingredient": {
+              "item": "hbm_m:capacitor"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 250,
+    "fluid": "space_m:polythylene"
+  },
+  "pcb": [
+    {
+      "count": 4,
+      "ingredient": {
+        "item": "hbm_m:pcb"
+      }
+    }
+  ],
+  "result": {
+    "item": "hbm_m:advanced_circuit"
+  },
+  "solder": [
+    {
+      "count": 8,
+      "ingredient": {
+        "tag": "forge:wires_fine/lead"
+      }
+    }
+  ],
+  "toppings": [
+    {
+      "count": 2,
+      "ingredient": {
+        "item": "space_m:gaschip"
+      }
+    },
+    {
+      "count": 2,
+      "ingredient": {
+        "item": "hbm_m:capacitor"
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "type": "hbm_m:fraction_tower",
+  "input": {
+    "amount": 100,
+    "fluid": "space_m:halolight"
+  },
+  "output_a": {
+    "amount": 35,
+    "fluid": "hbm_m:phosgene"
+  },
+  "output_b": {
+    "amount": 75,
+    "fluid": "space_m:chloroethane"
+  }
+}

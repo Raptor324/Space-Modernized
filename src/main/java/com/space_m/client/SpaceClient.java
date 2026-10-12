@@ -45,6 +45,40 @@ public final class SpaceClient {
         // Schwerkraft: schwebende Orbit-Items in der Client-Vorhersage
         com.space_m.gravity.client.CelestialGravityClient.init();
 
+        // R5-A Raketen: Screen, BER, Item-Eigenschaften, Tooltips der HBM-Teile
+        com.space_m.rocket.client.RocketClient.init();
+
+        // R5-C Transporter/Drop-Pods: Linker-Paket, Kapsel-Renderer, Linker-GUI
+        com.space_m.rocket.transport.client.TransportClient.init();
+
+        // R6-A Orbit/Station: Stations-Sync, Station am Himmel, Stationsbrummen
+        com.space_m.orbit.client.OrbitClient.init();
+
+        // R6-C Satelliten: Sync, Satelliten am Himmel (SkyHooks-Dekorator), Einstellungs-GUI, Tooltips
+        com.space_m.satellite.client.SatelliteClient.init();
+
+        // R5-B Rakete/Startrampe: Renderer, Geraeusche, Blick-Overlay
+        com.space_m.rocket.entity.client.RocketEntityClient.init();
+        // R7-B StarDar (S2C-Empfaenger)
+        com.space_m.machine.mining.client.DishClient.init();
+
+        // R7-A: Verbundtextur deco_stainless (Mod-Bus ModelEvent.ModifyBakingResult)
+        com.space_m.machine.misc.client.DecoStainlessCt.init();
+
+        // R8-B Krieg/Invasion: Renderer, Nuke-Shocks (SkyHooks-Dekorator), Meteore, Kriegsprojektile; Erz-Tooltips
+        com.space_m.war.client.WarClient.init();
+        com.space_m.resources.client.ResourcesClient.init();
+
+        // R8-A Mobs: Renderer
+        com.space_m.entity.mob.client.MobClient.init();
+        com.space_m.bomb.client.BombClient.init(); // R9-B1 Antimaterie-Bombe, Explosions-Renderer, Pilz Typ 2
+
+        // R9-B4: LPW-2-Overlay, Drop-Pod-Teilrenderer, DuoDec-Notenpartikel
+        SpaceMiscClient.init();
+
+        // R9-B: Laythe-Schlick-Toenung (Schlickhoehlen)
+        com.space_m.dim.laythe.client.LaytheClient.init();
+
         ClientLifecycleEvent.CLIENT_SETUP.register(SpaceClient::setup);
     }
 
@@ -58,6 +92,23 @@ public final class SpaceClient {
         com.space_m.lifesupport.LifeSupportClient.setup();
         // R2-C Atmo-Maschinen: BER Kompressor/Emitter
         com.space_m.machine.atmo.client.AtmoClient.setup();
+        // R5-A Raketen: BER VAB, Laufwerk-Itemeigenschaft
+        com.space_m.rocket.client.RocketClient.setup();
+        // R5-C Transporter/Drop-Pods: GUI Rampe, BER Rampe/Kapsel
+        com.space_m.rocket.transport.client.TransportClient.setup();
+        // R5-B Startrampe: GUI + BER
+        com.space_m.rocket.entity.client.RocketEntityClient.setup();
+        // R6-A Stationsports: BER
+        com.space_m.orbit.client.OrbitClient.setup();
+        // R6-B Stationsantrieb/-computer/-launcher: BER + GUIs
+        com.space_m.orbit.propulsion.client.PropulsionClient.setup();
+        // R7-B Chemie/Bergbau/StarDar (Renderer, Screens, Item-Darstellung)
+        com.space_m.machine.chem.client.ChemClient.setup();
+        com.space_m.machine.mining.client.MiningClient.setup();
+        com.space_m.machine.mining.client.DishClient.setup();
+        // R7-A Dyson-System + Sonstiges: BER, GUIs, Item-Renderer, Partikel spinlaunch/flare
+        com.space_m.machine.dyson.client.DysonClient.setup();
+        com.space_m.machine.misc.client.MiscClient.setup();
         SpaceRegistry.LOGGER.info("[space_m] Client setup finished");
     }
 

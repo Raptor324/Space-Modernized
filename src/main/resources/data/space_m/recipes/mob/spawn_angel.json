@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MSM",
+    "SBS",
+    "MSM"
+  ],
+  "key": {
+    "M": {
+      "item": "hbm_m:meteorite_ingot"
+    },
+    "S": {
+      "item": "space_m:divine_shard"
+    },
+    "B": {
+      "item": "hbm_m:egg_balefire_shard"
+    }
+  },
+  "result": {
+    "item": "space_m:spawn_angel"
+  }
+}

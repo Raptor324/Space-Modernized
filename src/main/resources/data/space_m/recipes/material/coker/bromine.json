@@ -1,0 +1,14 @@
+{
+  "type": "hbm_m:coker",
+  "byproduct": {
+    "amount": 500,
+    "fluid": "hbm_m:gas"
+  },
+  "input": {
+    "amount": 1000,
+    "fluid": "space_m:bromine"
+  },
+  "result": {
+    "item": "hbm_m:bromide_powder"
+  }
+}

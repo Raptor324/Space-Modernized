@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "space_m:block/machine_alkylation"
+    },
+    "facing=south": {
+      "model": "space_m:block/machine_alkylation"
+    },
+    "facing=west": {
+      "model": "space_m:block/machine_alkylation"
+    },
+    "facing=east": {
+      "model": "space_m:block/machine_alkylation"
+    }
+  }
+}

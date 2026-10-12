@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "hbm_m:oredict/any/ash"
+    },
+    {
+      "tag": "hbm_m:oredict/dust/red_phosphorus"
+    },
+    {
+      "tag": "hbm_m:oredict/dust/saltpeter"
+    },
+    {
+      "item": "space_m:ammonium_nitrate"
+    }
+  ],
+  "result": {
+    "item": "hbm_m:fertilizer_powder",
+    "count": 4
+  }
+}

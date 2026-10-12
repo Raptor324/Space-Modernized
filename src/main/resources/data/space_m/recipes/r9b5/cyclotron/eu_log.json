@@ -1,0 +1,13 @@
+{
+  "type": "hbm_m:cyclotron",
+  "amat": 0,
+  "input": {
+    "item": "space_m:bf_log"
+  },
+  "result": {
+    "item": "space_m:eu_log"
+  },
+  "target": {
+    "item": "hbm_m:block_euphemium"
+  }
+}

@@ -45,6 +45,10 @@ public final class SpaceItems {
     public static final RegistrySupplier<com.space_m.lifesupport.ItemModHeavyBoots> HEAVY_BOOTS = basic("heavy_boots",
             () -> new com.space_m.lifesupport.ItemModHeavyBoots(new Item.Properties().stacksTo(1)), SpaceCreativeTabs.Tab.CONSUMABLE);
 
+    // R5-C Transporter-Linker (Original transporter_linker: controlTab, setMaxStackSize(1))
+    public static final RegistrySupplier<com.space_m.rocket.transport.ItemTransporterLinker> TRANSPORTER_LINKER = basic("transporter_linker",
+            () -> new com.space_m.rocket.transport.ItemTransporterLinker(new Item.Properties().stacksTo(1)), SpaceCreativeTabs.Tab.CONTROL);
+
     private SpaceItems() {}
 
     public static <T extends Item> RegistrySupplier<T> register(String name, Supplier<T> item, SpaceCreativeTabs.Tab tab) {
@@ -65,6 +69,14 @@ public final class SpaceItems {
     public static void init() {
         // R4-B: Space-Materialien/-Items (eigene Klasse, muss vor ITEMS.register() geladen sein)
         SpaceMaterialItems.init();
+        // R9-B: Space-Watz-Pellets, Curium-RBMK-Staebe, laser_crystal_iron, Schallplatten
+        SpaceNuclearItems.init();
+        // R5-A: Raketenteile, Rakete, Ziel-Laufwerk
+        com.space_m.rocket.SpaceRocketItems.init();
+        // R6-C: Space-Satelliten (Dyson-Relais, Railkanone, Praezisionslaser, Detektor, Strahlscanner)
+        com.space_m.satellite.SpaceSatelliteItems.init();
+        // R8-B: Spawn-Eier Siege-UFO / War-Behemoth (Original EntityMappings.addMob mit Eifarben)
+        com.space_m.war.WarEntities.initItems();
         ITEMS.register();
     }
 }

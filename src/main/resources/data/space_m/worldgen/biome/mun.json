@@ -9,7 +9,16 @@
     "water_color": 4159204,
     "water_fog_color": 329011
   },
-  "spawners": {},
+  "spawners": {
+    "creature": [
+      {
+        "type": "space_m:entity_moon_cow",
+        "weight": 10,
+        "minCount": 4,
+        "maxCount": 4
+      }
+    ]
+  },
   "spawn_costs": {},
   "carvers": {},
   "features": [
@@ -20,6 +29,11 @@
     [],
     [],
     [
+      "space_m:mun/layer_hematite",
+      "space_m:mun/layer_bauxite",
+      "space_m:mun/layer_malachite",
+      "space_m:mun/cave_sulfur",
+      "space_m:mun/layer_conglomerate",
       "space_m:mun/vanilla_ore_iron",
       "space_m:mun/vanilla_ore_gold",
       "space_m:mun/vanilla_ore_redstone",
@@ -51,7 +65,7 @@
       "space_m:mun/cluster_titanium",
       "space_m:mun/cluster_aluminium",
       "space_m:mun/cluster_copper",
-      "space_m:mun/limestone",
+      "space_m:mun/calcium",
       "space_m:mun/keyhole",
       "space_m:mun/ore_lithium",
       "space_m:mun/ore_aluminium_moon",

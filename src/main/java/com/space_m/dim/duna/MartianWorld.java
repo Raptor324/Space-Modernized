@@ -46,6 +46,7 @@ import net.minecraft.world.level.levelgen.Heightmap;
  * Die Basis wird beim ersten Warp gebaut (die 40x42-Struktur ragt ueber den Dekorationsbereich eines Chunks
  * hinaus; das Original setzt die Bloecke direkt in die Welt).
  */
+// Original-Klasse: WorldTypeTeleport
 public final class MartianWorld {
 
     private static final Logger LOGGER = LogUtils.getLogger();

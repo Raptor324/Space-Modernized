@@ -1,0 +1,19 @@
+{
+  "type": "hbm_m:catalytic_reformer",
+  "input": {
+    "amount": 100,
+    "fluid": "space_m:halolight"
+  },
+  "output_a": {
+    "amount": 50,
+    "fluid": "hbm_m:unsaturateds"
+  },
+  "output_b": {
+    "amount": 35,
+    "fluid": "hbm_m:reformgas"
+  },
+  "output_c": {
+    "amount": 10,
+    "fluid": "space_m:hcl"
+  }
+}

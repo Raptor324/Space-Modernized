@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "space_m:block/crop_strawberry_stage1"
+    },
+    "age=1": {
+      "model": "space_m:block/crop_strawberry_stage1"
+    },
+    "age=2": {
+      "model": "space_m:block/crop_strawberry_stage2"
+    },
+    "age=3": {
+      "model": "space_m:block/crop_strawberry_stage2"
+    },
+    "age=4": {
+      "model": "space_m:block/crop_strawberry_stage3"
+    },
+    "age=5": {
+      "model": "space_m:block/crop_strawberry_stage3"
+    },
+    "age=6": {
+      "model": "space_m:block/crop_strawberry_stage4"
+    },
+    "age=7": {
+      "model": "space_m:block/crop_strawberry_stage5"
+    }
+  }
+}

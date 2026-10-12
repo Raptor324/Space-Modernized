@@ -2,7 +2,7 @@
   "type": "minecraft:smelting",
   "category": "misc",
   "ingredient": {
-    "item": "space_m:moon_turf"
+    "item": "hbm_m:moon_turf"
   },
   "result": "minecraft:glass",
   "experience": 0.1,

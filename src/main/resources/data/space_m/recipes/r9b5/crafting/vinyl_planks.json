@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "space_m:vinyl_log"
+    }
+  ],
+  "result": {
+    "item": "space_m:vinyl_planks",
+    "count": 4
+  }
+}

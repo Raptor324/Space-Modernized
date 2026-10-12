@@ -1,0 +1,20 @@
+{
+  "type": "space_m:cryo_distill",
+  "input": "space_m:tektoair",
+  "output1": {
+    "fluid": "space_m:chloromethane",
+    "amount": 55
+  },
+  "output2": {
+    "fluid": "hbm_m:chlorine",
+    "amount": 25
+  },
+  "output3": {
+    "fluid": "hbm_m:gas",
+    "amount": 15
+  },
+  "output4": {
+    "fluid": "space_m:hcl",
+    "amount": 5
+  }
+}

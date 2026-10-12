@@ -1,0 +1,24 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 400,
+  "fluid_inputs": [
+    {
+      "amount": 2000,
+      "fluid": "hbm_m:tritium"
+    }
+  ],
+  "ingredients": [
+    {
+      "count": 16,
+      "tag": "hbm_m:oredict/block/glass"
+    },
+    {
+      "count": 12,
+      "item": "hbm_m:advanced_circuit"
+    }
+  ],
+  "output": {
+    "item": "space_m:orrery"
+  },
+  "power": 100
+}

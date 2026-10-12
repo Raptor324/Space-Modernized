@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "item": "space_m:hard_drive_full",
+      "id": "space_m:hard_drive_full"
+    },
+    "title": {
+      "translate": "advancements.space_m.drive_fail.title"
+    },
+    "description": {
+      "translate": "advancements.space_m.drive_fail.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "granted": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "hbm_m:polymer"
+}

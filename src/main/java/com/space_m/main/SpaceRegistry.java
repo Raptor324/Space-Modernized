@@ -46,8 +46,11 @@ public final class SpaceRegistry {
         com.space_m.dim.SpaceWorldgen.init();
         // R4-B: Feldfruechte + Gummi-Ackerboden (Bloecke vor SpaceBlocks.init), Trankeffekt run
         com.space_m.item.SpaceCrops.init();
+        com.space_m.deco.SpaceDeco.init(); // R9-B2 Deko-/Restbloecke (Staemme, Fleisch, Tor, Erdbeeren ...)
         com.space_m.item.SpaceEffects.init();
         com.space_m.material.SpaceMats.init();
+        com.space_m.entity.mob.SpaceMobs.init(); // R8-A Mobs (Entities/Eier/Fleischbloecke vor den Registern)
+        com.space_m.bomb.SpaceBombs.init(); // R9-B1 Bomben/Einzelbloecke (Bloecke/BE/Menue/Entities vor den Registern)
         SpaceBlocks.init();
         SpaceItems.init();
         SpaceBlockEntities.init();
@@ -69,11 +72,39 @@ public final class SpaceRegistry {
         // R2-C: Atmo-Maschinen (Atmosphaeren-Chemie, Fluid-Trait terraformer)
         com.space_m.machine.atmo.AtmoMachines.init();
 
+        // R7-B: Chemie-/Bergbau-Maschinen (Rezepte, Events)
+        com.space_m.machine.chem.ChemMachines.commonInit();
+        com.space_m.machine.mining.MiningMachines.commonInit();
+        com.space_m.machine.mining.DishMachines.commonInit();
+
         // R2-B: Lebenserhaltung (schwere Stiefel beidseitig, oxy_pinwheel noDualUnload)
         com.space_m.lifesupport.LifeSupportEvents.init();
 
         // Schwerkraft je Himmelskoerper (ModEventHandler.onLivingUpdate/onEntityFall/Orbit-Items)
         com.space_m.gravity.CelestialGravity.register();
+
+        // R5-A: Raketen (Teile-Tabelle an Items binden)
+        com.space_m.rocket.SpaceRocket.init();
+
+        // R5-B: fliegende Rakete (Atmen in der Kapsel, Ausstieg im Flug)
+        com.space_m.rocket.entity.RocketEvents.init();
+
+        // R6-A: Orbit/Raumstationen (Hooks fuer Himmel/Rakete/Laufwerk/Befehl, Orbit-Rand, Stations-Sync)
+        com.space_m.orbit.SpaceOrbit.init();
+        com.space_m.orbit.propulsion.Lpw2Thruster.init(); // R9-B4: HBM-LPW-2 als Stationstriebwerk (Lpw2Hooks, im Mod-Konstruktor)
+
+        // R6-C: Satelliten (koerpergebunden, Registry nach HBM, Raketen-Nutzlast, Client-Sync)
+        com.space_m.satellite.SatelliteEvents.init();
+
+        // R7-A: Raumofen ersetzt Vanilla-Ofen, Respawn nur an atembaren Betten
+        com.space_m.machine.misc.MiscEvents.init();
+
+        // R8-B: Krieg/Invasion/Einschlag (Spawner, Bossleiste, Nuke-Shocks, Thatmo-Bomber) + Planeten-Ressourcen
+        com.space_m.war.WarEvents.init();
+        com.space_m.resources.SpaceResourceRegistry.init();
+
+        // R9-A: Annihilator "space fork"-Eintraege (528-Modus, beim Serverstart)
+        com.space_m.material.SpaceAnnihilator.init();
 
         LifecycleEvent.SETUP.register(SpaceRegistry::commonSetup);
 

@@ -18,8 +18,11 @@ import net.minecraft.world.item.ItemStack;
  */
 public interface StationCommandAccess {
 
-    /** Original {@code ItemVOTVdrive.Destination}: Koerper + Ziel-Chunk (Orbit: Stationsraster). */
-    record Destination(CelestialBody body, int x, int z) {}
+    /**
+     * Original {@code ItemVOTVdrive.Destination}: Koerper + Ziel-Chunk (Orbit: Stationsraster). {@code body} ist im
+     * Orbit null (Original {@code SolarSystem.Body.ORBIT}), {@code dimension} = Original {@code body.getDimensionId()}.
+     */
+    record Destination(@Nullable CelestialBody body, net.minecraft.resources.ResourceKey<net.minecraft.world.level.Level> dimension, int x, int z) {}
 
     /** Original {@code OrbitalStation} (Felder fuer list/fetch). */
     record StationInfo(int dX, int dZ, String name, boolean hasStation) {}

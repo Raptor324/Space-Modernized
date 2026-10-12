@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "QDQ",
+    "SBZ",
+    "QDQ"
+  ],
+  "key": {
+    "Q": {
+      "item": "hbm_m:glass_quartz"
+    },
+    "D": {
+      "tag": "hbm_m:oredict/ingot/dineutronium"
+    },
+    "B": {
+      "item": "hbm_m:egg_balefire"
+    },
+    "S": {
+      "item": "hbm_m:spark_mix_powder"
+    },
+    "Z": {
+      "item": "space_m:powder_zinc"
+    }
+  },
+  "result": {
+    "item": "hbm_m:laser_crystal_dnt"
+  }
+}

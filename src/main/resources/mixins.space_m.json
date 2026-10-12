@@ -5,13 +5,19 @@
   "compatibilityLevel": "JAVA_${java}",
   "refmap": "mixins.space_m.refmap.json",
   "mixins": [
+    "BushBlockHydroponicMixin",
+    "CropBlockHydroponicMixin",
+    "CreeperFleshMixin",
     "DimensionTypeTimeMixin",
     "DunaDayMixin",
     "LevelTimeMixin",
     "LivingEntityAccessor",
     "ServerLevelTimeMixin"
   ],
-  "client": [],
+  "client": [
+    "RocketCameraMixin",
+    "SpaceMusicMixin"
+  ],
   "server": [],
   "injectors": {
     "defaultRequire": 1

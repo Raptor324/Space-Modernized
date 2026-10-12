@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "space_m:item/votv_f",
+    "layer1": "space_m:item/votv.laythe"
+  }
+}

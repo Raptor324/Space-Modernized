@@ -1,0 +1,41 @@
+{
+  "type": "hbm_m:purex",
+  "duration": 60,
+  "power": 10000,
+  "fluid_inputs": [
+    {
+      "amount": 500,
+      "fluid": "hbm_m:kerosene"
+    },
+    {
+      "amount": 250,
+      "fluid": "hbm_m:nitric_acid"
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "amount": 1000,
+      "fluid": "hbm_m:watz"
+    }
+  ],
+  "item_inputs": [
+    {
+      "count": 1,
+      "item": "space_m:watz_pellet_depleted_cf252"
+    }
+  ],
+  "item_outputs": [
+    {
+      "count": 3,
+      "item": "space_m:nugget_cf252"
+    },
+    {
+      "count": 6,
+      "item": "space_m:nugget_cm_mix"
+    },
+    {
+      "count": 2,
+      "item": "hbm_m:nuclear_waste"
+    }
+  ]
+}

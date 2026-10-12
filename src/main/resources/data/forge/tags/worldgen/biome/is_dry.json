@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "space_m:duna",
+    "space_m:duna_lowlands",
+    "space_m:duna_polar",
+    "space_m:duna_hills",
+    "space_m:minmus_basins",
+    "space_m:minmus_hills"
+  ]
+}

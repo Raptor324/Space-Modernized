@@ -1,3 +1,4 @@
+// neo-pendant: Datagen laeuft nur auf Forge; NeoForge nutzt dieselben src/generated-Daten (processResources)
 //? if forge {
 package com.space_m.datagen;
 

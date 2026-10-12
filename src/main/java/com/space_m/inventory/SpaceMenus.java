@@ -21,6 +21,18 @@ public final class SpaceMenus {
 
     // ── Eintraege (je Runde/Agent ein eigener, kommentierter Abschnitt) ─────────────────────────
 
+    // R5-C Transporter-Rampe (Original ContainerTransporterRocket)
+    public static final RegistrySupplier<MenuType<com.space_m.rocket.transport.TransporterRocketMenu>> TRANSPORTER_ROCKET =
+            extended("transporter_rocket", com.space_m.rocket.transport.TransporterRocketMenu::new);
+
+    // R5-A Raketenmontage (Original ContainerMachineRocketAssembly)
+    public static final RegistrySupplier<MenuType<com.space_m.rocket.menu.RocketAssemblyMenu>> ROCKET_ASSEMBLY =
+            extended("rocket_assembly", com.space_m.rocket.menu.RocketAssemblyMenu::new);
+
+    // R5-B Raketen-Startrampe (Original ContainerLaunchPadRocket)
+    public static final RegistrySupplier<MenuType<com.space_m.rocket.pad.ContainerLaunchPadRocket>> LAUNCH_PAD_ROCKET =
+            extended("launch_pad_rocket", com.space_m.rocket.pad.ContainerLaunchPadRocket::new);
+
     private SpaceMenus() {}
 
     public static <T extends AbstractContainerMenu> RegistrySupplier<MenuType<T>> extended(
@@ -29,6 +41,8 @@ public final class SpaceMenus {
     }
 
     public static void init() {
+        com.space_m.orbit.propulsion.PropulsionMenus.init(); // R6-B (Klasse laden)
+        com.space_m.machine.misc.MiscMenus.init(); // R7-A (Klasse laden)
         MENUS.register();
     }
 }

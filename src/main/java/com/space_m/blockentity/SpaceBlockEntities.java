@@ -46,6 +46,22 @@ public final class SpaceBlockEntities {
     public static final RegistrySupplier<BlockEntityType<com.space_m.lifesupport.TileEntityAlgaeFilm>> ALGAE_FILM =
             register("algae_film", com.space_m.lifesupport.TileEntityAlgaeFilm::new, com.space_m.block.SpaceBlocks.ALGAE_FILM);
 
+    // R5-C Transporter/Drop-Pods (Original tileentity_transporter / tileentity_combat_pod)
+    public static final RegistrySupplier<BlockEntityType<com.space_m.rocket.transport.TransporterRocketBlockEntity>> TRANSPORTER_ROCKET =
+            register("transporter_rocket", com.space_m.rocket.transport.TransporterRocketBlockEntity::new, com.space_m.block.SpaceBlocks.TRANSPORTER_ROCKET);
+    public static final RegistrySupplier<BlockEntityType<com.space_m.rocket.transport.CombatDropPodBlockEntity>> COMBAT_DROP_POD =
+            register("combat_drop_pod", com.space_m.rocket.transport.CombatDropPodBlockEntity::new, com.space_m.block.SpaceBlocks.COMBAT_DROP);
+
+    // R5-A Raketenmontage (Original tileentity_rocket_assembly)
+    public static final RegistrySupplier<BlockEntityType<com.space_m.rocket.MachineRocketAssemblyBlockEntity>> ROCKET_ASSEMBLY =
+            register("rocket_assembly", com.space_m.rocket.MachineRocketAssemblyBlockEntity::new, com.space_m.rocket.SpaceRocketBlocks.MACHINE_ROCKET_ASSEMBLY);
+
+    // R5-B Raketen-Startrampe (Original tileentity_launchpad_rocket) + Turmzellen (Kernposition)
+    public static final RegistrySupplier<BlockEntityType<com.space_m.rocket.pad.TileEntityLaunchPadRocket>> LAUNCH_PAD_ROCKET =
+            register("launchpad_rocket", com.space_m.rocket.pad.TileEntityLaunchPadRocket::new, com.space_m.block.SpaceBlocks.LAUNCH_PAD_ROCKET);
+    public static final RegistrySupplier<BlockEntityType<com.space_m.rocket.pad.LaunchPadRocketTowerBlock.TowerBlockEntity>> LAUNCH_PAD_ROCKET_TOWER =
+            register("launch_pad_rocket_tower", com.space_m.rocket.pad.LaunchPadRocketTowerBlock.TowerBlockEntity::new, com.space_m.block.SpaceBlocks.LAUNCH_PAD_ROCKET_TOWER);
+
     private SpaceBlockEntities() {}
 
     /** Kurzform fuer {@code BlockEntityType.Builder.of(factory, blocks).build(null)} (beide Versionen identisch). */
@@ -60,6 +76,9 @@ public final class SpaceBlockEntities {
     }
 
     public static void init() {
+        com.space_m.orbit.propulsion.PropulsionBlockEntities.init(); // R6-B (Klasse laden)
+        com.space_m.machine.dyson.DysonBlockEntities.init(); // R7-A (Klasse laden)
+        com.space_m.machine.misc.MiscBlockEntities.init(); // R7-A (Klasse laden)
         BLOCK_ENTITIES.register();
     }
 }

@@ -1,0 +1,37 @@
+{
+  "type": "hbm_m:plasma_forge",
+  "duration": 1200,
+  "fluid_inputs": [
+    {
+      "amount": 8000,
+      "fluid": "hbm_m:stellar_flux"
+    }
+  ],
+  "ignition_temp": 50000000,
+  "item_inputs": [
+    {
+      "item": "hbm_m:plate_welded_osmiridium",
+      "count": 16
+    },
+    {
+      "item": "hbm_m:plate_welded_cmb",
+      "count": 16
+    },
+    {
+      "item": "hbm_m:plate_cast_star_metal",
+      "count": 16
+    },
+    {
+      "item": "hbm_m:wire_dense_bscco",
+      "count": 64
+    },
+    {
+      "item": "hbm_m:quantum_computer",
+      "count": 4
+    }
+  ],
+  "power": 10000000,
+  "result": {
+    "item": "space_m:dyson_converter_he"
+  }
+}

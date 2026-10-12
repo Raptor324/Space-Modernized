@@ -3,6 +3,14 @@
     {
       "id": "hbm_m:insert_cmb",
       "required": false
+    },
+    {
+      "id": "space_m:insert_cmb",
+      "required": false
+    },
+    {
+      "id": "hbm_m:insert_yharonite",
+      "required": false
     }
   ]
 }

@@ -1,6 +1,5 @@
 package com.space_m.fluid;
 
-import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -295,7 +294,8 @@ public final class SpaceFluids {
     public static void init() {
         FLUIDS.register();
         registerTraits();
-        // Traits/Gefahrenraute/Behaelter: SpaceFluidsSetup (FMLLoadCompleteEvent, nach HBMs Fluid-Bootstrap)
+        // Traits/Gefahrenraute/Behaelter: garantiert nach HBMs Fluid-Vorbelegung (W-R4A-2)
+        HbmFluidApi.afterHbmFluidDefaults(SpaceFluidsSetup::run);
     }
 
     /**
@@ -317,8 +317,12 @@ public final class SpaceFluids {
 
     // ═══════════════════════════════ Common-Setup ═══════════════════════════════
 
+    private static boolean setupDone;
+
     /** Nach HBMs {@code ModFluidTraitsBootstrap} (s. {@link SpaceFluidsSetup}), genau einmal. */
     static synchronized void setup() {
+        if (setupDone) return;
+        setupDone = true;
         for (Def d : DEFS) {
             FluidType type = FluidType.forFluid(d.fluid());
             if (d.temp != null) type.setTemp(d.temp);
@@ -429,33 +433,16 @@ public final class SpaceFluids {
     // ═══════════════════════════════ Behaelter ═══════════════════════════════
 
     /**
-     * Original {@code addContainers(new CD_Canister/CD_Gastank)}. HBM fuehrt die Tabelle in privaten Maps von
-     * {@link FluidContainerDefs} (kein Erweiterungspunkt, Wunsch W-R4A-1 in SPACE_API_wishes.md) - bis dahin per
-     * Reflexion, ohne HBM-Code zu aendern. Muss vor dem ersten {@code FluidContainerRegistry.init()} laufen
-     * (lazy, erst im Spiel/JEI). EARTHAIR-Gasflasche ({@code CD_Gastank(0xC3BEE8, 0xFFFFFF)}) haengt an {@code hbm_m:air}.
+     * Original {@code addContainers(new CD_Canister/CD_Gastank)} ueber die HBM-API (W-R4A-1, {@code HbmFluidApi.addCanister/
+     * addGastank}). Laeuft im Fluid-Setup, also vor dem ersten (lazy) {@code FluidContainerRegistry.init()}.
+     * EARTHAIR-Gasflasche ({@code CD_Gastank(0xC3BEE8, 0xFFFFFF)}) haengt an {@code hbm_m:air}.
      */
     private static void registerContainerDefs() {
-        Map<String, FluidContainerDefs.CDCanister> canisters = defsMap("CANISTERS");
-        Map<String, FluidContainerDefs.CDGastank> gastanks = defsMap("GASTANKS");
-        if (canisters == null || gastanks == null) return;
         for (Def d : DEFS) {
-            if (d.canister >= 0) canisters.putIfAbsent(d.name, new FluidContainerDefs.CDCanister(d.canister));
-            if (d.gasBottle >= 0) gastanks.putIfAbsent(d.name, new FluidContainerDefs.CDGastank(d.gasBottle, d.gasLabel));
+            if (d.canister >= 0) HbmFluidApi.addCanister(d.fluid(), d.canister);
+            if (d.gasBottle >= 0) HbmFluidApi.addGastank(d.fluid(), d.gasBottle, d.gasLabel);
         }
-        gastanks.putIfAbsent("air", new FluidContainerDefs.CDGastank(0xC3BEE8, 0xFFFFFF)); // EARTHAIR
-    }
-
-    @SuppressWarnings("unchecked")
-    @Nullable
-    private static <T> Map<String, T> defsMap(String field) {
-        try {
-            Field f = FluidContainerDefs.class.getDeclaredField(field);
-            f.setAccessible(true);
-            return (Map<String, T>) f.get(null);
-        } catch (ReflectiveOperationException | RuntimeException ex) {
-            SpaceRegistry.LOGGER.warn("[space_m] FluidContainerDefs.{} nicht erreichbar - keine Space-Kanister/Gasflaschen: {}", field, ex.toString());
-            return null;
-        }
+        FluidContainerDefs.registerGastank("air", 0xC3BEE8, 0xFFFFFF); // EARTHAIR
     }
 
     /**

@@ -1,0 +1,37 @@
+{
+  "type": "space_m:vacuum_circuit",
+  "wafer": [
+    {
+      "ingredient": {
+        "item": "space_m:gaschip"
+      },
+      "count": 48
+    },
+    {
+      "ingredient": {
+        "item": "space_m:hfchip"
+      },
+      "count": 16
+    }
+  ],
+  "pcb": [
+    {
+      "ingredient": {
+        "item": "hbm_m:advanced_circuit"
+      },
+      "count": 8
+    },
+    {
+      "ingredient": {
+        "item": "space_m:capacitor_lanthanium"
+      },
+      "count": 64
+    }
+  ],
+  "output": {
+    "item": "space_m:processt3",
+    "count": 1
+  },
+  "duration": 800,
+  "consumption": 25000
+}

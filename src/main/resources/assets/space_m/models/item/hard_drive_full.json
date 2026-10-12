@@ -1,0 +1,75 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "space_m:item/votv_f",
+    "layer1": "space_m:item/votv.orbit"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "space_m:body": 0
+      },
+      "model": "space_m:item/hard_drive_full_orbit"
+    },
+    {
+      "predicate": {
+        "space_m:body": 1
+      },
+      "model": "space_m:item/hard_drive_full_kerbin"
+    },
+    {
+      "predicate": {
+        "space_m:body": 2
+      },
+      "model": "space_m:item/hard_drive_full_mun"
+    },
+    {
+      "predicate": {
+        "space_m:body": 3
+      },
+      "model": "space_m:item/hard_drive_full_minmus"
+    },
+    {
+      "predicate": {
+        "space_m:body": 4
+      },
+      "model": "space_m:item/hard_drive_full_duna"
+    },
+    {
+      "predicate": {
+        "space_m:body": 5
+      },
+      "model": "space_m:item/hard_drive_full_moho"
+    },
+    {
+      "predicate": {
+        "space_m:body": 6
+      },
+      "model": "space_m:item/hard_drive_full_dres"
+    },
+    {
+      "predicate": {
+        "space_m:body": 7
+      },
+      "model": "space_m:item/hard_drive_full_eve"
+    },
+    {
+      "predicate": {
+        "space_m:body": 8
+      },
+      "model": "space_m:item/hard_drive_full_ike"
+    },
+    {
+      "predicate": {
+        "space_m:body": 9
+      },
+      "model": "space_m:item/hard_drive_full_laythe"
+    },
+    {
+      "predicate": {
+        "space_m:body": 10
+      },
+      "model": "space_m:item/hard_drive_full_tekto"
+    }
+  ]
+}

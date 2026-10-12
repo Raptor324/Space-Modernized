@@ -26,6 +26,19 @@ public final class SpaceEntities {
             () -> EntityType.Builder.<com.space_m.atmosphere.EntityDepress>of(com.space_m.atmosphere.EntityDepress::new,
                     net.minecraft.world.entity.MobCategory.MISC).sized(0.6F, 1.8F).fireImmune().clientTrackingRange(16));
 
+    // R5-C Drop-Pod (Original EntityMappings "entity_combat_pod", Tracking 1000 -> 63 Chunks; EntityThrowable 0,25 x 0,25)
+    public static final RegistrySupplier<EntityType<com.space_m.rocket.transport.EntityCombatDropPod>> COMBAT_POD = register("entity_combat_pod",
+            () -> EntityType.Builder.<com.space_m.rocket.transport.EntityCombatDropPod>of(com.space_m.rocket.transport.EntityCombatDropPod::new,
+                    net.minecraft.world.entity.MobCategory.MISC).sized(0.25F, 0.25F).fireImmune().clientTrackingRange(63).updateInterval(1));
+
+    // R5-B Rakete (Original EntityMappings "entity_rideable_rocket"/"_dummy", Tracking 1000 -> 63 Chunks; setSize(2, 8) bzw. (4, 2.5))
+    public static final RegistrySupplier<EntityType<com.space_m.rocket.entity.EntityRideableRocket>> ENTITY_RIDEABLE_ROCKET = register("entity_rideable_rocket",
+            () -> EntityType.Builder.<com.space_m.rocket.entity.EntityRideableRocket>of(com.space_m.rocket.entity.EntityRideableRocket::new,
+                    net.minecraft.world.entity.MobCategory.MISC).sized(2F, 8F).fireImmune().clientTrackingRange(63).updateInterval(1));
+    public static final RegistrySupplier<EntityType<com.space_m.rocket.entity.EntityRideableRocket.EntityRideableRocketDummy>> ENTITY_RIDEABLE_ROCKET_DUMMY = register("entity_rideable_rocket_dummy",
+            () -> EntityType.Builder.<com.space_m.rocket.entity.EntityRideableRocket.EntityRideableRocketDummy>of(com.space_m.rocket.entity.EntityRideableRocket.EntityRideableRocketDummy::new,
+                    net.minecraft.world.entity.MobCategory.MISC).sized(4F, 2.5F).fireImmune().noSave().clientTrackingRange(63).updateInterval(1));
+
     private SpaceEntities() {}
 
     /** {@code builder.build(id)} - Name wie in HBM-Modernized ({@code ModEntities}). */
@@ -41,6 +54,8 @@ public final class SpaceEntities {
     }
 
     public static void init() {
+        // R8-B Krieg/Invasion: Siege-UFO, War-Behemoth, Carpet-Jet + Bomblet (eigene Klasse, vor ENTITIES.register())
+        com.space_m.war.WarEntities.init();
         ENTITIES.register();
     }
 }

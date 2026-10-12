@@ -97,7 +97,7 @@ public final class CommandStations {
         StationCommandAccess.Destination destination = getStationDestination(source, player.getMainHandItem());
         if (destination == null) return 0;
 
-        ResourceKey<Level> dimension = destination.body().dimension;
+        ResourceKey<Level> dimension = destination.dimension();
         boolean orbit = SpaceDimensions.isOrbit(dimension);
 
         int x = destination.x();

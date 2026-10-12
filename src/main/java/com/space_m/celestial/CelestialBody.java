@@ -48,6 +48,7 @@ import net.minecraft.world.level.levelgen.Heightmap;
  *   <li>{@code Shader} (nur Client) -> {@link #shaderLocation}/{@link #shaderScale}; den Shader baut der Himmel.</li>
  * </ul>
  */
+// Original-Klasse: FT_Gaseous (release/capture -> emitGas/consumeGas, Trait = HBM FluidTraitSimple.FT_Gaseous)
 public class CelestialBody {
 
     /*

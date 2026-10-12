@@ -1,0 +1,23 @@
+{
+  "type": "hbm_m:vacuum_distill",
+  "heavy": {
+    "amount": 40,
+    "fluid": "space_m:halolight"
+  },
+  "input": {
+    "amount": 100,
+    "fluid": "space_m:tcrude"
+  },
+  "light": {
+    "amount": 20,
+    "fluid": "space_m:hcl"
+  },
+  "reformate": {
+    "amount": 25,
+    "fluid": "space_m:chloromethane"
+  },
+  "sour": {
+    "amount": 15,
+    "fluid": "space_m:hgas"
+  }
+}

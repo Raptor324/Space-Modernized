@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "space_m:block/machine_cryo_distill"
+    },
+    "facing=south": {
+      "model": "space_m:block/machine_cryo_distill"
+    },
+    "facing=west": {
+      "model": "space_m:block/machine_cryo_distill"
+    },
+    "facing=east": {
+      "model": "space_m:block/machine_cryo_distill"
+    }
+  }
+}

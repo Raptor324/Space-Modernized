@@ -1,0 +1,116 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 600,
+  "hbm_variants": [
+    {
+      "flags": [
+        "528",
+        "expensive"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 600,
+        "ingredients": [
+          {
+            "item": "hbm_m:item_expensive_heavy_frame",
+            "count": 2
+          },
+          {
+            "tag": "hbm_m:oredict/plate_sextuple/stainless_steel",
+            "count": 4
+          },
+          {
+            "tag": "hbm_m:oredict/ingot/niobium",
+            "count": 4
+          }
+        ],
+        "output": {
+          "item": "space_m:machine_cryo_distill"
+        },
+        "power": 100,
+        "blueprint_pool": "528.stainless"
+      }
+    },
+    {
+      "flags": [
+        "528"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 600,
+        "ingredients": [
+          {
+            "tag": "hbm_m:oredict/plate_triple/steel",
+            "count": 2
+          },
+          {
+            "tag": "hbm_m:oredict/plate/stainless_steel",
+            "count": 12
+          },
+          {
+            "tag": "hbm_m:oredict/ingot/any_plastic",
+            "count": 4
+          },
+          {
+            "tag": "hbm_m:oredict/ingot/niobium",
+            "count": 4
+          }
+        ],
+        "output": {
+          "item": "space_m:machine_cryo_distill"
+        },
+        "power": 100,
+        "blueprint_pool": "528.stainless"
+      }
+    },
+    {
+      "flags": [
+        "expensive"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 600,
+        "ingredients": [
+          {
+            "item": "hbm_m:item_expensive_heavy_frame",
+            "count": 2
+          },
+          {
+            "tag": "hbm_m:oredict/plate_sextuple/stainless_steel",
+            "count": 4
+          },
+          {
+            "tag": "hbm_m:oredict/ingot/niobium",
+            "count": 4
+          }
+        ],
+        "output": {
+          "item": "space_m:machine_cryo_distill"
+        },
+        "power": 100
+      }
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "hbm_m:oredict/plate_triple/steel",
+      "count": 2
+    },
+    {
+      "tag": "hbm_m:oredict/plate/stainless_steel",
+      "count": 12
+    },
+    {
+      "tag": "hbm_m:oredict/ingot/any_plastic",
+      "count": 4
+    },
+    {
+      "tag": "hbm_m:oredict/ingot/niobium",
+      "count": 4
+    }
+  ],
+  "output": {
+    "item": "space_m:machine_cryo_distill"
+  },
+  "power": 100
+}

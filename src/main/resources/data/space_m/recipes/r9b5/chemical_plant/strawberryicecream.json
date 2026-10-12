@@ -1,0 +1,32 @@
+{
+  "type": "hbm_m:chemical_plant",
+  "duration": 150,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "fluid": "space_m:cream"
+    }
+  ],
+  "fluid_outputs": [],
+  "item_inputs": [
+    {
+      "count": 2,
+      "tag": "hbm_m:oredict/food_butter"
+    },
+    {
+      "count": 1,
+      "item": "minecraft:packed_ice"
+    },
+    {
+      "count": 4,
+      "item": "hbm_m:strawberry"
+    }
+  ],
+  "item_outputs": [
+    {
+      "count": 4,
+      "item": "space_m:s_cream"
+    }
+  ],
+  "power": 100
+}

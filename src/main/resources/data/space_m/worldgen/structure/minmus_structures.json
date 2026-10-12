@@ -1,0 +1,11 @@
+{
+  "type": "hbm_m:ntm",
+  "dimension": 413021,
+  "biomes": [
+    "space_m:minmus_basins",
+    "space_m:minmus_hills"
+  ],
+  "spawn_overrides": {},
+  "step": "surface_structures",
+  "terrain_adaptation": "none"
+}

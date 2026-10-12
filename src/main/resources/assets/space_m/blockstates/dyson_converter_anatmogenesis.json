@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "space_m:block/dyson_converter_anatmogenesis"
+    },
+    "facing=south": {
+      "model": "space_m:block/dyson_converter_anatmogenesis"
+    },
+    "facing=west": {
+      "model": "space_m:block/dyson_converter_anatmogenesis"
+    },
+    "facing=east": {
+      "model": "space_m:block/dyson_converter_anatmogenesis"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 1200,
+  "power": 25000,
+  "ingredients": [
+    {
+      "tag": "hbm_m:oredict/plate_triple/gold",
+      "count": 16
+    },
+    {
+      "item": "hbm_m:photo_panel",
+      "count": 64
+    },
+    {
+      "tag": "hbm_m:oredict/wire_dense/bscco",
+      "count": 16
+    },
+    {
+      "item": "hbm_m:bismoid_circuit",
+      "count": 24
+    },
+    {
+      "item": "hbm_m:part_generic_lde",
+      "count": 16
+    },
+    {
+      "item": "hbm_m:controller_advanced",
+      "count": 1
+    }
+  ],
+  "output": {
+    "item": "space_m:sat_detector"
+  }
+}

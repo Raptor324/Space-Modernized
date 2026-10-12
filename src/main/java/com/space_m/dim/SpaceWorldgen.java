@@ -65,6 +65,7 @@ public final class SpaceWorldgen {
 
     /** Einmal aus {@code SpaceRegistry.init()} (vor {@code SpaceBlocks.init()}: meldet auch die Koerper-Bloecke an). */
     public static void init() {
+        SpaceStructures.init(); // meteor_dungeon aller Koerper (vor den Koerper-Strukturen) + Ziegelofen
         // Koerper (Bloecke + Generator-Fabriken). Neue Koerper (R3) hier je eine Zeile.
         WorldProviderMoon.init();
         com.space_m.dim.eve.WorldProviderEve.init(); // R3-3

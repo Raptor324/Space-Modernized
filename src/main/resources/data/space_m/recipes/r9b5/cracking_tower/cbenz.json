@@ -1,0 +1,15 @@
+{
+  "type": "hbm_m:cracking_tower",
+  "input": {
+    "amount": 100,
+    "fluid": "space_m:cbenz"
+  },
+  "output_a": {
+    "amount": 50,
+    "fluid": "hbm_m:aromatics"
+  },
+  "output_b": {
+    "amount": 30,
+    "fluid": "hbm_m:chlorine"
+  }
+}

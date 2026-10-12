@@ -1,0 +1,20 @@
+{
+  "type": "space_m:cryo_distill",
+  "input": "space_m:dunaair",
+  "output1": {
+    "fluid": "hbm_m:carbondioxide",
+    "amount": 70
+  },
+  "output2": {
+    "fluid": "space_m:nitrogen",
+    "amount": 15
+  },
+  "output3": {
+    "fluid": "space_m:argon",
+    "amount": 10
+  },
+  "output4": {
+    "fluid": "hbm_m:oxygen",
+    "amount": 5
+  }
+}

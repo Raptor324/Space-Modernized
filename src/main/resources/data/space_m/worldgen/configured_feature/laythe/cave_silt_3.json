@@ -1,0 +1,21 @@
+{
+  "type": "space_m:ore_cave",
+  "config": {
+    "ore": {
+      "Name": "space_m:laythe_silt",
+      "Properties": {
+        "tint": "3"
+      }
+    },
+    "ore_name": "hbm:laythe_silt",
+    "ore_meta": 3,
+    "target": {
+      "Name": "space_m:laythe_silt"
+    },
+    "threshold": 0.2,
+    "range_mult": 60,
+    "y_level": 58,
+    "max_range": 14,
+    "ignore_water": true
+  }
+}

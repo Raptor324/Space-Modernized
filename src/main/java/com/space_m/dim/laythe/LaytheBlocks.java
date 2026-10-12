@@ -95,7 +95,8 @@ public final class LaytheBlocks {
     public static final RegistrySupplier<Block> ORE_ASBESTOS = PlanetOres.ore("ore_asbestos", BODY,
             p -> new com.hbm_m.block.gas.OutgasBlock(p, () -> com.hbm_m.block.ModBlocks.GAS_ASBESTOS.get(), true, true, false, false, true), 5.0F, 15.0F);
     /** ChunkProviderLaythe: Oelblasen {@code ore_oil} (BlockOreFluid OIL, Laythe = entschwefeltes Oel), 5.0/10.0. */
-    public static final RegistrySupplier<Block> ORE_OIL = PlanetOres.ore("ore_oil", BODY, 5.0F, 10.0F);
+    public static final RegistrySupplier<Block> ORE_OIL = PlanetOres.ore("ore_oil", BODY,
+            p -> new com.space_m.resources.BlockOreFluid(p, () -> LaytheBlocks.ORE_OIL_EMPTY.get(), com.hbm_m.api.space.SpaceResources.ReserveType.OIL, com.space_m.celestial.SolarSystem.Body.LAYTHE), 5.0F, 10.0F) /* R8-B: BlockOreFluid */;
     public static final RegistrySupplier<Block> ORE_OIL_EMPTY = PlanetOres.ore("ore_oil_empty", BODY, 5.0F, 10.0F);
 
     // ── Items ──

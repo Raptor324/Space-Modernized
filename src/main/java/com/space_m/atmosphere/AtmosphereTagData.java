@@ -32,7 +32,8 @@ public final class AtmosphereTagData {
 			"hbm_m:glyphid_behemoth", "hbm_m:glyphid_brenda", "hbm_m:glyphid_bombardier", "hbm_m:glyphid_blaster",
 			"hbm_m:glyphid_scout", "hbm_m:glyphid_nuclear", "hbm_m:glyphid_digger");
 
-	public static final List<String> CORROSION_PROTECTION_OPTIONAL = List.of("hbm_m:insert_cmb", "space_m:insert_cmb");
+	// R9-A: Original ModItems insert_yharonite (9999, 0.01, 1, 1, 1).withCorrosionProtection() - in HBM portiert
+	public static final List<String> CORROSION_PROTECTION_OPTIONAL = List.of("hbm_m:insert_cmb", "space_m:insert_cmb", "hbm_m:insert_yharonite");
 
 	private static List<String> sets(String... names) {
 		List<String> ids = new ArrayList<>();

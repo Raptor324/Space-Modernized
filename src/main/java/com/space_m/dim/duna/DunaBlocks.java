@@ -42,6 +42,7 @@ public final class DunaBlocks {
     public static final RegistrySupplier<Block> DUNA_COBBLE = PlanetOres.pickaxe(SpaceBlocks.registerWithItem("duna_cobble",
             () -> new Block(PlanetOres.rock(2.0F, 10.0F)), SpaceCreativeTabs.Tab.BLOCKS));
 
+    // Original-Klasse: BlockGenericDrop (Beute ueber Loot-Tabelle duna_rock)
     /** {@code new BlockGenericDrop(Material.rock, duna_cobble).setHardness(1.5F).setResistance(10.0F)} - Beute {@code duna_cobble}. */
     public static final RegistrySupplier<Block> DUNA_ROCK = PlanetOres.pickaxe(SpaceBlocks.registerWithItem("duna_rock",
             () -> new Block(PlanetOres.rock(1.5F, 10.0F)), SpaceCreativeTabs.Tab.BLOCKS));
@@ -69,6 +70,7 @@ public final class DunaBlocks {
     public static final RegistrySupplier<Block> ORE_DIAMOND = PlanetOres.ore("ore_diamond", BODY, 3.0F, 5.0F);
 
     // ── WorldGeneratorCelestial.generateNTMOres (+ WorldGeneratorDuna: Eisen/Zink nutzen dieselben Bloecke) ──
+    // Original-Klasse: BlockOreOutgas (= HBM com.hbm_m.block.gas.OutgasBlock, Koerper-Varianten ueber PlanetOres)
     /** {@code BlockOreOutgas(rock, true, 5, true)}: gibt Radon ab (HBM {@code OutgasBlock}). */
     public static final RegistrySupplier<Block> ORE_URANIUM = PlanetOres.ore("ore_uranium", BODY,
             p -> new com.hbm_m.block.gas.OutgasBlock(p, () -> com.hbm_m.block.ModBlocks.GAS_RADON.get(), true, true), 5.0F, 10.0F);
@@ -93,7 +95,8 @@ public final class DunaBlocks {
     public static final RegistrySupplier<Block> CLUSTER_COPPER = PlanetOres.ore("cluster_copper", BODY, 5.0F, 15.0F);
 
     // ── ChunkProviderDuna: Oel-Blasen (BlockOreFluid OIL, leer -> ore_oil_empty), BlockOre.addValidBody(ore_oil, DUNA) ──
-    public static final RegistrySupplier<Block> ORE_OIL = PlanetOres.ore("ore_oil", BODY, 5.0F, 10.0F);
+    public static final RegistrySupplier<Block> ORE_OIL = PlanetOres.ore("ore_oil", BODY,
+            p -> new com.space_m.resources.BlockOreFluid(p, () -> DunaBlocks.ORE_OIL_EMPTY.get(), com.hbm_m.api.space.SpaceResources.ReserveType.OIL, com.space_m.celestial.SolarSystem.Body.DUNA), 5.0F, 10.0F) /* R8-B: BlockOreFluid */;
     public static final RegistrySupplier<Block> ORE_OIL_EMPTY = PlanetOres.ore("ore_oil_empty", BODY, 5.0F, 10.0F);
 
     private static <T extends Block> RegistrySupplier<T> shovel(RegistrySupplier<T> block) {

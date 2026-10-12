@@ -1,0 +1,148 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 400,
+  "hbm_variants": [
+    {
+      "flags": [
+        "528",
+        "expensive"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 400,
+        "ingredients": [
+          {
+            "item": "space_m:item_expensive_stainless_beam",
+            "count": 8
+          },
+          {
+            "item": "hbm_m:motor",
+            "count": 4
+          },
+          {
+            "tag": "hbm_m:oredict/block/glass_colorless",
+            "count": 8
+          },
+          {
+            "tag": "hbm_m:oredict/ingot/any_plastic",
+            "count": 8
+          },
+          {
+            "item": "hbm_m:advanced_circuit",
+            "count": 4
+          }
+        ],
+        "output": {
+          "item": "space_m:orbital_station_launcher"
+        },
+        "power": 100,
+        "blueprint_pool": "528.stainless"
+      }
+    },
+    {
+      "flags": [
+        "528"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 400,
+        "ingredients": [
+          {
+            "tag": "hbm_m:oredict/plate_sextuple/titanium",
+            "count": 6
+          },
+          {
+            "item": "hbm_m:motor",
+            "count": 4
+          },
+          {
+            "tag": "hbm_m:oredict/block/glass_colorless",
+            "count": 8
+          },
+          {
+            "tag": "hbm_m:oredict/ingot/any_plastic",
+            "count": 8
+          },
+          {
+            "item": "hbm_m:advanced_circuit",
+            "count": 2
+          },
+          {
+            "tag": "hbm_m:oredict/plate/stainless_steel",
+            "count": 4
+          }
+        ],
+        "output": {
+          "item": "space_m:orbital_station_launcher"
+        },
+        "power": 100,
+        "blueprint_pool": "528.stainless"
+      }
+    },
+    {
+      "flags": [
+        "expensive"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 400,
+        "ingredients": [
+          {
+            "item": "space_m:item_expensive_stainless_beam",
+            "count": 8
+          },
+          {
+            "item": "hbm_m:motor",
+            "count": 4
+          },
+          {
+            "tag": "hbm_m:oredict/block/glass_colorless",
+            "count": 8
+          },
+          {
+            "tag": "hbm_m:oredict/ingot/any_plastic",
+            "count": 8
+          },
+          {
+            "item": "hbm_m:advanced_circuit",
+            "count": 4
+          }
+        ],
+        "output": {
+          "item": "space_m:orbital_station_launcher"
+        },
+        "power": 100
+      }
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "hbm_m:oredict/plate_sextuple/titanium",
+      "count": 6
+    },
+    {
+      "item": "hbm_m:motor",
+      "count": 4
+    },
+    {
+      "tag": "hbm_m:oredict/block/glass_colorless",
+      "count": 8
+    },
+    {
+      "tag": "hbm_m:oredict/ingot/any_plastic",
+      "count": 8
+    },
+    {
+      "item": "hbm_m:advanced_circuit",
+      "count": 2
+    },
+    {
+      "tag": "hbm_m:oredict/plate/stainless_steel",
+      "count": 4
+    }
+  ],
+  "output": {
+    "item": "space_m:orbital_station_launcher"
+  },
+  "power": 100
+}

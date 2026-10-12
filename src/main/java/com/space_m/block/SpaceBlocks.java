@@ -80,6 +80,32 @@ public final class SpaceBlocks {
                     .sound(net.minecraft.world.level.block.SoundType.METAL).noOcclusion()),
             SpaceCreativeTabs.Tab.MACHINE));
 
+    // R5-C Transporter/Drop-Pods (Original ModBlocks: transporter_rocket Material.iron, setHardness(1) -> Widerstand 1*5*3/5 = 3,
+    // machineTab; combat_drop Material.iron, setHardness(5), setResistance(10) -> 10*3/5 = 6, missileTab, Drop 16 Stahlbarren)
+    public static final RegistrySupplier<com.space_m.rocket.transport.BlockTransporterRocket> TRANSPORTER_ROCKET = dropsSelf(registerWithItem("transporter_rocket",
+            () -> new com.space_m.rocket.transport.BlockTransporterRocket(net.minecraft.world.level.block.state.BlockBehaviour.Properties.of()
+                    .mapColor(net.minecraft.world.level.material.MapColor.METAL).strength(1.0F, 3.0F)
+                    .sound(net.minecraft.world.level.block.SoundType.STONE).requiresCorrectToolForDrops().noOcclusion()
+                    .isSuffocating((s, w, p) -> false)),
+            SpaceCreativeTabs.Tab.MACHINE, b -> new com.hbm_m.multiblock.MultiblockBlockItem(b, new Item.Properties())));
+    public static final RegistrySupplier<com.space_m.rocket.transport.CombatDropPodBlock> COMBAT_DROP = registerWithItem("combat_drop",
+            () -> new com.space_m.rocket.transport.CombatDropPodBlock(net.minecraft.world.level.block.state.BlockBehaviour.Properties.of()
+                    .mapColor(net.minecraft.world.level.material.MapColor.METAL).strength(5.0F, 6.0F)
+                    .sound(net.minecraft.world.level.block.SoundType.STONE).requiresCorrectToolForDrops().noOcclusion()),
+            SpaceCreativeTabs.Tab.MISSILE);
+
+    // R5-B Raketen-Startrampe (Original ModBlocks launch_pad_rocket: Material.iron, setHardness(5), setResistance(10) -> 10*3/5 = 6,
+    // missileTab; Turm-/Plattformzellen als eigener unsichtbarer Block ohne Item, s. LaunchPadRocketTowerBlock)
+    public static final RegistrySupplier<com.space_m.rocket.pad.LaunchPadRocket> LAUNCH_PAD_ROCKET = dropsSelf(registerWithItem("launch_pad_rocket",
+            () -> new com.space_m.rocket.pad.LaunchPadRocket(net.minecraft.world.level.block.state.BlockBehaviour.Properties.of()
+                    .mapColor(net.minecraft.world.level.material.MapColor.METAL).strength(5.0F, 6.0F)
+                    .sound(net.minecraft.world.level.block.SoundType.METAL).noOcclusion()),
+            SpaceCreativeTabs.Tab.MISSILE, b -> new com.hbm_m.multiblock.MultiblockBlockItem(b, new Item.Properties())));
+    public static final RegistrySupplier<com.space_m.rocket.pad.LaunchPadRocketTowerBlock> LAUNCH_PAD_ROCKET_TOWER = register("launch_pad_rocket_tower",
+            () -> new com.space_m.rocket.pad.LaunchPadRocketTowerBlock(net.minecraft.world.level.block.state.BlockBehaviour.Properties.of()
+                    .mapColor(net.minecraft.world.level.material.MapColor.METAL).strength(5.0F, 6.0F)
+                    .sound(net.minecraft.world.level.block.SoundType.METAL).noOcclusion().noLootTable()));
+
     private SpaceBlocks() {}
 
     public static <T extends Block> RegistrySupplier<T> register(String name, Supplier<T> block) {
@@ -117,7 +143,26 @@ public final class SpaceBlocks {
 
     public static List<RegistrySupplier<Block>> dropSelf() { return Collections.unmodifiableList(DROP_SELF); }
 
+    private static final List<RegistrySupplier<Block>> DROP_PERSISTENT = new java.util.ArrayList<>();
+
+    /** R7-B: Original {@code IPersistentNBT} - Drop mit Tankinhalt (Loot-Funktion {@code hbm_m:persistent_nbt}). */
+    @SuppressWarnings("unchecked")
+    public static <T extends Block> RegistrySupplier<T> dropsPersistent(RegistrySupplier<T> reg) {
+        DROP_PERSISTENT.add((RegistrySupplier<Block>) (RegistrySupplier<?>) reg);
+        return reg;
+    }
+
+    public static List<RegistrySupplier<Block>> dropPersistent() { return Collections.unmodifiableList(DROP_PERSISTENT); }
+
     public static void init() {
+        com.space_m.rocket.SpaceRocketBlocks.init(); // R5-A Raketenmontage (Klasse laden)
+        com.space_m.orbit.OrbitBlocks.init(); // R6-A Stationsports (Bloecke + BE, Klasse laden)
+        com.space_m.orbit.propulsion.PropulsionBlocks.init(); // R6-B Stationsantrieb/-computer/-launcher (Klasse laden)
+        com.space_m.machine.chem.ChemMachines.init(); // R7-B Chemie (Bloecke + BE + Menues, Klasse laden)
+        com.space_m.machine.mining.MiningMachines.init(); // R7-B Bergbau (Bloecke + BE + Menues, Klasse laden)
+        com.space_m.machine.mining.DishMachines.init(); // R7-B StarDar/Dish (Bloecke + BE + Menues, Klasse laden)
+        com.space_m.machine.dyson.DysonBlocks.init(); // R7-A Dyson-System (Klasse laden)
+        com.space_m.machine.misc.MiscBlocks.init(); // R7-A Solar/Stardar/Radiator/Raumofen/War-Controller/Deko (Klasse laden)
         BLOCKS.register();
     }
 }

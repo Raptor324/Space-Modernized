@@ -1,0 +1,26 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 400,
+  "power": 100,
+  "ingredients": [
+    {
+      "item": "hbm_m:seg_20",
+      "count": 2
+    },
+    {
+      "tag": "hbm_m:oredict/shell/titanium",
+      "count": 12
+    },
+    {
+      "tag": "hbm_m:oredict/plate_sextuple/aluminum",
+      "count": 16
+    },
+    {
+      "item": "hbm_m:polymer_ingot",
+      "count": 8
+    }
+  ],
+  "output": {
+    "item": "space_m:mp_fuselage_20_hydrazine"
+  }
+}

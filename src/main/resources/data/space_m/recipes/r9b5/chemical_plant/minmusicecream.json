@@ -1,0 +1,32 @@
+{
+  "type": "hbm_m:chemical_plant",
+  "duration": 150,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "fluid": "space_m:cream"
+    }
+  ],
+  "fluid_outputs": [],
+  "item_inputs": [
+    {
+      "count": 4,
+      "tag": "hbm_m:oredict/food_butter"
+    },
+    {
+      "count": 2,
+      "item": "space_m:minmus_smooth"
+    },
+    {
+      "count": 2,
+      "item": "space_m:minmus_stone"
+    }
+  ],
+  "item_outputs": [
+    {
+      "count": 4,
+      "item": "space_m:min_cream"
+    }
+  ],
+  "power": 100
+}

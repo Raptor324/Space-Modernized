@@ -27,10 +27,11 @@ import net.minecraft.world.level.ItemLike;
  * {@code makeSmeltable/makeNonSmeltable/makeAdditive}). IDs, Namen (= Ore-Dictionary-Namen), Farben und Autogen-Formen
  * 1:1; nur mit installiertem Addon vorhanden.
  *
- * <p>Schmelzwerte der Addon-Gegenstaende ({@code Mats.getMaterialsFromItem}): HBM loest Formen-Items nur unter
- * {@code hbm_m:} bzw. ueber {@code forge:}-Tags auf; deshalb traegt das Addon seine Formen (Barren 72, Nugget 8 ...)
- * und die {@code MatDistribution}-Zusaetze des Originals direkt in {@link Mats#materialEntries} ein. Giessformen
- * ({@code Mats.getItemForShape}) koennen Addon-Items noch nicht ausgeben -> Wunsch W-R4b-1.
+ * <p>Formen-Items (Original: Ore-Dictionary {@code <praefix><Material>}) meldet das Addon ueber die HBM-API
+ * {@link Mats#registerShapeItem} an (W-R4b-1): {@code Mats.getShape} erkennt sie direkt (Schmelzwert Barren 72, Nugget 8
+ * ...), Giessformen/Drehrohrofen ({@code Mats.getItemForShape}) geben sie aus. Nur die {@code MatDistribution}-Zusaetze
+ * des Originals (keine Formen) stehen in {@link Mats#materialEntries}. Die {@code forge:}/{@code c:}-Formen-Tags
+ * ({@code SpaceItemTags}) zaehlen dadurch nicht doppelt.
  *
  * <p>Nicht hier: zusaetzliche {@code FRAGMENT}-Autogen-Formen bestehender Materialien (Bedrock-Erz-Fragmente, R8).
  */
@@ -72,7 +73,7 @@ public final class SpaceMats {
         if (entriesDone) return;
         entriesDone = true;
 
-        // Formen (nur schmelzbar/Zusatz: Original getMaterialsFromItem prueft SMELTABLE/ADDITIVE)
+        // Formen (Mats.registerShapeItem; Schmelzwert nur bei SMELTABLE/ADDITIVE wie im Original getMaterialsFromItem)
         shape(SpaceMaterialItems.INGOT_NICKEL, MAT_NICKEL, INGOT);
         shape(SpaceMaterialItems.NUGGET_NICKEL, MAT_NICKEL, NUGGET);
         shape(SpaceMaterialItems.POWDER_NICKEL, MAT_NICKEL, DUST);
@@ -117,7 +118,7 @@ public final class SpaceMats {
     }
 
     private static void shape(Supplier<? extends ItemLike> item, NTMMaterial mat, MaterialShapes shape) {
-        entry(item, new MaterialStack(mat, shape.q(1)));
+        Mats.registerShapeItem(mat, shape, item);
     }
 
     private static void entry(Supplier<? extends ItemLike> item, MaterialStack... stacks) {

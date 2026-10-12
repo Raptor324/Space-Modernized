@@ -46,6 +46,7 @@ public final class IkeBlocks {
      * im Blockstate als vier gleichgewichtete Zufallsvarianten. {@code colorMultiplier} (Metadatum-Abdunklung)
      * ist bei Metadatum 0 weiss und entfaellt.
      */
+    // Original-Klasse: BlockTint (tumor nutzt sie ebenfalls - HBM-Block)
     public static final RegistrySupplier<Block> IKE_REGOLITH = PlanetOres.pickaxe(SpaceBlocks.registerWithItem("ike_regolith",
             () -> new Block(PlanetOres.rock(1.5F, 10.0F)), SpaceCreativeTabs.Tab.BLOCKS));
 
@@ -91,7 +92,8 @@ public final class IkeBlocks {
     public static final RegistrySupplier<Block> ORE_MINERAL = PlanetOres.ore("ore_mineral", BODY, 5.0F, 10.0F);
 
     // ── ChunkProviderIke: Sole-Blasen (BlockOreFluid BRINE, leer -> ore_brine_empty) ──
-    public static final RegistrySupplier<Block> ORE_BRINE = PlanetOres.ore("ore_brine", BODY, 5.0F, 10.0F);
+    public static final RegistrySupplier<Block> ORE_BRINE = PlanetOres.ore("ore_brine", BODY,
+            p -> new com.space_m.resources.BlockOreFluid(p, () -> IkeBlocks.ORE_BRINE_EMPTY.get(), com.hbm_m.api.space.SpaceResources.ReserveType.BRINE, com.space_m.celestial.SolarSystem.Body.IKE), 5.0F, 10.0F) /* R8-B: BlockOreFluid */;
     public static final RegistrySupplier<Block> ORE_BRINE_EMPTY = PlanetOres.ore("ore_brine_empty", BODY, 5.0F, 10.0F);
 
     // ── Alkylbromid (ModBlocks.bromine_fluid / bromine_block, ModItems.bucket_bromine) ──

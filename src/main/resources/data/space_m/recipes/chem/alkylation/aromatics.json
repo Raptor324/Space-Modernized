@@ -1,0 +1,16 @@
+{
+  "type": "space_m:alkylation",
+  "input": "hbm_m:aromatics",
+  "acid": {
+    "fluid": "hbm_m:radiosolvent",
+    "amount": 40
+  },
+  "output1": {
+    "fluid": "hbm_m:xylene",
+    "amount": 100
+  },
+  "output2": {
+    "fluid": "hbm_m:chlorine",
+    "amount": 10
+  }
+}

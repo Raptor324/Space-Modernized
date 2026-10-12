@@ -1,0 +1,10 @@
+{
+  "type": "hbm_m:ntm",
+  "dimension": 413025,
+  "biomes": [
+    "space_m:thatmo"
+  ],
+  "spawn_overrides": {},
+  "step": "surface_structures",
+  "terrain_adaptation": "none"
+}

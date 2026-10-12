@@ -1,0 +1,161 @@
+{
+  "loader": "forge:composite",
+  "textures": {
+    "particle": "space_m:block/launch_pad"
+  },
+  "children": {
+    "base": {
+      "loader": "forge:obj",
+      "model": "space_m:models/machines/rocket_pad.obj",
+      "flip_v": true,
+      "render_type": "minecraft:cutout",
+      "textures": {
+        "default": "space_m:block/machine/rocket_pad"
+      },
+      "visibility": {
+        "Base": true,
+        "Tower_Base": false,
+        "Tower_Segment": false,
+        "Tower_Cap": false,
+        "Tower_Segment_Small": false
+      }
+    },
+    "support": {
+      "loader": "forge:obj",
+      "model": "space_m:models/machines/rocket_pad.obj",
+      "flip_v": true,
+      "render_type": "minecraft:cutout",
+      "textures": {
+        "default": "space_m:block/machine/rocket_pad_support"
+      },
+      "visibility": {
+        "Base": false,
+        "Tower_Base": true,
+        "Tower_Segment": true,
+        "Tower_Cap": true,
+        "Tower_Segment_Small": true
+      }
+    }
+  },
+  "display": {
+    "gui": {
+      "rotation": [
+        30,
+        -135,
+        0
+      ],
+      "translation": [
+        0,
+        -3,
+        0
+      ],
+      "scale": [
+        0.07,
+        0.07,
+        0.07
+      ]
+    },
+    "ground": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        3,
+        0
+      ],
+      "scale": [
+        0.1,
+        0.1,
+        0.1
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        -3,
+        0
+      ],
+      "scale": [
+        0.1,
+        0.1,
+        0.1
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        75,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        2.5,
+        0
+      ],
+      "scale": [
+        0.07,
+        0.07,
+        0.07
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        75,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        2.5,
+        0
+      ],
+      "scale": [
+        0.07,
+        0.07,
+        0.07
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.07,
+        0.07,
+        0.07
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.07,
+        0.07,
+        0.07
+      ]
+    }
+  }
+}

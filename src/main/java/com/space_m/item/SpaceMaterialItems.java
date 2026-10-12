@@ -255,8 +255,9 @@ public final class SpaceMaterialItems {
             () -> new ItemCustomLore(new Item.Properties()), Tab.PARTS);
     public static final RegistrySupplier<Item> STICK_VINYL = basic("stick_vinyl",
             () -> new ItemCustomLore(new Item.Properties()), Tab.PARTS);
-    public static final RegistrySupplier<Item> SWARM_MEMBER = basic("swarm_member",
-            () -> new Item(new Item.Properties()), Tab.PARTS);
+    // R9-B4: 3D-Darstellung (builtin/entity, Original ItemRenderLibrary) -> plain + Hand-JSON
+    public static final RegistrySupplier<Item> SWARM_MEMBER = plain("swarm_member",
+            () -> new ItemSwarmMember(new Item.Properties()), Tab.PARTS);
     public static final RegistrySupplier<Item> TEA_LEAF = basic("tea_leaf",
             () -> new Item(new Item.Properties()), Tab.CONSUMABLE);
     public static final RegistrySupplier<Item> TEACUP_EMPTY = basic("teacup_empty",
@@ -296,8 +297,9 @@ public final class SpaceMaterialItems {
     // Original CreativeTabs.tabCombat (Vanilla-Tab, eingetragen in SpaceMaterialItems.init)
     public static final RegistrySupplier<Item> BUTTER_SWORD = basic("butter_sword",
             () -> new ItemButterSword(new Item.Properties()), null);
-    public static final RegistrySupplier<Item> CORE_ANGEL = basic("core_angel",
-            () -> new com.hbm_m.item.fekal_electric.ModBatteryItem(new Item.Properties().stacksTo(1), 16_000_000, 16_000_000, 800_000), Tab.CONTROL);
+    // R9-B4: 3D-Darstellung (builtin/entity, Original ItemRenderAngelCore) -> plain + Hand-JSON
+    public static final RegistrySupplier<Item> CORE_ANGEL = plain("core_angel",
+            () -> new ItemAngelCore(new Item.Properties().stacksTo(1), 16_000_000, 16_000_000, 800_000), Tab.CONTROL);
     public static final RegistrySupplier<Item> INSERT_CMB = basic("insert_cmb",
             () -> new ItemModInsertCorrosion(9999, 0.7F, 0.9F, 0.4F, 1F), Tab.CONSUMABLE);
     public static final RegistrySupplier<Item> FLIPPERS = basic("flippers",

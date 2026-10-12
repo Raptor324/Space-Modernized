@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "space_m:block/orbital_station_computer"
+    },
+    "facing=south": {
+      "model": "space_m:block/orbital_station_computer"
+    },
+    "facing=west": {
+      "model": "space_m:block/orbital_station_computer"
+    },
+    "facing=east": {
+      "model": "space_m:block/orbital_station_computer"
+    }
+  }
+}

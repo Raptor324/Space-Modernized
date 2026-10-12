@@ -78,6 +78,28 @@ public final class SpaceHazards {
         rbmkPellet(SpaceMaterialItems.RBMK_PELLET_LECM.get(), cmrg * billet, wst * cf252 * 2.5F);
         rbmkPellet(SpaceMaterialItems.RBMK_PELLET_MECM.get(), cmrg * billet, wst * cf252 * 2.6F);
         rbmkPellet(SpaceMaterialItems.RBMK_PELLET_HECM.get(), cmrg * billet, wst * cf252 * 2.7F);
+
+        // R9-B: Curium-RBMK-Staebe (HazardRegistry.registerRBMKRod) und Space-Watz-Pellets (DictFrame.fromOne(watz_pellet, typ),
+        // AMF/CF251 haben im Original keinen Eintrag)
+        rbmkRod(SpaceNuclearItems.RBMK_FUEL_LECM.get(), cmrg * 2.2F * rod_rbmk / 5F, wst * rod_rbmk);
+        rbmkRod(SpaceNuclearItems.RBMK_FUEL_MECM.get(), cmrg * 2.2F * rod_rbmk / 3F, wst * rod_rbmk * 3F);
+        rbmkRod(SpaceNuclearItems.RBMK_FUEL_HECM.get(), cmrg * 2.2F * rod_rbmk / 1.5F, wst * rod_rbmk * 5F);
+        watz(SpaceNuclearItems.PU241, 25.0F * ingot * 4);
+        watz(SpaceNuclearItems.AMRG, amrg * ingot * 4);
+        watz(SpaceNuclearItems.CMRG, cmrg * ingot * 4);
+        watz(SpaceNuclearItems.CMF, cmf * ingot * 4);
+        watz(SpaceNuclearItems.BK247, bk247 * ingot * 4);
+        watz(SpaceNuclearItems.CF252, cf252 * ingot * 4);
+        watz(SpaceNuclearItems.ES253, es253 * ingot * 4);
+
+        // R9-B: Neutronen an HBM-Gegenstaenden, erst nach HBMs eigener Gefahrenbelegung (HazardRegistry.registerItems
+        // laeuft in HBMs commonSetup vor ModFluidTraitsBootstrap; afterHbmFluidDefaults = Ende dieses Setups)
+        com.hbm_m.api.space.HbmFluidApi.afterHbmFluidDefaults(NeutronEffects::registerHbmNeutrons);
+        NeutronEffects.init();
+    }
+
+    private static void watz(com.hbm_m.item.nuclear.WatzPelletType type, float rad) {
+        HazardSystem.register(SpaceNuclearItems.WATZ_PELLET.get(type).get(), new HazardData(new HazardEntry(RADIATION, rad)));
     }
 
     /** DictFrame-Gefahren: abwechselnd Typ, Wert. */

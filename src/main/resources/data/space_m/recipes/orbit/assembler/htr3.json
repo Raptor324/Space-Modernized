@@ -1,0 +1,75 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 400,
+  "hbm_variants": [
+    {
+      "flags": [
+        "expensive"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 400,
+        "ingredients": [
+          {
+            "item": "hbm_m:item_expensive_lead_plating",
+            "count": 8
+          },
+          {
+            "tag": "hbm_m:oredict/plate_sextuple/tungsten",
+            "count": 8
+          },
+          {
+            "item": "hbm_m:motor_bismuth",
+            "count": 4
+          },
+          {
+            "tag": "hbm_m:oredict/ingot/any_hard_plastic",
+            "count": 8
+          },
+          {
+            "item": "hbm_m:item_expensive_circuit",
+            "count": 4
+          }
+        ],
+        "output": {
+          "item": "space_m:machine_htr3"
+        },
+        "power": 100
+      }
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "hbm_m:oredict/plate_sextuple/any_resistant_alloy",
+      "count": 4
+    },
+    {
+      "tag": "hbm_m:oredict/bolt/dura_steel",
+      "count": 16
+    },
+    {
+      "tag": "hbm_m:oredict/plate_sextuple/tungsten",
+      "count": 8
+    },
+    {
+      "item": "hbm_m:motor_bismuth",
+      "count": 1
+    },
+    {
+      "tag": "hbm_m:oredict/ingot/any_hard_plastic",
+      "count": 8
+    },
+    {
+      "item": "space_m:aero",
+      "count": 2
+    },
+    {
+      "tag": "hbm_m:oredict/ntmpipe/dura_steel",
+      "count": 8
+    }
+  ],
+  "output": {
+    "item": "space_m:machine_htr3"
+  },
+  "power": 100
+}

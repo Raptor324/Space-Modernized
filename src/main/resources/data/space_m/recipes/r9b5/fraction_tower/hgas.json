@@ -1,0 +1,15 @@
+{
+  "type": "hbm_m:fraction_tower",
+  "input": {
+    "amount": 100,
+    "fluid": "space_m:hgas"
+  },
+  "output_a": {
+    "amount": 25,
+    "fluid": "space_m:chloromethane"
+  },
+  "output_b": {
+    "amount": 85,
+    "fluid": "hbm_m:chlorine"
+  }
+}

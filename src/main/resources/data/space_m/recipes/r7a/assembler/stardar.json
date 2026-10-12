@@ -1,0 +1,164 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 200,
+  "hbm_variants": [
+    {
+      "flags": [
+        "528",
+        "expensive"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 200,
+        "ingredients": [
+          {
+            "item": "hbm_m:motor",
+            "count": 4
+          },
+          {
+            "tag": "hbm_m:oredict/plate_triple/gold",
+            "count": 16
+          },
+          {
+            "item": "hbm_m:photo_panel",
+            "count": 32
+          },
+          {
+            "item": "hbm_m:magnetron",
+            "count": 32
+          },
+          {
+            "item": "hbm_m:item_expensive_heavy_frame",
+            "count": 2
+          },
+          {
+            "item": "hbm_m:item_expensive_circuit",
+            "count": 4
+          }
+        ],
+        "output": {
+          "item": "space_m:machine_stardar"
+        },
+        "power": 100,
+        "blueprint_pool": "528.aluminium"
+      }
+    },
+    {
+      "flags": [
+        "528"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 200,
+        "ingredients": [
+          {
+            "item": "hbm_m:motor",
+            "count": 4
+          },
+          {
+            "tag": "hbm_m:oredict/plate_triple/gold",
+            "count": 16
+          },
+          {
+            "item": "hbm_m:photo_panel",
+            "count": 32
+          },
+          {
+            "item": "hbm_m:magnetron",
+            "count": 32
+          },
+          {
+            "tag": "hbm_m:oredict/any/concrete",
+            "count": 16
+          },
+          {
+            "item": "hbm_m:steel_scaffold",
+            "count": 8
+          },
+          {
+            "item": "hbm_m:integrated_circuit",
+            "count": 4
+          }
+        ],
+        "output": {
+          "item": "space_m:machine_stardar"
+        },
+        "power": 100,
+        "blueprint_pool": "528.aluminium"
+      }
+    },
+    {
+      "flags": [
+        "expensive"
+      ],
+      "recipe": {
+        "type": "hbm_m:assembler",
+        "duration": 200,
+        "ingredients": [
+          {
+            "item": "hbm_m:motor",
+            "count": 4
+          },
+          {
+            "tag": "hbm_m:oredict/plate_triple/gold",
+            "count": 16
+          },
+          {
+            "item": "hbm_m:photo_panel",
+            "count": 32
+          },
+          {
+            "item": "hbm_m:magnetron",
+            "count": 32
+          },
+          {
+            "item": "hbm_m:item_expensive_heavy_frame",
+            "count": 2
+          },
+          {
+            "item": "hbm_m:item_expensive_circuit",
+            "count": 4
+          }
+        ],
+        "output": {
+          "item": "space_m:machine_stardar"
+        },
+        "power": 100
+      }
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "hbm_m:motor",
+      "count": 4
+    },
+    {
+      "tag": "hbm_m:oredict/plate_triple/gold",
+      "count": 16
+    },
+    {
+      "item": "hbm_m:photo_panel",
+      "count": 32
+    },
+    {
+      "item": "hbm_m:magnetron",
+      "count": 32
+    },
+    {
+      "tag": "hbm_m:oredict/any/concrete",
+      "count": 16
+    },
+    {
+      "item": "hbm_m:steel_scaffold",
+      "count": 8
+    },
+    {
+      "item": "hbm_m:integrated_circuit",
+      "count": 4
+    }
+  ],
+  "output": {
+    "item": "space_m:machine_stardar"
+  },
+  "power": 100
+}

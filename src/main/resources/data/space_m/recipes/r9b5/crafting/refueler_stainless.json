@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    "HC",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "tag": "hbm_m:oredict/plate/stainless_steel"
+    },
+    "H": {
+      "item": "hbm_m:part_generic_piston_hydraulic"
+    },
+    "C": {
+      "item": "hbm_m:integrated_circuit"
+    }
+  },
+  "result": {
+    "item": "hbm_m:refueler"
+  }
+}

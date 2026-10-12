@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bread"
+    },
+    {
+      "item": "space_m:grilled_flesh"
+    }
+  ],
+  "result": {
+    "item": "space_m:flesh_burger"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "space_m:cryo_distill",
+  "input": "hbm_m:air",
+  "output1": {
+    "fluid": "space_m:nitrogen",
+    "amount": 60
+  },
+  "output2": {
+    "fluid": "hbm_m:oxygen",
+    "amount": 25
+  },
+  "output3": {
+    "fluid": "space_m:krypton",
+    "amount": 10
+  },
+  "output4": {
+    "fluid": "hbm_m:carbondioxide",
+    "amount": 5
+  }
+}

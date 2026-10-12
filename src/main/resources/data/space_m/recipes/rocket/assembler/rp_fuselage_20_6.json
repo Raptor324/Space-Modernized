@@ -1,0 +1,26 @@
+{
+  "type": "hbm_m:assembler",
+  "duration": 400,
+  "power": 100,
+  "ingredients": [
+    {
+      "item": "hbm_m:seg_20",
+      "count": 2
+    },
+    {
+      "item": "hbm_m:steel_scaffold",
+      "count": 8
+    },
+    {
+      "tag": "hbm_m:oredict/shell/titanium",
+      "count": 6
+    },
+    {
+      "tag": "hbm_m:oredict/plate_sextuple/aluminum",
+      "count": 4
+    }
+  ],
+  "output": {
+    "item": "space_m:rp_f_20_6"
+  }
+}

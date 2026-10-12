@@ -1,0 +1,14 @@
+{
+  "type": "hbm_m:coker",
+  "byproduct": {
+    "amount": 1600,
+    "fluid": "hbm_m:gas_coker"
+  },
+  "input": {
+    "amount": 16000,
+    "fluid": "space_m:scutterblood"
+  },
+  "result": {
+    "item": "hbm_m:coke_petroleum"
+  }
+}

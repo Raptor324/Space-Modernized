@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "space_m:block/machine_vacuum_circuit"
+    },
+    "facing=south": {
+      "model": "space_m:block/machine_vacuum_circuit"
+    },
+    "facing=west": {
+      "model": "space_m:block/machine_vacuum_circuit"
+    },
+    "facing=east": {
+      "model": "space_m:block/machine_vacuum_circuit"
+    }
+  }
+}

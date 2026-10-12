@@ -41,7 +41,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 /**
  * R4-B: Feldfruechte von NTM Space ({@code com.hbm.blocks.BlockCrop}: {@code crop_mint}, {@code crop_coffee},
  * {@code crop_tea}, {@code crop_paraffin}) und {@code rubber_farmland} ({@code BlockRubberFarm}). {@code crop_strawberry}
- * entfaellt - HBM-Modernized hat Erdbeere + Strauch schon.
+ * (Saat = HBMs {@code hbm_m:strawberry}) liegt in {@code com.space_m.deco.SpaceDeco} (R9-B2).
  *
  * <p>Original-Verhalten: jeder Zufallstick +1 Stufe (ohne Licht-/Feuchteabfrage), Knochenmehl +2..5, Boden nur der
  * eine Original-Block (Ackerboden bzw. Gummi-Ackerboden), Atmung ueber {@link IPlantableBreathing}
@@ -82,6 +82,7 @@ public final class SpaceCrops {
 
     public static void init() {}
 
+    // Original-Klasse: BlockCrop
     /** 1:1 {@code BlockCrop}. */
     public static class BlockSpaceCrop extends CropBlock implements IPlantableBreathing {
 
@@ -112,6 +113,8 @@ public final class SpaceCrops {
         @Override
         public boolean canSurvive(BlockState state, net.minecraft.world.level.LevelReader level, BlockPos pos) {
             BlockPos below = pos.below();
+            // R7-B: Original canBlockStay fragt soil.canSustainPlant -> Hydroponik traegt mint/coffee/tea (canHydro)
+            if (com.space_m.machine.chem.HydroponicSoil.sustains(level, below)) return true;
             return mayPlaceOn(level.getBlockState(below), level, below);
         }
 
@@ -144,6 +147,7 @@ public final class SpaceCrops {
      * Regen; trocknet nie zu Erde aus. Wird beim Darauffallen/festem Block darueber wieder {@code rubber_silt},
      * droppt {@code rubber_silt}. Feuchte im Original Metadatum 0/1 -> hier {@code MOISTURE} 0/7.
      */
+    // Original-Klasse: BlockRubberFarm
     public static class BlockRubberFarm extends FarmBlock {
 
         public BlockRubberFarm(Properties props) {
