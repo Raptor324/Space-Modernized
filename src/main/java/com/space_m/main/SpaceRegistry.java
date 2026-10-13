@@ -35,6 +35,9 @@ public final class SpaceRegistry {
         // Config vor allem anderen (Original: SpaceConfig/WorldConfig/... werden in preInit geladen).
         SpaceConfig.load();
 
+        // E1-E17: NTM-Space-Fork-Regeln in HBM einschalten (vor der Blockregistrierung, Elektrolyseur-Struktur)
+        com.space_m.fork.SpaceForkRules.init();
+
         // Netzwerk: C2S + (Server) S2C-Typen. Client-Empfaenger meldet SpaceClient an.
         SpacePacketHandler.register();
 
@@ -51,6 +54,8 @@ public final class SpaceRegistry {
         com.space_m.material.SpaceMats.init();
         com.space_m.entity.mob.SpaceMobs.init(); // R8-A Mobs (Entities/Eier/Fleischbloecke vor den Registern)
         com.space_m.bomb.SpaceBombs.init(); // R9-B1 Bomben/Einzelbloecke (Bloecke/BE/Menue/Entities vor den Registern)
+        com.space_m.dim.WildMint.init(); // R9-B wilde Minze (plant_flower MINT)
+        com.space_m.fork.trinket.ForkTrinkets.init(); // E11 Fork-Wackelkoepfe/-Plueschtiere (Bloecke/BE/Klaenge vor den Registern)
         SpaceBlocks.init();
         SpaceItems.init();
         SpaceBlockEntities.init();

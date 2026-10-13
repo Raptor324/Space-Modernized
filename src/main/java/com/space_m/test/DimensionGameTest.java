@@ -224,7 +224,8 @@ public final class DimensionGameTest {
         check(structures.containsKey(structKey), "structure space_m:mun_structures missing");
         check(access.registryOrThrow(net.minecraft.core.registries.Registries.STRUCTURE_SET).containsKey(setKey), "structure_set space_m:mun_structures missing");
         ServerLevel level = mun(helper);
-        if (level == null) {
+        // R9-C: ohne "Strukturen erzeugen" (NeoForge-GameTestServer: WorldOptions(0, false, false)) keine Strukturstarts
+        if (level == null || !level.getServer().getWorldData().worldGenOptions().generateStructures()) {
             helper.succeed();
             return;
         }

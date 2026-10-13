@@ -305,7 +305,8 @@ public final class DunaDresGameTest {
             check(structures.containsKey(structKey), "structure space_m:" + cs[0] + "_structures missing");
             check(access.registryOrThrow(Registries.STRUCTURE_SET).containsKey(setKey), "structure_set space_m:" + cs[0] + "_structures missing");
             ServerLevel level = helper.getLevel().getServer().getLevel(SpaceDimensions.level(cs[0]));
-            if (level == null) continue;
+            // R9-C: ohne "Strukturen erzeugen" (NeoForge-GameTestServer) keine Strukturstarts
+            if (level == null || !level.getServer().getWorldData().worldGenOptions().generateStructures()) continue;
             var set = access.registryOrThrow(Registries.STRUCTURE_SET).getHolderOrThrow(setKey);
             var state = level.getChunkSource().getGeneratorState();
             var structure = structures.get(structKey);

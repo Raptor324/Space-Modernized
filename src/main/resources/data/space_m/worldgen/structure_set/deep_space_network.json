@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "space_m:deep_space_network",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 96,
+    "separation": 48,
+    "salt": 702070
+  }
+}

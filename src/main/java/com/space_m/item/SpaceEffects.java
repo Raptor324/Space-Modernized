@@ -33,6 +33,14 @@ public final class SpaceEffects {
 
     public static final RegistrySupplier<MobEffect> RUN = EFFECTS.register("run", RunEffect::new);
 
+    // E12 (Nutzerentscheidung): HbmPotion nitan / flashbang / slippery des Space-Forks (Farben/Symbole 1:1)
+    public static final RegistrySupplier<MobEffect> NITAN = EFFECTS.register("nitan", NitanEffect::new);
+    public static final RegistrySupplier<MobEffect> FLASHBANG = EFFECTS.register("flashbang", FlashbangEffect::new);
+    public static final RegistrySupplier<MobEffect> SLIPPERY = EFFECTS.register("slippery", SlipperyEffect::new);
+
+    /** Original {@code ModDamageSource.nitan} ("death.attack.nitan"). */
+    public static final ResourceKey<DamageType> NITAN_DAMAGE = ResourceKey.create(Registries.DAMAGE_TYPE, SpaceMod.id("nitan"));
+
     /** Original {@code ModDamageSource.run} ("death.attack.run"). */
     public static final ResourceKey<DamageType> RUN_DAMAGE = ResourceKey.create(Registries.DAMAGE_TYPE, SpaceMod.id("run"));
 
@@ -50,6 +58,59 @@ public final class SpaceEffects {
 
     static DamageSource run(Level level) {
         return new DamageSource(level.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(RUN_DAMAGE));
+    }
+
+    static DamageSource nitan(Level level) {
+        return new DamageSource(level.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(NITAN_DAMAGE));
+    }
+
+    /** 1:1 {@code HbmPotion.nitan}: jeden Tick; die dritte Dosis Ambrosia ({@code nitanCount == 3}) toetet. */
+    public static class NitanEffect extends HbmEffect {
+        public NitanEffect() { super(MobEffectCategory.BENEFICIAL, 8388736, 3, 1); }
+
+        @Override
+        protected boolean isReady(int duration, int amplifier) { return true; }
+
+        @Override
+        protected void tick(@NotNull LivingEntity entity, int amplifier) {
+            if (entity.level().isClientSide) return;
+            if (entity instanceof Player player && com.space_m.fork.ForkItems.getNitanCount(player) == 3) {
+                entity.hurt(nitan(entity.level()), 1000);
+            }
+        }
+    }
+
+    /**
+     * 1:1 {@code HbmPotion.flashbang}: Zombies/Skelette brennen 20 s, Langsamkeit (Dauer 5, Stufe 10). Im Original
+     * liefert {@code isReady} fuer diesen Effekt false - die Wirkung laeuft also nie (und er wird nirgends verabreicht).
+     */
+    public static class FlashbangEffect extends HbmEffect {
+        public FlashbangEffect() { super(MobEffectCategory.BENEFICIAL, 0xD0D0D0, 15, 1); }
+
+        @Override
+        protected boolean isReady(int duration, int amplifier) { return false; }
+
+        @Override
+        protected void tick(@NotNull LivingEntity entity, int amplifier) {
+            if (entity.level().isClientSide) return;
+            if (entity instanceof net.minecraft.world.entity.monster.Zombie || entity instanceof net.minecraft.world.entity.monster.AbstractSkeleton) {
+                com.hbm_m.platform.PlatformHooks.setSecondsOnFire(entity, 20);
+            }
+            entity.addEffect(new net.minecraft.world.effect.MobEffectInstance(net.minecraft.world.effect.MobEffects.MOVEMENT_SLOWDOWN, 5, 10));
+        }
+    }
+
+    /** 1:1 {@code HbmPotion.slippery} ("Butterfingers"): {@code motionY += 0.026} je Tick (im Original nie verabreicht). */
+    public static class SlipperyEffect extends HbmEffect {
+        public SlipperyEffect() { super(MobEffectCategory.BENEFICIAL, 0xD0D0D0, 15, 0); }
+
+        @Override
+        protected boolean isReady(int duration, int amplifier) { return true; }
+
+        @Override
+        protected void tick(@NotNull LivingEntity entity, int amplifier) {
+            entity.setDeltaMovement(entity.getDeltaMovement().add(0, 0.026D, 0));
+        }
     }
 
     /** 1:1 {@code HbmPotion.run}. */

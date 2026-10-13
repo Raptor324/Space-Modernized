@@ -1,0 +1,11 @@
+{
+  "type": "hbm_m:shredding",
+  "ingredient": {
+    "type": "forge:partial_nbt",
+    "item": "space_m:bobblehead",
+    "nbt": "{type:2}"
+  },
+  "result": {
+    "item": "hbm_m:scrap_plastic"
+  }
+}

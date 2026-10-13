@@ -54,6 +54,9 @@ public final class StructureLocateGameTest {
             check(structures.containsKey(key), "structure space_m:" + body + "_structures missing");
             ServerLevel level = server.getLevel(SpaceDimensions.level(body));
             if (level == null) continue;
+            // R9-C: NeoForge-GameTestServer erzeugt die Welt mit generateStructures=false (WorldOptions(0, false, false));
+            // dann entstehen keine Strukturstarts und /locate sucht ergebnislos (~2 min je Koerper) -> ueberspringen
+            if (!server.getWorldData().worldGenOptions().generateStructures()) continue;
             var holder = structures.getHolderOrThrow(key);
             var found = level.getChunkSource().getGenerator().findNearestMapStructure(level, HolderSet.direct(holder), BlockPos.ZERO, 100, false);
             checked++;

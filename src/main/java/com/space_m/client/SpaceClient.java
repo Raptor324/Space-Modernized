@@ -76,13 +76,20 @@ public final class SpaceClient {
         // R9-B4: LPW-2-Overlay, Drop-Pod-Teilrenderer, DuoDec-Notenpartikel
         SpaceMiscClient.init();
 
-        // R9-B: Laythe-Schlick-Toenung (Schlickhoehlen)
-        com.space_m.dim.laythe.client.LaytheClient.init();
+        // E11 Fork-Wackelkoepfe/-Plueschtiere (Renderer)
+        com.space_m.fork.trinket.client.ForkTrinketClient.init();
 
         ClientLifecycleEvent.CLIENT_SETUP.register(SpaceClient::setup);
     }
 
     private static void setup(Minecraft mc) {
+        // R9-B: Laythe-Schlick-Toenung (Schlickhoehlen); erst im Client-Setup (im Datagen gibt es kein Minecraft)
+        com.space_m.dim.laythe.client.LaytheClient.init();
+        // E11: Fork-Kassetten - Overlay in Trackfarbe (wie HBMs ItemCassette.getColor)
+        dev.architectury.registry.client.rendering.ColorHandlerRegistry.registerItemColors(
+                (stack, tintIndex) -> 0xFF000000 | com.hbm_m.item.machine.ItemCassette.getColor(stack, tintIndex),
+                com.space_m.fork.ForkItems.CASSETTE_DUCC, com.space_m.fork.ForkItems.CASSETTE_XBOX_LIVE);
+
         // R3-1 Ike: Alkylbromid-Fluessigkeit durchscheinend
         com.space_m.dim.ike.IkeClient.setup();
         // R1-C Himmel: Planetarium-Renderer

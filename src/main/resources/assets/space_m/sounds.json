@@ -179,6 +179,24 @@
       }
     ]
   },
+  "alarm.ducc": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "space_m:alarm/ducc",
+        "stream": false
+      }
+    ]
+  },
+  "alarm.mama": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "space_m:alarm/mama",
+        "stream": false
+      }
+    ]
+  },
   "alarm.ping": {
     "category": "player",
     "sounds": [
@@ -328,6 +346,33 @@
     "sounds": [
       {
         "name": "space_m:block/fence_gate",
+        "stream": false
+      }
+    ]
+  },
+  "block.teto": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "space_m:block/teto",
+        "stream": false
+      }
+    ]
+  },
+  "block.akita": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "space_m:block/akita",
+        "stream": false
+      }
+    ]
+  },
+  "block.miku": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "space_m:block/miku",
         "stream": false
       }
     ]

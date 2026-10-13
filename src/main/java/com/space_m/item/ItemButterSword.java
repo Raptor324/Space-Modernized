@@ -1,8 +1,6 @@
 package com.space_m.item;
 
-import dev.architectury.registry.CreativeTabRegistry;
 import dev.architectury.registry.registries.RegistrySupplier;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.animal.Squid;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -36,7 +34,8 @@ public class ItemButterSword extends SwordItem {
 
     /** {@code setCreativeTab(CreativeTabs.tabCombat)}. */
     static void addToCombatTab(RegistrySupplier<? extends Item> item) {
-        CreativeTabRegistry.modifyBuiltin(BuiltInRegistries.CREATIVE_MODE_TAB.getOrThrow(CreativeModeTabs.COMBAT),
-                (flags, output, canUseOps) -> output.accept(new ItemStack(item.get())));
+        // Loader-Ereignis statt Architectury-modifyBuiltin (stuerzt auf NeoForge ab, siehe SpaceTabFill)
+        com.space_m.main.SpaceTabFill.modify(CreativeModeTabs.COMBAT, "ItemButterSword",
+                sink -> sink.accept(new ItemStack(item.get()), String.valueOf(item.getId())));
     }
 }

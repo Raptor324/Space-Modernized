@@ -101,6 +101,9 @@ dependencies {
 
 	// JEI (nur Compile, R2-C Atmo-Maschinen: Space-Kategorien auf Basis der HBM-JEI-Kategorien). Version wie HBM deps.jei.
 	"compileOnly"("maven.modrinth:u6dRKJwZ:LtwmFHuF")
+	// Dev-Laufzeit (nur runClient/runServer, nicht im Jar): JEI + WorldEdit zum Testen
+	"runtimeOnly"("maven.modrinth:u6dRKJwZ:LtwmFHuF")
+	"runtimeOnly"("maven.modrinth:worldedit:WTAFvuRx") // WorldEdit 7.3.8 NeoForge 1.21.1
 }
 
 tasks.named("createMinecraftArtifacts") {

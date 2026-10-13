@@ -53,8 +53,10 @@ public final class SpaceGameTestRegistration {
         event.register(com.space_m.machine.misc.R7aMachinesGameTest.class); // R7-A Dyson/Sonstiges
         event.register(SpaceTabGameTest.class); // Sammel-Tab NTM Space
         event.register(R9aForkGameTest.class); // R9-A X?-Abgleich
+        event.register(R9eForkGameTest.class); // E1-E17 Fork-Regeln (Nutzerentscheidung)
         event.register(com.space_m.bomb.BombGameTest.class); // R9-B1 Bomben/Einzelbloecke
         event.register(R9b4GameTest.class); // R9-B4 LPW-2, Angeln, Siege-Craft
         event.register(com.space_m.deco.SpaceDecoGameTest.class); // R9-B2 Deko/Erdbeere/Staemme
+        event.register(FluidContainerGameTest.class); // Fluessigkeitsbehaelter (Nutzer-Meldung 2026-10-13)
     }
 }

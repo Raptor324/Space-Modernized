@@ -300,6 +300,16 @@
     "space_m:furnace",
     "space_m:lit_furnace",
     "space_m:war_controller",
-    "space_m:deco_stainless"
+    "space_m:deco_stainless",
+    "space_m:nuke_antimatter",
+    "space_m:det_salt",
+    "space_m:oil_barrel",
+    "space_m:capacitor_complex",
+    "space_m:troll_disturber",
+    "space_m:ff",
+    "space_m:geysir_volcanic",
+    "space_m:block_nickel",
+    "space_m:block_osmiridium",
+    "space_m:fence_gate"
   ]
 }

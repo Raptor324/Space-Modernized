@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:plains",
+    "minecraft:sunflower_plains"
+  ],
+  "features": "space_m:wild_mint",
+  "step": "vegetal_decoration"
+}

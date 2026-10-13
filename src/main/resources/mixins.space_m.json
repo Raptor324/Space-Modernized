@@ -15,6 +15,7 @@
     "ServerLevelTimeMixin"
   ],
   "client": [
+    "ForkCapeMixin",
     "RocketCameraMixin",
     "SpaceMusicMixin"
   ],

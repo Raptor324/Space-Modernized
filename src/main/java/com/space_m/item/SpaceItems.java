@@ -77,6 +77,8 @@ public final class SpaceItems {
         com.space_m.satellite.SpaceSatelliteItems.init();
         // R8-B: Spawn-Eier Siege-UFO / War-Behemoth (Original EntityMappings.addMob mit Eifarben)
         com.space_m.war.WarEntities.initItems();
+        // E11/E12: Fork-Kassetten und NITAN-Ambrosia
+        com.space_m.fork.ForkItems.init();
         ITEMS.register();
     }
 }

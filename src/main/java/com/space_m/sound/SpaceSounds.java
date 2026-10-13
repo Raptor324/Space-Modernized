@@ -55,6 +55,9 @@ public final class SpaceSounds {
     public static final RegistrySupplier<SoundEvent> ENTITY_JETLOOPBOMB = register("entity.jetloopbomb", 250F); // Original getLoopedSound(..., 2F, 250F, ...)
     public static final RegistrySupplier<SoundEvent> ENTITY_BEEP = register("entity.beep");
     public static final RegistrySupplier<SoundEvent> ALARM_PING = register("alarm.ping");
+    // E11: Kassetten "Ducc"/"Xbox Live" (Original alarm.ducc / alarm.mama, Kategorie record)
+    public static final RegistrySupplier<SoundEvent> ALARM_DUCC = register("alarm.ducc");
+    public static final RegistrySupplier<SoundEvent> ALARM_MAMA = register("alarm.mama");
     public static final RegistrySupplier<SoundEvent> ENTITY_BFASHOOT = register("entity.bfaShoot");
 
     // R8-A Mobs: Radioaktiver Engel laedt den Strahl auf (Original EntityBFAngel "hbm:entity.bfatalk", entity/bfa_talk)

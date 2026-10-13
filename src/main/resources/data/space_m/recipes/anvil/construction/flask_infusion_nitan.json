@@ -1,0 +1,29 @@
+{
+  "type": "hbm_m:anvil",
+  "inputs": [
+    {
+      "comparable": true,
+      "count": 3,
+      "item": "hbm_m:glass_quartz"
+    },
+    {
+      "comparable": true,
+      "count": 2,
+      "item": "hbm_m:pill_herbal"
+    },
+    {
+      "comparable": true,
+      "count": 2,
+      "item": "hbm_m:magic_powder"
+    }
+  ],
+  "kind": "construction",
+  "outputs": [
+    {
+      "item": "space_m:flask_infusion_nitan"
+    }
+  ],
+  "overlay": "construction",
+  "sort": 90,
+  "tier": "steel"
+}

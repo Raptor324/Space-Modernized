@@ -30,11 +30,15 @@ public final class SpaceMod {
         // ("Can't get event bus for mod space_m because it was not registered!").
         IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
         EventBuses.registerModEventBus(MOD_ID, modBus);
+        // Fremde Creative-Tabs direkt ueber das Loader-Ereignis befuellen (siehe SpaceTabFill).
+        modBus.addListener(com.space_m.main.SpaceTabFill::onBuildContents);
         SpaceRegistry.init();
     }
     //?} elif neoforge {
     /*public SpaceMod(IEventBus modBus) {
         // NeoForge: Architectury loest die Mod-Bus selbst auf.
+        // Fremde Creative-Tabs direkt ueber das Loader-Ereignis befuellen (Architectury-modify stuerzt auf NeoForge ab, siehe SpaceTabFill).
+        modBus.addListener(com.space_m.main.SpaceTabFill::onBuildContents);
         SpaceRegistry.init();
     }
     *///?}

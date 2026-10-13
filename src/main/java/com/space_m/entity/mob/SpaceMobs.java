@@ -11,9 +11,7 @@ import com.space_m.item.SpaceItems;
 import com.space_m.main.SpaceCreativeTabs;
 
 import dev.architectury.core.item.ArchitecturySpawnEggItem;
-import dev.architectury.registry.CreativeTabRegistry;
 import dev.architectury.registry.registries.RegistrySupplier;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.MobCategory;
@@ -138,9 +136,10 @@ public final class SpaceMobs {
         SpaceEntities.attributes(MICRO_UFO, EntitySiegeCraftSpace::createAttributes);
 
         // Spawn-Eier: Original im Vanilla-Reiter (Spawn-Eier statt "Verschiedenes")
-        CreativeTabRegistry.modifyBuiltin(BuiltInRegistries.CREATIVE_MODE_TAB.getOrThrow(CreativeModeTabs.SPAWN_EGGS),
-                (flags, output, canUseOps) -> {
-                    for (RegistrySupplier<ArchitecturySpawnEggItem> egg : EGGS) output.accept(new ItemStack(egg.get()));
+        // Loader-Ereignis statt Architectury-modifyBuiltin (stuerzt auf NeoForge ab, siehe SpaceTabFill)
+        com.space_m.main.SpaceTabFill.modify(CreativeModeTabs.SPAWN_EGGS, "SpaceMobs",
+                sink -> {
+                    for (RegistrySupplier<ArchitecturySpawnEggItem> egg : EGGS) sink.accept(new ItemStack(egg.get()), String.valueOf(egg.getId()));
                 });
 
         // Spawn-Regeln (Platzierung, Fleisch auf tumor) - Loader-Ereignisse

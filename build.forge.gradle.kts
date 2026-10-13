@@ -119,6 +119,9 @@ dependencies {
 
 	// JEI (nur Compile, R2-C Atmo-Maschinen: Space-Kategorien auf Basis der HBM-JEI-Kategorien). Version wie HBM deps.jei.
 	"modCompileOnly"("curse.maven:jei-238222:7270446")
+	// Dev-Laufzeit (nur runClient/runServer, nicht im Jar): JEI + WorldEdit zum Testen
+	"modRuntimeOnly"("curse.maven:jei-238222:7270446")
+	"modRuntimeOnly"("maven.modrinth:worldedit:Wrlqaul6") // WorldEdit 7.2.15 Forge 1.20.1
 }
 
 sourceSets {

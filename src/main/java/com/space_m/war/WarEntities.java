@@ -6,7 +6,7 @@ import com.space_m.entity.SpaceEntities;
 import com.space_m.item.SpaceItems;
 
 import dev.architectury.core.item.ArchitecturySpawnEggItem;
-import dev.architectury.registry.CreativeTabRegistry;
+import net.minecraft.world.item.ItemStack;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -58,7 +58,10 @@ public final class WarEntities {
                 () -> new ArchitecturySpawnEggItem(SIEGE_UFO, 0x303030, 0x800000, new Item.Properties()), null);
         WAR_BEHEMOTH_EGG = SpaceItems.register("entity_war_behemoth_spawn_egg",
                 () -> new ArchitecturySpawnEggItem(WAR_BEHEMOTH, 0x204131, 0x75CE00, new Item.Properties()), null);
-        CreativeTabRegistry.append(CreativeModeTabs.SPAWN_EGGS, SIEGE_UFO_EGG);
-        CreativeTabRegistry.append(CreativeModeTabs.SPAWN_EGGS, WAR_BEHEMOTH_EGG);
+        // Loader-Ereignis (Leer-/Duplikat-Filter, siehe SpaceTabFill) statt Architectury-append
+        com.space_m.main.SpaceTabFill.modify(CreativeModeTabs.SPAWN_EGGS, "WarEntities", sink -> {
+            sink.accept(new ItemStack(SIEGE_UFO_EGG.get()), String.valueOf(SIEGE_UFO_EGG.getId()));
+            sink.accept(new ItemStack(WAR_BEHEMOTH_EGG.get()), String.valueOf(WAR_BEHEMOTH_EGG.getId()));
+        });
     }
 }

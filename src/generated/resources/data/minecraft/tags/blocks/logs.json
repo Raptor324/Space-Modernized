@@ -1,6 +1,10 @@
 {
   "values": [
     "space_m:pvc_log",
-    "space_m:vinyl_log"
+    "space_m:vinyl_log",
+    "space_m:primed_log",
+    "space_m:eu_log",
+    "space_m:bf_log",
+    "space_m:lattice_log"
   ]
 }

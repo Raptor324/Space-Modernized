@@ -6,9 +6,7 @@ import java.util.List;
 import org.jetbrains.annotations.Nullable;
 
 import com.hbm_m.block.ModBlocks;
-import com.hbm_m.block.decorations.TrinketTypes;
 import com.hbm_m.item.ModItems;
-import com.hbm_m.item.TrinketBlockItem;
 import com.hbm_m.multiblock.DummyableStructureBuilder;
 import com.hbm_m.multiblock.MultiblockStructureHelper;
 import com.hbm_m.sound.ModSounds;
@@ -40,8 +38,7 @@ import net.minecraft.world.level.block.state.BlockState;
  * Hand Chip herausnehmen; mit dem Pluesch "FAT TETO" ({@code PlushieType.FATO}) Sunset Overdrive einschalten. Overlay:
  * ID, Schwarmgroesse, Energie (rot unter Maximum) bzw. "No Satellite ID-Chip installed!".
  *
- * <p>Abweichung: HBM-Modernized kennt den Pluesch {@code FATO} nicht (nur Master-Typen) - der Overdrive ist damit derzeit
- * nicht ausloesbar (Pruefung ueber den Typnamen, wirkt sofort, sobald HBM den Typ fuehrt); NBT {@code overdrive} bleibt erhalten.
+ * <p>FAT TETO ist ein Addon-Plueschtier ({@code space_m:plushie}, E11; HBM fuehrt nur die Master-Typen). NBT {@code overdrive}.
  * Original-Klasse: MachineDysonLauncher
  */
 public class MachineDysonLauncher extends R7MachineBlock {
@@ -144,12 +141,9 @@ public class MachineDysonLauncher extends R7MachineBlock {
         return InteractionResult.SUCCESS;
     }
 
-    /** Original {@code block instanceof BlockPlushie && damage == PlushieType.FATO.ordinal()}. */
-    private static boolean isFatTeto(ItemStack stack) {
-        if (!(stack.getItem() instanceof TrinketBlockItem) || stack.getItem() != ModBlocks.PLUSHIE.get().asItem()) return false;
-        int type = TrinketBlockItem.getType(stack);
-        TrinketTypes.PlushieType[] types = TrinketTypes.PlushieType.values();
-        return type >= 0 && type < types.length && types[type].name().equals("FATO");
+    /** Original {@code block instanceof BlockPlushie && damage == PlushieType.FATO.ordinal()} (E11: Addon-Plueschtier FAT TETO). */
+    public static boolean isFatTeto(ItemStack stack) {
+        return com.space_m.fork.trinket.ForkTrinkets.isFatTeto(stack);
     }
 
     @Override

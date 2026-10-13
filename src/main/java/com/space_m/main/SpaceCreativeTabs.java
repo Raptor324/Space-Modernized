@@ -37,8 +37,8 @@ import net.minecraft.world.level.material.Fluid;
  * Creative-Tabs des Originals. NTM Space fuehrt <b>keine eigenen Tabs</b> ein, sondern sortiert seine Inhalte
  * in die neun Tabs von {@code MainRegistry} (1.7.10) ein: partsTab, controlTab, templateTab, blockTab,
  * machineTab, nukeTab, missileTab, weaponTab, consumableTab. HBM-Modernized bildet genau diese neun nach
- * ({@code com.hbm_m.main.ModCreativeTabs}); das Addon haengt seine Eintraege dort an (Architectury
- * {@link CreativeTabRegistry#modify}, beide Loader). Reihenfolge = Reihenfolge der {@link #add}-Aufrufe.
+ * ({@code com.hbm_m.main.ModCreativeTabs}); das Addon haengt seine Eintraege dort an ({@link SpaceTabFill},
+ * Loader-Ereignis, beide Loader). Reihenfolge = Reihenfolge der {@link #add}-Aufrufe.
  * <p>
  * Zusaetzlich (Nutzerwunsch, kein Original): ein eigener Sammel-Tab {@code space_m:ntm_space_tab} "NTM Space",
  * der automatisch <b>alle</b> {@code space_m}-Items zeigt - siehe {@link #fillSpaceTab}. Die Einordnung in die
@@ -98,12 +98,30 @@ public final class SpaceCreativeTabs {
 
     /** Haengt ein Item/einen Block an den Original-Tab an. */
     public static void add(Tab tab, Supplier<? extends ItemLike> item) {
-        addStack(tab, () -> new ItemStack(item.get()));
+        String source = item instanceof RegistrySupplier<?> rs ? String.valueOf(rs.getId()) : callerName();
+        ENTRIES.computeIfAbsent(tab, t -> new ArrayList<>()).add(new Labeled(() -> new ItemStack(item.get()), source));
     }
 
     /** Haengt einen Stack (z.B. mit NBT/Meta-Variante) an den Original-Tab an. */
     public static void addStack(Tab tab, Supplier<ItemStack> stack) {
-        ENTRIES.computeIfAbsent(tab, t -> new ArrayList<>()).add(stack);
+        ENTRIES.computeIfAbsent(tab, t -> new ArrayList<>()).add(new Labeled(stack, callerName()));
+    }
+
+    /** Eintrag mit Herkunft (Item-ID bzw. aufrufende Klasse) fuer die Leer-Stapel-Warnung in {@link SpaceTabFill}. */
+    private record Labeled(Supplier<ItemStack> stack, String source) implements Supplier<ItemStack> {
+        @Override
+        public ItemStack get() {
+            return stack.get();
+        }
+    }
+
+    private static String callerName() {
+        return StackWalker.getInstance().walk(fr -> fr.map(StackWalker.StackFrame::getClassName)
+                .filter(c -> !c.equals(SpaceCreativeTabs.class.getName())).findFirst().orElse("?"));
+    }
+
+    private static String sourceOf(Supplier<ItemStack> s) {
+        return s instanceof Labeled l ? l.source() : "?";
     }
 
     public static List<Supplier<ItemStack>> entries(Tab tab) {
@@ -116,11 +134,9 @@ public final class SpaceCreativeTabs {
         initialized = true;
         TABS.register();
         for (Tab tab : Tab.values()) {
-            CreativeTabRegistry.modify(CreativeTabRegistry.defer(tab.id()), (flags, output, canUseOps) -> {
-                for (Supplier<ItemStack> s : entries(tab)) {
-                    ItemStack st = s.get();
-                    if (!st.isEmpty()) output.accept(st);
-                }
+            // Nicht ueber Architectury-modify: dessen output.accept stuerzt auf NeoForge ab (siehe SpaceTabFill).
+            SpaceTabFill.modify(tab.id(), "SpaceCreativeTabs." + tab.name(), sink -> {
+                for (Supplier<ItemStack> s : entries(tab)) sink.accept(s.get(), sourceOf(s));
             });
         }
     }

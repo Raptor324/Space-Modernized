@@ -1,3 +1,4 @@
+// neo-pendant: Datagen laeuft nur auf Forge; NeoForge nutzt dieselben src/generated-Daten (processResources)
 //? if forge {
 package com.space_m.datagen;
 
@@ -520,6 +521,18 @@ public final class SpaceLang {
         e("death.attack.oxyprime", "death.attack.oxyprime", "%1$s forgot their PLSS.", "%1$s забыл нацепить PLSS.");
         e("death.attack.run", "death.attack.run", "%1$s atoned for their sins.", "%1$s искупил свои грехи.");
         e("effect.space_m.run", "potion.hbm_run", "GOD WATCHES YOU", "БОГ НАБЛЮДАЕТ ЗА ВАМИ");
+        // E11/E12 (Nutzerentscheidung): Fork-Traenke, NITAN-Ambrosia, Kassetten, DNT-Raumanzug-Zeile
+        e("effect.space_m.nitan", "potion.hbm_nitan", "Ambrosia", "Aмброзия");
+        e("effect.space_m.flashbang", "potion.hbm_flashbang", "Flashbang", "Светошумовая");
+        e("effect.space_m.slippery", "potion.hbm_slippery", "Butterfingers", "Скольжение");
+        e("death.attack.nitan", "death.attack.nitan", "%1$s was consumed by taint.", "%1$s был поглощён заражением.");
+        e("item.space_m.flask_infusion_nitan", "item.flask_infusion.nitan.name", "NITAN© Ambrosia", "Амброзия NITAN©");
+        e("item.space_m.flask_infusion_nitan.desc", "item.flask_infusion.nitan.desc", "Painkiller for medical and recreational use only.", "Болеутоляющее исключительно для медицинского или развлекательного использования.");
+        e("item.space_m.cassette_ducc", "item.siren_track.name", "Siren Track", "Трек сирены");
+        e("item.space_m.cassette_xbox_live", "item.siren_track.name", "Siren Track", "Трек сирены");
+        e("block.space_m.bobblehead", "tile.bobblehead.name", "Bobblehead", "Болванчик"); // E11 Fork-Wackelkoepfe
+        e("block.space_m.plushie", "tile.plushie.name", "%s Plushie", "Плюшевая игрушка %s"); // E11 Fork-Plueschtiere
+        e("armor.canBreathe", "armor.canBreathe", "Can be used as a spacesuit", "Можно использовать как скафандр");
         e("entity.space_m.carpet_bomblet", "!", "Bomblet", "Бомбочка");
         e("entity.space_m.carpet_jet", "!", "Carpet Bomber", "Ковровый бомбардировщик");
         e("entity.space_m.entity_combat_pod", "!", "Combat Drop Pod", "Боевая десантная капсула");
@@ -958,6 +971,13 @@ public final class SpaceLang {
         e("advancements.space_m.drive_fail.title", "achievement.driveFail", "uh, did you make a copy?", "М-м... Ты же скопировал?");
         e("advancements.space_m.drive_fail.description", "achievement.driveFail.desc", "Fail to clone an orbital station drive before launching the station", "Ты забыл создать копию диска орбитальной станции перед запуском");
         e("trait.confusion", "trait.confusion", "Autism", "Аутизм");
+        // R9-B: Materialnamen der Bedrock-Erz-Materialien (CelestialBedrockMats)
+        e("hbmmat.australium", "hbmmat.australium", "Australium", "Австралий");
+        e("hbmmat.ayerite", "hbmmat.ayerite", "Ayerite", "Айерит");
+        e("hbmmat.netherquartz", "hbmmat.netherquartz", "Quartz", "Кварц");
+        e("hbmmat.tasmanite", "hbmmat.tasmanite", "Tasmanite", "Тасманит");
+        // R9-B: wilde Minze
+        e("block.space_m.plant_flower_mint", "tile.plant_flower.mint.name", "Wild Mint", "Дикая мята");
     }
 }
 //?}

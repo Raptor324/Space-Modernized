@@ -17,9 +17,7 @@ import com.hbm_m.util.function.Function.FunctionSqrt;
 import com.space_m.main.SpaceCreativeTabs.Tab;
 import com.space_m.sound.SpaceSounds;
 
-import dev.architectury.registry.CreativeTabRegistry;
 import dev.architectury.registry.registries.RegistrySupplier;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -116,11 +114,12 @@ public final class SpaceNuclearItems {
 
     /** Klassenladen (Registrierung) + Platten im Vanilla-Werkzeug-Tab. */
     public static void init() {
-        CreativeTabRegistry.modifyBuiltin(BuiltInRegistries.CREATIVE_MODE_TAB.getOrThrow(CreativeModeTabs.TOOLS_AND_UTILITIES),
-                (flags, output, canUseOps) -> {
-                    output.accept(new ItemStack(RECORD_GS.get()));
-                    output.accept(new ItemStack(RECORD_GP.get()));
-                    output.accept(new ItemStack(RECORD_EL.get()));
+        // Loader-Ereignis statt Architectury-modifyBuiltin (stuerzt auf NeoForge ab, siehe SpaceTabFill)
+        com.space_m.main.SpaceTabFill.modify(CreativeModeTabs.TOOLS_AND_UTILITIES, "SpaceNuclearItems",
+                sink -> {
+                    sink.accept(new ItemStack(RECORD_GS.get()), String.valueOf(RECORD_GS.getId()));
+                    sink.accept(new ItemStack(RECORD_GP.get()), String.valueOf(RECORD_GP.getId()));
+                    sink.accept(new ItemStack(RECORD_EL.get()), String.valueOf(RECORD_EL.getId()));
                 });
     }
 }

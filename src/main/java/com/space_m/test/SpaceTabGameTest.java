@@ -69,4 +69,70 @@ public final class SpaceTabGameTest {
                 stacks.size(), n, drives, fluidContainers);
         helper.succeed();
     }
+    /**
+     * Regression Nutzer-Meldung 2026-10-13 (1.21.1-NeoForge: Inventar oeffnen -> Absturz
+     * "Itemstack 0 minecraft:air does not exist in tab's list", ausgeloest durch Architectury-{@code modify}).
+     * Baut alle Tabs wie der Client beim Oeffnen des Inventars (HBM + Addon), mit und ohne OP-Rechte, und prueft
+     * die Addon-Eintraege in HBM- und Vanilla-Tabs.
+     */
+    @GameTest(template = "empty3x3x3", batch = "space_tab", timeoutTicks = 40)
+    public static void allCreativeTabsBuildWithAddon(GameTestHelper helper) {
+        for (boolean ops : new boolean[] { true, false, true }) {
+            try {
+                net.minecraft.world.item.CreativeModeTabs.tryRebuildTabContents(helper.getLevel().enabledFeatures(), ops,
+                        helper.getLevel().registryAccess());
+            } catch (RuntimeException e) {
+                StringBuilder msg = new StringBuilder("creative tab build failed (ops=" + ops + "): ");
+                for (Throwable t = e; t != null && t.getCause() != t; t = t.getCause())
+                    msg.append(t.getClass().getSimpleName()).append(": ").append(t.getMessage()).append(" | ");
+                com.mojang.logging.LogUtils.getLogger().error("[SpaceTabGameTest] {}", msg, e);
+                throw new GameTestAssertException(msg.toString());
+            }
+        }
+        int tabs = 0, total = 0;
+        for (CreativeModeTab tab : BuiltInRegistries.CREATIVE_MODE_TAB) {
+            if (tab.getType() != CreativeModeTab.Type.CATEGORY) continue;
+            tabs++;
+            for (ItemStack st : tab.getDisplayItems()) {
+                total++;
+                check(!st.isEmpty(), "empty stack in tab " + BuiltInRegistries.CREATIVE_MODE_TAB.getKey(tab));
+            }
+        }
+        check(com.space_m.main.SpaceTabFill.skippedEmpty() == 0,
+                "empty addon tab entries skipped: " + com.space_m.main.SpaceTabFill.skippedEmpty() + " (see log warnings)");
+
+        // Addon-Eintraege in den Vanilla-Tabs
+        checkInTab(net.minecraft.world.item.CreativeModeTabs.TOOLS_AND_UTILITIES, com.space_m.item.SpaceNuclearItems.RECORD_GS.get());
+        checkInTab(net.minecraft.world.item.CreativeModeTabs.TOOLS_AND_UTILITIES, com.space_m.item.SpaceNuclearItems.RECORD_EL.get());
+        checkInTab(net.minecraft.world.item.CreativeModeTabs.COMBAT, com.space_m.item.SpaceMaterialItems.BUTTER_SWORD.get());
+        for (var egg : com.space_m.entity.mob.SpaceMobs.eggs())
+            checkInTab(net.minecraft.world.item.CreativeModeTabs.SPAWN_EGGS, egg.get());
+        checkInTab(net.minecraft.world.item.CreativeModeTabs.SPAWN_EGGS, com.space_m.war.WarEntities.SIEGE_UFO_EGG.get());
+        checkInTab(net.minecraft.world.item.CreativeModeTabs.SPAWN_EGGS, com.space_m.war.WarEntities.WAR_BEHEMOTH_EGG.get());
+
+        // Addon-Eintraege in den neun HBM-Tabs: jedes eingetragene Item steht im Tab
+        int hbmEntries = 0;
+        for (SpaceCreativeTabs.Tab t : SpaceCreativeTabs.Tab.values()) {
+            CreativeModeTab tab = BuiltInRegistries.CREATIVE_MODE_TAB.get(t.id());
+            check(tab != null, "HBM tab missing: " + t.id());
+            Set<Item> items = new HashSet<>();
+            for (ItemStack st : tab.getDisplayItems()) items.add(st.getItem());
+            for (var sup : SpaceCreativeTabs.entries(t)) {
+                ItemStack st = sup.get();
+                check(!st.isEmpty(), "empty addon entry for " + t.id());
+                check(items.contains(st.getItem()), "addon entry " + BuiltInRegistries.ITEM.getKey(st.getItem()) + " missing in " + t.id());
+                hbmEntries++;
+            }
+        }
+        check(hbmEntries > 100, "addon entries in HBM tabs: " + hbmEntries);
+        com.mojang.logging.LogUtils.getLogger().info("[SpaceTabGameTest] {} tabs, {} stacks, {} addon entries in HBM tabs",
+                tabs, total, hbmEntries);
+        helper.succeed();
+    }
+
+    private static void checkInTab(net.minecraft.resources.ResourceKey<CreativeModeTab> key, Item item) {
+        CreativeModeTab tab = BuiltInRegistries.CREATIVE_MODE_TAB.getOrThrow(key);
+        boolean found = tab.getDisplayItems().stream().anyMatch(s -> s.getItem() == item);
+        check(found, BuiltInRegistries.ITEM.getKey(item) + " missing in " + key.location());
+    }
 }
