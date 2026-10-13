@@ -1,0 +1,15 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_solvent_washed_moho_nonmetal"
+  },
+  "results": [
+    {
+      "item": "hbm_m:bedrock_ore_fragment_sulfur",
+      "count": 6
+    },
+    {
+      "item": "space_m:bedrock_ore_crumbs_moho_nonmetal"
+    }
+  ]
+}

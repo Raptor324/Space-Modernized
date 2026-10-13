@@ -1,0 +1,14 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_base_tekto_rare"
+  },
+  "results": [
+    {
+      "item": "space_m:bedrock_ore_primary_tekto_rare"
+    },
+    {
+      "item": "minecraft:gravel"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "hbm_m:mixer",
+  "output": {
+    "fluid": "space_m:vinyl",
+    "amount": 1000
+  },
+  "duration": 20,
+  "input1": {
+    "fluid": "hbm_m:radiosolvent",
+    "amount": 250
+  },
+  "solid": {
+    "ingredient": {
+      "item": "space_m:pvc_log"
+    },
+    "count": 1
+  }
+}

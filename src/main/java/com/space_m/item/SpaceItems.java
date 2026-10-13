@@ -79,6 +79,8 @@ public final class SpaceItems {
         com.space_m.war.WarEntities.initItems();
         // E11/E12: Fork-Kassetten und NITAN-Ambrosia
         com.space_m.fork.ForkItems.init();
+        // Bedrock-Erz-Verarbeitungsstufen je Koerpersorte (54 x 26) + fehlende Bedrock-Erz-Fragmente
+        com.space_m.resources.CelestialBedrockOreItems.init();
         ITEMS.register();
     }
 }

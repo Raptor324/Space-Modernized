@@ -6,7 +6,7 @@
   "children": {
     "algae_film_model": {
       "loader": "forge:obj",
-      "model": "space_m:models/block/algae_film.obj",
+      "model": "space_m:models/block/algae_film_item.obj",
       "flip_v": true,
       "render_type": "minecraft:cutout",
       "textures": {

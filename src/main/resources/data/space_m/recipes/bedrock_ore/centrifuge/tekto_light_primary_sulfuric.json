@@ -1,0 +1,16 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_primary_sulfuric_tekto_light"
+  },
+  "results": [
+    {
+      "item": "space_m:bedrock_ore_primary_nosulfuric_tekto_light",
+      "count": 2
+    },
+    {
+      "item": "space_m:bedrock_ore_sulfuric_byproduct_tekto_light",
+      "count": 2
+    }
+  ]
+}

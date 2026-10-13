@@ -1,0 +1,16 @@
+{
+  "type": "hbm_m:electrolysis_fluid",
+  "input": {
+    "fluid": "space_m:hcl",
+    "amount": 1000
+  },
+  "output1": {
+    "fluid": "hbm_m:hydrogen",
+    "amount": 500
+  },
+  "output2": {
+    "fluid": "hbm_m:chlorine",
+    "amount": 500
+  },
+  "duration": 40
+}

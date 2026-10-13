@@ -34,6 +34,8 @@ public class CombatDropPodBlockEntity extends BaseHbmBlockEntity {
     public int amount;
     public int color;
     public int delay = 40;
+    /** Ticks seit dem Aussetzen der Nutzlast (fuer das Verschwinden nach combatPodDespawnSeconds). */
+    public int emptyTicks;
 
     public double hatchopen;
     public double hatchopen2;
@@ -99,8 +101,11 @@ public class CombatDropPodBlockEntity extends BaseHbmBlockEntity {
             return;
         }
 
+        // Abweichung (Nutzerwunsch): leere Kapsel verschwindet combatPodDespawnSeconds nach dem Aussetzen der Nutzlast
+        // (Original: bei Weltzeit % 1000 == 0) - verhindert Lag durch hunderte Kapseln waehrend einer Invasion.
         if (SpaceConfig.get().combatPodDespawn && !level.isClientSide) {
-            if (level.getGameTime() % 1000 == 0) {
+            emptyTicks++;
+            if (emptyTicks >= Math.max(1, SpaceConfig.get().combatPodDespawnSeconds) * 20) {
                 level.setBlockAndUpdate(worldPosition, Blocks.AIR.defaultBlockState());
             }
         }
@@ -126,6 +131,7 @@ public class CombatDropPodBlockEntity extends BaseHbmBlockEntity {
             nbt.put("EntityType", entityType);
 
         nbt.putInt("amount", amount);
+        nbt.putInt("emptyTicks", emptyTicks);
         nbt.putInt("color", color);
         nbt.putInt("delay", delay);
         nbt.putDouble("hatchopen", hatchopen);
@@ -140,5 +146,6 @@ public class CombatDropPodBlockEntity extends BaseHbmBlockEntity {
         delay = nbt.getInt("delay");
         hatchopen = nbt.getDouble("hatchopen");
         hatchopen2 = nbt.getDouble("hatchopen2");
+        emptyTicks = nbt.getInt("emptyTicks");
     }
 }

@@ -935,6 +935,8 @@
   "item.warhead.desc.apollo": "Capsule",
   "item.warhead.desc.satellite": "Satellite",
   "itemGroup.space_m.ntm_space_tab": "NTM Space",
+  "pseudofluid.hbm_m.minsol": "Heavy Mineral Slurry",
+  "pseudofluid.hbm_m.minsolsep": "Seperated Mineral Slurry",
   "station.disengage": "Disengaging engines",
   "station.emptyRocket": "Rocket needs fuel",
   "station.engage": "Engaging engines for burn to",

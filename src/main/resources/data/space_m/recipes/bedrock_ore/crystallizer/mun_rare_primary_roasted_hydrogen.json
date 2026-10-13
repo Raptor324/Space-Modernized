@@ -1,0 +1,15 @@
+{
+  "type": "hbm_m:crystallizer",
+  "acid": {
+    "amount": 250,
+    "fluid": "hbm_m:hydrogen"
+  },
+  "duration": 200,
+  "ingredient": {
+    "item": "space_m:bedrock_ore_primary_roasted_mun_rare"
+  },
+  "productivity": 0.0,
+  "result": {
+    "item": "space_m:bedrock_ore_primary_first_mun_rare"
+  }
+}

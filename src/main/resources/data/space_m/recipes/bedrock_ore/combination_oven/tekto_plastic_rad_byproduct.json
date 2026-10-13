@@ -1,0 +1,14 @@
+{
+  "type": "hbm_m:combination_oven",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_rad_byproduct_tekto_plastic"
+  },
+  "fluid": {
+    "fluid": "hbm_m:vitriol",
+    "amount": 50
+  },
+  "result": {
+    "item": "space_m:bedrock_ore_rad_roasted_tekto_plastic",
+    "count": 1
+  }
+}

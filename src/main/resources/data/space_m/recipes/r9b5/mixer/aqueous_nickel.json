@@ -1,0 +1,18 @@
+{
+  "type": "hbm_m:mixer",
+  "output": {
+    "fluid": "space_m:aqueous_nickel",
+    "amount": 1000
+  },
+  "duration": 80,
+  "input1": {
+    "fluid": "space_m:brine",
+    "amount": 250
+  },
+  "solid": {
+    "ingredient": {
+      "tag": "hbm_m:oredict/dust/nickel_pure"
+    },
+    "count": 1
+  }
+}

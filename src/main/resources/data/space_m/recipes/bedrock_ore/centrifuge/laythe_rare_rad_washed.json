@@ -1,0 +1,15 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_rad_washed_laythe_rare"
+  },
+  "results": [
+    {
+      "item": "hbm_m:bedrock_ore_fragment_niobium",
+      "count": 3
+    },
+    {
+      "item": "space_m:bedrock_ore_crumbs_laythe_rare"
+    }
+  ]
+}

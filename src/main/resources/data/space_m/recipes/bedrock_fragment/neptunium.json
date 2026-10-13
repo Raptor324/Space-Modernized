@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "space_m:bedrock_ore_fragment_neptunium"
+    }
+  },
+  "result": {
+    "item": "hbm_m:neptunium_powder"
+  }
+}

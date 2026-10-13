@@ -80,6 +80,9 @@ public final class SpaceResourceRegistry {
         setupDone = true;
 
         CelestialBedrockOre.registerWithHbm();
+        // Verarbeitungsstufen je Koerpersorte: Fragment-Formen, Lichtbogenofen/Elektrolyse (Rest als Rezept-JSON)
+        CelestialBedrockOreItems.registerShapes();
+        CelestialBedrockRecipes.register();
 
         // Lagerstaetten (alle BlockOreFluid-Varianten; HBM-Maschinen fragen BlockOreFluid ueber
         // SpaceResources.FluidDepositBlock ab, W-R8B-2)

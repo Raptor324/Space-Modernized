@@ -1,0 +1,16 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_primary_sulfuric_duna_actinide"
+  },
+  "results": [
+    {
+      "item": "space_m:bedrock_ore_primary_nosulfuric_duna_actinide",
+      "count": 2
+    },
+    {
+      "item": "space_m:bedrock_ore_sulfuric_byproduct_duna_actinide",
+      "count": 2
+    }
+  ]
+}

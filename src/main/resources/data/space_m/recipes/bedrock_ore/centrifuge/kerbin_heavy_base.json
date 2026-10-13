@@ -1,0 +1,14 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_base_kerbin_heavy"
+  },
+  "results": [
+    {
+      "item": "space_m:bedrock_ore_primary_kerbin_heavy"
+    },
+    {
+      "item": "minecraft:gravel"
+    }
+  ]
+}

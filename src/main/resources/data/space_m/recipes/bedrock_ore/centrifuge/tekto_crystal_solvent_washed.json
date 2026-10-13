@@ -1,0 +1,15 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_solvent_washed_tekto_crystal"
+  },
+  "results": [
+    {
+      "item": "hbm_m:bedrock_ore_fragment_molysite",
+      "count": 6
+    },
+    {
+      "item": "space_m:bedrock_ore_crumbs_tekto_crystal"
+    }
+  ]
+}

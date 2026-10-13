@@ -90,6 +90,53 @@ public final class WarResourcesGameTest {
         helper.succeed();
     }
 
+    /**
+     * Spieltest "Invasion bleibt bei Wave 1": Abschuesse von Siege-UFOs muessen ueber das echte Todesereignis
+     * (WarEvents -> CBT_Invasion.onKill) als Kill-Punkte am Koerper ankommen; ein frisch erschienenes UFO darf
+     * sich nicht sofort zurueckziehen (Original: erst nach 2 Minuten).
+     */
+    // eigener Batch: invasionSpawnerAndKillValues entfernt am Ende alle Siege-UFOs der Welt
+    @GameTest(template = "empty3x3x3", batch = "space_war_invasion", timeoutTicks = 100)
+    public static void invasionKillsCountAndUfoStays(GameTestHelper helper) {
+        ServerLevel level = helper.getLevel();
+        CelestialBody body = CelestialBody.getBody(level);
+        java.util.HashMap<Class<? extends com.space_m.celestial.trait.CelestialBodyTrait>, com.space_m.celestial.trait.CelestialBodyTrait> before =
+                new java.util.HashMap<>(body.getTraits());
+        // waveTime -1: kein Countdown; ohne Spieler laufen logicTick/Spawns nicht (wie Original)
+        body.modifyTraits(new CBT_Invasion(1, -1, true));
+        Vec3 at = helper.absoluteVec(new Vec3(1.5, 2, 1.5));
+
+        int expected = 0;
+        for (int i = 0; i < 12; i++) {
+            EntitySiegeUFO ufo = new EntitySiegeUFO(WarEntities.SIEGE_UFO.get(), level);
+            ufo.moveTo(at.x, at.y, at.z, 0, 0);
+            ufo.setTier(i % 3 == 0 ? SiegeTier.GOLD : SiegeTier.CLAY);
+            expected += i % 3 == 0 ? 2 : 1;
+            level.addFreshEntity(ufo);
+            ufo.kill();
+        }
+        CBT_Invasion inv = body.getTrait(CBT_Invasion.class);
+        check(inv != null && inv.kills == expected, "kills " + (inv == null ? "null" : inv.kills) + " != " + expected);
+
+        EntitySiegeUFO stay = new EntitySiegeUFO(WarEntities.SIEGE_UFO.get(), level);
+        stay.moveTo(at.x, at.y + 1, at.z, 0, 0);
+        stay.setTier(SiegeTier.STONE);
+        level.addFreshEntity(stay);
+        helper.runAfterDelay(40, () -> {
+            net.minecraft.nbt.CompoundTag nbt = new net.minecraft.nbt.CompoundTag();
+            stay.saveWithoutId(nbt);
+            boolean peaceful = level.getDifficulty() == net.minecraft.world.Difficulty.PEACEFUL;
+            body.setTraits(before);
+            if (!peaceful) {
+                check(!nbt.getBoolean("isRetreating"), "ufo retreats right after spawn");
+                check(nbt.getInt("lifetime") > 0 && nbt.getInt("lifetime") <= 41, "lifetime " + nbt.getInt("lifetime") + " removed " + stay.getRemovalReason()
+                        + " ticks " + stay.tickCount + " pos " + stay.position() + " diff " + level.getDifficulty() + " noAi " + stay.isNoAi());
+            }
+            stay.discard();
+            helper.succeed();
+        });
+    }
+
     /** Thatmo-Bomber: statFacCarpetJet (Typ 9, 150 Ticks, 1,5-faches Tempo). */
     @GameTest(template = "empty3x3x3", batch = "space_war", timeoutTicks = 20)
     public static void carpetJetFactory(GameTestHelper helper) {

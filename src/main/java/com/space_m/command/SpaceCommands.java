@@ -15,6 +15,7 @@ public final class SpaceCommands {
             CommandStations.register(dispatcher);
             CommandTotalTime.register(dispatcher);
             PlanetaryWeatherCommand.register(dispatcher);
+            CommandSpace.register(dispatcher); // Abweichung (Nutzerwunsch): /space destroystar
         });
     }
 }

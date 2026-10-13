@@ -1,0 +1,14 @@
+{
+  "type": "hbm_m:combination_oven",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_primary_minmus_rare"
+  },
+  "fluid": {
+    "fluid": "hbm_m:vitriol",
+    "amount": 50
+  },
+  "result": {
+    "item": "space_m:bedrock_ore_primary_roasted_minmus_rare",
+    "count": 1
+  }
+}

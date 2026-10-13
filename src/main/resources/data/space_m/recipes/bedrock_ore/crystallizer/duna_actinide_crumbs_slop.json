@@ -1,0 +1,16 @@
+{
+  "type": "hbm_m:crystallizer",
+  "acid": {
+    "amount": 1000,
+    "fluid": "hbm_m:slop"
+  },
+  "count": 64,
+  "duration": 200,
+  "ingredient": {
+    "item": "space_m:bedrock_ore_crumbs_duna_actinide"
+  },
+  "productivity": 0.0,
+  "result": {
+    "item": "space_m:bedrock_ore_base_duna_actinide"
+  }
+}

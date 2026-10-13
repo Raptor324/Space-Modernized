@@ -1,0 +1,20 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_primary_solvent_minmus_rare"
+  },
+  "results": [
+    {
+      "item": "space_m:bedrock_ore_primary_nosolvent_minmus_rare",
+      "count": 2
+    },
+    {
+      "item": "space_m:bedrock_ore_sulfuric_byproduct_minmus_rare",
+      "count": 2
+    },
+    {
+      "item": "space_m:bedrock_ore_solvent_byproduct_minmus_rare",
+      "count": 2
+    }
+  ]
+}

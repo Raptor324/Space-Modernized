@@ -1,0 +1,20 @@
+{
+  "type": "hbm_m:electrolysis_fluid",
+  "input": {
+    "fluid": "space_m:lithcarbonate",
+    "amount": 1000
+  },
+  "output1": {
+    "fluid": "hbm_m:oxygen",
+    "amount": 12000
+  },
+  "duration": 10,
+  "byproducts": [
+    {
+      "item": "hbm_m:lithium_powder"
+    },
+    {
+      "item": "hbm_m:graphite_ingot"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_sulfuric_washed_kerbin_nonmetal"
+  },
+  "results": [
+    {
+      "item": "hbm_m:bedrock_ore_fragment_lignite",
+      "count": 9
+    },
+    {
+      "item": "space_m:bedrock_ore_crumbs_kerbin_nonmetal"
+    }
+  ]
+}

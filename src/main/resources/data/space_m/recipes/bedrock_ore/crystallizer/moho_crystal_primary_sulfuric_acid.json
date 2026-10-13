@@ -1,0 +1,15 @@
+{
+  "type": "hbm_m:crystallizer",
+  "acid": {
+    "amount": 250,
+    "fluid": "hbm_m:sulfuric_acid"
+  },
+  "duration": 200,
+  "ingredient": {
+    "item": "space_m:bedrock_ore_primary_moho_crystal"
+  },
+  "productivity": 0.0,
+  "result": {
+    "item": "space_m:bedrock_ore_primary_sulfuric_moho_crystal"
+  }
+}

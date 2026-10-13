@@ -1,0 +1,15 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_solvent_washed_ike_light"
+  },
+  "results": [
+    {
+      "item": "space_m:bedrock_ore_fragment_nickel",
+      "count": 6
+    },
+    {
+      "item": "space_m:bedrock_ore_crumbs_ike_light"
+    }
+  ]
+}

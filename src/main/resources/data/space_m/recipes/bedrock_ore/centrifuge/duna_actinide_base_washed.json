@@ -1,0 +1,17 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_base_washed_duna_actinide"
+  },
+  "results": [
+    {
+      "item": "space_m:bedrock_ore_primary_duna_actinide"
+    },
+    {
+      "item": "space_m:bedrock_ore_primary_duna_actinide"
+    },
+    {
+      "item": "minecraft:gravel"
+    }
+  ]
+}

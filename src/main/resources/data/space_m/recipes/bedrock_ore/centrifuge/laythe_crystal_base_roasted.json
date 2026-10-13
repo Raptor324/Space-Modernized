@@ -1,0 +1,14 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_base_roasted_laythe_crystal"
+  },
+  "results": [
+    {
+      "item": "space_m:bedrock_ore_primary_laythe_crystal"
+    },
+    {
+      "item": "minecraft:gravel"
+    }
+  ]
+}

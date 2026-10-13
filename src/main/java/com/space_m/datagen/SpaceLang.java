@@ -647,6 +647,9 @@ public final class SpaceLang {
         e("hbmmat.gallium", "hbmmat.gallium", "Gallium", "Галлий");
         e("hbmmat.galliumarsenide", "hbmmat.galliumarsenide", "Gallium Arsenide", "Арсенид галлия");
         e("hbmmat.glowstone", "hbmmat.glowstone", "Glowstone", "Светящийся камень");
+        // W-R9B5-5: Pseudofluide der Gaszentrifuge (HBM-Schluessel pseudofluid.hbm_m.<id>)
+        e("pseudofluid.hbm_m.minsol", "hbmpseudofluid.minsol", "Heavy Mineral Slurry", "Тяжёлый минеральный шлам");
+        e("pseudofluid.hbm_m.minsolsep", "hbmpseudofluid.minsolsep", "Seperated Mineral Slurry", "Отделённый минеральный шлам");
         e("hbmmat.hafnium", "hbmmat.hafnium", "Hafnium", "Гафний");
         e("hbmmat.iodine", "hbmmat.iodine", "Iodine", "Йод");
         e("hbmmat.iridium", "hbmmat.iridium", "Iridium", "Иридий");

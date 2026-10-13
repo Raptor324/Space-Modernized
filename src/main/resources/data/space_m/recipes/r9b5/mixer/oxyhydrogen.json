@@ -1,0 +1,17 @@
+{
+  "type": "hbm_m:mixer",
+  "output": {
+    "fluid": "hbm_m:oxyhydrogen",
+    "amount": 1000
+  },
+  "duration": 50,
+  "input1": {
+    "fluid": "hbm_m:hydrogen",
+    "amount": 500
+  },
+  "input2": {
+    "fluid": "hbm_m:oxygen",
+    "amount": 500
+  },
+  "replace": true
+}

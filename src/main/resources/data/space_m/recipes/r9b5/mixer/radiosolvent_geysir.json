@@ -1,0 +1,18 @@
+{
+  "type": "hbm_m:mixer",
+  "output": {
+    "fluid": "hbm_m:radiosolvent",
+    "amount": 5000
+  },
+  "duration": 20,
+  "input1": {
+    "fluid": "hbm_m:reformgas",
+    "amount": 500
+  },
+  "solid": {
+    "ingredient": {
+      "item": "space_m:geysir_chloric"
+    },
+    "count": 1
+  }
+}

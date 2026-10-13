@@ -1,0 +1,22 @@
+{
+  "type": "hbm_m:electrolysis_fluid",
+  "input": {
+    "fluid": "space_m:brine",
+    "amount": 400
+  },
+  "output1": {
+    "fluid": "hbm_m:hydrogen",
+    "amount": 200
+  },
+  "output2": {
+    "fluid": "hbm_m:oxygen",
+    "amount": 200
+  },
+  "duration": 40,
+  "byproducts": [
+    {
+      "item": "hbm_m:powder_sodium",
+      "count": 2
+    }
+  ]
+}

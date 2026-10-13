@@ -1,0 +1,12 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_primary_roasted_tekto_plastic"
+  },
+  "results": [
+    {
+      "item": "space_m:bedrock_ore_fragment_polymer",
+      "count": 18
+    }
+  ]
+}

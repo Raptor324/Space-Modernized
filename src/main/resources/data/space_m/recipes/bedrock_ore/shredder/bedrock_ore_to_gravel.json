@@ -1,0 +1,9 @@
+{
+  "type": "hbm_m:shredding",
+  "ingredient": {
+    "tag": "space_m:bedrock_ore"
+  },
+  "result": {
+    "item": "minecraft:gravel"
+  }
+}

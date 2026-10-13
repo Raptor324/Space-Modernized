@@ -1,0 +1,20 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_primary_solvent_tekto_plastic"
+  },
+  "results": [
+    {
+      "item": "space_m:bedrock_ore_primary_nosolvent_tekto_plastic",
+      "count": 2
+    },
+    {
+      "item": "space_m:bedrock_ore_sulfuric_byproduct_tekto_plastic",
+      "count": 2
+    },
+    {
+      "item": "space_m:bedrock_ore_solvent_byproduct_tekto_plastic",
+      "count": 2
+    }
+  ]
+}

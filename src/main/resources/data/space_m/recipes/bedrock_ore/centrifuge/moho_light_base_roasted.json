@@ -1,0 +1,14 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_base_roasted_moho_light"
+  },
+  "results": [
+    {
+      "item": "space_m:bedrock_ore_primary_moho_light"
+    },
+    {
+      "item": "minecraft:gravel"
+    }
+  ]
+}

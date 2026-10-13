@@ -1,0 +1,15 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_rad_washed_duna_actinide"
+  },
+  "results": [
+    {
+      "item": "space_m:bedrock_ore_fragment_u233",
+      "count": 3
+    },
+    {
+      "item": "space_m:bedrock_ore_crumbs_duna_actinide"
+    }
+  ]
+}

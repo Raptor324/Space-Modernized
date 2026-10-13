@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "space_m:bedrock_ore_fragment_pvc"
+    }
+  },
+  "result": {
+    "item": "space_m:powder_pvc"
+  }
+}

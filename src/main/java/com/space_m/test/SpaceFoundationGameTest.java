@@ -41,7 +41,7 @@ public final class SpaceFoundationGameTest {
     public static void configDefaultsMatchOriginal(GameTestHelper helper) {
         SpaceConfig c = new SpaceConfig();
         check(c.maxProbeDistance == 32_000 && c.maxStationDistance == 32_000, "SpaceConfig probe/station distance 32000");
-        check(!c.allowNetherPortals && c.enableVolcanoGen && c.crashOnBiomeConflict && c.showOreLocations && !c.combatPodDespawn,
+        check(!c.allowNetherPortals && c.enableVolcanoGen && c.crashOnBiomeConflict && c.showOreLocations && c.combatPodDespawn && c.combatPodDespawnSeconds == 60,
                 "SpaceConfig switches");
         check(c.nickelSpawn == 12 && c.mineralSpawn == 4 && c.bedrockCadmiumSpawn == 400, "WorldConfig load defaults");
         check(c.celestialRadMultiplier == 0.25D && c.disableNeutron && c.enableMunCows, "Radiation/Mob defaults");
@@ -54,7 +54,7 @@ public final class SpaceFoundationGameTest {
                 check(keys.add(f.getAnnotation(ConfigEntry.class).key()), "duplicate config key " + f.getName());
             }
         }
-        check(n == 61, "61 config entries, found " + n);
+        check(n == 62, "62 config entries (61 Original + combatPodDespawnSeconds), found " + n);
         helper.succeed();
     }
 

@@ -148,8 +148,11 @@ tasks.named<ProcessResources>("processResources") {
 				val dest = File(target, child.name)
 				if (dest.exists()) {
 					if (child.isDirectory) moveInto(child, dest) else child.delete()
-				} else {
-					child.renameTo(dest)
+				} else if (!child.renameTo(dest)) {
+					// Windows: das Umbenennen scheitert still, solange ein anderer Prozess (Virenscanner, IDE-Dateiwaechter)
+					// eine Datei im Baum offen haelt - danach loeschte deleteRecursively() den Baum, die Daten fehlten im
+					// Ergebnis (z.B. alle c:-Formen-Tags). Dann kopieren (wirft bei Fehlern) statt still zu verlieren.
+					child.copyRecursively(dest, overwrite = true)
 				}
 			}
 			source.deleteRecursively()

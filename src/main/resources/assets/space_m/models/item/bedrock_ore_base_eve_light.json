@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "space_m:item/bedrock_ore/bedrock_ore_base_eve_light"
+  }
+}

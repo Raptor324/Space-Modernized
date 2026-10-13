@@ -1,0 +1,16 @@
+{
+  "type": "hbm_m:crystallizer",
+  "acid": {
+    "amount": 250,
+    "fluid": "hbm_m:water"
+  },
+  "count": 4,
+  "duration": 100,
+  "ingredient": {
+    "item": "space_m:bedrock_ore_rad_roasted_duna_heavy"
+  },
+  "productivity": 0.0,
+  "result": {
+    "item": "space_m:bedrock_ore_rad_washed_duna_heavy"
+  }
+}

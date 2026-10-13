@@ -1,0 +1,14 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_base_moho_rare"
+  },
+  "results": [
+    {
+      "item": "space_m:bedrock_ore_primary_moho_rare"
+    },
+    {
+      "item": "minecraft:gravel"
+    }
+  ]
+}

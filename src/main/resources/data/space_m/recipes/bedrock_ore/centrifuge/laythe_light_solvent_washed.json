@@ -1,0 +1,15 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_solvent_washed_laythe_light"
+  },
+  "results": [
+    {
+      "item": "space_m:bedrock_ore_fragment_gallium",
+      "count": 6
+    },
+    {
+      "item": "space_m:bedrock_ore_crumbs_laythe_light"
+    }
+  ]
+}

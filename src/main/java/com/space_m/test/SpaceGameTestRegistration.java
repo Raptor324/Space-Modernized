@@ -58,5 +58,9 @@ public final class SpaceGameTestRegistration {
         event.register(R9b4GameTest.class); // R9-B4 LPW-2, Angeln, Siege-Craft
         event.register(com.space_m.deco.SpaceDecoGameTest.class); // R9-B2 Deko/Erdbeere/Staemme
         event.register(FluidContainerGameTest.class); // Fluessigkeitsbehaelter (Nutzer-Meldung 2026-10-13)
+        event.register(DestroyedStarGameTest.class); // wand_d / Schwarzes Loch (zerstoerte Sonne)
+        event.register(com.space_m.resources.BedrockProcessingGameTest.class); // Bedrock-Erzstufen je Koerper
+        event.register(com.space_m.resources.BedrockFragmentGameTest.class); // Fragment -> Material (OreDictManager)
+        event.register(OwWishesGameTest.class); // offene HBM-Wuensche (Mischer/Elektrolyse/SILEX-XRAY/Gaszentrifuge/Wackelkopf-Gefahren)
     }
 }

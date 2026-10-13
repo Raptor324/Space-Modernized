@@ -37,6 +37,8 @@ public final class SpaceRegistry {
 
         // E1-E17: NTM-Space-Fork-Regeln in HBM einschalten (vor der Blockregistrierung, Elektrolyseur-Struktur)
         com.space_m.fork.SpaceForkRules.init();
+        // wand_d: Space-ItemWandD (Teleporter/Atmosphaere/Sonne zerstoeren) ersetzt die HBM-Fassung
+        com.space_m.item.SpaceWandD.init();
 
         // Netzwerk: C2S + (Server) S2C-Typen. Client-Empfaenger meldet SpaceClient an.
         SpacePacketHandler.register();
@@ -110,6 +112,9 @@ public final class SpaceRegistry {
 
         // R9-A: Annihilator "space fork"-Eintraege (528-Modus, beim Serverstart)
         com.space_m.material.SpaceAnnihilator.init();
+        // Runde ow: Mineralschlamm in der Gaszentrifuge (Pseudofluide), Wackelkopf-Gefahren (GLITCH/ASBESTOS je Typ)
+        com.space_m.material.SpaceGasCentrifuge.init();
+        com.space_m.fork.trinket.ForkTrinketHazards.init();
 
         LifecycleEvent.SETUP.register(SpaceRegistry::commonSetup);
 

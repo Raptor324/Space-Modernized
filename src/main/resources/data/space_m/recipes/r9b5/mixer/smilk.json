@@ -1,0 +1,18 @@
+{
+  "type": "hbm_m:mixer",
+  "output": {
+    "fluid": "space_m:smilk",
+    "amount": 500
+  },
+  "duration": 50,
+  "input1": {
+    "fluid": "space_m:milk",
+    "amount": 500
+  },
+  "solid": {
+    "ingredient": {
+      "item": "hbm_m:strawberry"
+    },
+    "count": 4
+  }
+}

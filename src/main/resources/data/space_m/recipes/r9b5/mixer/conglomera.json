@@ -1,0 +1,18 @@
+{
+  "type": "hbm_m:mixer",
+  "output": {
+    "fluid": "space_m:conglomera",
+    "amount": 1000
+  },
+  "duration": 70,
+  "input1": {
+    "fluid": "space_m:aqueous_nickel",
+    "amount": 250
+  },
+  "solid": {
+    "ingredient": {
+      "item": "space_m:stone_resource_conglomerate"
+    },
+    "count": 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "hbm_m:mixer",
+  "output": {
+    "fluid": "space_m:vinyl",
+    "amount": 500
+  },
+  "duration": 20,
+  "input1": {
+    "fluid": "space_m:hgas",
+    "amount": 500
+  },
+  "input2": {
+    "fluid": "hbm_m:unsaturateds",
+    "amount": 250
+  },
+  "solid": {
+    "ingredient": {
+      "item": "hbm_m:cadmium_powder"
+    },
+    "count": 1
+  },
+  "order": 2
+}

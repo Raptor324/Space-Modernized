@@ -1,0 +1,15 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_rad_washed_dres_light"
+  },
+  "results": [
+    {
+      "item": "space_m:bedrock_ore_fragment_gallium",
+      "count": 3
+    },
+    {
+      "item": "space_m:bedrock_ore_crumbs_dres_light"
+    }
+  ]
+}

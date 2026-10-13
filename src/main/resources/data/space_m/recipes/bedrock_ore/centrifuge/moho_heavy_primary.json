@@ -1,0 +1,12 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_primary_moho_heavy"
+  },
+  "results": [
+    {
+      "item": "hbm_m:bedrock_ore_fragment_gold",
+      "count": 18
+    }
+  ]
+}

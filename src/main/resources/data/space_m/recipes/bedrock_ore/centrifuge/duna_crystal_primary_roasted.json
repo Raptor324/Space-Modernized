@@ -1,0 +1,12 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_primary_roasted_duna_crystal"
+  },
+  "results": [
+    {
+      "item": "hbm_m:bedrock_ore_fragment_redstone",
+      "count": 18
+    }
+  ]
+}

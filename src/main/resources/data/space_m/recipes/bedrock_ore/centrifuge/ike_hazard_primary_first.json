@@ -1,0 +1,19 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_primary_first_ike_hazard"
+  },
+  "results": [
+    {
+      "item": "hbm_m:bedrock_ore_fragment_uranium",
+      "count": 18
+    },
+    {
+      "item": "hbm_m:bedrock_ore_fragment_uranium",
+      "count": 18
+    },
+    {
+      "item": "space_m:bedrock_ore_crumbs_ike_hazard"
+    }
+  ]
+}

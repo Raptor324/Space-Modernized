@@ -1,0 +1,15 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_primary_norad_minmus_light"
+  },
+  "results": [
+    {
+      "item": "hbm_m:bedrock_ore_fragment_copper",
+      "count": 18
+    },
+    {
+      "item": "space_m:bedrock_ore_crumbs_minmus_light"
+    }
+  ]
+}

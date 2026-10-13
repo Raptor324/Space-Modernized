@@ -1,0 +1,17 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_base_washed_ike_hazard"
+  },
+  "results": [
+    {
+      "item": "space_m:bedrock_ore_primary_ike_hazard"
+    },
+    {
+      "item": "space_m:bedrock_ore_primary_ike_hazard"
+    },
+    {
+      "item": "minecraft:gravel"
+    }
+  ]
+}

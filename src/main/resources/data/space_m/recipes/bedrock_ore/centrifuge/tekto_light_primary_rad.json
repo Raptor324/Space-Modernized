@@ -1,0 +1,24 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_primary_rad_tekto_light"
+  },
+  "results": [
+    {
+      "item": "space_m:bedrock_ore_primary_norad_tekto_light",
+      "count": 2
+    },
+    {
+      "item": "space_m:bedrock_ore_sulfuric_byproduct_tekto_light",
+      "count": 2
+    },
+    {
+      "item": "space_m:bedrock_ore_solvent_byproduct_tekto_light",
+      "count": 2
+    },
+    {
+      "item": "space_m:bedrock_ore_rad_byproduct_tekto_light",
+      "count": 2
+    }
+  ]
+}

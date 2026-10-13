@@ -1,0 +1,15 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_sulfuric_washed_minmus_light"
+  },
+  "results": [
+    {
+      "item": "hbm_m:bedrock_ore_fragment_titanium",
+      "count": 9
+    },
+    {
+      "item": "space_m:bedrock_ore_crumbs_minmus_light"
+    }
+  ]
+}

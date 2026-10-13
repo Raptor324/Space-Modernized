@@ -1,0 +1,16 @@
+{
+  "type": "hbm_m:pyro_oven",
+  "duration": 10,
+  "fluid_output": {
+    "amount": 50,
+    "fluid": "hbm_m:vitriol"
+  },
+  "item_input": {
+    "ingredient": {
+      "item": "space_m:bedrock_ore_primary_minmus_crystal"
+    }
+  },
+  "item_output": {
+    "item": "space_m:bedrock_ore_primary_roasted_minmus_crystal"
+  }
+}

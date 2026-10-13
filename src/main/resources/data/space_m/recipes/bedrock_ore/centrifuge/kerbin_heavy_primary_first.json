@@ -1,0 +1,19 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_primary_first_kerbin_heavy"
+  },
+  "results": [
+    {
+      "item": "hbm_m:bedrock_ore_fragment_tungsten",
+      "count": 18
+    },
+    {
+      "item": "hbm_m:bedrock_ore_fragment_tungsten",
+      "count": 18
+    },
+    {
+      "item": "space_m:bedrock_ore_crumbs_kerbin_heavy"
+    }
+  ]
+}

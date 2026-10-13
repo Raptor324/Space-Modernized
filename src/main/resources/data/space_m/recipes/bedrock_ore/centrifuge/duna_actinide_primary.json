@@ -1,0 +1,12 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_primary_duna_actinide"
+  },
+  "results": [
+    {
+      "item": "hbm_m:bedrock_ore_fragment_thorium",
+      "count": 18
+    }
+  ]
+}

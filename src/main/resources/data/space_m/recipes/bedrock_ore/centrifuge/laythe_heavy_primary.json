@@ -1,0 +1,12 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_primary_laythe_heavy"
+  },
+  "results": [
+    {
+      "item": "hbm_m:bedrock_ore_fragment_beryllium",
+      "count": 18
+    }
+  ]
+}

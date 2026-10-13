@@ -27,8 +27,8 @@ import net.minecraft.world.item.Items;
  * {@code STACKTRACE0x00<n>}).
  *
  * <p>Im Original haengt der Eintrag an {@code bobblehead} Metadatum 25 (Space-Reihenfolge: MICROWAVE). HBM-Modernized
- * fuehrt Wackelkoepfe als einen Block mit Typ im Blockzustand; eine Gegenstandsregel je Typ ist ohne HBM-Erweiterung
- * nicht moeglich (Wunsch W-R9B-1). Der Typ ist deshalb nur angelegt.
+ * fuehrt den Wackelkopf-Typ im Stapel-NBT; angehaengt wird der Eintrag daher ueber den stapelabhaengigen Transformer
+ * {@link com.space_m.fork.trinket.ForkTrinketHazards} (HBM-Wackelkopf Typ MICROWAVE).
  */
 public class HazardTypeGlitch extends HazardTypeBase {
 

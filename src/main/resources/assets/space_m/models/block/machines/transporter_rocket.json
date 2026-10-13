@@ -6,7 +6,7 @@
   "children": {
     "transporter_rocket_model": {
       "loader": "forge:obj",
-      "model": "space_m:models/machines/transporter_pad.obj",
+      "model": "space_m:models/machines/transporter_pad_item.obj",
       "flip_v": true,
       "render_type": "minecraft:cutout",
       "textures": {

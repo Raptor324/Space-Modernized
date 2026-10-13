@@ -1,0 +1,16 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_primary_sulfuric_ike_hazard"
+  },
+  "results": [
+    {
+      "item": "space_m:bedrock_ore_primary_nosulfuric_ike_hazard",
+      "count": 2
+    },
+    {
+      "item": "space_m:bedrock_ore_sulfuric_byproduct_ike_hazard",
+      "count": 2
+    }
+  ]
+}

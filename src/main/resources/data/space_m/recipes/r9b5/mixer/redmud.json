@@ -1,0 +1,18 @@
+{
+  "type": "hbm_m:mixer",
+  "output": {
+    "fluid": "hbm_m:redmud",
+    "amount": 50
+  },
+  "duration": 100,
+  "input1": {
+    "fluid": "space_m:hcl",
+    "amount": 1400
+  },
+  "solid": {
+    "ingredient": {
+      "item": "space_m:duna_sands"
+    },
+    "count": 4
+  }
+}

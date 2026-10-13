@@ -6,7 +6,7 @@
   "children": {
     "air_scrubber_model": {
       "loader": "forge:obj",
-      "model": "space_m:models/block/air_scrubber.obj",
+      "model": "space_m:models/block/air_scrubber_item.obj",
       "flip_v": true,
       "render_type": "minecraft:cutout",
       "textures": {

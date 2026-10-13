@@ -1,0 +1,18 @@
+{
+  "type": "hbm_m:mixer",
+  "output": {
+    "fluid": "space_m:cbenz",
+    "amount": 250
+  },
+  "duration": 20,
+  "input1": {
+    "fluid": "hbm_m:radiosolvent",
+    "amount": 500
+  },
+  "solid": {
+    "ingredient": {
+      "item": "space_m:leaf_pet"
+    },
+    "count": 32
+  }
+}

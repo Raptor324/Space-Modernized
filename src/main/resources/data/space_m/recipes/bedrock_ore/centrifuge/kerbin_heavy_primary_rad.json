@@ -1,0 +1,24 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_primary_rad_kerbin_heavy"
+  },
+  "results": [
+    {
+      "item": "space_m:bedrock_ore_primary_norad_kerbin_heavy",
+      "count": 2
+    },
+    {
+      "item": "space_m:bedrock_ore_sulfuric_byproduct_kerbin_heavy",
+      "count": 2
+    },
+    {
+      "item": "space_m:bedrock_ore_solvent_byproduct_kerbin_heavy",
+      "count": 2
+    },
+    {
+      "item": "space_m:bedrock_ore_rad_byproduct_kerbin_heavy",
+      "count": 2
+    }
+  ]
+}

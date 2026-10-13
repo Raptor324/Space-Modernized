@@ -63,7 +63,11 @@ public class SpaceConfig {
 
     @ConfigEntry(category = GENERAL, key = "1.94_combatPodDespawn", origin = "SpaceConfig",
             comment = "wether combat pods should despawn after a certian amount of time.")
-    public boolean combatPodDespawn = false;
+    public boolean combatPodDespawn = true; // Abweichung (Nutzerwunsch): standardmaessig an, Original false
+
+    @ConfigEntry(category = GENERAL, key = "1.95_combatPodDespawnSeconds", origin = "Space-Modernized",
+            comment = "Seconds after releasing its payload until a combat pod despawns (only if combatPodDespawn is true).")
+    public int combatPodDespawnSeconds = 60;
 
     // ════════════════════════ GeneralConfig (Space-Ergaenzungen) ════════════════════════
 

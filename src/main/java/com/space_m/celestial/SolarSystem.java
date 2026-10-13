@@ -125,7 +125,7 @@ public class SolarSystem {
                             .withRotationalPeriod(138_984)
                             .withColor(0.51F, 0.51F, 0.51F)
                             .withTidalLockingTo("kerbin")
-                            .withBlockTextures(tex("moon_rock"), tex("moon_turf"))
+                            .withBlockTextures(tex("moon_rock"), ResourceLocation.fromNamespaceAndPath("hbm_m", "textures/block/moon_turf.png")) // moon_turf liegt in HBM
                             .withIce(true),
 
                         landable("minmus", SpaceDimensions.MINMUS, 413_021, Body.MINMUS)

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "space_m:bedrock_ore_fragment_ghiorsium"
+    }
+  },
+  "result": {
+    "item": "hbm_m:gh336_ingot"
+  }
+}

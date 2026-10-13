@@ -6,7 +6,7 @@
   "children": {
     "base": {
       "loader": "forge:obj",
-      "model": "space_m:models/machines/rocket_pad.obj",
+      "model": "space_m:models/machines/rocket_pad_item.obj",
       "flip_v": true,
       "render_type": "minecraft:cutout",
       "textures": {
@@ -22,7 +22,7 @@
     },
     "support": {
       "loader": "forge:obj",
-      "model": "space_m:models/machines/rocket_pad.obj",
+      "model": "space_m:models/machines/rocket_pad_item.obj",
       "flip_v": true,
       "render_type": "minecraft:cutout",
       "textures": {

@@ -1,0 +1,17 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_base_washed_minmus_rare"
+  },
+  "results": [
+    {
+      "item": "space_m:bedrock_ore_primary_minmus_rare"
+    },
+    {
+      "item": "space_m:bedrock_ore_primary_minmus_rare"
+    },
+    {
+      "item": "minecraft:gravel"
+    }
+  ]
+}

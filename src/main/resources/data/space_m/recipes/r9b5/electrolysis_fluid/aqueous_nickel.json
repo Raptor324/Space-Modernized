@@ -1,0 +1,22 @@
+{
+  "type": "hbm_m:electrolysis_fluid",
+  "input": {
+    "fluid": "space_m:aqueous_nickel",
+    "amount": 300
+  },
+  "duration": 40,
+  "byproducts": [
+    {
+      "item": "space_m:powder_nickel",
+      "count": 2
+    },
+    {
+      "item": "hbm_m:iron_powder",
+      "count": 2
+    },
+    {
+      "item": "hbm_m:sulfur",
+      "count": 4
+    }
+  ]
+}

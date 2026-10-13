@@ -1,0 +1,17 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_base_washed_laythe_nonmetal"
+  },
+  "results": [
+    {
+      "item": "space_m:bedrock_ore_primary_laythe_nonmetal"
+    },
+    {
+      "item": "space_m:bedrock_ore_primary_laythe_nonmetal"
+    },
+    {
+      "item": "minecraft:gravel"
+    }
+  ]
+}

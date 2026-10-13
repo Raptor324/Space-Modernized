@@ -1,0 +1,14 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_base_mun_crystal"
+  },
+  "results": [
+    {
+      "item": "space_m:bedrock_ore_primary_mun_crystal"
+    },
+    {
+      "item": "minecraft:gravel"
+    }
+  ]
+}

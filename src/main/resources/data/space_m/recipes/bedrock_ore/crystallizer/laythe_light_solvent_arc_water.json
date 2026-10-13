@@ -1,0 +1,16 @@
+{
+  "type": "hbm_m:crystallizer",
+  "acid": {
+    "amount": 250,
+    "fluid": "hbm_m:water"
+  },
+  "count": 4,
+  "duration": 100,
+  "ingredient": {
+    "item": "space_m:bedrock_ore_solvent_arc_laythe_light"
+  },
+  "productivity": 0.0,
+  "result": {
+    "item": "space_m:bedrock_ore_solvent_washed_laythe_light"
+  }
+}

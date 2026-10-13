@@ -1,0 +1,24 @@
+{
+  "type": "hbm_m:centrifuge",
+  "ingredient": {
+    "item": "space_m:ingot_magma"
+  },
+  "results": [
+    {
+      "item": "space_m:bedrock_ore_fragment_gallium",
+      "count": 4
+    },
+    {
+      "item": "space_m:bedrock_ore_fragment_arsenic",
+      "count": 2
+    },
+    {
+      "item": "hbm_m:meteorite_powder_tiny",
+      "count": 2
+    },
+    {
+      "item": "hbm_m:dust_tiny",
+      "count": 3
+    }
+  ]
+}

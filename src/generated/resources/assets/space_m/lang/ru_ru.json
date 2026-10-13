@@ -935,6 +935,8 @@
   "item.warhead.desc.apollo": "Capsule",
   "item.warhead.desc.satellite": "Satellite",
   "itemGroup.space_m.ntm_space_tab": "NTM Космос",
+  "pseudofluid.hbm_m.minsol": "Тяжёлый минеральный шлам",
+  "pseudofluid.hbm_m.minsolsep": "Отделённый минеральный шлам",
   "station.disengage": "Выключение двигателей",
   "station.emptyRocket": "Требуется топливо!",
   "station.engage": "Включение двигателей",

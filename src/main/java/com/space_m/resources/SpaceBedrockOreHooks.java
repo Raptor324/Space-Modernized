@@ -13,13 +13,10 @@ import com.space_m.celestial.CelestialBody;
 import com.space_m.celestial.SolarSystem;
 
 import net.minecraft.ChatFormatting;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 
 /**
@@ -31,11 +28,9 @@ import net.minecraft.world.level.Level;
  *   <li>Erzdichtescanner: Sorten des Koerpers, Bohrsaeure des Koerpers ({@code getBedrockAcid}).</li>
  * </ul>
  *
- * <p>Abweichung (begruendet): das Original legt je Sorte 26 Verarbeitungsstufen an ({@code ItemBedrockOreNew}, 54 Sorten
- * x 26 Grade, Rezepte in Zentrifuge/Kristallisator/Elektrolyse/Lichtbogen/Pyro-/Kombinationsofen). Diese Items gibt es im
- * Addon noch nicht; bis dahin gibt der Erzschlammer die HBM-Grundstufe derselben Sortenart aus
- * ({@code hbm_m:bedrock_ore_base_<suffix>}, light/heavy/rare/actinide/nonmetal/crystal) - deren Weiterverarbeitung liefert
- * die HBM-(Master-)Ausbeute. Sorten ohne HBM-Gegenstueck (schrabidic, hazard, plastic) werden nicht geschlaemmt.
+ * <p>Der Erzschlammer gibt je Sorte die Space-Grundstufe aus ({@code space_m:bedrock_ore_base_<koerper>_<sorte>},
+ * {@link ItemCelestialBedrockOre}, Original {@code ItemBedrockOreNew.make(BASE, type)}); die 26 Verarbeitungsstufen und
+ * ihre Rezepte liefern {@link CelestialBedrockOreItems} und {@link CelestialBedrockRecipes} (+ Rezept-JSON).
  */
 public final class SpaceBedrockOreHooks implements BedrockOreHooks {
 
@@ -72,7 +67,6 @@ public final class SpaceBedrockOreHooks implements BedrockOreHooks {
         if (ore == null) return null;
         Map<ResourceLocation, Double> out = new LinkedHashMap<>();
         for (CelestialBedrockOre.Type type : ore.types) {
-            if (baseItem(type) == null) continue; // keine Verarbeitungsstufe vorhanden (s. Klassenkommentar)
             out.put(type.id(), CelestialBedrockOre.getOreAmount(stack, type));
         }
         return out;
@@ -81,8 +75,7 @@ public final class SpaceBedrockOreHooks implements BedrockOreHooks {
     @Override
     public ItemStack slopperOutput(ResourceLocation oreType) {
         CelestialBedrockOre.Type type = CelestialBedrockOre.byId(oreType);
-        Item item = type != null ? baseItem(type) : null;
-        return item != null ? new ItemStack(item) : ItemStack.EMPTY;
+        return type != null ? ItemCelestialBedrockOre.make(ItemCelestialBedrockOre.BedrockOreGrade.BASE, type) : ItemStack.EMPTY;
     }
 
     @Nullable
@@ -113,13 +106,6 @@ public final class SpaceBedrockOreHooks implements BedrockOreHooks {
 
     private static net.minecraft.network.chat.MutableComponent typeName(CelestialBedrockOre.Type type) {
         return Component.translatable("item.hbm_m.bedrock_ore.type." + type.suffix + ".name");
-    }
-
-    /** HBM-Grundstufe derselben Sortenart ({@code hbm_m:bedrock_ore_base_<suffix>}), sonst null. */
-    @Nullable
-    private static Item baseItem(CelestialBedrockOre.Type type) {
-        Item item = BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("hbm_m", "bedrock_ore_base_" + type.suffix));
-        return item == Items.AIR ? null : item;
     }
 
     /** Im Mod-Konstruktor (Client + Server). */

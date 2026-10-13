@@ -26,5 +26,6 @@
       "weight": 22
     }
   ],
-  "pellet_state": 3
+  "pellet_state": 3,
+  "wavelength": "xray"
 }

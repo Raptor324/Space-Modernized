@@ -1,0 +1,14 @@
+{
+  "type": "hbm_m:combination_oven",
+  "ingredient": {
+    "item": "space_m:bedrock_ore_solvent_byproduct_tekto_heavy"
+  },
+  "fluid": {
+    "fluid": "hbm_m:vitriol",
+    "amount": 50
+  },
+  "result": {
+    "item": "space_m:bedrock_ore_solvent_roasted_tekto_heavy",
+    "count": 1
+  }
+}

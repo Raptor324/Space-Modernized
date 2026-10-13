@@ -99,6 +99,82 @@ public final class RocketFlightGameTest {
         });
     }
 
+    /**
+     * Spieltest "Ich kann nicht in die Rakete einsteigen": echter Spielerpfad wie im Spiel - Client-Zielerfassung
+     * ({@code ProjectileUtil.getEntityHitResult} wie {@code GameRenderer.pick}, Reichweite 3 im Ueberlebensmodus),
+     * Server-Reichweitenpruefung ({@code handleInteract}: Abstand Trefferbox-Auge unter 6) und {@code Player.interactOn}.
+     * Einmal unten am Rumpf, einmal oben an der Kapsel (Turmplattform, Treffer ueber die Kapsel-Trefferbox).
+     */
+    @GameTest(template = "empty3x3x3", batch = "space_rocket", timeoutTicks = 40)
+    public static void boardRocket(GameTestHelper helper) {
+        EntityRideableRocket rocket = spawn(helper, rocket(2), drive(SolarSystem.Body.MUN, 8, 8));
+        ServerLevel level = helper.getLevel();
+        net.minecraft.server.level.ServerPlayer player = fakePlayer(level, "rocket_board_test");
+
+        helper.runAfterDelay(3, () -> {
+            check(rocket.getState() == RocketState.AWAITING, "awaiting, state " + rocket.getState());
+            check(rocket.capDummy != null && !rocket.capDummy.isRemoved(), "capsule dummy present");
+
+            // 1) unten am Rumpf, 2 Bloecke neben der Achse, Blick waagerecht zur Rakete
+            String low = tryBoard(player, rocket, rocket.getY(), 2.0D);
+            check(low == null, "board from ground: " + low);
+            check(player.getVehicle() == rocket, "player rides rocket (ground)");
+            player.stopRiding(); // danach 60 Ticks boardingCooldown (Vanilla) - zweiter Spieler fuer die Plattform
+
+            // 2) oben auf der Turmplattform an der Kapsel
+            net.minecraft.server.level.ServerPlayer player2 = fakePlayer(level, "rocket_board_test2");
+            // Plattformhoehe wie TileEntityLaunchPadRocket: Oberkante pad + newHeight + 3, Rakete steht auf pad + 3
+            com.space_m.rocket.RocketStruct struct = rocket.getRocket();
+            double capsuleFeet = rocket.getY() + Math.floor(struct.getHeight() - struct.capsule.height + 1);
+            String high = tryBoard(player2, rocket, capsuleFeet, 2.6D); // knapp ausserhalb der 4 breiten Kapsel-Trefferbox
+            check(high == null, "board from tower platform: " + high);
+            check(player2.getVehicle() == rocket, "player rides rocket (platform)");
+            check(rocket.getPassengers().size() == 1, "one passenger");
+
+            player2.stopRiding();
+            rocket.discard();
+            helper.succeed();
+        });
+    }
+
+    private static net.minecraft.server.level.ServerPlayer fakePlayer(ServerLevel level, String name) {
+        //? if forge {
+        net.minecraft.server.level.ServerPlayer player = net.minecraftforge.common.util.FakePlayerFactory.get(level,
+                new com.mojang.authlib.GameProfile(java.util.UUID.randomUUID(), name));
+        //?} elif neoforge {
+        /*// NeoForge-FakePlayer verweigert startRiding grundsaetzlich -> echter ServerPlayer, Netzkanal vom FakePlayer
+        com.mojang.authlib.GameProfile profile = new com.mojang.authlib.GameProfile(java.util.UUID.randomUUID(), name);
+        net.minecraft.server.level.ServerPlayer player = new net.minecraft.server.level.ServerPlayer(level.getServer(), level, profile,
+                net.minecraft.server.level.ClientInformation.createDefault());
+        player.connection = net.neoforged.neoforge.common.util.FakePlayerFactory.get(level, profile).connection;
+        *///?}
+        player.setGameMode(net.minecraft.world.level.GameType.SURVIVAL);
+        return player;
+    }
+
+    /** @return null bei Erfolg, sonst Grund */
+    private static String tryBoard(net.minecraft.server.level.ServerPlayer player, EntityRideableRocket rocket, double feetY, double side) {
+        player.moveTo(rocket.getX() + side, feetY, rocket.getZ(), 90.0F, 0.0F); // Yaw 90 = Blick nach -X
+        player.setYHeadRot(90.0F); // Blickrichtung lebender Wesen = Kopfdrehung
+        Vec3 eye = player.getEyePosition();
+        Vec3 look = player.getViewVector(1.0F);
+        double reach = 3.0D; // Forge ENTITY_REACH Ueberleben
+        Vec3 end = eye.add(look.scale(reach));
+        AABB search = player.getBoundingBox().expandTowards(look.scale(reach)).inflate(1.0D);
+        net.minecraft.world.phys.EntityHitResult hit = net.minecraft.world.entity.projectile.ProjectileUtil.getEntityHitResult(player, eye, end, search,
+                e -> !e.isSpectator() && e.isPickable(), reach * reach);
+        if (hit == null) return "client pick finds no entity at y " + feetY + " (rocket " + rocket.getBoundingBox() + ", eye " + eye + " end " + end
+                + " search " + search + " found " + player.level().getEntities(player, search, e -> true) + " pickable " + rocket.isPickable()
+                + " clip " + rocket.getBoundingBox().clip(eye, end) + " sameLevel " + (player.level() == rocket.level()) + ")";
+        net.minecraft.world.entity.Entity target = hit.getEntity();
+        if (target != rocket && target != rocket.capDummy) return "picked " + target;
+        if (target.getBoundingBox().distanceToSqr(eye) >= 36.0D) return "server reach check fails";
+        net.minecraft.world.InteractionResult r = target.interactAt(player, hit.getLocation().subtract(target.position()), net.minecraft.world.InteractionHand.MAIN_HAND);
+        if (!r.consumesAction()) r = player.interactOn(target, net.minecraft.world.InteractionHand.MAIN_HAND);
+        if (!r.consumesAction()) return "interact result " + r;
+        return player.getVehicle() == rocket ? null : "not mounted after " + r + ", vehicle " + player.getVehicle();
+    }
+
     /** Startrampe: Tanks aus dem Treibstoffbedarf der Rakete (updateStorageTanks), betankte Rakete fuellt sie, NONE hinten. */
     @GameTest(template = "empty3x3x3", batch = "space_rocket", timeoutTicks = 20)
     public static void padTanks(GameTestHelper helper) {
