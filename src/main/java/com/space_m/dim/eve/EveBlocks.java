@@ -109,7 +109,7 @@ public final class EveBlocks {
      */
     public static final RegistrySupplier<LiquidBlock> MERCURY_BLOCK = SpaceBlocks.register("mercury_block",
             () -> new com.hbm_m.block.fluid.GenericFluidBlock(() -> (FlowingFluid) MERCURY_FLUID.get(),
-                    com.hbm_m.platform.BlockProps.copy(Blocks.WATER).mapColor(MapColor.METAL).strength(100F, 500F).noLootTable()));
+                    com.hbm_m.platform.BlockHooks.copy(Blocks.WATER).mapColor(MapColor.METAL).strength(100F, 500F).noLootTable()));
 
     /** {@code bucket_mercury = new ItemModBucket(mercury_block).setContainerItem(Items.bucket)}, blockTab. */
     public static final RegistrySupplier<Item> BUCKET_MERCURY = SpaceItems.register("bucket_mercury",

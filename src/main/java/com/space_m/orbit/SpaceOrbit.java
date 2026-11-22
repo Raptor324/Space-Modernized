@@ -301,7 +301,7 @@ public final class SpaceOrbit {
             ItemStack drive = ItemVOTVdrive.of(SolarSystem.Body.ORBIT);
             ItemVOTVdrive.setCoordinates(drive, station.dX(), station.dZ());
             ItemVOTVdrive.setProcessed(drive, true);
-            com.hbm_m.platform.PlatformHooks.editItemTag(drive, t -> t.putString("stationName", station.name()));
+            com.hbm_m.platform.StackNbt.edit(drive, t -> t.putString("stationName", station.name()));
             return drive;
         }
 

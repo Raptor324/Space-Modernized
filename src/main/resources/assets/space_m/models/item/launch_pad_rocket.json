@@ -1,43 +1,91 @@
 {
-  "loader": "forge:composite",
-  "textures": {
-    "particle": "space_m:block/launch_pad"
-  },
-  "children": {
-    "base": {
-      "loader": "forge:obj",
-      "model": "space_m:models/machines/rocket_pad_item.obj",
-      "flip_v": true,
-      "render_type": "minecraft:cutout",
-      "textures": {
-        "default": "space_m:block/machine/rocket_pad"
-      },
-      "visibility": {
-        "Base": true,
-        "Tower_Base": false,
-        "Tower_Segment": false,
-        "Tower_Cap": false,
-        "Tower_Segment_Small": false
-      }
-    },
-    "support": {
-      "loader": "forge:obj",
-      "model": "space_m:models/machines/rocket_pad_item.obj",
-      "flip_v": true,
-      "render_type": "minecraft:cutout",
-      "textures": {
-        "default": "space_m:block/machine/rocket_pad_support"
-      },
-      "visibility": {
-        "Base": false,
-        "Tower_Base": true,
-        "Tower_Segment": true,
-        "Tower_Cap": true,
-        "Tower_Segment_Small": true
-      }
-    }
-  },
+  "parent": "space_m:block/launch_pad_rocket",
   "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        15.499252,
+        168.653183,
+        -14.955139
+      ],
+      "translation": [
+        -1.625939,
+        1.305788,
+        0.201587
+      ],
+      "scale": [
+        0.077344,
+        0.077344,
+        0.077344
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        15.499252,
+        168.653183,
+        -14.955154
+      ],
+      "translation": [
+        -0.453723,
+        1.550668,
+        0.5136
+      ],
+      "scale": [
+        0.077344,
+        0.077344,
+        0.077344
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        -25.083801,
+        -175.469498,
+        -2.117493
+      ],
+      "translation": [
+        -0.468475,
+        1.805586,
+        2.217958
+      ],
+      "scale": [
+        0.0825,
+        0.0825,
+        0.0825
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        -25.083801,
+        -175.469498,
+        -2.117508
+      ],
+      "translation": [
+        0.846502,
+        1.805586,
+        2.102912
+      ],
+      "scale": [
+        0.0825,
+        0.0825,
+        0.0825
+      ]
+    },
+    "head": {
+      "rotation": [
+        0,
+        -50.000004,
+        154.999985
+      ],
+      "translation": [
+        3.553666,
+        -13.622345,
+        8.342207
+      ],
+      "scale": [
+        0.33,
+        0.33,
+        0.33
+      ]
+    },
     "gui": {
       "rotation": [
         30,
@@ -45,116 +93,48 @@
         0
       ],
       "translation": [
-        0,
-        -3,
-        0
+        -0.486136,
+        -3.434354,
+        -8.828125
       ],
       "scale": [
-        0.07,
-        0.07,
-        0.07
+        0.042969,
+        0.042969,
+        0.042969
       ]
     },
     "ground": {
       "rotation": [
         0,
-        0,
+        90,
         0
       ],
       "translation": [
-        0,
-        3,
-        0
+        0.825,
+        -3.175,
+        -0.825
       ],
       "scale": [
-        0.1,
-        0.1,
-        0.1
+        0.103125,
+        0.103125,
+        0.103125
       ]
     },
     "fixed": {
       "rotation": [
         0,
-        0,
+        -90,
         0
       ],
       "translation": [
-        0,
-        -3,
-        0
+        -1.65,
+        -0.91,
+        2.15
       ],
       "scale": [
-        0.1,
-        0.1,
-        0.1
-      ]
-    },
-    "thirdperson_righthand": {
-      "rotation": [
-        75,
-        45,
-        0
-      ],
-      "translation": [
-        0,
-        2.5,
-        0
-      ],
-      "scale": [
-        0.07,
-        0.07,
-        0.07
-      ]
-    },
-    "thirdperson_lefthand": {
-      "rotation": [
-        75,
-        45,
-        0
-      ],
-      "translation": [
-        0,
-        2.5,
-        0
-      ],
-      "scale": [
-        0.07,
-        0.07,
-        0.07
-      ]
-    },
-    "firstperson_righthand": {
-      "rotation": [
-        0,
-        45,
-        0
-      ],
-      "translation": [
-        0,
-        0,
-        0
-      ],
-      "scale": [
-        0.07,
-        0.07,
-        0.07
-      ]
-    },
-    "firstperson_lefthand": {
-      "rotation": [
-        0,
-        45,
-        0
-      ],
-      "translation": [
-        0,
-        0,
-        0
-      ],
-      "scale": [
-        0.07,
-        0.07,
-        0.07
+        0.20625,
+        0.20625,
+        0.20625
       ]
     }
   }

@@ -198,7 +198,7 @@ public final class SpaceCrops {
 
     /** {@code ItemSeedFood(heal, sat, crop, soil)}: Saat, die man auch essen kann. */
     public static Item.Properties seedProps(int heal, float sat) {
-        return new Item.Properties().food(com.hbm_m.platform.PlatformHooks.foodBuilder(heal, sat).build());
+        return new Item.Properties().food(com.hbm_m.platform.ItemHooks.foodBuilder(heal, sat).build());
     }
 
     public static BlockItem seed(Block crop, int heal, float sat) {

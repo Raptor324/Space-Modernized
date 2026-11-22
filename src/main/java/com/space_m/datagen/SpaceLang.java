@@ -1,4 +1,3 @@
-// neo-pendant: Datagen laeuft nur auf Forge; NeoForge nutzt dieselben src/generated-Daten (processResources)
 //? if forge {
 package com.space_m.datagen;
 
@@ -23,6 +22,9 @@ public final class SpaceLang {
     public static void addAll(BiConsumer<String, String> consumer, boolean ru) {
         out = consumer;
         russian = ru;
+        e("advancements.space_m.drive_fail.description", "achievement.driveFail.desc", "Fail to clone an orbital station drive before launching the station", "Ты забыл создать копию диска орбитальной станции перед запуском");
+        e("advancements.space_m.drive_fail.title", "achievement.driveFail", "uh, did you make a copy?", "М-м... Ты же скопировал?");
+        e("armor.canBreathe", "armor.canBreathe", "Can be used as a spacesuit", "Можно использовать как скафандр");
         e("armor.canSeal", "armor.canSeal", "Can be used as a spacesuit (requires PLSS)", "Обеспечивает герметичность (требуется PLSS)");
         e("armor.mustSeal", "armor.mustSeal", "Must be used with a fully sealed armor set!", "Использовать с полностью герметичным набором брони!");
         e("atmosphere.engineFacing", "atmosphere.engineFacing", "WRONG DIRECTION", "НЕВЕРНОЕ НАПРАВЛЕНИЕ");
@@ -79,7 +81,9 @@ public final class SpaceLang {
         e("block.space_m.bf_log", "tile.bf_log.name", "Balefire Log", "Жар-дерево");
         e("block.space_m.block_nickel", "tile.block_nickel.name", "Block of Nickel", "Никелевый блок");
         e("block.space_m.block_osmiridium", "tile.block_osmiridium.name", "Block of Osmiridium", "Осмиридиевый блок");
+        e("block.space_m.bobblehead", "tile.bobblehead.name", "Bobblehead", "Болванчик");
         e("block.space_m.bromine_block", "tile.bromine_block.name", "Alkyl Bromide", "Смесь алкилбромидов");
+        e("block.space_m.capacitor_complex", "tile.capacitor_complex.name", "Wavefunction Capacitor (LEGACY)", "Конденсатор на Волновой функции");
         e("block.space_m.carbonized_flesh_block", "!", "tile.carbonized_flesh_block.name", "tile.carbonized_flesh_block.name");
         e("block.space_m.ccl_block", "tile.ccl_block.name", "CCL", "CCL");
         e("block.space_m.charred_flesh_block", "!", "tile.charred_flesh_block.name", "tile.charred_flesh_block.name");
@@ -120,19 +124,13 @@ public final class SpaceLang {
         e("block.space_m.cluster_titanium_mun", "tile.cluster_titanium.name", "Titanium Ore Cluster", "Титановый рудный кластер");
         e("block.space_m.cluster_titanium_tekto", "tile.cluster_titanium.name", "Titanium Ore Cluster", "Титановый рудный кластер");
         e("block.space_m.combat_drop", "tile.combat_drop.name", "Combat Drop Pod", "Боевая десантная капсула");
-        e("block.space_m.capacitor_complex", "tile.capacitor_complex.name", "Wavefunction Capacitor (LEGACY)", "Конденсатор на Волновой функции"); // R9-B1
-        e("block.space_m.det_salt", "tile.det_salt.name", "Salted Nuclear Charge", "Солёный ядерный заряд"); // R9-B1
-        e("block.space_m.ff", "!", "tile.ff.name", "tile.ff.name"); // R9-B1 (Original ohne Lang-Eintrag)
-        e("block.space_m.nuke_antimatter", "tile.nuke_antimatter.name", "Antimatter Bomb", "Антиматериальная бомба"); // R9-B1
-        e("block.space_m.oil_barrel", "!", "tile.oil_barrel.name", "tile.oil_barrel.name"); // R9-B1 (Original ohne Lang-Eintrag)
-        e("block.space_m.salted_fallout", "tile.salted_fallout.name", "Salted Fallout", "Salted Fallout"); // R9-B1
-        e("block.space_m.troll_disturber", "!", "tile.troll_disturber.name", "tile.troll_disturber.name"); // R9-B1 (Original ohne Lang-Eintrag)
         e("block.space_m.crop_coffee", "tile.crop_coffee.name", "Coffee", "Кофе");
         e("block.space_m.crop_mint", "tile.crop_mint.name", "Mint", "Мята");
         e("block.space_m.crop_paraffin", "tile.crop_paraffin.name", "Wax Crop", "Wax Crop");
         e("block.space_m.crop_strawberry", "tile.crop_strawberry.name", "Strawberries", "Клубника");
         e("block.space_m.crop_tea", "tile.crop_tea.name", "Tea", "Чай");
         e("block.space_m.deco_stainless", "tile.deco_stainless.name", "Stainless Steel Deco Block", "Нержавеющий декоративный блок");
+        e("block.space_m.det_salt", "tile.det_salt.name", "Salted Nuclear Charge", "Солёный ядерный заряд");
         e("block.space_m.dish_control", "tile.dish_control.name", "StarDar Remote Access Console", "Консоль удалённого доступа к радиотелескопу StarDar");
         e("block.space_m.dish_control.desc", "tile.dish_control.desc", "Enables remote access to the StarDar.$Shift right click StarDar with reactor sensor to start linking.$Then shift right click the console to finish link.", "Позволяет удалённо управлять радиотелескопом StarDar.$Чтобы начать связь - нажмите шифт + пкм дистанционным датчиком реактора по StarDar.$Затем сделайте тоже самое, но уже по консоли, чтобы завершить связь.");
         e("block.space_m.dres_rock", "tile.dres_rock.name", "Dres Rock", "Камень Дреса");
@@ -153,6 +151,7 @@ public final class SpaceLang {
         e("block.space_m.eve_silt", "tile.eve_silt.name", "Eve Silt", "Грунт Евы");
         e("block.space_m.fence_gate", "tile.fence_gate.name", "Chainlink Fence Gate", "Проволочная калитка");
         e("block.space_m.ferric_clay", "tile.ferric_clay.name", "Ferric Clay", "Блок железистой глины");
+        e("block.space_m.ff", "!", "tile.ff.name", "tile.ff.name");
         e("block.space_m.flesh_block", "!", "tile.flesh_block.name", "tile.flesh_block.name");
         e("block.space_m.furnace", "!", "Furnace", "Печь");
         e("block.space_m.gas_dock", "tile.gas_dock.name", "Gas Giant Harvester", "Станция газового комбайна");
@@ -217,6 +216,8 @@ public final class SpaceLang {
         e("block.space_m.moho_regolith", "tile.moho_regolith.name", "Moho Regolith", "Реголит Мохо");
         e("block.space_m.moho_stone", "tile.moho_stone.name", "Moho Stone", "Камень Мохо");
         e("block.space_m.moon_rock", "tile.moon_rock.name", "Mun Rock", "Лунный камень");
+        e("block.space_m.nuke_antimatter", "tile.nuke_antimatter.name", "Antimatter Bomb", "Антиматериальная бомба");
+        e("block.space_m.oil_barrel", "!", "tile.oil_barrel.name", "tile.oil_barrel.name");
         e("block.space_m.orbital_station", "tile.orbital_station.name", "Orbital Station Core", "Ядро орбитальной станции");
         e("block.space_m.orbital_station_computer", "tile.orbital_station_computer.name", "Orbital Station Computer", "Компьютер орбитальной станции");
         e("block.space_m.orbital_station_launcher", "tile.orbital_station_launcher.name", "Orbital Station Launching Port", "Орбитальный космодром");
@@ -437,7 +438,9 @@ public final class SpaceLang {
         e("block.space_m.ore_zinc_tekto", "tile.ore_zinc.name", "Zinc Ore", "Цинковая руда");
         e("block.space_m.orrery", "tile.orrery.name", "Orrery", "Планетарий");
         e("block.space_m.pet_leaves", "tile.pet_leaves.name", "Plastic Leaves", "Пластиковые листья");
+        e("block.space_m.plant_flower_mint", "tile.plant_flower.mint.name", "Wild Mint", "Дикая мята");
         e("block.space_m.plant_tall_laythe", "tile.plant_tall_laythe.laythe.name", "Saltgrass", "Высокая морская трава Лейта");
+        e("block.space_m.plushie", "tile.plushie.name", "%s Plushie", "Плюшевая игрушка \"%s\"");
         e("block.space_m.primed_log", "tile.primed_log.name", "Primed Log", "Загрунтованное дерево");
         e("block.space_m.propulsion_creative", "tile.propulsion_creative.name", "Creative Station Propulsion", "Творческий орбитальный двигатель");
         e("block.space_m.pvc_log", "tile.pvc_log.name", "PVC Log", "ПВХ-бревно");
@@ -452,6 +455,7 @@ public final class SpaceLang {
         e("block.space_m.rubber_tall_bush", "tile.rubber_tall.name", "Tall Rubber Plant", "Высокая травзина");
         e("block.space_m.rubber_tall_cact", "tile.rubber_tall.name", "Tall Rubber Plant", "Высокая травзина");
         e("block.space_m.rubber_tall_flower", "tile.rubber_tall.name", "Tall Rubber Plant", "Высокая травзина");
+        e("block.space_m.salted_fallout", "tile.salted_fallout.name", "Salted Fallout", "Salted Fallout");
         e("block.space_m.sapling_pvc", "tile.sapling_pvc.name", "Plastic Sapling", "Саженец пластикового дерева");
         e("block.space_m.sapling_vinyl", "tile.sapling_vinyl.name", "Vinyl Sapling", "Саженец винилового дерева");
         e("block.space_m.stalactite_flesh", "tile.stalactite.flesh.name", "Fleshy Spindles", "Свисающие волокна плоти");
@@ -459,6 +463,7 @@ public final class SpaceLang {
         e("block.space_m.stone_resource_calcium", "tile.stone_resource.calcium.name", "Calcium", "Кальцит");
         e("block.space_m.stone_resource_conglomerate", "tile.stone_resource.conglomerate.name", "Conglomerate", "Конгломерат");
         e("block.space_m.transporter_rocket", "tile.transporter_rocket.name", "Rocket Transporter Pad", "Станция ракетного транспортера");
+        e("block.space_m.troll_disturber", "!", "tile.troll_disturber.name", "tile.troll_disturber.name");
         e("block.space_m.tumor", "tile.tumor.name", "Fleshy Mass", "Мясистая масса");
         e("block.space_m.vinyl_log", "tile.vinyl_log.name", "Hardened Vinyl Log", "Прочное виниловое бревно");
         e("block.space_m.vinyl_planks", "tile.vinyl_planks.name", "Vinyl Planks", "Виниловые доски");
@@ -507,32 +512,24 @@ public final class SpaceLang {
         e("container.cryoDistillator", "container.cryoDistillator", "Cryo-Distil", "Криогенный дистиллятор");
         e("container.dysonConverterAnatmogenesis", "!", "Dyson Anatmogenesis Terraformer", "Анатмогенезисный терраформер Дайсона");
         e("container.hydrobay", "container.hydrobay", "Greenhouse", "Теплица");
-        e("container.nukeAntimatter", "container.nukeAntimatter", "Antimatter Bomb", "Антиматериальная бомба"); // R9-B1
         e("container.machineDysonConverterHE", "!", "Dyson Power Converter", "Энергетический конвертор Дайсона");
         e("container.machineDysonConverterTU", "!", "Dyson Heat Converter", "Нагреватель Дайсона");
         e("container.machineDysonLauncher", "!", "Dyson Spinlauncher", "Пусковая установка SpinLaunch™");
         e("container.machineDysonReceiver", "!", "Dyson Receiver", "Приёмник Дайсона");
         e("container.machineStardar", "!", "StarDar", "Радиотелескоп \"StarDar\"");
         e("container.machineVacuumCircuit", "container.machineVacuumCircuit", "Vacuum", "ВПС");
+        e("container.nukeAntimatter", "container.nukeAntimatter", "Antimatter Bomb", "Антиматериальная бомба");
         e("container.warController", "!", "War Controller", "War Controller");
         e("crucible.arse", "crucible.arse", "Gallium Arsenide Production", "Производство арсенида галлия");
         e("crucible.hsss", "crucible.hsss", "Boosted High-Speed Steel Production", "Альтернативное производство высокоскоростной стали");
         e("crucible.stainless", "crucible.stainless", "Stainless Steel Production", "Производство нержавеющей стали");
+        e("death.attack.nitan", "death.attack.nitan", "%1$s was consumed by taint.", "%1$s был поглощён заражением.");
         e("death.attack.oxyprime", "death.attack.oxyprime", "%1$s forgot their PLSS.", "%1$s забыл нацепить PLSS.");
         e("death.attack.run", "death.attack.run", "%1$s atoned for their sins.", "%1$s искупил свои грехи.");
-        e("effect.space_m.run", "potion.hbm_run", "GOD WATCHES YOU", "БОГ НАБЛЮДАЕТ ЗА ВАМИ");
-        // E11/E12 (Nutzerentscheidung): Fork-Traenke, NITAN-Ambrosia, Kassetten, DNT-Raumanzug-Zeile
-        e("effect.space_m.nitan", "potion.hbm_nitan", "Ambrosia", "Aмброзия");
         e("effect.space_m.flashbang", "potion.hbm_flashbang", "Flashbang", "Светошумовая");
+        e("effect.space_m.nitan", "potion.hbm_nitan", "Ambrosia", "Aмброзия");
+        e("effect.space_m.run", "potion.hbm_run", "GOD WATCHES YOU", "БОГ НАБЛЮДАЕТ ЗА ВАМИ");
         e("effect.space_m.slippery", "potion.hbm_slippery", "Butterfingers", "Скольжение");
-        e("death.attack.nitan", "death.attack.nitan", "%1$s was consumed by taint.", "%1$s был поглощён заражением.");
-        e("item.space_m.flask_infusion_nitan", "item.flask_infusion.nitan.name", "NITAN© Ambrosia", "Амброзия NITAN©");
-        e("item.space_m.flask_infusion_nitan.desc", "item.flask_infusion.nitan.desc", "Painkiller for medical and recreational use only.", "Болеутоляющее исключительно для медицинского или развлекательного использования.");
-        e("item.space_m.cassette_ducc", "item.siren_track.name", "Siren Track", "Трек сирены");
-        e("item.space_m.cassette_xbox_live", "item.siren_track.name", "Siren Track", "Трек сирены");
-        e("block.space_m.bobblehead", "tile.bobblehead.name", "Bobblehead", "Болванчик"); // E11 Fork-Wackelkoepfe
-        e("block.space_m.plushie", "tile.plushie.name", "%s Plushie", "Плюшевая игрушка %s"); // E11 Fork-Plueschtiere
-        e("armor.canBreathe", "armor.canBreathe", "Can be used as a spacesuit", "Можно использовать как скафандр");
         e("entity.space_m.carpet_bomblet", "!", "Bomblet", "Бомбочка");
         e("entity.space_m.carpet_jet", "!", "Carpet Bomber", "Ковровый бомбардировщик");
         e("entity.space_m.entity_combat_pod", "!", "Combat Drop Pod", "Боевая десантная капсула");
@@ -642,22 +639,23 @@ public final class SpaceLang {
         e("gui.stardar.tooltip.focus_current_body", "gui.stardar.tooltip.focus_current_body", "Focus current body", "Сфокусироваться на текущей планете");
         e("gui.stardar.tooltip.program_current_body", "gui.stardar.tooltip.program_current_body", "Program current body into drive", "Записать текущую планету на диск");
         e("gui.stardar.tooltip.program_new_station", "gui.stardar.tooltip.program_new_station", "Program new orbital station into drive", "Записать новую орбитальную станцию на диск");
+        e("hbmmat.australium", "hbmmat.australium", "Australium", "Австралий");
+        e("hbmmat.ayerite", "hbmmat.ayerite", "Ayerite", "Айерит");
         e("hbmmat.bromine", "hbmmat.bromine", "Bromine", "Бром");
         e("hbmmat.conglomerate", "hbmmat.conglomerate", "Conglomerate", "Конгломерат");
         e("hbmmat.gallium", "hbmmat.gallium", "Gallium", "Галлий");
         e("hbmmat.galliumarsenide", "hbmmat.galliumarsenide", "Gallium Arsenide", "Арсенид галлия");
         e("hbmmat.glowstone", "hbmmat.glowstone", "Glowstone", "Светящийся камень");
-        // W-R9B5-5: Pseudofluide der Gaszentrifuge (HBM-Schluessel pseudofluid.hbm_m.<id>)
-        e("pseudofluid.hbm_m.minsol", "hbmpseudofluid.minsol", "Heavy Mineral Slurry", "Тяжёлый минеральный шлам");
-        e("pseudofluid.hbm_m.minsolsep", "hbmpseudofluid.minsolsep", "Seperated Mineral Slurry", "Отделённый минеральный шлам");
         e("hbmmat.hafnium", "hbmmat.hafnium", "Hafnium", "Гафний");
         e("hbmmat.iodine", "hbmmat.iodine", "Iodine", "Йод");
         e("hbmmat.iridium", "hbmmat.iridium", "Iridium", "Иридий");
+        e("hbmmat.netherquartz", "hbmmat.netherquartz", "Quartz", "Кварц");
         e("hbmmat.nickel", "hbmmat.nickel", "Nickel", "Никель");
         e("hbmmat.nickelpure", "hbmmat.nickelpure", "Nickel", "Никель");
         e("hbmmat.richmagma", "hbmmat.richmagma", "Mineral-Rich Magma", "Обогащённая минералами магма");
         e("hbmmat.semtex", "hbmmat.semtex", "Semtex", "Semtex");
         e("hbmmat.stainlesssteel", "hbmmat.stainlesssteel", "Stainless Steel", "Нержавеющая сталь");
+        e("hbmmat.tasmanite", "hbmmat.tasmanite", "Tasmanite", "Тасманит");
         e("hbmmat.zinc", "hbmmat.zinc", "Zinc", "Цинк");
         e("info.corrosion", "info.corrosion", "My suit is melting.", "Мой костюм плавится.");
         e("info.orbitfall", "info.orbitfall", "I'm going to fall.", "Я сейчас упаду с орбиты.");
@@ -679,6 +677,7 @@ public final class SpaceLang {
         e("item.hbm_m.oil_detector.bullseye_gas", "item.oil_detector.bullseye_gas", "Natural gas deposit directly below!", "Газовый резервуар прямо снизу!");
         e("item.hbm_m.oil_detector.detected_brine", "item.oil_detector.detected_brine", "Brine deposit detected nearby.", "Поблизости обнаружен резервуар рудного рассола.");
         e("item.hbm_m.oil_detector.detected_gas", "item.oil_detector.detected_gas", "Natural gas detected nearby.", "Поблизости обнаружен резервуар газа.");
+        e("item.hbm_m.sat_head_scanner", "!", "M700 Survey Scanner", "Сканер M700");
         e("item.hbm_m.strawberry", "item.strawberry.name", "Strawberry", "Клубника");
         e("item.missile.part.isp", "item.missile.part.isp", "ISP", "ISP");
         e("item.missile.part.mass", "item.missile.part.mass", "Mass", "Mass");
@@ -739,6 +738,8 @@ public final class SpaceLang {
         e("item.space_m.butter", "item.butter.name", "Butter", "Сливочное масло");
         e("item.space_m.butter_sword", "!", "Butter Sword", "Масляный меч");
         e("item.space_m.capacitor_lanthanium", "item.circuit.capacitor_lanthanium.name", "Lanthanium Capacitor", "Лантановый конденсатор");
+        e("item.space_m.cassette_ducc", "item.siren_track.name", "Siren Track", "Трек сирены");
+        e("item.space_m.cassette_xbox_live", "item.siren_track.name", "Siren Track", "Трек сирены");
         e("item.space_m.chocolate_mint_billet", "item.chocolate_mint_billet.name", "Mint Slice", "Мятное печенье");
         e("item.space_m.chunk_ore_pentlandite", "item.chunk_ore.pentlandite.name", "Pentlandite Chunk", "Кусок пентландита");
         e("item.space_m.clump_hydrochloric", "item.clump_hydrochloric.name", "Chloride Minerals", "Хлорированные очищенные минералы");
@@ -760,6 +761,8 @@ public final class SpaceLang {
         e("item.space_m.entity_meme_ufo_spawn_egg", "!", "Mini UFO Spawn Egg", "Яйцо призыва мини-НЛО");
         e("item.space_m.entity_war_behemoth_spawn_egg", "!", "War Behemoth Spawn Egg", "Яйцо призыва колосса войны");
         e("item.space_m.fence_gate", "item.fence_gate.name", "Chainlink Fence Gate", "Проволочная калитка");
+        e("item.space_m.flask_infusion_nitan", "item.flask_infusion.nitan.name", "NITAN© Ambrosia", "Амброзия NITAN©");
+        e("item.space_m.flask_infusion_nitan.desc", "item.flask_infusion.nitan.desc", "Painkiller for medical and recreational use only.", "Болеутоляющее исключительно для медицинского или развлекательного использования.");
         e("item.space_m.flesh", "item.flesh.name", "Flesh", "Плоть");
         e("item.space_m.flesh_burger", "item.flesh_burger.name", "Flesh Burger", "Флэшбургер");
         e("item.space_m.flesh_burger.desc", "item.flesh_burger.desc", "juicy!.", "juicy!.");
@@ -911,10 +914,11 @@ public final class SpaceLang {
         e("item.space_m.rubber_leaves", "item.rubber_leaves.name", "Rubber Leaves", "Резиновые листья");
         e("item.space_m.s_cream", "item.s_cream.name", "Strawberry Ice Cream", "Клубничное мороженое");
         e("item.space_m.saltleaf", "item.saltleaf.name", "Saltleaf", "Солёный лист");
-        e("item.space_m.sat_detector", "item.sat_detector.name", "Wideband Radio Emission Detector Satellite", "Wideband Radio Emission Detector Satellite");
+        e("item.space_m.sat_detector", "item.sat_detector.name", "Wideband Radio Emission Detector Satellite", "Спутник-детектор широкополосного радиоизлучения");
         e("item.space_m.sat_dyson_relay", "item.sat_dyson_relay.name", "Satellite Dyson Relay", "Ретранслятор Роя Дайсона");
         e("item.space_m.sat_precision_laser", "item.sat_precision_laser.name", "Orbital Precision Laser", "Orbital Precision Laser");
-        e("item.space_m.sat_ray_scan", "item.sat_ray_scan.name", "Narrowband Emission Scanning Satellite", "Narrowband Emission Scanning Satellite");
+        e("item.space_m.sat_ray_scan", "item.sat_ray_scan.name", "Narrowband Emission Scanning Satellite", "Спутник-сканер узкополосного излучения");
+        e("item.space_m.sat_war", "!", "Orbital Railgun", "Орбитальный рельсотрон");
         e("item.space_m.scrapfish_spawn_egg", "!", "Spawn Scrapfish", "Призвать: Металлоломорыба");
         e("item.space_m.scutterfish_spawn_egg", "!", "Spawn Scutterfish", "Призвать: Скаттер");
         e("item.space_m.scuttertail", "item.scuttertail.name", "Scuttertail", "Хвост скаттера");
@@ -956,6 +960,8 @@ public final class SpaceLang {
         e("item.warhead.desc.apollo", "item.warhead.desc.apollo", "Capsule", "Capsule");
         e("item.warhead.desc.satellite", "item.warhead.desc.satellite", "Satellite", "Satellite");
         e("itemGroup.space_m.ntm_space_tab", "!", "NTM Space", "NTM Космос");
+        e("pseudofluid.hbm_m.minsol", "hbmpseudofluid.minsol", "Heavy Mineral Slurry", "Тяжёлый минеральный шлам");
+        e("pseudofluid.hbm_m.minsolsep", "hbmpseudofluid.minsolsep", "Seperated Mineral Slurry", "Отделённый минеральный шлам");
         e("station.disengage", "station.disengage", "Disengaging engines", "Выключение двигателей");
         e("station.emptyRocket", "station.emptyRocket", "Rocket needs fuel", "Требуется топливо!");
         e("station.engage", "station.engage", "Engaging engines for burn to", "Включение двигателей");
@@ -969,18 +975,15 @@ public final class SpaceLang {
         e("station.removeRocket", "station.removeRocket", "Interact to remove docked rocket", "Нажмите, чтобы удалить пристыкованную капсулу");
         e("station.retrieveRocket", "station.retrieveRocket", "Interact to retrieve stored rockets", "Нажмите, чтобы извлечь накопленные ракеты");
         e("station.travelling", "station.travelling", "Travelling to", "Точка назначения");
-        e("trait.neutron", "trait.neutron", "Neutron Radiation", "Нейтронная радиация");
-        // R9-B: Erfolg drive_fail, Gefahr AUTISM
-        e("advancements.space_m.drive_fail.title", "achievement.driveFail", "uh, did you make a copy?", "М-м... Ты же скопировал?");
-        e("advancements.space_m.drive_fail.description", "achievement.driveFail.desc", "Fail to clone an orbital station drive before launching the station", "Ты забыл создать копию диска орбитальной станции перед запуском");
+        e("tooltip.hbm_m.bedrock_ore.trait.arc", "item.bedrock_ore.trait.arc", "§6Arc Smelted", "§6Дуговая плавка");
+        e("tooltip.hbm_m.bedrock_ore.trait.centrifuged", "item.bedrock_ore.trait.centrifuged", "§9Centrifuged", "§9Центрифугированный");
+        e("tooltip.hbm_m.bedrock_ore.trait.rad", "item.bedrock_ore.trait.rad", "§aTreated with High-Performance Solvent", "§aОбработанный высокоэффективным растворителем");
+        e("tooltip.hbm_m.bedrock_ore.trait.roasted", "item.bedrock_ore.trait.roasted", "§eCombination Oven Roasted", "§eОбжиг в коксовой печи");
+        e("tooltip.hbm_m.bedrock_ore.trait.solvent", "item.bedrock_ore.trait.solvent", "§fTreated with Solvent", "§fОбработанный растворителем");
+        e("tooltip.hbm_m.bedrock_ore.trait.sulfuric", "item.bedrock_ore.trait.sulfuric", "§6Treated with Sulfuric Acid", "§6Обработанный серной кислотой");
+        e("tooltip.hbm_m.bedrock_ore.trait.washed", "item.bedrock_ore.trait.washed", "§bWashed", "§bПромытый в окислителе водой");
         e("trait.confusion", "trait.confusion", "Autism", "Аутизм");
-        // R9-B: Materialnamen der Bedrock-Erz-Materialien (CelestialBedrockMats)
-        e("hbmmat.australium", "hbmmat.australium", "Australium", "Австралий");
-        e("hbmmat.ayerite", "hbmmat.ayerite", "Ayerite", "Айерит");
-        e("hbmmat.netherquartz", "hbmmat.netherquartz", "Quartz", "Кварц");
-        e("hbmmat.tasmanite", "hbmmat.tasmanite", "Tasmanite", "Тасманит");
-        // R9-B: wilde Minze
-        e("block.space_m.plant_flower_mint", "tile.plant_flower.mint.name", "Wild Mint", "Дикая мята");
+        e("trait.neutron", "trait.neutron", "Neutron Radiation", "Нейтронная радиация");
     }
 }
 //?}

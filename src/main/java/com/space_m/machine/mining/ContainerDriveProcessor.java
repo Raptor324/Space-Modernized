@@ -3,7 +3,7 @@ package com.space_m.machine.mining;
 import org.jetbrains.annotations.Nullable;
 
 import com.hbm_m.inventory.ModItemStackHandlerContainer;
-import com.hbm_m.platform.DummyItemStackHandler;
+import com.hbm_m.platform.ModItemStackHandler;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
@@ -36,7 +36,7 @@ public class ContainerDriveProcessor extends AbstractContainerMenu {
 
         Container container = machine != null
                 ? new ModItemStackHandlerContainer(machine.getInventory(), machine::setChanged)
-                : new ModItemStackHandlerContainer(new DummyItemStackHandler(TILE_SIZE), () -> {});
+                : new ModItemStackHandlerContainer(new ModItemStackHandler.Dummy(TILE_SIZE), () -> {});
 
         // 0 - active drive slot
         // 1 - cloning drive slot

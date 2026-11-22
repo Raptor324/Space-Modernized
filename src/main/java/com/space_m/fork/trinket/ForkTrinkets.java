@@ -102,11 +102,11 @@ public final class ForkTrinkets {
 
     // ── Bloecke (Original: bobblehead Material.iron Haerte 0, plushie soundTypeCloth Haerte 0; beide ohne Drop) ──
     public static final RegistrySupplier<ForkTrinketBlock> BOBBLEHEAD = SpaceBlocks.registerWithItem("bobblehead",
-            () -> new ForkTrinketBlock(com.hbm_m.platform.BlockProps.copy(Blocks.IRON_BLOCK).instabreak().sound(SoundType.STONE).noOcclusion().noLootTable(),
+            () -> new ForkTrinketBlock(com.hbm_m.platform.BlockHooks.copy(Blocks.IRON_BLOCK).instabreak().sound(SoundType.STONE).noOcclusion().noLootTable(),
                     ForkTrinketBlock.Kind.BOBBLE),
             null, b -> new ForkTrinketItem(b, new Item.Properties()));
     public static final RegistrySupplier<ForkTrinketBlock> PLUSHIE = SpaceBlocks.registerWithItem("plushie",
-            () -> new ForkTrinketBlock(com.hbm_m.platform.BlockProps.copy(Blocks.WHITE_WOOL).instabreak().sound(SoundType.WOOL).noOcclusion().noLootTable(),
+            () -> new ForkTrinketBlock(com.hbm_m.platform.BlockHooks.copy(Blocks.WHITE_WOOL).instabreak().sound(SoundType.WOOL).noOcclusion().noLootTable(),
                     ForkTrinketBlock.Kind.PLUSHIE),
             null, b -> new ForkTrinketItem(b, new Item.Properties()));
 

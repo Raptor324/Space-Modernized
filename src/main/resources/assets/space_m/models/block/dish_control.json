@@ -1,5 +1,161 @@
 {
+  "loader": "hbm_m:machine_parts_loader",
+  "model": "space_m:models/machines/dish_controller.obj",
+  "flip_v": true,
   "textures": {
-    "particle": "hbm_m:block/block_steel_machine"
+    "particle": "space_m:models/machines/dish_controller",
+    "default": "space_m:models/machines/dish_controller"
+  },
+  "parts": {
+    "dish_control": {
+      "group": "dish_control",
+      "texture": "space_m:models/machines/dish_controller"
+    },
+    "drive": {
+      "group": "drive",
+      "texture": "space_m:models/machines/dish_controller"
+    },
+    "joystick": {
+      "group": "joystick",
+      "texture": "space_m:models/machines/dish_controller"
+    }
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        15.499252,
+        168.653183,
+        -14.955139
+      ],
+      "translation": [
+        -3.199619,
+        1.593815,
+        -0.582075
+      ],
+      "scale": [
+        0.140625,
+        0.140625,
+        0.140625
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        15.499252,
+        168.653183,
+        -14.955154
+      ],
+      "translation": [
+        1.062982,
+        2.484288,
+        0.552517
+      ],
+      "scale": [
+        0.140625,
+        0.140625,
+        0.140625
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        -25.083801,
+        -175.469498,
+        -2.117493
+      ],
+      "translation": [
+        -2.264399,
+        2.066778,
+        1.65472
+      ],
+      "scale": [
+        0.15,
+        0.15,
+        0.15
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        -25.083801,
+        -175.469498,
+        -2.117508
+      ],
+      "translation": [
+        2.517336,
+        2.066778,
+        1.236372
+      ],
+      "scale": [
+        0.15,
+        0.15,
+        0.15
+      ]
+    },
+    "head": {
+      "rotation": [
+        0,
+        -50.000004,
+        154.999985
+      ],
+      "translation": [
+        -2.742403,
+        -12.638545,
+        4.199206
+      ],
+      "scale": [
+        0.6,
+        0.6,
+        0.6
+      ]
+    },
+    "gui": {
+      "rotation": [
+        30,
+        -135,
+        0
+      ],
+      "translation": [
+        -6.363961,
+        -0.895596,
+        -4.912883
+      ],
+      "scale": [
+        0.375,
+        0.375,
+        0.375
+      ]
+    },
+    "ground": {
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "translation": [
+        1.5,
+        -2.5,
+        -3
+      ],
+      "scale": [
+        0.1875,
+        0.1875,
+        0.1875
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        -90,
+        0
+      ],
+      "translation": [
+        -3,
+        0.44,
+        6.5
+      ],
+      "scale": [
+        0.375,
+        0.375,
+        0.375
+      ]
+    }
   }
 }

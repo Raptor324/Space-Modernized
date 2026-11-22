@@ -1,5 +1,161 @@
 {
+  "loader": "hbm_m:machine_parts_loader",
+  "model": "space_m:models/machines/rocket_assembly.obj",
+  "flip_v": true,
   "textures": {
-    "particle": "hbm_m:block/machine_missile_assembly"
+    "particle": "space_m:models/machines/rocket_assembly",
+    "default": "space_m:models/machines/rocket_assembly"
+  },
+  "parts": {
+    "Base": {
+      "group": "Base",
+      "texture": "space_m:models/machines/rocket_assembly"
+    },
+    "Support": {
+      "group": "Support",
+      "texture": "space_m:models/machines/rocket_assembly"
+    },
+    "Level": {
+      "group": "Level",
+      "texture": "space_m:models/machines/rocket_assembly"
+    }
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        15.499252,
+        168.653183,
+        -14.955139
+      ],
+      "translation": [
+        -1.625939,
+        1.305788,
+        0.201587
+      ],
+      "scale": [
+        0.077344,
+        0.077344,
+        0.077344
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        15.499252,
+        168.653183,
+        -14.955154
+      ],
+      "translation": [
+        -0.453723,
+        1.550668,
+        0.5136
+      ],
+      "scale": [
+        0.077344,
+        0.077344,
+        0.077344
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        -25.083801,
+        -175.469498,
+        -2.117493
+      ],
+      "translation": [
+        -0.468475,
+        1.805586,
+        2.217958
+      ],
+      "scale": [
+        0.0825,
+        0.0825,
+        0.0825
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        -25.083801,
+        -175.469498,
+        -2.117508
+      ],
+      "translation": [
+        0.846502,
+        1.805586,
+        2.102912
+      ],
+      "scale": [
+        0.0825,
+        0.0825,
+        0.0825
+      ]
+    },
+    "head": {
+      "rotation": [
+        0,
+        -50.000004,
+        154.999985
+      ],
+      "translation": [
+        3.553666,
+        -13.622345,
+        8.342207
+      ],
+      "scale": [
+        0.33,
+        0.33,
+        0.33
+      ]
+    },
+    "gui": {
+      "rotation": [
+        30,
+        -135,
+        0
+      ],
+      "translation": [
+        -0.777818,
+        -2.389711,
+        -8.225
+      ],
+      "scale": [
+        0.06875,
+        0.06875,
+        0.06875
+      ]
+    },
+    "ground": {
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "translation": [
+        0.825,
+        -3.175,
+        -0.825
+      ],
+      "scale": [
+        0.103125,
+        0.103125,
+        0.103125
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        -90,
+        0
+      ],
+      "translation": [
+        -1.65,
+        -0.91,
+        2.15
+      ],
+      "scale": [
+        0.20625,
+        0.20625,
+        0.20625
+      ]
+    }
   }
 }

@@ -398,7 +398,7 @@ public class MachineRocketAssemblyBlockEntity extends BaseHbmBlockEntity impleme
     @Override
     protected void writeNbtData(@NotNull CompoundTag tag, @Nullable net.minecraft.core.HolderLookup.Provider registries) {
         super.writeNbtData(tag, registries);
-        tag.put("inventory", com.hbm_m.platform.ItemStackSerialization.serialize(inventory, registries));
+        tag.put("inventory", inventory.serialize(registries));
         tag.putIntArray("platforms", platforms.stream().mapToInt(Integer::intValue).toArray());
         tag.putInt("prevHeight", previousHeight);
         tag.putBoolean("platformFailed", platformFailed);
@@ -409,7 +409,7 @@ public class MachineRocketAssemblyBlockEntity extends BaseHbmBlockEntity impleme
     protected void readNbtData(@NotNull CompoundTag tag, @Nullable net.minecraft.core.HolderLookup.Provider registries) {
         super.readNbtData(tag, registries);
         if (tag.contains("inventory")) {
-            com.hbm_m.platform.ItemStackSerialization.deserialize(inventory, tag.getCompound("inventory"), registries);
+            inventory.deserialize(tag.getCompound("inventory"), registries);
         }
         platforms = new ArrayList<>();
         for (int i : tag.getIntArray("platforms")) platforms.add(i);

@@ -1,16 +1,8 @@
 {
   "variants": {
-    "facing=north": {
-      "model": "space_m:block/gas_dock"
-    },
-    "facing=south": {
-      "model": "space_m:block/gas_dock"
-    },
-    "facing=west": {
-      "model": "space_m:block/gas_dock"
-    },
-    "facing=east": {
-      "model": "space_m:block/gas_dock"
-    }
+    "facing=north": { "model": "space_m:block/gas_dock" },
+    "facing=east":  { "model": "space_m:block/gas_dock", "y": 90 },
+    "facing=south": { "model": "space_m:block/gas_dock", "y": 180 },
+    "facing=west":  { "model": "space_m:block/gas_dock", "y": 270 }
   }
 }

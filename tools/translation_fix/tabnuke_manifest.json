@@ -1,0 +1,2586 @@
+{
+ "stats": {
+  "core_en_mismatch": 0,
+  "core_ru_mismatch": 0,
+  "core_no_modern_key": 0,
+  "core_no_orig": 0,
+  "space_mismatch": 0,
+  "space_ok": 2,
+  "space_no_orig": 1
+ },
+ "core": [
+  {
+   "order": 1,
+   "orig_id": "hbm:tile.nuke_gadget",
+   "meta": 0,
+   "registry_id": "hbm_m:nuke_gadget",
+   "alias_name": "The Gadget",
+   "modern_key": "block.hbm_m.nuke_gadget",
+   "current_en": "The Gadget",
+   "current_ru": "Гаджет",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.nuke_gadget.name",
+     "en": "The Gadget",
+     "ru": "Гаджет",
+     "ruFound": true
+    },
+    {
+     "repo": "base",
+     "origKey": "container.nukeGadget",
+     "en": "The Gadget",
+     "ru": "Гаджет",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 2,
+   "orig_id": "hbm:tile.nuke_boy",
+   "meta": 0,
+   "registry_id": "hbm_m:nuke_boy",
+   "alias_name": "Little Boy",
+   "modern_key": "block.hbm_m.nuke_boy",
+   "current_en": "Little Boy",
+   "current_ru": "Малыш",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.nuke_boy.name",
+     "en": "Little Boy",
+     "ru": "Малыш",
+     "ruFound": true
+    },
+    {
+     "repo": "base",
+     "origKey": "container.nukeBoy",
+     "en": "Little Boy",
+     "ru": "Малыш",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 3,
+   "orig_id": "hbm:tile.nuke_man",
+   "meta": 0,
+   "registry_id": "hbm_m:nuke_fat_man",
+   "alias_name": "Fat Man",
+   "modern_key": "block.hbm_m.nuke_fat_man",
+   "current_en": "Fat Man",
+   "current_ru": "Толстяк",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.nuke_man.name",
+     "en": "Fat Man",
+     "ru": "Толстяк",
+     "ruFound": true
+    },
+    {
+     "repo": "base",
+     "origKey": "container.nukeMan",
+     "en": "Fat Man",
+     "ru": "Толстяк",
+     "ruFound": true
+    },
+    {
+     "repo": "base",
+     "origKey": "item.gun_fatman.name",
+     "en": "Fat Man",
+     "ru": "Атомная катапульта M42 \"Fat man\"",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "NAME_OR_ID_VARIATION"
+  },
+  {
+   "order": 4,
+   "orig_id": "hbm:tile.nuke_mike",
+   "meta": 0,
+   "registry_id": "hbm_m:nuke_mike",
+   "alias_name": "Ivy Mike",
+   "modern_key": "block.hbm_m.nuke_mike",
+   "current_en": "Ivy Mike",
+   "current_ru": "Иви Майк",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.nuke_mike.name",
+     "en": "Ivy Mike",
+     "ru": "Иви Майк",
+     "ruFound": true
+    },
+    {
+     "repo": "base",
+     "origKey": "container.nukeMike",
+     "en": "Ivy Mike",
+     "ru": "Иви Майк",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 5,
+   "orig_id": "hbm:tile.nuke_tsar",
+   "meta": 0,
+   "registry_id": "hbm_m:nuke_tsar",
+   "alias_name": "Tsar Bomba",
+   "modern_key": "block.hbm_m.nuke_tsar",
+   "current_en": "Tsar Bomba",
+   "current_ru": "Царь-бомба",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.nuke_tsar.name",
+     "en": "Tsar Bomba",
+     "ru": "Царь-бомба",
+     "ruFound": true
+    },
+    {
+     "repo": "base",
+     "origKey": "container.nukeTsar",
+     "en": "Tsar Bomba",
+     "ru": "Царь-бомба",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 6,
+   "orig_id": "hbm:tile.nuke_prototype",
+   "meta": 0,
+   "registry_id": "hbm_m:nuke_prototype",
+   "alias_name": "The Prototype",
+   "modern_key": "block.hbm_m.nuke_prototype",
+   "current_en": "The Prototype",
+   "current_ru": "Прототип",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.nuke_prototype.name",
+     "en": "The Prototype",
+     "ru": "Прототип",
+     "ruFound": true
+    },
+    {
+     "repo": "base",
+     "origKey": "container.nukePrototype",
+     "en": "The Prototype",
+     "ru": "Прототип",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 7,
+   "orig_id": "hbm:tile.nuke_fleija",
+   "meta": 0,
+   "registry_id": "hbm_m:nuke_fleija",
+   "alias_name": "F.L.E.I.J.A.",
+   "modern_key": "block.hbm_m.nuke_fleija",
+   "current_en": "F.L.E.I.J.A.",
+   "current_ru": "Ф.Л.Е.Я",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.nuke_fleija.name",
+     "en": "F.L.E.I.J.A.",
+     "ru": "Ф.Л.Е.Я",
+     "ruFound": true
+    },
+    {
+     "repo": "base",
+     "origKey": "container.nukeFleija",
+     "en": "F.L.E.I.J.A.",
+     "ru": "Ф.Л.Е.Я",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 8,
+   "orig_id": "hbm:tile.nuke_solinium",
+   "meta": 0,
+   "registry_id": "hbm_m:nuke_solinium",
+   "alias_name": "The Blue Rinse",
+   "modern_key": "block.hbm_m.nuke_solinium",
+   "current_en": "The Blue Rinse",
+   "current_ru": "Синий Ополаскиватель",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.nuke_solinium.name",
+     "en": "The Blue Rinse",
+     "ru": "Синий Ополаскиватель",
+     "ruFound": true
+    },
+    {
+     "repo": "base",
+     "origKey": "container.nukeSolinium",
+     "en": "The Blue Rinse",
+     "ru": "Синий Ополаскиватель",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 9,
+   "orig_id": "hbm:tile.nuke_n2",
+   "meta": 0,
+   "registry_id": "hbm_m:nuke_n2",
+   "alias_name": "N² Mine",
+   "modern_key": "block.hbm_m.nuke_n2",
+   "current_en": "N² Mine",
+   "current_ru": "N²-мина",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.nuke_n2.name",
+     "en": "N² Mine",
+     "ru": "N²-мина",
+     "ruFound": true
+    },
+    {
+     "repo": "base",
+     "origKey": "container.nukeN2",
+     "en": "N² Mine",
+     "ru": "N²-мина",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 10,
+   "orig_id": "hbm:tile.nuke_fstbmb",
+   "meta": 0,
+   "registry_id": "hbm_m:nuke_fstbmb",
+   "alias_name": "Balefire Bomb",
+   "modern_key": "block.hbm_m.nuke_fstbmb",
+   "current_en": "Balefire Bomb",
+   "current_ru": "Жар-бомба",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.nuke_fstbmb.name",
+     "en": "Balefire Bomb",
+     "ru": "Жар-бомба",
+     "ruFound": true
+    },
+    {
+     "repo": "base",
+     "origKey": "container.nukeFstbmb",
+     "en": "Balefire Bomb",
+     "ru": "Жар-бомба",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 11,
+   "orig_id": "hbm:tile.nuke_custom",
+   "meta": 0,
+   "registry_id": "hbm_m:nuke_custom",
+   "alias_name": "Custom Nuke",
+   "modern_key": "block.hbm_m.nuke_custom",
+   "current_en": "Custom Nuke",
+   "current_ru": "Кастомная бомба",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.nuke_custom.name",
+     "en": "Custom Nuke",
+     "ru": "Кастомная бомба",
+     "ruFound": true
+    },
+    {
+     "repo": "base",
+     "origKey": "container.nukeCustom",
+     "en": "Custom Nuke",
+     "ru": "Кастомная бомба",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 12,
+   "orig_id": "hbm:tile.bomb_multi",
+   "meta": 0,
+   "registry_id": "hbm_m:bomb_multi",
+   "alias_name": "Multi Purpose Bomb",
+   "modern_key": "block.hbm_m.bomb_multi",
+   "current_en": "Multi Purpose Bomb",
+   "current_ru": "Многоцелевая бомба",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.bomb_multi.name",
+     "en": "Multi Purpose Bomb",
+     "ru": "Многоцелевая бомба",
+     "ruFound": true
+    },
+    {
+     "repo": "base",
+     "origKey": "container.bombMulti",
+     "en": "Multi Purpose Bomb",
+     "ru": "Многоцелевая бомба",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 13,
+   "orig_id": "hbm:tile.crashed_bomb",
+   "meta": 0,
+   "registry_id": "hbm_m:dud_balefire",
+   "alias_name": "Dud",
+   "modern_key": "block.hbm_m.dud_balefire",
+   "current_en": "Dud",
+   "current_ru": "Неразорвавшаяся бомба",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.crashed_bomb.name",
+     "en": "Dud",
+     "ru": "Неразорвавшаяся бомба",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "METADATA_SPLIT"
+  },
+  {
+   "order": 14,
+   "orig_id": "hbm:tile.crashed_bomb",
+   "meta": 1,
+   "registry_id": "hbm_m:dud_conventional",
+   "alias_name": "Dud",
+   "modern_key": "block.hbm_m.dud_conventional",
+   "current_en": "Dud",
+   "current_ru": "Неразорвавшаяся бомба",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.crashed_bomb.name",
+     "en": "Dud",
+     "ru": "Неразорвавшаяся бомба",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "METADATA_SPLIT"
+  },
+  {
+   "order": 15,
+   "orig_id": "hbm:tile.crashed_bomb",
+   "meta": 2,
+   "registry_id": "hbm_m:dud_nuke",
+   "alias_name": "Dud",
+   "modern_key": "block.hbm_m.dud_nuke",
+   "current_en": "Dud",
+   "current_ru": "Неразорвавшаяся бомба",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.crashed_bomb.name",
+     "en": "Dud",
+     "ru": "Неразорвавшаяся бомба",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "METADATA_SPLIT"
+  },
+  {
+   "order": 16,
+   "orig_id": "hbm:tile.crashed_bomb",
+   "meta": 3,
+   "registry_id": "hbm_m:dud_salted",
+   "alias_name": "Dud",
+   "modern_key": "block.hbm_m.dud_salted",
+   "current_en": "Dud",
+   "current_ru": "Неразорвавшаяся бомба",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.crashed_bomb.name",
+     "en": "Dud",
+     "ru": "Неразорвавшаяся бомба",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "METADATA_SPLIT"
+  },
+  {
+   "order": 17,
+   "orig_id": "hbm:tile.fireworks",
+   "meta": 0,
+   "registry_id": "hbm_m:fireworks",
+   "alias_name": "Firework Battery",
+   "modern_key": "block.hbm_m.fireworks",
+   "current_en": "Firework Battery",
+   "current_ru": "Батарея фейерверков",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.fireworks.name",
+     "en": "Firework Battery",
+     "ru": "Батарея фейерверков",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 18,
+   "orig_id": "hbm:tile.dynamite",
+   "meta": 0,
+   "registry_id": "hbm_m:dynamite",
+   "alias_name": "Dynamite",
+   "modern_key": "block.hbm_m.dynamite",
+   "current_en": "Dynamite",
+   "current_ru": "Динамит",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.dynamite.name",
+     "en": "Dynamite",
+     "ru": "Динамит",
+     "ruFound": true
+    },
+    {
+     "repo": "base",
+     "origKey": "item.ball_dynamite.name",
+     "en": "Dynamite",
+     "ru": "Динамит",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 19,
+   "orig_id": "hbm:tile.tnt_ntm",
+   "meta": 0,
+   "registry_id": "hbm_m:tnt_ntm",
+   "alias_name": "Actual TNT",
+   "modern_key": "block.hbm_m.tnt_ntm",
+   "current_en": "Actual TNT",
+   "current_ru": "Настоящий ТНТ",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.tnt_ntm.name",
+     "en": "Actual TNT",
+     "ru": "Настоящий ТНТ",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 20,
+   "orig_id": "hbm:tile.semtex",
+   "meta": 0,
+   "registry_id": "hbm_m:semtex",
+   "alias_name": "Semtex",
+   "modern_key": "block.hbm_m.semtex",
+   "current_en": "Semtex",
+   "current_ru": "Семтекс",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.semtex.name",
+     "en": "Semtex",
+     "ru": "Семтекс",
+     "ruFound": true
+    },
+    {
+     "repo": "fork",
+     "origKey": "hbmmat.semtex",
+     "en": "Semtex",
+     "ru": "Semtex",
+     "ruFound": false
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 21,
+   "orig_id": "hbm:tile.c4",
+   "meta": 0,
+   "registry_id": "hbm_m:c4",
+   "alias_name": "C-4",
+   "modern_key": "block.hbm_m.c4",
+   "current_en": "C-4",
+   "current_ru": "C-4",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.c4.name",
+     "en": "C-4",
+     "ru": "C-4",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 22,
+   "orig_id": "hbm:tile.fissure_bomb",
+   "meta": 0,
+   "registry_id": "hbm_m:fissure_bomb",
+   "alias_name": "Fissure Bomb",
+   "modern_key": "block.hbm_m.fissure_bomb",
+   "current_en": "Fissure Bomb",
+   "current_ru": "Вулканическая бомба",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.fissure_bomb.name",
+     "en": "Fissure Bomb",
+     "ru": "Вулканическая бомба",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 23,
+   "orig_id": "hbm:tile.charge_dynamite",
+   "meta": 0,
+   "registry_id": "hbm_m:charge_dynamite",
+   "alias_name": "Time Bomb",
+   "modern_key": "block.hbm_m.charge_dynamite",
+   "current_en": "Time Bomb",
+   "current_ru": "Бомба с таймером",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.charge_dynamite.name",
+     "en": "Time Bomb",
+     "ru": "Бомба с таймером",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 24,
+   "orig_id": "hbm:tile.charge_miner",
+   "meta": 0,
+   "registry_id": "hbm_m:charge_miner",
+   "alias_name": "Timed Mining Charge",
+   "modern_key": "block.hbm_m.charge_miner",
+   "current_en": "Timed Mining Charge",
+   "current_ru": "Шахтёрский заряд с таймером",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.charge_miner.name",
+     "en": "Timed Mining Charge",
+     "ru": "Шахтёрский заряд с таймером",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 25,
+   "orig_id": "hbm:tile.charge_c4",
+   "meta": 0,
+   "registry_id": "hbm_m:charge_c4",
+   "alias_name": "Demolition Charge",
+   "modern_key": "block.hbm_m.charge_c4",
+   "current_en": "Demolition Charge",
+   "current_ru": "Подрывной заряд",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.charge_c4.name",
+     "en": "Demolition Charge",
+     "ru": "Подрывной заряд",
+     "ruFound": true
+    },
+    {
+     "repo": "base",
+     "origKey": "item.ammo_standard.ct_mortar.name",
+     "en": "Demolition Charge",
+     "ru": "Разрывной снаряд",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 26,
+   "orig_id": "hbm:tile.charge_semtex",
+   "meta": 0,
+   "registry_id": "hbm_m:charge_semtex",
+   "alias_name": "Semtex Mining Charge",
+   "modern_key": "block.hbm_m.charge_semtex",
+   "current_en": "Semtex Mining Charge",
+   "current_ru": "Шахтёрский заряд с семтексом",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.charge_semtex.name",
+     "en": "Semtex Mining Charge",
+     "ru": "Шахтёрский заряд с семтексом",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 27,
+   "orig_id": "hbm:tile.mine_ap",
+   "meta": 0,
+   "registry_id": "hbm_m:mine_ap",
+   "alias_name": "Anti-Personell Mine",
+   "modern_key": "block.hbm_m.mine_ap",
+   "current_en": "Anti-Personell Mine",
+   "current_ru": "Противопехотная мина",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.mine_ap.name",
+     "en": "Anti-Personell Mine",
+     "ru": "Противопехотная мина",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 28,
+   "orig_id": "hbm:tile.mine_shrap",
+   "meta": 0,
+   "registry_id": "hbm_m:mine_shrap",
+   "alias_name": "Shrapnel Mine",
+   "modern_key": "block.hbm_m.mine_shrap",
+   "current_en": "Shrapnel Mine",
+   "current_ru": "Мина со шрапнелью",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.mine_shrap.name",
+     "en": "Shrapnel Mine",
+     "ru": "Мина со шрапнелью",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 29,
+   "orig_id": "hbm:tile.mine_he",
+   "meta": 0,
+   "registry_id": "hbm_m:mine_he",
+   "alias_name": "Anti-Tank Mine",
+   "modern_key": "block.hbm_m.mine_he",
+   "current_en": "Anti-Tank Mine",
+   "current_ru": "Противотанковая мина",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.mine_he.name",
+     "en": "Anti-Tank Mine",
+     "ru": "Противотанковая мина",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 30,
+   "orig_id": "hbm:tile.mine_fat",
+   "meta": 0,
+   "registry_id": "hbm_m:mine_fat",
+   "alias_name": "Fat Mine",
+   "modern_key": "block.hbm_m.mine_fat",
+   "current_en": "Fat Mine",
+   "current_ru": "Мина-Толстяк",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.mine_fat.name",
+     "en": "Fat Mine",
+     "ru": "Мина-Толстяк",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 31,
+   "orig_id": "hbm:tile.mine_naval",
+   "meta": 0,
+   "registry_id": "hbm_m:mine_naval",
+   "alias_name": "Naval Mine",
+   "modern_key": "block.hbm_m.mine_naval",
+   "current_en": "Naval Mine",
+   "current_ru": "Морская мина",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.mine_naval.name",
+     "en": "Naval Mine",
+     "ru": "Морская мина",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 32,
+   "orig_id": "hbm:tile.flame_war",
+   "meta": 0,
+   "registry_id": "hbm_m:flame_war",
+   "alias_name": "Flame War in a Box",
+   "modern_key": "block.hbm_m.flame_war",
+   "current_en": "Flame War in a Box",
+   "current_ru": "Война в коробке",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.flame_war.name",
+     "en": "Flame War in a Box",
+     "ru": "Война в коробке",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 33,
+   "orig_id": "hbm:tile.float_bomb",
+   "meta": 0,
+   "registry_id": "hbm_m:float_bomb",
+   "alias_name": "Levitation Bomb",
+   "modern_key": "block.hbm_m.float_bomb",
+   "current_en": "Levitation Bomb",
+   "current_ru": "Левитационная бомба",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.float_bomb.name",
+     "en": "Levitation Bomb",
+     "ru": "Левитационная бомба",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 34,
+   "orig_id": "hbm:tile.therm_endo",
+   "meta": 0,
+   "registry_id": "hbm_m:therm_endo",
+   "alias_name": "Endothermic Bomb",
+   "modern_key": "block.hbm_m.therm_endo",
+   "current_en": "Endothermic Bomb",
+   "current_ru": "Эндотермическая бомба",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.therm_endo.name",
+     "en": "Endothermic Bomb",
+     "ru": "Эндотермическая бомба",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 35,
+   "orig_id": "hbm:tile.therm_exo",
+   "meta": 0,
+   "registry_id": "hbm_m:therm_exo",
+   "alias_name": "Exothermic Bomb",
+   "modern_key": "block.hbm_m.therm_exo",
+   "current_en": "Exothermic Bomb",
+   "current_ru": "Экзотермическая бомба",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.therm_exo.name",
+     "en": "Exothermic Bomb",
+     "ru": "Экзотермическая бомба",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 36,
+   "orig_id": "hbm:tile.emp_bomb",
+   "meta": 0,
+   "registry_id": "hbm_m:emp_bomb",
+   "alias_name": "EMP Device",
+   "modern_key": "block.hbm_m.emp_bomb",
+   "current_en": "EMP Device",
+   "current_ru": "ЭМИ-бомба",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.emp_bomb.name",
+     "en": "EMP Device",
+     "ru": "ЭМИ-бомба",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 37,
+   "orig_id": "hbm:tile.det_cord",
+   "meta": 0,
+   "registry_id": "hbm_m:det_cord",
+   "alias_name": "Det Cord",
+   "modern_key": "block.hbm_m.det_cord",
+   "current_en": "Det Cord",
+   "current_ru": "Детонирующий шнур",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.det_cord.name",
+     "en": "Det Cord",
+     "ru": "Детонирующий шнур",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 38,
+   "orig_id": "hbm:tile.det_charge",
+   "meta": 0,
+   "registry_id": "hbm_m:det_charge",
+   "alias_name": "Explosive Charge",
+   "modern_key": "block.hbm_m.det_charge",
+   "current_en": "Explosive Charge",
+   "current_ru": "Заряд взрывчатки",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.det_charge.name",
+     "en": "Explosive Charge",
+     "ru": "Заряд взрывчатки",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 39,
+   "orig_id": "hbm:tile.det_nuke",
+   "meta": 0,
+   "registry_id": "hbm_m:det_nuke",
+   "alias_name": "Nuclear Charge",
+   "modern_key": "block.hbm_m.det_nuke",
+   "current_en": "Nuclear Charge",
+   "current_ru": "Ядерный заряд",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.det_nuke.name",
+     "en": "Nuclear Charge",
+     "ru": "Ядерный заряд",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 40,
+   "orig_id": "hbm:tile.det_miner",
+   "meta": 0,
+   "registry_id": "hbm_m:det_miner",
+   "alias_name": "Mining Charge",
+   "modern_key": "block.hbm_m.det_miner",
+   "current_en": "Mining Charge",
+   "current_ru": "Шахтёрский заряд",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.det_miner.name",
+     "en": "Mining Charge",
+     "ru": "Шахтёрский заряд",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 41,
+   "orig_id": "hbm:tile.red_barrel",
+   "meta": 0,
+   "registry_id": "hbm_m:barrel_red",
+   "alias_name": "Explosive Barrel",
+   "modern_key": "block.hbm_m.barrel_red",
+   "current_en": "Explosive Barrel",
+   "current_ru": "Взрывная бочка",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.red_barrel.name",
+     "en": "Explosive Barrel",
+     "ru": "Взрывная бочка",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "NAME_OR_ID_VARIATION"
+  },
+  {
+   "order": 42,
+   "orig_id": "hbm:tile.pink_barrel",
+   "meta": 0,
+   "registry_id": "hbm_m:barrel_pink",
+   "alias_name": "Kerosene Barrel",
+   "modern_key": "block.hbm_m.barrel_pink",
+   "current_en": "Kerosene Barrel",
+   "current_ru": "Керосиновая бочка",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.pink_barrel.name",
+     "en": "Kerosene Barrel",
+     "ru": "Керосиновая бочка",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "NAME_OR_ID_VARIATION"
+  },
+  {
+   "order": 43,
+   "orig_id": "hbm:tile.lox_barrel",
+   "meta": 0,
+   "registry_id": "hbm_m:barrel_lox",
+   "alias_name": "LOX Barrel",
+   "modern_key": "block.hbm_m.barrel_lox",
+   "current_en": "LOX Barrel",
+   "current_ru": "Бочка с жидким кислородом",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.lox_barrel.name",
+     "en": "LOX Barrel",
+     "ru": "Бочка с жидким кислородом",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "NAME_OR_ID_VARIATION"
+  },
+  {
+   "order": 44,
+   "orig_id": "hbm:tile.taint_barrel",
+   "meta": 0,
+   "registry_id": "hbm_m:barrel_taint",
+   "alias_name": "IMP Residue Barrel",
+   "modern_key": "block.hbm_m.barrel_taint",
+   "current_en": "IMP Residue Barrel",
+   "current_ru": "Бочка с осадком IMP",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.taint_barrel.name",
+     "en": "IMP Residue Barrel",
+     "ru": "Бочка с осадком IMP",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "NAME_OR_ID_VARIATION"
+  },
+  {
+   "order": 45,
+   "orig_id": "hbm:tile.yellow_barrel",
+   "meta": 0,
+   "registry_id": "hbm_m:yellow_barrel",
+   "alias_name": "Radioactive Barrel",
+   "modern_key": "block.hbm_m.yellow_barrel",
+   "current_en": "Radioactive Barrel",
+   "current_ru": "Радиоактивная бочка",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.yellow_barrel.name",
+     "en": "Radioactive Barrel",
+     "ru": "Радиоактивная бочка",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 46,
+   "orig_id": "hbm:tile.vitrified_barrel",
+   "meta": 0,
+   "registry_id": "hbm_m:vitrified_barrel",
+   "alias_name": "Vitrified Nuclear Waste Drum",
+   "modern_key": "block.hbm_m.vitrified_barrel",
+   "current_en": "Vitrified Nuclear Waste Drum",
+   "current_ru": "Бочка с остеклованными ядерными отходами",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.vitrified_barrel.name",
+     "en": "Vitrified Nuclear Waste Drum",
+     "ru": "Бочка с остеклованными ядерными отходами",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 47,
+   "orig_id": "hbm:tile.volcano_core",
+   "meta": 0,
+   "registry_id": "hbm_m:volcano_core",
+   "alias_name": "Volcano Core",
+   "modern_key": "block.hbm_m.volcano_core",
+   "current_en": "Volcano Core",
+   "current_ru": "Вулканическое ядро",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.volcano_core.name",
+     "en": "Volcano Core",
+     "ru": "Вулканическое ядро",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 48,
+   "orig_id": "hbm:tile.volcano_core",
+   "meta": 1,
+   "registry_id": "hbm_m:volcano_core",
+   "alias_name": "Volcano Core",
+   "modern_key": "block.hbm_m.volcano_core",
+   "current_en": "Volcano Core",
+   "current_ru": "Вулканическое ядро",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.volcano_core.name",
+     "en": "Volcano Core",
+     "ru": "Вулканическое ядро",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 49,
+   "orig_id": "hbm:tile.volcano_core",
+   "meta": 2,
+   "registry_id": "hbm_m:volcano_core",
+   "alias_name": "Volcano Core",
+   "modern_key": "block.hbm_m.volcano_core",
+   "current_en": "Volcano Core",
+   "current_ru": "Вулканическое ядро",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.volcano_core.name",
+     "en": "Volcano Core",
+     "ru": "Вулканическое ядро",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 50,
+   "orig_id": "hbm:tile.volcano_core",
+   "meta": 3,
+   "registry_id": "hbm_m:volcano_core",
+   "alias_name": "Volcano Core",
+   "modern_key": "block.hbm_m.volcano_core",
+   "current_en": "Volcano Core",
+   "current_ru": "Вулканическое ядро",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.volcano_core.name",
+     "en": "Volcano Core",
+     "ru": "Вулканическое ядро",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 51,
+   "orig_id": "hbm:tile.volcano_core",
+   "meta": 4,
+   "registry_id": "hbm_m:volcano_core",
+   "alias_name": "Volcano Core",
+   "modern_key": "block.hbm_m.volcano_core",
+   "current_en": "Volcano Core",
+   "current_ru": "Вулканическое ядро",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.volcano_core.name",
+     "en": "Volcano Core",
+     "ru": "Вулканическое ядро",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 52,
+   "orig_id": "hbm:tile.volcano_rad_core",
+   "meta": 0,
+   "registry_id": "hbm_m:volcano_rad_core",
+   "alias_name": "Rad Volcano Core",
+   "modern_key": "block.hbm_m.volcano_rad_core",
+   "current_en": "Rad Volcano Core",
+   "current_ru": "Радиоактивное вулканическое ядро",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.volcano_rad_core.name",
+     "en": "Rad Volcano Core",
+     "ru": "Радиоактивное вулканическое ядро",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 53,
+   "orig_id": "hbm:tile.volcano_rad_core",
+   "meta": 1,
+   "registry_id": "hbm_m:volcano_rad_core",
+   "alias_name": "Rad Volcano Core",
+   "modern_key": "block.hbm_m.volcano_rad_core",
+   "current_en": "Rad Volcano Core",
+   "current_ru": "Радиоактивное вулканическое ядро",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.volcano_rad_core.name",
+     "en": "Rad Volcano Core",
+     "ru": "Радиоактивное вулканическое ядро",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 54,
+   "orig_id": "hbm:tile.volcano_rad_core",
+   "meta": 2,
+   "registry_id": "hbm_m:volcano_rad_core",
+   "alias_name": "Rad Volcano Core",
+   "modern_key": "block.hbm_m.volcano_rad_core",
+   "current_en": "Rad Volcano Core",
+   "current_ru": "Радиоактивное вулканическое ядро",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.volcano_rad_core.name",
+     "en": "Rad Volcano Core",
+     "ru": "Радиоактивное вулканическое ядро",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 55,
+   "orig_id": "hbm:tile.volcano_rad_core",
+   "meta": 3,
+   "registry_id": "hbm_m:volcano_rad_core",
+   "alias_name": "Rad Volcano Core",
+   "modern_key": "block.hbm_m.volcano_rad_core",
+   "current_en": "Rad Volcano Core",
+   "current_ru": "Радиоактивное вулканическое ядро",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.volcano_rad_core.name",
+     "en": "Rad Volcano Core",
+     "ru": "Радиоактивное вулканическое ядро",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 56,
+   "orig_id": "hbm:tile.volcano_rad_core",
+   "meta": 4,
+   "registry_id": "hbm_m:volcano_rad_core",
+   "alias_name": "Rad Volcano Core",
+   "modern_key": "block.hbm_m.volcano_rad_core",
+   "current_en": "Rad Volcano Core",
+   "current_ru": "Радиоактивное вулканическое ядро",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "tile.volcano_rad_core.name",
+     "en": "Rad Volcano Core",
+     "ru": "Радиоактивное вулканическое ядро",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 57,
+   "orig_id": "hbm:tile.book_guide",
+   "meta": 0,
+   "registry_id": "hbm_m:book_guide",
+   "alias_name": "Hbm's Nuclear Tech Mod Manual [LEGACY]",
+   "modern_key": "item.hbm_m.book_guide",
+   "current_en": "Guide Book",
+   "current_ru": "Руководство",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.book_guide.name",
+     "en": "Guide Book",
+     "ru": "Руководство",
+     "ruFound": true
+    },
+    {
+     "repo": "base",
+     "origKey": "tile.book_guide.name",
+     "en": "Hbm's Nuclear Tech Mod Manual [LEGACY]",
+     "ru": "Книга знаний",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 58,
+   "orig_id": "hbm:item.demon_core_open",
+   "meta": 0,
+   "registry_id": "hbm_m:demon_core_open",
+   "alias_name": "Suspended Demon Core",
+   "modern_key": "item.hbm_m.demon_core_open",
+   "current_en": "Suspended Demon Core",
+   "current_ru": "Приостановленный Заряд-Демон",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.demon_core_open.name",
+     "en": "Suspended Demon Core",
+     "ru": "Приостановленный Заряд-Демон",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 59,
+   "orig_id": "hbm:item.demon_core_closed",
+   "meta": 0,
+   "registry_id": "hbm_m:demon_core_closed",
+   "alias_name": "Closed Demon Core",
+   "modern_key": "item.hbm_m.demon_core_closed",
+   "current_en": "Closed Demon Core",
+   "current_ru": "Закрытый Заряд-Демон",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.demon_core_closed.name",
+     "en": "Closed Demon Core",
+     "ru": "Закрытый Заряд-Демон",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 60,
+   "orig_id": "hbm:item.battery_spark",
+   "meta": 0,
+   "registry_id": "hbm_m:battery_spark",
+   "alias_name": "Spark Battery",
+   "modern_key": "item.hbm_m.battery_spark",
+   "current_en": "Spark Battery",
+   "current_ru": "Спарк-батарея",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.battery_spark.name",
+     "en": "Spark Battery",
+     "ru": "Спарк-батарея",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 61,
+   "orig_id": "hbm:item.battery_trixite",
+   "meta": 0,
+   "registry_id": "hbm_m:battery_trixite",
+   "alias_name": "Off-Brand Spark Battery",
+   "modern_key": "item.hbm_m.battery_trixite",
+   "current_en": "Off-Brand Spark Battery",
+   "current_ru": "Безымянная спарк-батарея",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.battery_trixite.name",
+     "en": "Off-Brand Spark Battery",
+     "ru": "Безымянная спарк-батарея",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 62,
+   "orig_id": "hbm:item.early_explosive_lenses",
+   "meta": 0,
+   "registry_id": "hbm_m:fat_man_explosive",
+   "alias_name": "Array of First-Generation High-Explosive Lenses",
+   "modern_key": "item.hbm_m.fat_man_explosive",
+   "current_en": "Array of First-Generation High-Explosive Lenses",
+   "current_ru": "Набор взрывных линз первого поколения",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.early_explosive_lenses.name",
+     "en": "Array of First-Generation High-Explosive Lenses",
+     "ru": "Набор взрывных линз первого поколения",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "NAME_OR_ID_VARIATION"
+  },
+  {
+   "order": 63,
+   "orig_id": "hbm:item.explosive_lenses",
+   "meta": 0,
+   "registry_id": "hbm_m:explosive_lenses",
+   "alias_name": "Array of High-Explosive Lenses",
+   "modern_key": "item.hbm_m.explosive_lenses",
+   "current_en": "Array of High-Explosive Lenses",
+   "current_ru": "Набор взрывных линз",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.explosive_lenses.name",
+     "en": "Array of High-Explosive Lenses",
+     "ru": "Набор взрывных линз",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 64,
+   "orig_id": "hbm:item.gadget_wireing",
+   "meta": 0,
+   "registry_id": "hbm_m:gadget_wireing",
+   "alias_name": "Wiring",
+   "modern_key": "item.hbm_m.gadget_wireing",
+   "current_en": "Wiring",
+   "current_ru": "Провода",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.gadget_wireing.name",
+     "en": "Wiring",
+     "ru": "Провода",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 65,
+   "orig_id": "hbm:item.gadget_core",
+   "meta": 0,
+   "registry_id": "hbm_m:gadget_core",
+   "alias_name": "Large Plutonium Core",
+   "modern_key": "item.hbm_m.gadget_core",
+   "current_en": "Large Plutonium Core",
+   "current_ru": "Плутониевое ядро",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.gadget_core.name",
+     "en": "Large Plutonium Core",
+     "ru": "Плутониевое ядро",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 66,
+   "orig_id": "hbm:item.boy_shielding",
+   "meta": 0,
+   "registry_id": "hbm_m:boy_shielding",
+   "alias_name": "Neutron Shielding",
+   "modern_key": "item.hbm_m.boy_shielding",
+   "current_en": "Neutron Shielding",
+   "current_ru": "Нейтронный щит",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.boy_shielding.name",
+     "en": "Neutron Shielding",
+     "ru": "Нейтронный щит",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 67,
+   "orig_id": "hbm:item.boy_target",
+   "meta": 0,
+   "registry_id": "hbm_m:boy_target",
+   "alias_name": "Subcritical U235 Target",
+   "modern_key": "item.hbm_m.boy_target",
+   "current_en": "Subcritical U235 Target",
+   "current_ru": "Субкритическая цель U235",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.boy_target.name",
+     "en": "Subcritical U235 Target",
+     "ru": "Субкритическая цель U235",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 68,
+   "orig_id": "hbm:item.boy_bullet",
+   "meta": 0,
+   "registry_id": "hbm_m:boy_bullet",
+   "alias_name": "U235 Projectile",
+   "modern_key": "item.hbm_m.boy_bullet",
+   "current_en": "U235 Projectile",
+   "current_ru": "Снаряд U235",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.boy_bullet.name",
+     "en": "U235 Projectile",
+     "ru": "Снаряд U235",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 69,
+   "orig_id": "hbm:item.boy_propellant",
+   "meta": 0,
+   "registry_id": "hbm_m:boy_propellant",
+   "alias_name": "Propellant",
+   "modern_key": "item.hbm_m.boy_propellant",
+   "current_en": "Propellant",
+   "current_ru": "Взрывчатка",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.boy_propellant.name",
+     "en": "Propellant",
+     "ru": "Взрывчатка",
+     "ruFound": true
+    },
+    {
+     "repo": "base",
+     "origKey": "item.test_nuke_propellant.name",
+     "en": "Propellant",
+     "ru": "Взрывчатка",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 70,
+   "orig_id": "hbm:item.boy_igniter",
+   "meta": 0,
+   "registry_id": "hbm_m:boy_igniter",
+   "alias_name": "Bomb Igniter",
+   "modern_key": "item.hbm_m.boy_igniter",
+   "current_en": "Bomb Igniter",
+   "current_ru": "Воспламенитель",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.boy_igniter.name",
+     "en": "Bomb Igniter",
+     "ru": "Воспламенитель",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 71,
+   "orig_id": "hbm:item.man_igniter",
+   "meta": 0,
+   "registry_id": "hbm_m:fat_man_igniter",
+   "alias_name": "Bomb Firing Unit",
+   "modern_key": "item.hbm_m.fat_man_igniter",
+   "current_en": "Bomb Firing Unit",
+   "current_ru": "Зажигатель",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.man_igniter.name",
+     "en": "Bomb Firing Unit",
+     "ru": "Зажигатель",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "NAME_OR_ID_VARIATION"
+  },
+  {
+   "order": 72,
+   "orig_id": "hbm:item.man_core",
+   "meta": 0,
+   "registry_id": "hbm_m:fat_man_core",
+   "alias_name": "Plutonium Core",
+   "modern_key": "item.hbm_m.fat_man_core",
+   "current_en": "Plutonium Core",
+   "current_ru": "Плутониевое ядро",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.man_core.name",
+     "en": "Plutonium Core",
+     "ru": "Плутониевое ядро",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "NAME_OR_ID_VARIATION"
+  },
+  {
+   "order": 73,
+   "orig_id": "hbm:item.mike_core",
+   "meta": 0,
+   "registry_id": "hbm_m:mike_core",
+   "alias_name": "Uranium Coated Deuterium Tank",
+   "modern_key": "item.hbm_m.mike_core",
+   "current_en": "Uranium Coated Deuterium Tank",
+   "current_ru": "Дейтериевый бак с урановым покрытием",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.mike_core.name",
+     "en": "Uranium Coated Deuterium Tank",
+     "ru": "Дейтериевый бак с урановым покрытием",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 74,
+   "orig_id": "hbm:item.mike_deut",
+   "meta": 0,
+   "registry_id": "hbm_m:mike_deut",
+   "alias_name": "Deuterium Tank",
+   "modern_key": "item.hbm_m.mike_deut",
+   "current_en": "Deuterium Tank",
+   "current_ru": "Дейтериевый бак",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.mike_deut.name",
+     "en": "Deuterium Tank",
+     "ru": "Дейтериевый бак",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 75,
+   "orig_id": "hbm:item.mike_cooling_unit",
+   "meta": 0,
+   "registry_id": "hbm_m:mike_cooling_unit",
+   "alias_name": "Deuterium Cooling Unit",
+   "modern_key": "item.hbm_m.mike_cooling_unit",
+   "current_en": "Deuterium Cooling Unit",
+   "current_ru": "Блок охлаждения дейтерия",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.mike_cooling_unit.name",
+     "en": "Deuterium Cooling Unit",
+     "ru": "Блок охлаждения дейтерия",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 76,
+   "orig_id": "hbm:item.tsar_core",
+   "meta": 0,
+   "registry_id": "hbm_m:tsar_core",
+   "alias_name": "Tsar Bomba Core",
+   "modern_key": "item.hbm_m.tsar_core",
+   "current_en": "Tsar Bomba Core",
+   "current_ru": "Ядро Царь-бомбы",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.tsar_core.name",
+     "en": "Tsar Bomba Core",
+     "ru": "Ядро Царь-бомбы",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 77,
+   "orig_id": "hbm:item.fleija_igniter",
+   "meta": 0,
+   "registry_id": "hbm_m:fleija_igniter",
+   "alias_name": "Pulse Igniter",
+   "modern_key": "item.hbm_m.fleija_igniter",
+   "current_en": "Pulse Igniter",
+   "current_ru": "Импульсный воспламенитель",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.fleija_igniter.name",
+     "en": "Pulse Igniter",
+     "ru": "Импульсный воспламенитель",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 78,
+   "orig_id": "hbm:item.fleija_propellant",
+   "meta": 0,
+   "registry_id": "hbm_m:fleija_propellant",
+   "alias_name": "Schrabidium Propellant",
+   "modern_key": "item.hbm_m.fleija_propellant",
+   "current_en": "Schrabidium Propellant",
+   "current_ru": "Шрабидиевая взрывчатка",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.fleija_propellant.name",
+     "en": "Schrabidium Propellant",
+     "ru": "Шрабидиевая взрывчатка",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 79,
+   "orig_id": "hbm:item.fleija_core",
+   "meta": 0,
+   "registry_id": "hbm_m:fleija_core",
+   "alias_name": "F.L.E.I.J.A. Uranium 235 Charge",
+   "modern_key": "item.hbm_m.fleija_core",
+   "current_en": "F.L.E.I.J.A. Uranium 235 Charge",
+   "current_ru": "Заряд Ф.Л.Е.И из урана 235",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.fleija_core.name",
+     "en": "F.L.E.I.J.A. Uranium 235 Charge",
+     "ru": "Заряд Ф.Л.Е.И из урана 235",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 80,
+   "orig_id": "hbm:item.solinium_igniter",
+   "meta": 0,
+   "registry_id": "hbm_m:solinium_igniter",
+   "alias_name": "SOL Pulse Igniter",
+   "modern_key": "item.hbm_m.solinium_igniter",
+   "current_en": "SOL Pulse Igniter",
+   "current_ru": "Солиниевый импульсный воспламенитель",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.solinium_igniter.name",
+     "en": "SOL Pulse Igniter",
+     "ru": "Солиниевый импульсный воспламенитель",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 81,
+   "orig_id": "hbm:item.solinium_propellant",
+   "meta": 0,
+   "registry_id": "hbm_m:solinium_propellant",
+   "alias_name": "SOL Compression Charge",
+   "modern_key": "item.hbm_m.solinium_propellant",
+   "current_en": "SOL Compression Charge",
+   "current_ru": "Солиниевый сжимающий заряд",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.solinium_propellant.name",
+     "en": "SOL Compression Charge",
+     "ru": "Солиниевый сжимающий заряд",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 82,
+   "orig_id": "hbm:item.solinium_core",
+   "meta": 0,
+   "registry_id": "hbm_m:solinium_core",
+   "alias_name": "Semi-Stable Solinium Core",
+   "modern_key": "item.hbm_m.solinium_core",
+   "current_en": "Semi-Stable Solinium Core",
+   "current_ru": "Полустабильный солиниевый заряд",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.solinium_core.name",
+     "en": "Semi-Stable Solinium Core",
+     "ru": "Полустабильный солиниевый заряд",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 83,
+   "orig_id": "hbm:item.n2_charge",
+   "meta": 0,
+   "registry_id": "hbm_m:n2_charge",
+   "alias_name": "Large Explosive Charge",
+   "modern_key": "item.hbm_m.n2_charge",
+   "current_en": "Large Explosive Charge",
+   "current_ru": "Крупный взрывной заряд",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.n2_charge.name",
+     "en": "Large Explosive Charge",
+     "ru": "Крупный взрывной заряд",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 84,
+   "orig_id": "hbm:item.egg_balefire_shard",
+   "meta": 0,
+   "registry_id": "hbm_m:egg_balefire_shard",
+   "alias_name": "Balefire Shard",
+   "modern_key": "item.hbm_m.egg_balefire_shard",
+   "current_en": "Balefire Shard",
+   "current_ru": "Жар-осколок",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.egg_balefire_shard.name",
+     "en": "Balefire Shard",
+     "ru": "Жар-осколок",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 85,
+   "orig_id": "hbm:item.egg_balefire",
+   "meta": 0,
+   "registry_id": "hbm_m:egg_balefire",
+   "alias_name": "Balefire Egg",
+   "modern_key": "item.hbm_m.egg_balefire",
+   "current_en": "Balefire Egg",
+   "current_ru": "Жар-яйцо",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.egg_balefire.name",
+     "en": "Balefire Egg",
+     "ru": "Жар-яйцо",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 86,
+   "orig_id": "hbm:item.custom_tnt",
+   "meta": 0,
+   "registry_id": "hbm_m:custom_tnt",
+   "alias_name": "Custom Nuke Explosive Charge",
+   "modern_key": "item.hbm_m.custom_tnt",
+   "current_en": "Custom Nuke Explosive Charge",
+   "current_ru": "Взрывной заряд кастомной бомбы",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.custom_tnt.name",
+     "en": "Custom Nuke Explosive Charge",
+     "ru": "Взрывной заряд кастомной бомбы",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 87,
+   "orig_id": "hbm:item.custom_nuke",
+   "meta": 0,
+   "registry_id": "hbm_m:custom_nuke",
+   "alias_name": "Custom Nuke Nuclear Rod",
+   "modern_key": "item.hbm_m.custom_nuke",
+   "current_en": "Custom Nuke Nuclear Rod",
+   "current_ru": "Ядерный заряд кастомной бомбы",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.custom_nuke.name",
+     "en": "Custom Nuke Nuclear Rod",
+     "ru": "Ядерный заряд кастомной бомбы",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 88,
+   "orig_id": "hbm:item.custom_hydro",
+   "meta": 0,
+   "registry_id": "hbm_m:custom_hydro",
+   "alias_name": "Custom Nuke Hydrogen Rod",
+   "modern_key": "item.hbm_m.custom_hydro",
+   "current_en": "Custom Nuke Hydrogen Rod",
+   "current_ru": "Водородный заряд кастомной бомбы",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.custom_hydro.name",
+     "en": "Custom Nuke Hydrogen Rod",
+     "ru": "Водородный заряд кастомной бомбы",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 89,
+   "orig_id": "hbm:item.custom_amat",
+   "meta": 0,
+   "registry_id": "hbm_m:custom_amat",
+   "alias_name": "Custom Nuke Antimatter Rod",
+   "modern_key": "item.hbm_m.custom_amat",
+   "current_en": "Custom Nuke Antimatter Rod",
+   "current_ru": "Антивещественный заряд кастомной бомбы",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.custom_amat.name",
+     "en": "Custom Nuke Antimatter Rod",
+     "ru": "Антивещественный заряд кастомной бомбы",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 90,
+   "orig_id": "hbm:item.custom_dirty",
+   "meta": 0,
+   "registry_id": "hbm_m:custom_dirty",
+   "alias_name": "Custom Nuke Dirty Rod",
+   "modern_key": "item.hbm_m.custom_dirty",
+   "current_en": "Custom Nuke Dirty Rod",
+   "current_ru": "Грязный заряд кастомной бомбы",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.custom_dirty.name",
+     "en": "Custom Nuke Dirty Rod",
+     "ru": "Грязный заряд кастомной бомбы",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 91,
+   "orig_id": "hbm:item.custom_schrab",
+   "meta": 0,
+   "registry_id": "hbm_m:custom_schrab",
+   "alias_name": "Custom Nuke Schrabidium Rod",
+   "modern_key": "item.hbm_m.custom_schrab",
+   "current_en": "Custom Nuke Schrabidium Rod",
+   "current_ru": "Шрабидиевый заряд кастомной бомбы",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.custom_schrab.name",
+     "en": "Custom Nuke Schrabidium Rod",
+     "ru": "Шрабидиевый заряд кастомной бомбы",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 92,
+   "orig_id": "hbm:item.custom_fall",
+   "meta": 0,
+   "registry_id": "hbm_m:custom_fall",
+   "alias_name": "Custom Nuke Drop Upgrade",
+   "modern_key": "item.hbm_m.custom_fall",
+   "current_en": "Custom Nuke Drop Upgrade",
+   "current_ru": "Улучшение кастомной бомбы (Удар с неба)",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.custom_fall.name",
+     "en": "Custom Nuke Drop Upgrade",
+     "ru": "Улучшение кастомной бомбы (Удар с неба)",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 93,
+   "orig_id": "hbm:item.igniter",
+   "meta": 0,
+   "registry_id": "hbm_m:igniter",
+   "alias_name": "Igniter",
+   "modern_key": "item.hbm_m.igniter",
+   "current_en": "Igniter",
+   "current_ru": "Зажигатель",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.igniter.name",
+     "en": "Igniter",
+     "ru": "Зажигатель",
+     "ruFound": true
+    },
+    {
+     "repo": "base",
+     "origKey": "item.test_nuke_igniter.name",
+     "en": "Igniter",
+     "ru": "Активатор",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 94,
+   "orig_id": "hbm:item.detonator",
+   "meta": 0,
+   "registry_id": "hbm_m:detonator",
+   "alias_name": "Detonator",
+   "modern_key": "item.hbm_m.detonator",
+   "current_en": "Detonator",
+   "current_ru": "Детонатор",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.detonator.name",
+     "en": "Detonator",
+     "ru": "Детонатор",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 95,
+   "orig_id": "hbm:item.detonator_multi",
+   "meta": 0,
+   "registry_id": "hbm_m:multi_detonator",
+   "alias_name": "Multi Detonator",
+   "modern_key": "item.hbm_m.multi_detonator",
+   "current_en": "Multi Detonator",
+   "current_ru": "Мульти-детонатор",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.detonator_multi.name",
+     "en": "Multi Detonator",
+     "ru": "Мульти-детонатор",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "NAME_OR_ID_VARIATION"
+  },
+  {
+   "order": 96,
+   "orig_id": "hbm:item.detonator_laser",
+   "meta": 0,
+   "registry_id": "hbm_m:range_detonator",
+   "alias_name": "Laser Detonator",
+   "modern_key": "item.hbm_m.range_detonator",
+   "current_en": "Laser Detonator",
+   "current_ru": "Лазерный детонатор",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.detonator_laser.name",
+     "en": "Laser Detonator",
+     "ru": "Лазерный детонатор",
+     "ruFound": true
+    },
+    {
+     "repo": "base",
+     "origKey": "item.gun_detonator.name",
+     "en": "Laser Detonator",
+     "ru": "Лазерный детонатор",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "NAME_OR_ID_VARIATION"
+  },
+  {
+   "order": 97,
+   "orig_id": "hbm:item.detonator_deadman",
+   "meta": 0,
+   "registry_id": "hbm_m:detonator_deadman",
+   "alias_name": "Dead Man's Detonator",
+   "modern_key": "item.hbm_m.detonator_deadman",
+   "current_en": "Dead Man's Detonator",
+   "current_ru": "Детонатор смертника",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.detonator_deadman.name",
+     "en": "Dead Man's Detonator",
+     "ru": "Детонатор смертника",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 98,
+   "orig_id": "hbm:item.detonator_de",
+   "meta": 0,
+   "registry_id": "hbm_m:detonator_de",
+   "alias_name": "Dead Man's Explosive",
+   "modern_key": "item.hbm_m.detonator_de",
+   "current_en": "Dead Man's Explosive",
+   "current_ru": "Взрывчатка смертника",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.detonator_de.name",
+     "en": "Dead Man's Explosive",
+     "ru": "Взрывчатка смертника",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 99,
+   "orig_id": "hbm:item.defuser",
+   "meta": 0,
+   "registry_id": "hbm_m:defuser",
+   "alias_name": "High-Tech Bomb Defusing Device",
+   "modern_key": "item.hbm_m.defuser",
+   "current_en": "High-Tech Bomb Defusing Device",
+   "current_ru": "Высокотехнологичное устройство для разминирования",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.defuser.name",
+     "en": "High-Tech Bomb Defusing Device",
+     "ru": "Высокотехнологичное устройство для разминирования",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 100,
+   "orig_id": "hbm:item.gadget_kit",
+   "meta": 0,
+   "registry_id": "hbm_m:gadget_kit",
+   "alias_name": "The Gadget Kit",
+   "modern_key": "item.hbm_m.gadget_kit",
+   "current_en": "The Gadget Kit",
+   "current_ru": "Комплект Гаджета",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.gadget_kit.name",
+     "en": "The Gadget Kit",
+     "ru": "Комплект Гаджета",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 101,
+   "orig_id": "hbm:item.boy_kit",
+   "meta": 0,
+   "registry_id": "hbm_m:boy_kit",
+   "alias_name": "Little Boy Kit",
+   "modern_key": "item.hbm_m.boy_kit",
+   "current_en": "Little Boy Kit",
+   "current_ru": "Комплект Малыша",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.boy_kit.name",
+     "en": "Little Boy Kit",
+     "ru": "Комплект Малыша",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 102,
+   "orig_id": "hbm:item.man_kit",
+   "meta": 0,
+   "registry_id": "hbm_m:man_kit",
+   "alias_name": "Fat Man Kit",
+   "modern_key": "item.hbm_m.man_kit",
+   "current_en": "Fat Man Kit",
+   "current_ru": "Комплект Толстяка",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.man_kit.name",
+     "en": "Fat Man Kit",
+     "ru": "Комплект Толстяка",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 103,
+   "orig_id": "hbm:item.mike_kit",
+   "meta": 0,
+   "registry_id": "hbm_m:mike_kit",
+   "alias_name": "Ivy Mike Kit",
+   "modern_key": "item.hbm_m.mike_kit",
+   "current_en": "Ivy Mike Kit",
+   "current_ru": "Комплект Иви Майка",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.mike_kit.name",
+     "en": "Ivy Mike Kit",
+     "ru": "Комплект Иви Майка",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 104,
+   "orig_id": "hbm:item.tsar_kit",
+   "meta": 0,
+   "registry_id": "hbm_m:tsar_kit",
+   "alias_name": "Tsar Bomba Kit",
+   "modern_key": "item.hbm_m.tsar_kit",
+   "current_en": "Tsar Bomba Kit",
+   "current_ru": "Комплект Царь Бомбы",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.tsar_kit.name",
+     "en": "Tsar Bomba Kit",
+     "ru": "Комплект Царь Бомбы",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 105,
+   "orig_id": "hbm:item.prototype_kit",
+   "meta": 0,
+   "registry_id": "hbm_m:prototype_kit",
+   "alias_name": "Prototype Kit",
+   "modern_key": "item.hbm_m.prototype_kit",
+   "current_en": "Prototype Kit",
+   "current_ru": "Комплект Прототипа",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.prototype_kit.name",
+     "en": "Prototype Kit",
+     "ru": "Комплект Прототипа",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 106,
+   "orig_id": "hbm:item.fleija_kit",
+   "meta": 0,
+   "registry_id": "hbm_m:fleija_kit",
+   "alias_name": "F.L.E.I.J.A. Kit",
+   "modern_key": "item.hbm_m.fleija_kit",
+   "current_en": "F.L.E.I.J.A. Kit",
+   "current_ru": "Комплект Ф.Л.Е.Я",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.fleija_kit.name",
+     "en": "F.L.E.I.J.A. Kit",
+     "ru": "Комплект Ф.Л.Е.Я",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 107,
+   "orig_id": "hbm:item.solinium_kit",
+   "meta": 0,
+   "registry_id": "hbm_m:solinium_kit",
+   "alias_name": "Solinium Kit",
+   "modern_key": "item.hbm_m.solinium_kit",
+   "current_en": "Solinium Kit",
+   "current_ru": "Комплект Синего Ополаскивателя",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.solinium_kit.name",
+     "en": "Solinium Kit",
+     "ru": "Комплект Синего Ополаскивателя",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 108,
+   "orig_id": "hbm:item.multi_kit",
+   "meta": 0,
+   "registry_id": "hbm_m:multi_kit",
+   "alias_name": "Multi Purpose Bomb Kit",
+   "modern_key": "item.hbm_m.multi_kit",
+   "current_en": "Multi Purpose Bomb Kit",
+   "current_ru": "Комплект Многоцелевой бомбы",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.multi_kit.name",
+     "en": "Multi Purpose Bomb Kit",
+     "ru": "Комплект Многоцелевой бомбы",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  },
+  {
+   "order": 109,
+   "orig_id": "hbm:item.custom_kit",
+   "meta": 0,
+   "registry_id": "hbm_m:custom_kit",
+   "alias_name": "Custom Nuke Kit",
+   "modern_key": "item.hbm_m.custom_kit",
+   "current_en": "Custom Nuke Kit",
+   "current_ru": "Комплект Пользовательской бомбы",
+   "en_match": true,
+   "ru_match": true,
+   "candidates": [
+    {
+     "repo": "base",
+     "origKey": "item.custom_kit.name",
+     "en": "Custom Nuke Kit",
+     "ru": "Комплект Пользовательской бомбы",
+     "ruFound": true
+    }
+   ],
+   "tab_status": "DIRECT_MATCH"
+  }
+ ],
+ "space": [
+  {
+   "port_key": "block.space_m.nuke_antimatter",
+   "orig_key": "tile.nuke_antimatter.name",
+   "current_en": "Antimatter Bomb",
+   "current_ru": "Антиматериальная бомба",
+   "orig_en": "Antimatter Bomb",
+   "orig_ru": "Антиматериальная бомба",
+   "en_match": true,
+   "ru_match": true,
+   "has_orig": true
+  },
+  {
+   "port_key": "block.space_m.det_salt",
+   "orig_key": "tile.det_salt.name",
+   "current_en": "Salted Nuclear Charge",
+   "current_ru": "Солёный ядерный заряд",
+   "orig_en": "Salted Nuclear Charge",
+   "orig_ru": "Солёный ядерный заряд",
+   "en_match": true,
+   "ru_match": true,
+   "has_orig": true
+  },
+  {
+   "port_key": "block.space_m.oil_barrel",
+   "orig_key": "tile.oil_barrel.name",
+   "current_en": "tile.oil_barrel.name",
+   "current_ru": "tile.oil_barrel.name",
+   "orig_en": null,
+   "orig_ru": null,
+   "en_match": false,
+   "ru_match": false,
+   "has_orig": false
+  }
+ ]
+}

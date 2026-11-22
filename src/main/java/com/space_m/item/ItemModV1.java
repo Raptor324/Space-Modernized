@@ -10,7 +10,7 @@ import com.google.common.collect.Multimap;
 import com.hbm_m.armormod.item.IArmorModDash;
 import com.hbm_m.armormod.item.ItemArmorMod;
 import com.hbm_m.armormod.util.ArmorModificationHelper;
-import com.hbm_m.platform.AttributeOps;
+import com.hbm_m.platform.AttributeHooks;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
@@ -42,7 +42,7 @@ public class ItemModV1 extends ItemArmorMod implements IArmorModDash {
                 Attribute//?} else {
                 /*net.minecraft.core.Holder<Attribute>*///?}
                 , AttributeModifier> multimap = HashMultimap.create();
-        multimap.put(Attributes.MOVEMENT_SPEED, modifier(SPEED, "V1 SPEED", 0.5, AttributeOps.MULTIPLY_TOTAL));
+        multimap.put(Attributes.MOVEMENT_SPEED, modifier(SPEED, "V1 SPEED", 0.5, AttributeHooks.MULTIPLY_TOTAL));
         return multimap;
     }
 

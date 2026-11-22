@@ -1,5 +1,21 @@
 {
   "sources": [
-    { "type": "single", "resource": "space_m:misc/space/kerbol" }
+    { "type": "single", "resource": "space_m:misc/space/kerbol" },
+    { "type": "single", "resource": "space_m:models/bombs/blomb_tex" },
+    { "type": "single", "resource": "space_m:models/gas_dock" },
+    { "type": "single", "resource": "space_m:models/machines/alkylation_unit" },
+    { "type": "single", "resource": "space_m:models/machines/cryo_distiller" },
+    { "type": "single", "resource": "space_m:models/machines/dish_controller" },
+    { "type": "single", "resource": "space_m:models/machines/docking_port" },
+    { "type": "single", "resource": "space_m:models/machines/docking_port_launcher" },
+    { "type": "single", "resource": "space_m:models/machines/drive_processor" },
+    { "type": "single", "resource": "space_m:models/machines/hydroponic" },
+    { "type": "single", "resource": "space_m:models/machines/magma_drill" },
+    { "type": "single", "resource": "space_m:models/machines/milker" },
+    { "type": "single", "resource": "space_m:models/machines/rocket_assembly" },
+    { "type": "single", "resource": "space_m:models/machines/rocket_pad" },
+    { "type": "single", "resource": "space_m:models/machines/rocket_pad_support" },
+    { "type": "single", "resource": "space_m:models/machines/transporter_pad" },
+    { "type": "single", "resource": "space_m:models/machines/vacuum_solderer" }
   ]
 }

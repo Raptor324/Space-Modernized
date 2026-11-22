@@ -12,7 +12,7 @@ import com.hbm_m.hazard.type.HazardTypeRadiation;
 import com.hbm_m.item.material.MaterialShape;
 import com.hbm_m.item.material.ModMaterialItems;
 import com.hbm_m.item.material.ModMaterials;
-import com.hbm_m.platform.PlatformHooks;
+import com.hbm_m.platform.StackNbt;
 import com.hbm_m.util.ContaminationUtil;
 import com.space_m.config.SpaceConfig;
 
@@ -54,7 +54,7 @@ public final class NeutronEffects {
     /** {@code stack.nbt.getFloat(NEUTRON_KEY)} (Original HazardTypeRadiation.onUpdate/addHazardInformation). */
     public static double itemActivation(ItemStack stack) {
         if (stack.isEmpty()) return 0D;
-        CompoundTag t = PlatformHooks.getItemTag(stack);
+        CompoundTag t = StackNbt.read(stack);
         return t != null && t.contains(HazardTypeNeutron.NEUTRON_KEY) ? t.getFloat(HazardTypeNeutron.NEUTRON_KEY) : 0D;
     }
 
@@ -69,7 +69,7 @@ public final class NeutronEffects {
 
         @Override
         public void transformPost(ItemStack stack, List<HazardEntry> entries) {
-            CompoundTag t = PlatformHooks.getItemTag(stack);
+            CompoundTag t = StackNbt.read(stack);
             if (t == null || !t.contains(HazardTypeNeutron.NEUTRON_KEY)) return;
             float level = t.contains(HazardTransformerRadiationNBT.RAD_KEY) ? 0F : t.getFloat(HazardTypeNeutron.NEUTRON_KEY);
             entries.add(new HazardEntry(HazardRegistry.RADIATION, level));
@@ -115,10 +115,10 @@ public final class NeutronEffects {
     /** {@code HazardTypeNeutron.decay}. */
     public static void decay(ItemStack stack, float factor) {
         if (stack == null || stack.isEmpty()) return;
-        CompoundTag t = PlatformHooks.getItemTag(stack);
+        CompoundTag t = StackNbt.read(stack);
         if (t == null || !t.contains(HazardTypeNeutron.NEUTRON_KEY)) return;
         float activation = t.getFloat(HazardTypeNeutron.NEUTRON_KEY);
-        PlatformHooks.editItemTag(stack, tag -> {
+        StackNbt.edit(stack, tag -> {
             tag.putFloat(HazardTypeNeutron.NEUTRON_KEY, activation * factor);
             if (activation < 1e-5) tag.remove(HazardTypeNeutron.NEUTRON_KEY);
         });

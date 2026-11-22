@@ -21,11 +21,11 @@ public final class SpaceMobModels {
 
     private SpaceMobModels() {}
 
-    static final SimpleObjModel SCUTTERFISH = ObjMobModel.obj("scutterfish");
-    static final SimpleObjModel SCUTTLECRAB = ObjMobModel.obj("scuttlecrab");
-    static final SimpleObjModel SCRAPFISH = ObjMobModel.obj("scrapfish");
-    static final SimpleObjModel DEPTHSQUID = ObjMobModel.obj("depthsquid");
-    static final SimpleObjModel SIFTER_EEL = ObjMobModel.obj("siftereel");
+    public static final SimpleObjModel SCUTTERFISH = ObjMobModel.obj("scutterfish");
+    public static final SimpleObjModel SCUTTLECRAB = ObjMobModel.obj("scuttlecrab");
+    public static final SimpleObjModel SCRAPFISH = ObjMobModel.obj("scrapfish");
+    public static final SimpleObjModel DEPTHSQUID = ObjMobModel.obj("depthsquid");
+    public static final SimpleObjModel SIFTER_EEL = ObjMobModel.obj("siftereel");
 
     static void rx(PoseStack ps, double deg) { ps.mulPose(Axis.XP.rotationDegrees((float) deg)); }
     static void ry(PoseStack ps, double deg) { ps.mulPose(Axis.YP.rotationDegrees((float) deg)); }

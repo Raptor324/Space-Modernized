@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.hbm_m.platform.PlatformHooks;
+import com.hbm_m.platform.StackNbt;
 import com.space_m.celestial.CelestialBody;
 import com.space_m.celestial.SolarSystem;
 import com.space_m.config.SpaceConfig;
@@ -46,7 +46,7 @@ public class ItemVOTVdrive extends Item {
 
     public static ItemStack of(SolarSystem.Body body) {
         ItemStack stack = new ItemStack(SpaceRocketItems.FULL_DRIVE.get());
-        PlatformHooks.editItemTag(stack, t -> t.putInt("body", body.ordinal()));
+        StackNbt.edit(stack, t -> t.putInt("body", body.ordinal()));
         return stack;
     }
 
@@ -55,7 +55,7 @@ public class ItemVOTVdrive extends Item {
         List<ItemStack> list = new ArrayList<>();
         for (SolarSystem.Body body : SolarSystem.Body.values()) {
             ItemStack stack = of(body);
-            PlatformHooks.editItemTag(stack, t -> {
+            StackNbt.edit(stack, t -> {
                 t.putInt("x", 1);
                 t.putInt("ax", 1);
                 t.putBoolean("Processed", true);
@@ -66,7 +66,7 @@ public class ItemVOTVdrive extends Item {
     }
 
     private static CompoundTag tag(ItemStack stack) {
-        CompoundTag tag = PlatformHooks.getItemTag(stack);
+        CompoundTag tag = StackNbt.read(stack);
         return tag != null ? tag : new CompoundTag();
     }
 
@@ -172,7 +172,7 @@ public class ItemVOTVdrive extends Item {
             // The client can't get this information, so any time the server grabs it, serialize it to the itemstack
             CompoundTag old = tag(stack);
             if (!name.equals(old.getString("stationName")) || !finalOrbiting.name.equals(old.getString("sDim")) || hasStation != old.getBoolean("sHas")) {
-                PlatformHooks.editItemTag(stack, t -> {
+                StackNbt.edit(stack, t -> {
                     t.putString("stationName", name);
                     t.putString("sDim", finalOrbiting.name); // Original: Dimensions-ID; hier Koerpername
                     t.putBoolean("sHas", hasStation);
@@ -186,7 +186,7 @@ public class ItemVOTVdrive extends Item {
     }
 
     public static void setCoordinates(ItemStack stack, int x, int z) {
-        PlatformHooks.editItemTag(stack, t -> {
+        StackNbt.edit(stack, t -> {
             t.putInt("x", x);
             t.putInt("z", z);
         });
@@ -202,7 +202,7 @@ public class ItemVOTVdrive extends Item {
     }
 
     public static void setProcessed(ItemStack stack, boolean processed) {
-        PlatformHooks.editItemTag(stack, t -> t.putBoolean("Processed", processed));
+        StackNbt.edit(stack, t -> t.putBoolean("Processed", processed));
     }
 
     // Returns an area for the Stardar to draw, so the player can pick a safe spot to land
@@ -213,7 +213,7 @@ public class ItemVOTVdrive extends Item {
             int max = SpaceConfig.get().maxProbeDistance;
             int ax = itemRand.nextInt(max * 2) - max;
             int az = itemRand.nextInt(max * 2) - max;
-            PlatformHooks.editItemTag(stack, t -> {
+            StackNbt.edit(stack, t -> {
                 t.putInt("ax", ax);
                 t.putInt("az", az);
             });
@@ -223,11 +223,11 @@ public class ItemVOTVdrive extends Item {
     }
 
     public static void markCopied(ItemStack stack) {
-        PlatformHooks.editItemTag(stack, t -> t.putBoolean("copied", true));
+        StackNbt.edit(stack, t -> t.putBoolean("copied", true));
     }
 
     public static boolean wasCopied(ItemStack stack) {
-        CompoundTag tag = PlatformHooks.getItemTag(stack);
+        CompoundTag tag = StackNbt.read(stack);
         return tag != null && tag.getBoolean("copied");
     }
 

@@ -93,7 +93,7 @@ public final class SatelliteGameTest {
         check(o.altitude == 100F && o.inclination == 0F && o.phaseOffset == 0F && !o.isBlinking && o.blinkPeriod == 0.3F
                 && "None".equals(o.owner) && Math.abs(o.colorG - 0.9F) < 1e-6, "Standardwerte");
         SatelliteItemData.ensureItemData(stack);
-        CompoundTag tag = com.hbm_m.platform.PlatformHooks.getItemTag(stack);
+        CompoundTag tag = com.hbm_m.platform.StackNbt.read(stack);
         check(tag != null && tag.contains("satAltitude") && tag.contains("satColorR") && tag.contains("satOwner"), "ensureItemData schreibt");
 
         CompoundTag ctl = new CompoundTag();

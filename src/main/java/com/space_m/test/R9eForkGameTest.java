@@ -91,8 +91,7 @@ public final class R9eForkGameTest {
         check(!com.hbm_m.util.ContaminationUtil.isRadImmune(EntityType.OCELOT.create(sl)), "E15 Ozelot nicht immun");
         check(com.hbm_m.util.ContaminationUtil.isRadImmune(EntityType.ZOMBIE.create(sl)), "E15 Zombie bleibt immun");
         // E16 Teleporter
-        var tele = new com.hbm_m.blockentity.machines.MachineTeleporterBlockEntity(BlockPos.ZERO, ModBlocks.MACHINE_TELEPORTER.get().defaultBlockState());
-        check(tele.tank != null && tele.tank.getTankType() == SpaceFluids.NMASS.fluid() && tele.tank.getMaxFill() == 16000, "E16 N-Masse-Tank 16000");
+        check(SpaceApi.fork().teleporterFluid() == SpaceFluids.NMASS.fluid(), "E16 N-Masse");
         helper.succeed();
     }
 

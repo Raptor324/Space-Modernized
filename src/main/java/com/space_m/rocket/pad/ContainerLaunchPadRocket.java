@@ -4,7 +4,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import com.hbm_m.inventory.ModItemStackHandlerContainer;
-import com.hbm_m.platform.DummyItemStackHandler;
+import com.hbm_m.platform.ModItemStackHandler;
 import com.space_m.inventory.SpaceMenus;
 
 import net.minecraft.network.FriendlyByteBuf;
@@ -37,7 +37,7 @@ public class ContainerLaunchPadRocket extends AbstractContainerMenu {
 
         Container container = this.machine != null
                 ? new ModItemStackHandlerContainer(this.machine.getInventory(), this.machine::setChanged)
-                : new ModItemStackHandlerContainer(new DummyItemStackHandler(TE_SLOTS), () -> {});
+                : new ModItemStackHandlerContainer(new ModItemStackHandler.Dummy(TE_SLOTS), () -> {});
 
         addSlot(new Checked(container, 0, 37, 21)); // Rocket slot
         addSlot(new Checked(container, 1, 37, 39)); // Drive slot

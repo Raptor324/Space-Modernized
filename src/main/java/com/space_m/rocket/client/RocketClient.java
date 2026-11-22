@@ -2,7 +2,6 @@ package com.space_m.rocket.client;
 
 import java.util.List;
 
-import com.space_m.blockentity.SpaceBlockEntities;
 import com.space_m.inventory.SpaceMenus;
 import com.space_m.rocket.ItemRocketPart;
 import com.space_m.rocket.ItemVOTVdrive;
@@ -10,7 +9,6 @@ import com.space_m.rocket.RocketPart;
 import com.space_m.rocket.SpaceRocketItems;
 
 import dev.architectury.event.events.client.ClientTooltipEvent;
-import dev.architectury.registry.client.rendering.BlockEntityRendererRegistry;
 import dev.architectury.registry.item.ItemPropertiesRegistry;
 import dev.architectury.registry.menu.MenuRegistry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -44,7 +42,7 @@ public final class RocketClient {
     /** Aus {@code SpaceClient.setup()}. */
     public static void setup() {
         MenuRegistry.registerScreenFactory(SpaceMenus.ROCKET_ASSEMBLY.get(), GUIMachineRocketAssembly::new);
-        BlockEntityRendererRegistry.register(SpaceBlockEntities.ROCKET_ASSEMBLY.get(), RenderRocketAssembly::new);
+        // BER migrated to Nucleus declarative specs in SpaceMachineRenderers
         // Original ItemVOTVdrive: Overlay-Symbol je Metadaten (Koerper)
         ItemPropertiesRegistry.register(SpaceRocketItems.FULL_DRIVE.get(), ResourceLocation.fromNamespaceAndPath("space_m", "body"),
                 (stack, level, entity, seed) -> ItemVOTVdrive.getBody(stack).ordinal());

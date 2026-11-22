@@ -52,7 +52,8 @@ public class RenderCarpetJet extends EntityRenderer<EntityCarpetJet> {
         ps.scale(3, 3, 3);
         ps.translate(2, 0, 0);
         ps.mulPose(Axis.YP.rotationDegrees(-90));
-        B2X.renderAllEntity(ps, buffers.getBuffer(RenderType.entityCutoutNoCull(B2X_TEX)), light, OverlayTexture.NO_OVERLAY, 1F, 1F, 1F, 1F);
+        com.mojang.blaze3d.vertex.VertexConsumer vc = buffers.getBuffer(RenderType.entityCutoutNoCull(B2X_TEX));
+        com.space_m.entity.mob.client.SpaceMobVbos.renderPart(B2X, "tube", B2X_TEX, ps, vc, light, OverlayTexture.NO_OVERLAY, entity.blockPosition(), buffers, 1F, 1F, 1F, 1F);
 
         float trailStretch = rand.nextFloat();
         trailStretch = 1.2F - (trailStretch * trailStretch * 0.2F);
@@ -65,8 +66,9 @@ public class RenderCarpetJet extends EntityRenderer<EntityCarpetJet> {
                 ps.mulPose(Axis.YP.rotationDegrees(180));
                 ps.scale(0.5F, 0.5F, trailStretch);
                 ps.translate(0, 0, 1F);
-                XENON_THRUSTER.renderPartEntity("Exhaust", ps, buffers.getBuffer(RenderType.entityTranslucentEmissive(XENON_EXHAUST_TEX)),
-                        LightTexture.FULL_BRIGHT, OverlayTexture.NO_OVERLAY, 0.25F, 0.88F, 0.82F, 1F);
+                com.mojang.blaze3d.vertex.VertexConsumer evc = buffers.getBuffer(RenderType.entityTranslucentEmissive(XENON_EXHAUST_TEX));
+                com.space_m.entity.mob.client.SpaceMobVbos.renderPart(XENON_THRUSTER, "Exhaust", XENON_EXHAUST_TEX, ps, evc,
+                        LightTexture.FULL_BRIGHT, OverlayTexture.NO_OVERLAY, entity.blockPosition(), buffers, 0.25F, 0.88F, 0.82F, 1F);
                 ps.popPose();
             }
         }

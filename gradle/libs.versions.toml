@@ -1,5 +1,5 @@
 [versions]
-stonecutter = "0.8"
+stonecutter = "0.9.8"
 neoforge-moddev = "2.0.120"
 foojay = "1.0.0"
 mod-publish = "1.1.0"

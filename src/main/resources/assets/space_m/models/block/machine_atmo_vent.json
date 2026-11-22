@@ -1,0 +1,157 @@
+{
+  "loader": "hbm_m:machine_parts_loader",
+  "model": "space_m:models/block/machines/atmo_vent.obj",
+  "flip_v": true,
+  "textures": {
+    "particle": "space_m:block/machine/atmo_vent",
+    "default": "space_m:block/machine/atmo_vent"
+  },
+  "parts": {
+    "Body_Cylinder": {
+      "group": "Body_Cylinder",
+      "texture": "space_m:block/machine/atmo_vent"
+    },
+    "Fan_Cylinder.001": {
+      "group": "Fan_Cylinder.001",
+      "texture": "space_m:block/machine/atmo_vent"
+    }
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        15.499252,
+        -11.346817,
+        14.955139
+      ],
+      "translation": [
+        -0.725182,
+        1.176915,
+        1.603692
+      ],
+      "scale": [
+        0.070312,
+        0.070312,
+        0.070312
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        15.499252,
+        -11.346817,
+        14.955154
+      ],
+      "translation": [
+        -1.790831,
+        0.954297,
+        1.320043
+      ],
+      "scale": [
+        0.070312,
+        0.070312,
+        0.070312
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        -25.083801,
+        4.530502,
+        2.117493
+      ],
+      "translation": [
+        0.888467,
+        2.283707,
+        3.271005
+      ],
+      "scale": [
+        0.075,
+        0.075,
+        0.075
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        -25.083801,
+        4.530502,
+        2.117508
+      ],
+      "translation": [
+        -0.306967,
+        2.283707,
+        3.375591
+      ],
+      "scale": [
+        0.075,
+        0.075,
+        0.075
+      ]
+    },
+    "head": {
+      "rotation": [
+        180,
+        50.000004,
+        25.000015
+      ],
+      "translation": [
+        10.415846,
+        -15.534829,
+        8.679387
+      ],
+      "scale": [
+        0.3,
+        0.3,
+        0.3
+      ]
+    },
+    "gui": {
+      "rotation": [
+        30,
+        45,
+        0
+      ],
+      "translation": [
+        2.12132,
+        -4.165063,
+        -9.25
+      ],
+      "scale": [
+        0.1875,
+        0.1875,
+        0.1875
+      ]
+    },
+    "ground": {
+      "rotation": [
+        0,
+        -90,
+        0
+      ],
+      "translation": [
+        -0.75,
+        -3.25,
+        0.75
+      ],
+      "scale": [
+        0.09375,
+        0.09375,
+        0.09375
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "translation": [
+        1.5,
+        -1.06,
+        -1
+      ],
+      "scale": [
+        0.1875,
+        0.1875,
+        0.1875
+      ]
+    }
+  }
+}

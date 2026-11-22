@@ -20,9 +20,9 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
-BASE = os.path.dirname(os.path.dirname(ROOT))  # .../VS Projekte HBM Modernized
-ORIG = os.path.join(BASE, 'Hbm-s-Nuclear-Tech-GIT-space-travel-twopointfive', 'src', 'main', 'resources', 'assets', 'hbm', 'lang')
-MASTER = os.path.join(BASE, 'Hbm-s-Nuclear-Tech-GIT-master', 'Hbm-s-Nuclear-Tech-GIT-master', 'src', 'main', 'resources', 'assets', 'hbm', 'lang')
+# Оригиналы на этой машине лежат в C:\Projects (см. AGENTS.md раздел 6)
+ORIG = 'C:/Projects/NTM-Space-1.7.10/src/main/resources/assets/hbm/lang'
+MASTER = 'C:/Projects/Hbm-s-Nuclear-Tech-GIT/src/main/resources/assets/hbm/lang'
 JAVA = os.path.join(ROOT, 'src', 'main', 'java', 'com', 'space_m', 'datagen', 'SpaceLang.java')
 BS = chr(92)
 PAT = re.compile(r'e\("((?:[^"\\]|\\.)*)", "((?:[^"\\]|\\.)*)", "((?:[^"\\]|\\.)*)", "((?:[^"\\]|\\.)*)"\);')

@@ -136,7 +136,7 @@ public final class IkeBlocks {
     /** Welt-Fluessigkeit ohne eigenes Item (Original: Block ohne Kreativ-Tab, Beute keine). */
     public static final RegistrySupplier<LiquidBlock> BROMINE_BLOCK = SpaceBlocks.register("bromine_block",
             () -> new com.hbm_m.block.fluid.GenericFluidBlock(() -> (FlowingFluid) BROMINE_FLUID.get(),
-                    com.hbm_m.platform.BlockProps.copy(Blocks.WATER).strength(100F, 500F).noLootTable())
+                    com.hbm_m.platform.BlockHooks.copy(Blocks.WATER).strength(100F, 500F).noLootTable())
                     .setDamage((level, e) -> com.hbm_m.damagesource.ModDamageSources.acid(level), 5F));
 
     /** {@code bucket_bromine = new ItemModBucket(bromine_block)}, blockTab, Rest-Eimer. */

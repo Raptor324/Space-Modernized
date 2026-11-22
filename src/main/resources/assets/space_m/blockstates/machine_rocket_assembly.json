@@ -1,7 +1,8 @@
 {
   "variants": {
-    "": {
-      "model": "space_m:block/machine_rocket_assembly"
-    }
+    "facing=north": { "model": "space_m:block/machine_rocket_assembly" },
+    "facing=east":  { "model": "space_m:block/machine_rocket_assembly", "y": 90 },
+    "facing=south": { "model": "space_m:block/machine_rocket_assembly", "y": 180 },
+    "facing=west":  { "model": "space_m:block/machine_rocket_assembly", "y": 270 }
   }
 }

@@ -9,14 +9,12 @@ import com.space_m.celestial.SolarSystemWorldSavedData;
 import com.space_m.client.sky.SkyHooks;
 import com.space_m.config.SpaceConfig;
 import com.space_m.network.SpacePacketHandler;
-import com.space_m.orbit.OrbitBlocks;
 import com.space_m.orbit.OrbitalStation;
 import com.space_m.orbit.StationSyncPacket;
 import com.space_m.sound.SpaceSounds;
 
 import dev.architectury.event.events.client.ClientPlayerEvent;
 import dev.architectury.event.events.client.ClientTickEvent;
-import dev.architectury.registry.client.rendering.BlockEntityRendererRegistry;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.player.LocalPlayer;
@@ -46,7 +44,7 @@ public final class OrbitClient {
 
     /** Aus {@code SpaceClient.setup()}. */
     public static void setup() {
-        BlockEntityRendererRegistry.register(OrbitBlocks.ORBITAL_STATION_BE.get(), RenderOrbitalStation::new);
+        // BERs migrated to Nucleus declarative specs in SpaceMachineRenderers
     }
 
     // ── Station am Himmel (Dekorator, s. SPACE_R6_iface B) ────────────────────────────────────

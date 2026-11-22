@@ -3,7 +3,7 @@ package com.space_m.machine.misc;
 import org.jetbrains.annotations.Nullable;
 
 import com.hbm_m.inventory.ModItemStackHandlerContainer;
-import com.hbm_m.platform.DummyItemStackHandler;
+import com.hbm_m.platform.ModItemStackHandler;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
@@ -36,7 +36,7 @@ public class ContainerStardar extends AbstractContainerMenu {
 
         Container container = stardar != null
                 ? new ModItemStackHandlerContainer(stardar.getInventory(), stardar::setChanged)
-                : new ModItemStackHandlerContainer(new DummyItemStackHandler(TILE_SIZE), () -> {});
+                : new ModItemStackHandlerContainer(new ModItemStackHandler.Dummy(TILE_SIZE), () -> {});
 
         this.addSlot(new Slot(container, 0, 150, 124) {
             @Override

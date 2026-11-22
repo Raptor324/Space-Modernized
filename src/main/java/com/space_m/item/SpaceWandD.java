@@ -8,7 +8,7 @@ import org.jetbrains.annotations.Nullable;
 import com.hbm_m.api.space.SpaceApi;
 import com.hbm_m.api.space.WandDHook;
 import com.hbm_m.block.ModBlocks;
-import com.hbm_m.platform.PlatformHooks;
+import com.hbm_m.platform.StackNbt;
 import com.space_m.celestial.CelestialBody;
 import com.space_m.celestial.SolarSystem;
 import com.space_m.celestial.trait.CBT_Atmosphere;
@@ -71,7 +71,7 @@ public final class SpaceWandD implements WandDHook {
             if (!player.isShiftKeyDown()) {
                 int targetId = tag(stack).getInt("dim");
                 // Original: stackTagCompound wird angelegt (Tooltip zeigt danach das Ziel)
-                PlatformHooks.editItemTag(stack, t -> t.putInt("dim", targetId));
+                StackNbt.edit(stack, t -> t.putInt("dim", targetId));
 
                 if (targetId == 0) {
                     CelestialTeleporter.teleport(player, SpaceDimensions.ORBIT, player.getX(), 128, player.getZ(), false);
@@ -93,7 +93,7 @@ public final class SpaceWandD implements WandDHook {
                 }
 
                 final int newId = targetId;
-                PlatformHooks.editItemTag(stack, t -> t.putInt("dim", newId));
+                StackNbt.edit(stack, t -> t.putInt("dim", newId));
 
                 if (targetId == 0) {
                     player.sendSystemMessage(Component.literal("Set teleport target to: ORBIT"));
@@ -168,7 +168,7 @@ public final class SpaceWandD implements WandDHook {
     public void appendTooltip(ItemStack stack, @Nullable Level level, List<Component> list) {
         list.add(Component.literal("Dimension teleporter and atmosphere debugger."));
 
-        CompoundTag nbt = PlatformHooks.getItemTag(stack);
+        CompoundTag nbt = StackNbt.read(stack);
         if (nbt != null && !nbt.isEmpty()) {
             int targetId = nbt.getInt("dim");
             if (targetId == 0) {
@@ -181,7 +181,7 @@ public final class SpaceWandD implements WandDHook {
     }
 
     private static CompoundTag tag(ItemStack stack) {
-        CompoundTag tag = PlatformHooks.getItemTag(stack);
+        CompoundTag tag = StackNbt.read(stack);
         return tag != null ? tag : new CompoundTag();
     }
 }

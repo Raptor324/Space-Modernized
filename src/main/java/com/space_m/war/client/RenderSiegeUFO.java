@@ -46,7 +46,9 @@ public class RenderSiegeUFO extends EntityRenderer<EntitySiegeUFO> {
             ps.mulPose(Axis.XP.rotationDegrees((float) (Math.sin(System.currentTimeMillis() * 0.01D) * (ufo.invulnerableTime - f1))));
         }
 
-        MINI_UFO.renderAllEntity(ps, buffers.getBuffer(RenderType.entityCutoutNoCull(getTextureLocation(ufo))), light, OverlayTexture.NO_OVERLAY, 1F, 1F, 1F, 1F);
+        ResourceLocation tex = getTextureLocation(ufo);
+        com.mojang.blaze3d.vertex.VertexConsumer vc = buffers.getBuffer(RenderType.entityCutoutNoCull(tex));
+        com.space_m.entity.mob.client.SpaceMobVbos.renderPart(MINI_UFO, "Circle", tex, ps, vc, light, OverlayTexture.NO_OVERLAY, ufo.blockPosition(), buffers, 1F, 1F, 1F, 1F);
 
         ps.popPose();
         super.render(ufo, yaw, f1, ps, buffers, light);

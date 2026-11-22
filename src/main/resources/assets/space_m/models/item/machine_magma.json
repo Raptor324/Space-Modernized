@@ -1,6 +1,141 @@
 {
-  "parent": "minecraft:builtin/entity",
-  "textures": {
-    "particle": "hbm_m:block/block_steel"
+  "parent": "space_m:block/machine_magma",
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        -38.126223,
+        -108.693892,
+        -52.131355
+      ],
+      "translation": [
+        -1.790832,
+        0.954297,
+        1.320043
+      ],
+      "scale": [
+        0.070312,
+        0.070312,
+        0.070312
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        -38.126252,
+        71.306096,
+        52.131383
+      ],
+      "translation": [
+        -0.725181,
+        1.176915,
+        1.603691
+      ],
+      "scale": [
+        0.070312,
+        0.070312,
+        0.070312
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        -0.000142,
+        -85.000012,
+        24.999888
+      ],
+      "translation": [
+        -0.306967,
+        2.283707,
+        3.375592
+      ],
+      "scale": [
+        0.075,
+        0.075,
+        0.075
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        1.4e-05,
+        94.999994,
+        -25.000044
+      ],
+      "translation": [
+        0.888467,
+        2.283707,
+        3.271005
+      ],
+      "scale": [
+        0.075,
+        0.075,
+        0.075
+      ]
+    },
+    "head": {
+      "rotation": [
+        -148.670214,
+        -35.631034,
+        19.525472
+      ],
+      "translation": [
+        7.619543,
+        -13.50626,
+        5.346881
+      ],
+      "scale": [
+        0.3,
+        0.3,
+        0.3
+      ]
+    },
+    "gui": {
+      "rotation": [
+        30,
+        -45,
+        0
+      ],
+      "translation": [
+        0,
+        -3.612862,
+        -7.706441
+      ],
+      "scale": [
+        0.09375,
+        0.09375,
+        0.09375
+      ]
+    },
+    "ground": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "translation": [
+        -0.75,
+        -3.25,
+        -0.75
+      ],
+      "scale": [
+        0.09375,
+        0.09375,
+        0.09375
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        1.5,
+        -1.06,
+        2
+      ],
+      "scale": [
+        0.1875,
+        0.1875,
+        0.1875
+      ]
+    }
   }
 }

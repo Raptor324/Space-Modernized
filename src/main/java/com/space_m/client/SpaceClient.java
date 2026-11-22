@@ -95,25 +95,20 @@ public final class SpaceClient {
         // R1-C Himmel: Planetarium-Renderer
         com.space_m.client.sky.SkyRegistration.setup();
         com.space_m.dim.eve.client.EveClient.setup(); // R3-3 Entladungsgeysir-Renderer, Quecksilber
-        // R2-B Lebenserhaltung: BER Luftwascher
+        // Nucleus Maschinen-Renderer (declarative specs via MachineRenderers.machine)
+        com.space_m.client.render.SpaceMachineRenderers.registerAll();
+
+        // Subsystem client initializations (screens, item properties, custom client effects)
         com.space_m.lifesupport.LifeSupportClient.setup();
-        // R2-C Atmo-Maschinen: BER Kompressor/Emitter
         com.space_m.machine.atmo.client.AtmoClient.setup();
-        // R5-A Raketen: BER VAB, Laufwerk-Itemeigenschaft
         com.space_m.rocket.client.RocketClient.setup();
-        // R5-C Transporter/Drop-Pods: GUI Rampe, BER Rampe/Kapsel
         com.space_m.rocket.transport.client.TransportClient.setup();
-        // R5-B Startrampe: GUI + BER
         com.space_m.rocket.entity.client.RocketEntityClient.setup();
-        // R6-A Stationsports: BER
         com.space_m.orbit.client.OrbitClient.setup();
-        // R6-B Stationsantrieb/-computer/-launcher: BER + GUIs
         com.space_m.orbit.propulsion.client.PropulsionClient.setup();
-        // R7-B Chemie/Bergbau/StarDar (Renderer, Screens, Item-Darstellung)
         com.space_m.machine.chem.client.ChemClient.setup();
         com.space_m.machine.mining.client.MiningClient.setup();
         com.space_m.machine.mining.client.DishClient.setup();
-        // R7-A Dyson-System + Sonstiges: BER, GUIs, Item-Renderer, Partikel spinlaunch/flare
         com.space_m.machine.dyson.client.DysonClient.setup();
         com.space_m.machine.misc.client.MiscClient.setup();
         SpaceRegistry.LOGGER.info("[space_m] Client setup finished");

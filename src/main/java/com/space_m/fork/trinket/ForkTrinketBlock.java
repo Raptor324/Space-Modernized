@@ -207,7 +207,7 @@ public class ForkTrinketBlock extends BaseEntityBlock {
         return state.setValue(ROTATION, mirror.mirror(state.getValue(ROTATION), 16));
     }
     //? if >= 1.21.1 {
-    /*public static final com.mojang.serialization.MapCodec<ForkTrinketBlock> CODEC = com.hbm_m.platform.BlockCodecs.unsupported(ForkTrinketBlock.class);
+    /*public static final com.mojang.serialization.MapCodec<ForkTrinketBlock> CODEC = com.hbm_m.platform.BlockHooks.unsupportedCodec(ForkTrinketBlock.class);
     @Override protected com.mojang.serialization.MapCodec<? extends net.minecraft.world.level.block.BaseEntityBlock> codec() { return CODEC; }
     *///?}
 }

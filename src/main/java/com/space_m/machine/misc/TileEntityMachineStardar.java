@@ -6,8 +6,8 @@ import org.jetbrains.annotations.Nullable;
 import com.hbm_m.api.tile.IControlReceiver;
 import com.hbm_m.blockentity.BaseMachineBlockEntity;
 import com.hbm_m.platform.ModItemStackHandler;
-import com.hbm_m.platform.PlatformHooks;
 import com.hbm_m.platform.RenderBounds;
+import com.hbm_m.platform.StackNbt;
 import com.space_m.celestial.CelestialBody;
 import com.space_m.celestial.SolarSystem;
 import com.space_m.celestial.SolarSystemWorldSavedData;
@@ -286,7 +286,7 @@ public class TileEntityMachineStardar extends BaseMachineBlockEntity implements 
         ItemStack drive = ItemVOTVdrive.of(meta);
 
         if ((ix != 0 || iz != 0) && !CelestialBody.inOrbit(level)) {
-            PlatformHooks.editItemTag(drive, t -> {
+            StackNbt.edit(drive, t -> {
                 t.putInt("ax", ix);
                 t.putInt("az", iz);
                 t.putBoolean("Processed", true);
@@ -304,7 +304,7 @@ public class TileEntityMachineStardar extends BaseMachineBlockEntity implements 
             }
 
             ChunkPos station = pos;
-            PlatformHooks.editItemTag(drive, t -> {
+            StackNbt.edit(drive, t -> {
                 t.putInt("x", station.x);
                 t.putInt("z", station.z);
                 t.putBoolean("Processed", true);

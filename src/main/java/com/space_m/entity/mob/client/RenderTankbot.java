@@ -36,6 +36,13 @@ public class RenderTankbot extends MobRenderer<EntityTankbot, RenderTankbot.Mode
         return TEXTURE;
     }
 
+    @Override
+    public void render(EntityTankbot entity, float entityYaw, float partialTicks, PoseStack poseStack, net.minecraft.client.renderer.MultiBufferSource bufferSource, int packedLight) {
+        this.model.texture = getTextureLocation(entity);
+        this.model.buffers = bufferSource;
+        super.render(entity, entityYaw, partialTicks, poseStack, bufferSource, packedLight);
+    }
+
     public static class ModelTankbot extends ObjMobModel<EntityTankbot> {
 
         double bite = 0;

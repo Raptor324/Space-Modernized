@@ -6,7 +6,6 @@ import com.hbm_m.particle.nt.NukeTorex;
 import com.hbm_m.particle.nt.ParticleEngineNT;
 import com.space_m.bomb.EntityBalefireAntimatter;
 import com.space_m.bomb.SpaceBombs;
-import com.space_m.machine.misc.client.ItemRenderMachines;
 
 import dev.architectury.event.events.client.ClientLifecycleEvent;
 import dev.architectury.registry.client.level.entity.EntityRendererRegistry;
@@ -42,6 +41,5 @@ public final class BombClient {
     private static void setup() {
         BlockEntityRendererRegistry.register(SpaceBombs.ANTIMATTER_BE.get(), RenderAntimatter::new);
         MenuRegistry.registerScreenFactory(SpaceBombs.ANTIMATTER_MENU.get(), GUINukeAntimatter::new);
-        ItemRenderMachines.register(SpaceBombs.NUKE_ANTIMATTER, RenderAntimatter.ITEM);
     }
 }

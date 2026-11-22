@@ -9,7 +9,6 @@ import com.hbm_m.client.render.util.BeamPronter.EnumWaveType;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.space_m.SpaceMod;
 import com.space_m.bomb.TileEntityAntimatter;
-import com.space_m.machine.misc.client.ItemRenderMachines;
 
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
@@ -29,7 +28,9 @@ public class RenderAntimatter implements HbmBerBounds<TileEntityAntimatter> {
 
     public static final SimpleObjModel MODEL = new SimpleObjModel(SpaceMod.id("models/bombs/blomb.obj"));
     public static final ResourceLocation TEXTURE = SpaceMod.id("textures/models/bombs/blomb_tex.png");
-    public static final SimpleObjModel SPHERE = new SimpleObjModel(ResourceLocation.fromNamespaceAndPath("hbm_m", "models/sphere_uv.obj"));
+    // Core ships sphere_uv only at models/block/machines/sphere_uv (.nmesh in the compiled core jar);
+    // NMeshLoader remaps the .obj path, so it must point at the real core asset location.
+    public static final SimpleObjModel SPHERE = new SimpleObjModel(ResourceLocation.fromNamespaceAndPath("hbm_m", "models/block/machines/sphere_uv.obj"));
 
     public RenderAntimatter(BlockEntityRendererProvider.Context ctx) { }
 
@@ -67,20 +68,4 @@ public class RenderAntimatter implements HbmBerBounds<TileEntityAntimatter> {
 
     @Override public boolean shouldRenderOffScreen(TileEntityAntimatter be) { return true; }
     @Override public int getViewDistance() { return 256; } // getMaxRenderDistanceSquared 65536
-
-    /** Original {@code ItemRenderLibrary} (nuke_antimatter). */
-    public static final ItemRenderMachines.ItemRender ITEM = new ItemRenderMachines.ItemRender() {
-        @Override
-        public void renderInventory(PoseStack ps) {
-            ps.translate(0, 7, 0);
-            ps.scale(3.25F, 3.25F, 3.25F);
-            // GL11.glRotatef(180, 90, 0, 0): Achse (90,0,0) normiert = X
-            ps.mulPose(com.mojang.math.Axis.XP.rotationDegrees(180));
-        }
-
-        @Override
-        public void renderCommon(PoseStack ps, MultiBufferSource buf, int light) {
-            MODEL.renderAll(ps, buf.getBuffer(RenderType.entityCutoutNoCull(TEXTURE)), light);
-        }
-    };
 }

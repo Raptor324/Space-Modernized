@@ -1,18 +1,12 @@
 {
-  "loader": "forge:composite",
+  "loader": "hbm_m:nmesh_obj",
+  "model": "space_m:models/block/plant_spike.obj",
+  "flip_v": true,
+  "render_type": "minecraft:cutout",
+  "texture": "space_m:block/rubber_tall_flower",
   "textures": {
-    "particle": "space_m:block/rubber_tall_flower"
-  },
-  "children": {
-    "spike": {
-      "loader": "forge:obj",
-      "model": "space_m:models/block/plant_spike.obj",
-      "flip_v": true,
-      "render_type": "minecraft:cutout",
-      "textures": {
-        "default": "space_m:block/rubber_tall_flower"
-      }
-    }
+    "particle": "space_m:block/rubber_tall_flower",
+    "default": "space_m:block/rubber_tall_flower"
   },
   "transform": {
     "translation": [
@@ -62,6 +56,74 @@
         0.4,
         0.4,
         0.4
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        75,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        2.5,
+        0
+      ],
+      "scale": [
+        0.25,
+        0.25,
+        0.25
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        75,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        2.5,
+        0
+      ],
+      "scale": [
+        0.25,
+        0.25,
+        0.25
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.25,
+        0.25,
+        0.25
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        225,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.25,
+        0.25,
+        0.25
       ]
     }
   }

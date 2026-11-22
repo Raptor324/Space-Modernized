@@ -50,12 +50,11 @@ public final class RocketEntityClient implements EntityRideableRocket.RocketClie
         ClientGuiEvent.RENDER_HUD.register((graphics, tickDelta) -> renderLookOverlay(graphics));
     }
 
-    /** Aus {@code SpaceClient.setup()}: Startrampe (GUI, BER). */
+    /** Aus {@code SpaceClient.setup()}: Startrampe (GUI). */
     public static void setup() {
         dev.architectury.registry.menu.MenuRegistry.registerScreenFactory(com.space_m.inventory.SpaceMenus.LAUNCH_PAD_ROCKET.get(),
                 com.space_m.rocket.pad.client.GUILaunchPadRocket::new);
-        dev.architectury.registry.client.rendering.BlockEntityRendererRegistry.register(com.space_m.blockentity.SpaceBlockEntities.LAUNCH_PAD_ROCKET.get(),
-                com.space_m.rocket.pad.client.RenderLaunchPadRocket::new);
+        // BER migrated to Nucleus declarative specs in SpaceMachineRenderers
     }
 
     // ── Geraeusche ─────────────────────────────────────────────────────────────────────────────

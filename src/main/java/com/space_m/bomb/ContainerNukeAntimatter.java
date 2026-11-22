@@ -1,7 +1,7 @@
 package com.space_m.bomb;
 
 import com.hbm_m.inventory.ModItemStackHandlerContainer;
-import com.hbm_m.platform.DummyItemStackHandler;
+import com.hbm_m.platform.ModItemStackHandler;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
@@ -38,7 +38,7 @@ public class ContainerNukeAntimatter extends AbstractContainerMenu {
 
         var container = this.be != null
                 ? this.be
-                : new ModItemStackHandlerContainer(new DummyItemStackHandler(TileEntityAntimatter.SLOTS), () -> {});
+                : new ModItemStackHandlerContainer(new ModItemStackHandler.Dummy(TileEntityAntimatter.SLOTS), () -> {});
 
         addSlot(new Slot(container, 0, 26, 15));
         addSlot(new Slot(container, 1, 134, 14));

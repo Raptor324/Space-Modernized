@@ -1,9 +1,7 @@
 package com.space_m.orbit.propulsion.client;
 
-import com.space_m.orbit.propulsion.PropulsionBlockEntities;
 import com.space_m.orbit.propulsion.PropulsionMenus;
 
-import dev.architectury.registry.client.rendering.BlockEntityRendererRegistry;
 import dev.architectury.registry.menu.MenuRegistry;
 
 /**
@@ -17,12 +15,7 @@ public final class PropulsionClient {
 
     /** Aus {@code SpaceClient.setup} (Client-Setup). */
     public static void setup() {
-        BlockEntityRendererRegistry.register(PropulsionBlockEntities.HTR3.get(), RenderHTR3::new);
-        BlockEntityRendererRegistry.register(PropulsionBlockEntities.HTRF4.get(), RenderHTRF4::new);
-        BlockEntityRendererRegistry.register(PropulsionBlockEntities.HTRF4_NEO.get(), RenderHTRNeo::new);
-        BlockEntityRendererRegistry.register(PropulsionBlockEntities.XENON_THRUSTER.get(), RenderXenonThruster::new);
-        BlockEntityRendererRegistry.register(PropulsionBlockEntities.ORBITAL_STATION_COMPUTER.get(), RenderOrbitalComputer::new);
-        BlockEntityRendererRegistry.register(PropulsionBlockEntities.ORBITAL_STATION_LAUNCHER.get(), RenderOrbitalStationLauncher::new);
+        // BERs migrated to Nucleus declarative specs in SpaceMachineRenderers
 
         MenuRegistry.registerScreenFactory(PropulsionMenus.ORBITAL_STATION_COMPUTER.get(), GUIOrbitalStationComputer::new);
         MenuRegistry.registerScreenFactory(PropulsionMenus.ORBITAL_STATION_LAUNCHER.get(), GUIOrbitalStationLauncher::new);

@@ -6,7 +6,7 @@ import com.hbm_m.extprop.HbmLivingProps;
 import com.hbm_m.hazard.modifier.HazardModifier;
 import com.hbm_m.hazard.type.HazardTypeBase;
 import com.hbm_m.item.ModItems;
-import com.hbm_m.platform.PlatformHooks;
+import com.hbm_m.platform.StackNbt;
 import com.hbm_m.util.BobMathUtil;
 import com.hbm_m.util.ContaminationUtil;
 
@@ -82,6 +82,6 @@ public class HazardTypeNeutron extends HazardTypeBase {
 
     public static void apply(ItemStack stack, float rad) {
         if (stack == null || stack.isEmpty()) return;
-        PlatformHooks.editItemTag(stack, t -> t.putFloat(NEUTRON_KEY, t.getFloat(NEUTRON_KEY) + (rad / stack.getCount()) / 10));
+        StackNbt.edit(stack, t -> t.putFloat(NEUTRON_KEY, t.getFloat(NEUTRON_KEY) + (rad / stack.getCount()) / 10));
     }
 }

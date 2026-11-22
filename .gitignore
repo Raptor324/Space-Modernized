@@ -1,5 +1,12 @@
 # Generated resources output (datagen)
-src/generated/resources/.cache
+src/generated/*
+!src/generated/resources/
+src/generated/resources/*
+!src/generated/resources/assets/
+src/generated/resources/assets/*
+!src/generated/resources/assets/space_m/
+src/generated/resources/assets/space_m/*
+!src/generated/resources/assets/space_m/lang/
 
 # Gradle build outputs
 .gradle/
@@ -23,7 +30,13 @@ out/
 # Machine-local overrides (see local.properties.example)
 local.properties
 
+# Python
+__pycache__/
+
 # OS
 .DS_Store
 Thumbs.db
-
+.zcode
+AGENTS.md
+docs
+.agents

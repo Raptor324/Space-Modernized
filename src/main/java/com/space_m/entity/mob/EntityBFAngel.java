@@ -236,7 +236,7 @@ public class EntityBFAngel extends FlyingMob implements Enemy, IRadiationImmune,
                 for (Entity e : entities) {
                     if (this.canAttack(e)) {
                         e.hurt(ModDamageSources.create(e, this, ModDamageTypes.CMB), 1000F);
-                        com.hbm_m.platform.PlatformHooks.setSecondsOnFire(e, 5);
+                        com.hbm_m.platform.MobHooks.setSecondsOnFire(e, 5);
 
                         if (e instanceof LivingEntity living)
                             ContaminationUtil.contaminate(living, HazardType.RADIATION, ContaminationType.CREATIVE, 5F);

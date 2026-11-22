@@ -2,9 +2,8 @@ package com.space_m.rocket.client;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.hbm_m.client.render.SimpleObjModel;
+import com.hbm_m.client.render.SingleMeshVboRenderer;
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Axis;
 import com.space_m.celestial.CelestialBody;
 import com.space_m.rocket.entity.EntityRideableRocket;
@@ -12,6 +11,8 @@ import com.space_m.rocket.entity.EntityRideableRocket.RocketState;
 
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.core.BlockPos;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.Entity;
 
@@ -21,6 +22,7 @@ import net.minecraft.world.entity.Entity;
  * nach der Landung mit 2 Grad/Tick bis 90, schliesst sich beim Warten), vier Luftbremsen (beim Landen bis 65 Grad
  * ausgefahren; faellt die Rakete langsamer als 0,4, klappen sie in 1 s wieder ein) und Landebeine (beim Start
  * eingezogen = 0, sonst 0,5 tiefer). Angemeldet als Teil-Renderer {@code "drop_pod"} bei {@link RocketPronter}.
+ * Modernisiert auf Nucleus SingleMeshVboRenderer mit gekapselten Submesh-VBOs und PoseStack-Kinematik.
  * Original-Klasse: RenderDropPod
  */
 public class RenderDropPod implements RocketPartRenderer {
@@ -31,13 +33,27 @@ public class RenderDropPod implements RocketPartRenderer {
     private boolean brakes;
     private long brakeStart;
 
+    private static void renderPartVbo(String part, PoseStack ps, MultiBufferSource buf, int light, ResourceLocation texRl, BlockPos pos) {
+        SingleMeshVboRenderer vbo = RocketModels.getVbo(MODEL, part, texRl);
+        if (vbo != null) {
+            vbo.render(ps, light, pos, null, buf);
+        } else {
+            RocketModels.model(MODEL).renderPart(part, ps, buf.getBuffer(RenderType.entityCutoutNoCull(texRl)), light);
+        }
+    }
+
     @Override
     public void render(PoseStack ps, MultiBufferSource buf, int light, @Nullable Entity entity, float interp) {
-        SimpleObjModel model = RocketModels.model(MODEL);
-        VertexConsumer vc = buf.getBuffer(RenderType.entityCutoutNoCull(RocketModels.texture(TEXTURE)));
+        ResourceLocation texRl = RocketModels.texture(TEXTURE);
+        BlockPos pos = entity != null ? entity.blockPosition() : BlockPos.ZERO;
 
         if (!(entity instanceof EntityRideableRocket rocket) || CelestialBody.inOrbit(entity.level())) {
-            model.renderAll(ps, vc, light);
+            SingleMeshVboRenderer vboAll = RocketModels.getVbo(MODEL, null, texRl);
+            if (vboAll != null) {
+                vboAll.render(ps, light, pos, null, buf);
+            } else {
+                RocketModels.model(MODEL).renderAll(ps, buf.getBuffer(RenderType.entityCutoutNoCull(texRl)), light);
+            }
             return;
         }
 
@@ -45,7 +61,7 @@ public class RenderDropPod implements RocketPartRenderer {
         int timer = rocket.getStateTimer();
         float lerpTimer = (float) timer + interp;
 
-        model.renderPart("DropPod", ps, vc, light);
+        renderPartVbo("DropPod", ps, buf, light, texRl, pos);
 
         // Render door
         ps.pushPose();
@@ -60,7 +76,7 @@ public class RenderDropPod implements RocketPartRenderer {
             ps.translate(0.69291F, 2.8333F, 0);
             ps.mulPose(Axis.ZP.rotationDegrees(doorRotation));
             ps.translate(-0.69291F, -2.8333F, 0);
-            model.renderPart("Door", ps, vc, light);
+            renderPartVbo("Door", ps, buf, light, texRl, pos);
         }
         ps.popPose();
 
@@ -94,7 +110,7 @@ public class RenderDropPod implements RocketPartRenderer {
                     ps.mulPose(Axis.ZP.rotationDegrees(brakeRotation));
                     ps.translate(-0.46194, -3.5, 0);
                     ps.mulPose(Axis.YP.rotationDegrees(45));
-                    model.renderPart("Airbrake0", ps, vc, light);
+                    renderPartVbo("Airbrake0", ps, buf, light, texRl, pos);
                 }
                 ps.popPose();
             }
@@ -108,7 +124,7 @@ public class RenderDropPod implements RocketPartRenderer {
             if (state == RocketState.LAUNCHING) legExtension = 0;
 
             ps.translate(0, -legExtension * 0.5, 0);
-            model.renderPart("Legs", ps, vc, light);
+            renderPartVbo("Legs", ps, buf, light, texRl, pos);
         }
         ps.popPose();
     }

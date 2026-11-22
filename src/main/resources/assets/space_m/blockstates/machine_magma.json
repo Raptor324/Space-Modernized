@@ -1,16 +1,8 @@
 {
   "variants": {
-    "facing=north": {
-      "model": "space_m:block/machine_magma"
-    },
-    "facing=south": {
-      "model": "space_m:block/machine_magma"
-    },
-    "facing=west": {
-      "model": "space_m:block/machine_magma"
-    },
-    "facing=east": {
-      "model": "space_m:block/machine_magma"
-    }
+    "facing=north": { "model": "space_m:block/machine_magma" },
+    "facing=east":  { "model": "space_m:block/machine_magma", "y": 90 },
+    "facing=south": { "model": "space_m:block/machine_magma", "y": 180 },
+    "facing=west":  { "model": "space_m:block/machine_magma", "y": 270 }
   }
 }

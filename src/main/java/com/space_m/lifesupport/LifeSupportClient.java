@@ -3,13 +3,11 @@ package com.space_m.lifesupport;
 import java.util.List;
 
 import com.hbm_m.armormod.util.ArmorModificationHelper;
-import com.space_m.blockentity.SpaceBlockEntities;
 import com.space_m.lib.SpaceTags;
 import com.space_m.sound.SpaceSounds;
 
 import dev.architectury.event.events.client.ClientTickEvent;
 import dev.architectury.event.events.client.ClientTooltipEvent;
-import dev.architectury.registry.client.rendering.BlockEntityRendererRegistry;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
@@ -40,7 +38,7 @@ public final class LifeSupportClient {
 
     /** Aus {@code SpaceClient.setup()}. */
     public static void setup() {
-        BlockEntityRendererRegistry.register(SpaceBlockEntities.AIR_SCRUBBER.get(), RenderAirScrubber::new);
+        // BERs migrated to Nucleus declarative specs in SpaceMachineRenderers
     }
 
     private static void addSealTooltip(ItemStack stack, List<Component> lines) {

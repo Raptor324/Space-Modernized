@@ -1,5 +1,209 @@
 {
+  "loader": "hbm_m:machine_parts_loader",
+  "model": "space_m:models/machines/radiator.obj",
+  "flip_v": true,
   "textures": {
-    "particle": "hbm_m:block/block_steel_machine"
+    "particle": "space_m:block/machine/radiator",
+    "default": "space_m:block/machine/radiator"
+  },
+  "parts": {
+    "Base": {
+      "group": "Base",
+      "texture": "space_m:block/machine/radiator"
+    },
+    "PanelStart": {
+      "group": "PanelStart",
+      "texture": "space_m:block/machine/radiator"
+    },
+    "FrameStart": {
+      "group": "FrameStart",
+      "texture": "space_m:block/machine/radiator"
+    },
+    "Panel1": {
+      "group": "Panel1",
+      "texture": "space_m:block/machine/radiator"
+    },
+    "Frame1": {
+      "group": "Frame1",
+      "texture": "space_m:block/machine/radiator"
+    },
+    "Panel2": {
+      "group": "Panel2",
+      "texture": "space_m:block/machine/radiator"
+    },
+    "Frame2": {
+      "group": "Frame2",
+      "texture": "space_m:block/machine/radiator"
+    },
+    "Panel3": {
+      "group": "Panel3",
+      "texture": "space_m:block/machine/radiator"
+    },
+    "Frame3": {
+      "group": "Frame3",
+      "texture": "space_m:block/machine/radiator"
+    },
+    "Panel4": {
+      "group": "Panel4",
+      "texture": "space_m:block/machine/radiator"
+    },
+    "Frame4": {
+      "group": "Frame4",
+      "texture": "space_m:block/machine/radiator"
+    },
+    "Panel5": {
+      "group": "Panel5",
+      "texture": "space_m:block/machine/radiator"
+    },
+    "Frame5": {
+      "group": "Frame5",
+      "texture": "space_m:block/machine/radiator"
+    },
+    "PanelLast": {
+      "group": "PanelLast",
+      "texture": "space_m:block/machine/radiator"
+    },
+    "FrameLast": {
+      "group": "FrameLast",
+      "texture": "space_m:block/machine/radiator"
+    }
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        15.499252,
+        168.653183,
+        -14.955139
+      ],
+      "translation": [
+        -1.85173,
+        1.532741,
+        -0.020641
+      ],
+      "scale": [
+        0.105469,
+        0.105469,
+        0.105469
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        15.499252,
+        168.653183,
+        -14.955154
+      ],
+      "translation": [
+        -0.253254,
+        1.866669,
+        0.404831
+      ],
+      "scale": [
+        0.105469,
+        0.105469,
+        0.105469
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        -25.083801,
+        -175.469498,
+        -2.117493
+      ],
+      "translation": [
+        -0.73536,
+        1.921671,
+        1.921147
+      ],
+      "scale": [
+        0.1125,
+        0.1125,
+        0.1125
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        -25.083801,
+        -175.469498,
+        -2.117508
+      ],
+      "translation": [
+        1.057791,
+        1.921671,
+        1.764266
+      ],
+      "scale": [
+        0.1125,
+        0.1125,
+        0.1125
+      ]
+    },
+    "head": {
+      "rotation": [
+        0,
+        -50.000004,
+        154.999985
+      ],
+      "translation": [
+        1.998215,
+        -14.086687,
+        7.981987
+      ],
+      "scale": [
+        0.45,
+        0.45,
+        0.45
+      ]
+    },
+    "gui": {
+      "rotation": [
+        30,
+        -135,
+        0
+      ],
+      "translation": [
+        -0.636396,
+        -5.940415,
+        -10.275
+      ],
+      "scale": [
+        0.05625,
+        0.05625,
+        0.05625
+      ]
+    },
+    "ground": {
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "translation": [
+        1.125,
+        -2.875,
+        -1.125
+      ],
+      "scale": [
+        0.140625,
+        0.140625,
+        0.140625
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        -90,
+        0
+      ],
+      "translation": [
+        -2.25,
+        -0.31,
+        2.75
+      ],
+      "scale": [
+        0.28125,
+        0.28125,
+        0.28125
+      ]
+    }
   }
 }

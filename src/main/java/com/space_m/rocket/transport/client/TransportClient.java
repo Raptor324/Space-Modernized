@@ -1,6 +1,5 @@
 package com.space_m.rocket.transport.client;
 
-import com.space_m.blockentity.SpaceBlockEntities;
 import com.space_m.entity.SpaceEntities;
 import com.space_m.inventory.SpaceMenus;
 import com.space_m.network.SpacePacketHandler;
@@ -8,7 +7,6 @@ import com.space_m.rocket.transport.ItemTransporterLinker;
 import com.space_m.rocket.transport.TransporterLinkerPacket;
 
 import dev.architectury.registry.client.level.entity.EntityRendererRegistry;
-import dev.architectury.registry.client.rendering.BlockEntityRendererRegistry;
 import dev.architectury.registry.menu.MenuRegistry;
 import net.minecraft.client.Minecraft;
 
@@ -32,7 +30,6 @@ public final class TransportClient {
     /** Aus {@code SpaceClient.setup()} (CLIENT_SETUP). */
     public static void setup() {
         MenuRegistry.registerScreenFactory(SpaceMenus.TRANSPORTER_ROCKET.get(), TransporterRocketScreen::new);
-        BlockEntityRendererRegistry.register(SpaceBlockEntities.TRANSPORTER_ROCKET.get(), TransporterRocketRenderer::new);
-        BlockEntityRendererRegistry.register(SpaceBlockEntities.COMBAT_DROP_POD.get(), CombatPodRenderer::new);
+        // BERs migrated to Nucleus declarative specs in SpaceMachineRenderers
     }
 }

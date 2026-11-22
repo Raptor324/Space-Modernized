@@ -94,7 +94,7 @@ public final class SpaceEffects {
         protected void tick(@NotNull LivingEntity entity, int amplifier) {
             if (entity.level().isClientSide) return;
             if (entity instanceof net.minecraft.world.entity.monster.Zombie || entity instanceof net.minecraft.world.entity.monster.AbstractSkeleton) {
-                com.hbm_m.platform.PlatformHooks.setSecondsOnFire(entity, 20);
+                com.hbm_m.platform.MobHooks.setSecondsOnFire(entity, 20);
             }
             entity.addEffect(new net.minecraft.world.effect.MobEffectInstance(net.minecraft.world.effect.MobEffects.MOVEMENT_SLOWDOWN, 5, 10));
         }

@@ -37,7 +37,7 @@ import net.minecraft.world.level.Level;
 public class ItemPillAniman extends Item implements ITooltipProvider {
 
     public ItemPillAniman(Properties props) {
-        super(props.food(com.hbm_m.platform.PlatformHooks.foodBuilder(0, 0F)
+        super(props.food(com.hbm_m.platform.ItemHooks.foodBuilder(0, 0F)
                 //? if < 1.21.1 {
                 .alwaysEat()
                 //?} else {

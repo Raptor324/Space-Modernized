@@ -1,16 +1,8 @@
 {
   "variants": {
-    "facing=north": {
-      "model": "space_m:block/machine_xenon_thruster"
-    },
-    "facing=south": {
-      "model": "space_m:block/machine_xenon_thruster"
-    },
-    "facing=west": {
-      "model": "space_m:block/machine_xenon_thruster"
-    },
-    "facing=east": {
-      "model": "space_m:block/machine_xenon_thruster"
-    }
+    "facing=north": { "model": "space_m:block/machine_xenon_thruster" },
+    "facing=east":  { "model": "space_m:block/machine_xenon_thruster", "y": 90 },
+    "facing=south": { "model": "space_m:block/machine_xenon_thruster", "y": 180 },
+    "facing=west":  { "model": "space_m:block/machine_xenon_thruster", "y": 270 }
   }
 }

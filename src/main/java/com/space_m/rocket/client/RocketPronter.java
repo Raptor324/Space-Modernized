@@ -6,6 +6,7 @@ import java.util.Map;
 import org.jetbrains.annotations.Nullable;
 import org.joml.Matrix4f;
 
+import com.hbm_m.client.render.SingleMeshVboRenderer;
 import com.hbm_m.client.render.SimpleObjModel;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
@@ -16,6 +17,8 @@ import com.space_m.rocket.RocketStruct.RocketStage;
 
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.core.BlockPos;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 
 /**
@@ -24,6 +27,7 @@ import net.minecraft.world.entity.Entity;
  * Kapsel. Ab der zweiten Stufe umhuellt die Verkleidung des Rumpfs ({@code getShroud()}, Textur {@code universal}) das
  * Triebwerk - beschnitten an der Triebwerkshoehe (Original {@code GL_CLIP_PLANE0 {0,-1,0,h}}, hier per Dreiecks-Clipping).
  * Abwurf-/Verkleidungs-Animation ueber {@code decoupleTimer}/{@code shroudTimer}.
+ * Modernisiert auf Nucleus SingleMeshVboRenderer und MeshRenderCache.
  * Original-Klasse: MissilePronter (prontRocket; prontMissile bleibt HBM)
  */
 public final class RocketPronter {
@@ -38,7 +42,18 @@ public final class RocketPronter {
     }
 
     private static void part(String model, String texture, PoseStack ps, MultiBufferSource buf, int light) {
-        RocketModels.model(model).renderAll(ps, buf.getBuffer(RenderType.entityCutoutNoCull(RocketModels.texture(texture))), light);
+        part(model, texture, ps, buf, light, null);
+    }
+
+    private static void part(String model, String texture, PoseStack ps, MultiBufferSource buf, int light, @Nullable Entity entity) {
+        BlockPos pos = entity != null ? entity.blockPosition() : BlockPos.ZERO;
+        ResourceLocation texRl = RocketModels.texture(texture);
+        SingleMeshVboRenderer vbo = RocketModels.getVbo(model, null, texRl);
+        if (vbo != null) {
+            vbo.render(ps, light, pos, null, buf);
+        } else {
+            RocketModels.model(model).renderAll(ps, buf.getBuffer(RenderType.entityCutoutNoCull(texRl)), light);
+        }
     }
 
     public static void prontRocket(RocketStruct rocket, PoseStack ps, MultiBufferSource buf, int light) {
@@ -105,7 +120,7 @@ public final class RocketPronter {
                         }
 
                         if (!hasShroud || shroudTimer > 0) {
-                            part(stage.thruster.getModel(isDeployed), stage.thruster.texture, ps, buf, light);
+                            part(stage.thruster.getModel(isDeployed), stage.thruster.texture, ps, buf, light, entity);
                         }
 
                         ps.translate(0, stage.thruster.height, 0);
@@ -113,11 +128,11 @@ public final class RocketPronter {
 
                     if (stage.fuselage != null) {
                         if (stage.fins != null) {
-                            part(stage.fins.getModel(isDeployed), stage.fins.texture, ps, buf, light);
+                            part(stage.fins.getModel(isDeployed), stage.fins.texture, ps, buf, light, entity);
                         }
 
                         for (int s = 0; s < stack; s++) {
-                            part(stage.fuselage.getModel(isDeployed), stage.fuselage.texture, ps, buf, light);
+                            part(stage.fuselage.getModel(isDeployed), stage.fuselage.texture, ps, buf, light, entity);
                             ps.translate(0, stage.fuselage.height, 0);
                         }
                     }
@@ -141,7 +156,7 @@ public final class RocketPronter {
             if (entity != null && custom != null) {
                 custom.render(ps, buf, light, entity, interp);
             } else {
-                part(rocket.capsule.model, rocket.capsule.texture, ps, buf, light);
+                part(rocket.capsule.model, rocket.capsule.texture, ps, buf, light, entity);
             }
         }
 

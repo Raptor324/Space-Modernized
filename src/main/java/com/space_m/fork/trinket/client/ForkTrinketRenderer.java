@@ -29,12 +29,12 @@ public class ForkTrinketRenderer implements com.hbm_m.client.render.HbmBerBounds
     private static ResourceLocation rl(String path) { return SpaceMod.id(path); }
 
     public static final SimpleObjModel BOBBLE = new SimpleObjModel(rl("models/trinkets/bobble.obj"));
-    public static final ResourceLocation SOCKET = ResourceLocation.fromNamespaceAndPath("hbm_m", "textures/models/trinkets/socket.png");
+    public static final ResourceLocation SOCKET = com.hbm_m.client.render.implementations.TrinketRenderer.SOCKET;
     public static final ResourceLocation BOBBLE_GWEN = rl("textures/models/trinkets/gwen.png");
     public static final ResourceLocation BOBBLE_JUICE = rl("textures/models/trinkets/juicy_lad.png");
     public static final ResourceLocation BOBBLE_JAMESH_2 = rl("textures/models/trinkets/jamesh_2.png");
     public static final ResourceLocation BOBBLE_MRKIMKIMORA = rl("textures/models/trinkets/mrkimkimora.png");
-    public static final ResourceLocation UNIVERSAL = ResourceLocation.fromNamespaceAndPath("hbm_m", "textures/models/thegadget3_.png");
+    public static final ResourceLocation UNIVERSAL = com.hbm_m.client.render.implementations.TrinketRenderer.UNIVERSAL;
 
     // VOCALOIDS
     public static final SimpleObjModel TETO = new SimpleObjModel(rl("models/trinkets/teto.obj"));
@@ -102,20 +102,31 @@ public class ForkTrinketRenderer implements com.hbm_m.client.render.HbmBerBounds
         } else {
             renderGuy(ps, buf, type, skin, light, time);
         }
-        // renderPost: keine Zusaetze fuer die Fork-Typen
         renderSocket(ps, buf, type, light);
     }
 
-    /** {@code renderGuy} ohne Figurenhaltung (die Fork-Typen haben in {@code setupFigurineRotation} keinen Eintrag). */
+    private static void limb(PoseStack ps, double ox, double oy, double oz, double rx, double ry, double rz) {
+        ps.translate(ox, oy, oz);
+        if (rx != 0) ps.mulPose(Axis.XP.rotationDegrees((float) rx));
+        if (ry != 0) ps.mulPose(Axis.YP.rotationDegrees((float) ry));
+        if (rz != 0) ps.mulPose(Axis.ZP.rotationDegrees((float) rz));
+        ps.translate(-ox, -oy, -oz);
+    }
+
+    /**
+     * Universelle Human-Figurinen-Kinematik nach HBM TrinketRenderer:
+     * Gliedmassen-Pivots fuer Arme, Beine und oszillierenden Wackelkopf.
+     */
     public static void renderGuy(PoseStack ps, MultiBufferSource buf, ForkBobbleType type, ResourceLocation tex, int light, long time) {
         ps.pushPose();
         var vc = buf.getBuffer(RenderType.entityTranslucent(tex));
         String suffix = type.skinLayers ? "" : "17";
 
-        BOBBLE.renderPart("LL" + suffix, ps, vc, light);
-        BOBBLE.renderPart("RL" + suffix, ps, vc, light);
-        BOBBLE.renderPart("LA" + suffix, ps, vc, light);
-        BOBBLE.renderPart("RA" + suffix, ps, vc, light);
+        ps.pushPose(); limb(ps, 0, 1, -0.125, 0, 0, 0); BOBBLE.renderPart("LL" + suffix, ps, vc, light); ps.popPose();
+        ps.pushPose(); limb(ps, 0, 1, 0.125, 0, 0, 0); BOBBLE.renderPart("RL" + suffix, ps, vc, light); ps.popPose();
+        ps.pushPose(); limb(ps, 0, 1.625, -0.25, 0, 0, 0); BOBBLE.renderPart("LA" + suffix, ps, vc, light); ps.popPose();
+        ps.pushPose(); limb(ps, 0, 1.625, 0.25, 0, 0, 0); BOBBLE.renderPart("RA" + suffix, ps, vc, light); ps.popPose();
+
         BOBBLE.renderPart("Body" + suffix, ps, vc, light);
 
         double speed = 0.005, amplitude = 1;
@@ -129,16 +140,20 @@ public class ForkTrinketRenderer implements com.hbm_m.client.render.HbmBerBounds
         ps.popPose();
     }
 
-    private static void renderSocket(PoseStack ps, MultiBufferSource buf, ForkBobbleType type, int light) {
+    public static void renderSocket(PoseStack ps, MultiBufferSource buf, ForkBobbleType type, int light) {
+        renderSocketLabel(ps, buf, type.label, light);
+    }
+
+    public static void renderSocketLabel(PoseStack ps, MultiBufferSource buf, String label, int light) {
         Font font = Minecraft.getInstance().font;
         float f3 = 0.01F;
         ps.pushPose();
         ps.translate(0.63, 0.175F, 0.0);
         ps.scale(f3, -f3, f3);
-        ps.translate(0, 0, font.width(type.label) * 0.5D);
+        ps.translate(0, 0, font.width(label) * 0.5D);
         ps.mulPose(Axis.YP.rotationDegrees(90));
         ps.translate(0, 1, 0);
-        font.drawInBatch(type.label, 0, 0, 0xffffff, false, ps.last().pose(), buf, Font.DisplayMode.POLYGON_OFFSET, 0, light);
+        font.drawInBatch(label, 0, 0, 0xffffff, false, ps.last().pose(), buf, Font.DisplayMode.POLYGON_OFFSET, 0, light);
         ps.popPose();
     }
 

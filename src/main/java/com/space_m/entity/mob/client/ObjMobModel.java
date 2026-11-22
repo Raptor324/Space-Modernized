@@ -26,6 +26,8 @@ public abstract class ObjMobModel<T extends LivingEntity> extends EntityModel<T>
     protected float partialTick;
     /** Fuer Modelle mit mehreren Texturen (vom Renderer vor {@code super.render} gesetzt). */
     public MultiBufferSource buffers;
+    /** Aktuelle Textur des Mobs fuer VBO-Stitching in LOCATION_BLOCKS. */
+    public net.minecraft.resources.ResourceLocation texture;
 
     public static SimpleObjModel obj(String name) {
         return new SimpleObjModel(SpaceMod.id("models/mobs/" + name + ".obj"));
@@ -61,8 +63,20 @@ public abstract class ObjMobModel<T extends LivingEntity> extends EntityModel<T>
 
     protected abstract void draw(PoseStack ps, VertexConsumer vc, int light, int overlay, float r, float g, float b, float a);
 
-    /** Kleiner Helfer: {@code model.renderPart(name)} mit Licht/Overlay/Farbe. */
-    protected static void part(SimpleObjModel model, String name, PoseStack ps, VertexConsumer vc, int light, int overlay, float r, float g, float b, float a) {
-        model.renderPartEntity(name, ps, vc, light, overlay, r, g, b, a);
+    /**
+     * Zeichnet ein OBJ-Teil ueber {@link SpaceMobVbos} via GPU-VBO, falls verfuegbar;
+     * andernfalls CPU-Fallback auf {@link SimpleObjModel#renderPartEntity}.
+     */
+    protected void part(SimpleObjModel model, String name, PoseStack ps, VertexConsumer vc, int light, int overlay, float r, float g, float b, float a) {
+        net.minecraft.core.BlockPos pos = entity != null ? entity.blockPosition() : net.minecraft.core.BlockPos.ZERO;
+        SpaceMobVbos.renderPart(model, name, this.texture, ps, vc, light, overlay, pos, this.buffers, r, g, b, a);
+    }
+
+    /**
+     * Explizite VBO-Teil-Ausgabe fuer Modelle mit festen Pfaden.
+     */
+    protected void partVbo(String modelPath, String partName, net.minecraft.resources.ResourceLocation tex, PoseStack ps, int light, MultiBufferSource buf) {
+        net.minecraft.core.BlockPos pos = entity != null ? entity.blockPosition() : net.minecraft.core.BlockPos.ZERO;
+        SpaceMobVbos.renderPartVbo(SpaceMod.id("models/mobs/" + modelPath + ".obj"), partName, tex, ps, light, pos, buf);
     }
 }

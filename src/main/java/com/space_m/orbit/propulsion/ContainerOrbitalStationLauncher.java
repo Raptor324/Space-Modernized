@@ -3,7 +3,7 @@ package com.space_m.orbit.propulsion;
 import org.jetbrains.annotations.Nullable;
 
 import com.hbm_m.inventory.ModItemStackHandlerContainer;
-import com.hbm_m.platform.DummyItemStackHandler;
+import com.hbm_m.platform.ModItemStackHandler;
 import com.space_m.rocket.RocketPart.PartType;
 import com.space_m.rocket.RocketStruct;
 import com.space_m.rocket.menu.SlotRocket.SlotCapsule;
@@ -42,7 +42,7 @@ public class ContainerOrbitalStationLauncher extends AbstractContainerMenu {
 
         Container container = machine != null
                 ? new ModItemStackHandlerContainer(machine.getInventory(), machine::setChanged)
-                : new ModItemStackHandlerContainer(new DummyItemStackHandler(tileSize), () -> {});
+                : new ModItemStackHandlerContainer(new ModItemStackHandler.Dummy(tileSize), () -> {});
 
         int slotId = 0;
 

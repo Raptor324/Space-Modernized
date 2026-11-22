@@ -5,7 +5,7 @@ import java.util.List;
 import org.jetbrains.annotations.Nullable;
 
 import com.hbm_m.item.ISatChip;
-import com.hbm_m.platform.PlatformHooks;
+import com.hbm_m.platform.StackNbt;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
@@ -30,7 +30,7 @@ public class ItemCustomRocket extends Item implements ISatChip {
 
         CompoundTag tag = new CompoundTag();
         rocket.writeToNBT(tag);
-        PlatformHooks.setItemTag(stack, tag);
+        StackNbt.set(stack, tag);
         if (rocket.capsule != null && rocket.capsule.part != null && RocketPayloadHooks.get().isSatelliteItem(rocket.capsule.part)) {
             RocketPayloadHooks.get().ensureItemData(stack);
         }
@@ -49,7 +49,7 @@ public class ItemCustomRocket extends Item implements ISatChip {
     @Nullable
     public static RocketStruct get(@Nullable ItemStack stack) {
         if (stack == null || !(stack.getItem() instanceof ItemCustomRocket)) return null;
-        CompoundTag tag = PlatformHooks.getItemTag(stack);
+        CompoundTag tag = StackNbt.read(stack);
         if (tag == null) return null;
 
         return RocketStruct.readFromNBT(tag);
@@ -57,13 +57,13 @@ public class ItemCustomRocket extends Item implements ISatChip {
 
     public static boolean hasFuel(@Nullable ItemStack stack) {
         if (stack == null) return false;
-        CompoundTag tag = PlatformHooks.getItemTag(stack);
+        CompoundTag tag = StackNbt.read(stack);
         return tag != null && tag.getBoolean("hasFuel");
     }
 
     public static void setFuel(@Nullable ItemStack stack, boolean hasFuel) {
         if (stack == null || stack.isEmpty()) return;
-        PlatformHooks.editItemTag(stack, t -> t.putBoolean("hasFuel", hasFuel));
+        StackNbt.edit(stack, t -> t.putBoolean("hasFuel", hasFuel));
     }
 
     //? if < 1.21.1 {

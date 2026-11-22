@@ -75,16 +75,16 @@ public class RenderBFA extends EntityRenderer<EntityBFAngel> {
         int o = OverlayTexture.NO_OVERLAY;
 
         // Core
-        BFANGEL.renderPartEntity("eye", ps, vc, light, o, 1, 1, 1, 1);
-        BFANGEL.renderPartEntity("body", ps, vc, light, o, 1, 1, 1, 1);
+        renderPart("eye", ps, vc, light, ufo, buffers);
+        renderPart("body", ps, vc, light, ufo, buffers);
 
         // === Wings === (Original ohne Standardbeleuchtung)
-        wing(ps, vc, light, "wingL1", cy0 * 2, cy0 * 20, false);
-        wing(ps, vc, light, "wingR1", cy0 * -2, cy0 * -20, false);
-        wing(ps, vc, light, "wingL2", cy1 * 5, cy1 * 20, false);
-        wing(ps, vc, light, "wingR2", cy1 * -5, cy1 * -20, false);
-        wing(ps, vc, light, "wingL3", cy1 * 5, cy2 * 20, true);
-        wing(ps, vc, light, "wingR3", cy1 * -5, cy2 * -20, true);
+        wing(ps, vc, light, "wingL1", cy0 * 2, cy0 * 20, false, ufo, buffers);
+        wing(ps, vc, light, "wingR1", cy0 * -2, cy0 * -20, false, ufo, buffers);
+        wing(ps, vc, light, "wingL2", cy1 * 5, cy1 * 20, false, ufo, buffers);
+        wing(ps, vc, light, "wingR2", cy1 * -5, cy1 * -20, false, ufo, buffers);
+        wing(ps, vc, light, "wingL3", cy1 * 5, cy2 * 20, true, ufo, buffers);
+        wing(ps, vc, light, "wingR3", cy1 * -5, cy2 * -20, true, ufo, buffers);
 
         ps.popPose();
 
@@ -114,12 +114,16 @@ public class RenderBFA extends EntityRenderer<EntityBFAngel> {
         super.render(ufo, entityYaw, f1, ps, buffers, light);
     }
 
+    private static void renderPart(String name, PoseStack ps, VertexConsumer vc, int light, EntityBFAngel ufo, MultiBufferSource buffers) {
+        SpaceMobVbos.renderPart(BFANGEL, name, TEXTURE, ps, vc, light, OverlayTexture.NO_OVERLAY, ufo.blockPosition(), buffers, 1, 1, 1, 1);
+    }
+
     /** Fluegel: 1./2. Paar Z dann Y, 3. Paar X dann Y. */
-    private static void wing(PoseStack ps, VertexConsumer vc, int light, String name, double a, double b, boolean xAxis) {
+    private static void wing(PoseStack ps, VertexConsumer vc, int light, String name, double a, double b, boolean xAxis, EntityBFAngel ufo, MultiBufferSource buffers) {
         ps.pushPose();
         if (xAxis) rx(ps, a); else rz(ps, a);
         ry(ps, b);
-        BFANGEL.renderPartEntity(name, ps, vc, light, OverlayTexture.NO_OVERLAY, 1, 1, 1, 1);
+        renderPart(name, ps, vc, light, ufo, buffers);
         ps.popPose();
     }
 

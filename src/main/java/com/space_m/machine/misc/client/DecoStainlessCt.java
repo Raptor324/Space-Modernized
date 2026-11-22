@@ -1,7 +1,7 @@
 package com.space_m.machine.misc.client;
 
 import com.hbm_m.client.model.ConnectedDecoBlockBakedModel;
-import com.hbm_m.platform.PlatformHooks;
+import com.hbm_m.platform.LoaderHooks;
 import com.space_m.SpaceMod;
 import com.space_m.machine.misc.MiscBlocks;
 
@@ -35,7 +35,7 @@ public final class DecoStainlessCt {
     @SuppressWarnings({ "rawtypes", "unchecked" })
     private static void onModelBake(ModelEvent.ModifyBakingResult event) {
         java.util.Map models = event.getModels();
-        Object loc = PlatformHooks.createModelLocation(MiscBlocks.DECO_STAINLESS.getId(), "");
+        Object loc = LoaderHooks.createModelLocation(MiscBlocks.DECO_STAINLESS.getId(), "");
         BakedModel baked = (BakedModel) models.get(loc);
         if (baked == null || baked instanceof ConnectedDecoBlockBakedModel) return;
 

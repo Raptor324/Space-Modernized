@@ -225,7 +225,7 @@ public class TileEntityMachineVacuumCircuit extends BaseMachineBlockEntity imple
         nbt.putInt("processTime", processTime);
         nbt.putLong("consumption", consumption);
         nbt.putBoolean("canOperate", canOperate);
-        if (!display.isEmpty()) nbt.put("display", com.hbm_m.platform.PlatformHooks.saveItemStack(display, new CompoundTag(), registries));
+        if (!display.isEmpty()) nbt.put("display", com.hbm_m.platform.StackNbt.saveNew(display, registries));
     }
 
     @Override
@@ -236,7 +236,7 @@ public class TileEntityMachineVacuumCircuit extends BaseMachineBlockEntity imple
         processTime = nbt.getInt("processTime");
         consumption = nbt.getLong("consumption");
         canOperate = !nbt.contains("canOperate") || nbt.getBoolean("canOperate");
-        display = nbt.contains("display") ? com.hbm_m.platform.PlatformHooks.itemStackOf(nbt.getCompound("display"), registries) : ItemStack.EMPTY;
+        display = nbt.contains("display") ? com.hbm_m.platform.StackNbt.parse(nbt.getCompound("display"), registries) : ItemStack.EMPTY;
     }
 
     /** Original {@code getRenderBoundingBox}: x-1..x+2, y..y+3, z-1..z+2. */

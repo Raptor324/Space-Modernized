@@ -6,10 +6,12 @@ import java.util.function.Function;
 import com.space_m.SpaceMod;
 import com.space_m.entity.mob.IEntityEnumMulti;
 
+import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Mob;
+import com.mojang.blaze3d.vertex.PoseStack;
 
 /**
  * 1:1 {@code RenderEntityMulti} / {@code RenderScutter}: OBJ-Modell mit Textur je Variante
@@ -37,5 +39,12 @@ public class RenderEntityMulti<T extends Mob> extends MobRenderer<T, ObjMobModel
     @Override
     public ResourceLocation getTextureLocation(T entity) {
         return texture.apply(entity);
+    }
+
+    @Override
+    public void render(T entity, float entityYaw, float partialTicks, PoseStack poseStack, MultiBufferSource bufferSource, int packedLight) {
+        this.model.texture = getTextureLocation(entity);
+        this.model.buffers = bufferSource;
+        super.render(entity, entityYaw, partialTicks, poseStack, bufferSource, packedLight);
     }
 }

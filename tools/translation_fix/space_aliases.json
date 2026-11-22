@@ -1,0 +1,4767 @@
+{
+ "advancements.space_m.drive_fail.description": {
+  "en": "Fail to clone an orbital station drive before launching the station",
+  "origKey": "achievement.driveFail.desc",
+  "ru": "Ты забыл создать копию диска орбитальной станции перед запуском"
+ },
+ "advancements.space_m.drive_fail.title": {
+  "en": "uh, did you make a copy?",
+  "origKey": "achievement.driveFail",
+  "ru": "М-м... Ты же скопировал?"
+ },
+ "armor.canBreathe": {
+  "en": "Can be used as a spacesuit",
+  "origKey": "armor.canBreathe",
+  "ru": "Можно использовать как скафандр"
+ },
+ "armor.canSeal": {
+  "en": "Can be used as a spacesuit (requires PLSS)",
+  "origKey": "armor.canSeal",
+  "ru": "Обеспечивает герметичность (требуется PLSS)"
+ },
+ "armor.mustSeal": {
+  "en": "Must be used with a fully sealed armor set!",
+  "origKey": "armor.mustSeal",
+  "ru": "Использовать с полностью герметичным набором брони!"
+ },
+ "atmosphere.engineFacing": {
+  "en": "WRONG DIRECTION",
+  "origKey": "atmosphere.engineFacing",
+  "ru": "НЕВЕРНОЕ НАПРАВЛЕНИЕ"
+ },
+ "atmosphere.name": {
+  "en": "Atmosphere",
+  "origKey": "atmosphere.name",
+  "ru": "Статус атмосферы"
+ },
+ "atmosphere.noAir": {
+  "en": "REQUIRES VACUUM",
+  "origKey": "atmosphere.noAir",
+  "ru": "ТРЕБУЕТСЯ ВАКУУМ"
+ },
+ "atmosphere.noGravity": {
+  "en": "REQUIRES ZERO-G",
+  "origKey": "atmosphere.noGravity",
+  "ru": "ТРЕБУЕТСЯ НЕВЕСОМОСТЬ"
+ },
+ "atmosphere.noOrbit": {
+  "en": "MUST BE IN ORBIT",
+  "origKey": "atmosphere.noOrbit",
+  "ru": "РАБОТАЕТ ТОЛЬКО НА ОРБИТЕ"
+ },
+ "atmosphere.noSeal": {
+  "en": "ROOM UNSEALED",
+  "origKey": "atmosphere.noSeal",
+  "ru": "КОМНАТА НЕГЕРМЕТИЧНА"
+ },
+ "atmosphere.noTank": {
+  "en": "EMPTY TANK",
+  "origKey": "atmosphere.noTank",
+  "ru": "ПУСТОЙ БАК"
+ },
+ "atmosphere.noVacuum": {
+  "en": "REQUIRES ATMOSPHERE",
+  "origKey": "atmosphere.noVacuum",
+  "ru": "ТРЕБУЕТСЯ АТМОСФЕРА"
+ },
+ "atmosphere.recycling": {
+  "en": "Running on recycled air",
+  "origKey": "atmosphere.recycling",
+  "ru": "Running on recycled air"
+ },
+ "atmosphere.vacuum": {
+  "en": "Near Vacuum",
+  "origKey": "atmosphere.vacuum",
+  "ru": "Отсутствует"
+ },
+ "atmosphere.yesOrbit": {
+  "en": "UNUSABLE IN ORBIT",
+  "origKey": "atmosphere.yesOrbit",
+  "ru": "UNUSABLE IN ORBIT"
+ },
+ "biome.space_m.dres": {
+  "en": "Dresian Plains",
+  "origKey": "!",
+  "ru": "Равнины Дреса"
+ },
+ "biome.space_m.dres_basins": {
+  "en": "Dres Large Basins",
+  "origKey": "!",
+  "ru": "Большие бассейны Дреса"
+ },
+ "biome.space_m.duna": {
+  "en": "Dunaian Plains",
+  "origKey": "!",
+  "ru": "Равнины Дюны"
+ },
+ "biome.space_m.duna_hills": {
+  "en": "Weathered Dunaian Hills",
+  "origKey": "!",
+  "ru": "Выветренные холмы Дюны"
+ },
+ "biome.space_m.duna_lowlands": {
+  "en": "Dunaian Lowland Plains",
+  "origKey": "!",
+  "ru": "Низменные равнины Дюны"
+ },
+ "biome.space_m.duna_polar": {
+  "en": "Dunaian Ice Sheet",
+  "origKey": "!",
+  "ru": "Ледяной щит Дюны"
+ },
+ "biome.space_m.duna_polar_hills": {
+  "en": "Dunaian Polar Mountains",
+  "origKey": "!",
+  "ru": "Полярные горы Дюны"
+ },
+ "biome.space_m.eve_mountains": {
+  "en": "Eve Mountains",
+  "origKey": "!",
+  "ru": "Горы Евы"
+ },
+ "biome.space_m.eve_ocean": {
+  "en": "Explodium Ocean",
+  "origKey": "!",
+  "ru": "Эксплодиевый океан"
+ },
+ "biome.space_m.eve_plains": {
+  "en": "Eve Plains",
+  "origKey": "!",
+  "ru": "Равнины Евы"
+ },
+ "biome.space_m.eve_river": {
+  "en": "Explodium River",
+  "origKey": "!",
+  "ru": "Эксплодиевая река"
+ },
+ "biome.space_m.eve_seismic_plains": {
+  "en": "Eve Seismic Plains",
+  "origKey": "!",
+  "ru": "Сейсмические равнины Евы"
+ },
+ "biome.space_m.ike": {
+  "en": "Ike",
+  "origKey": "!",
+  "ru": "Айк"
+ },
+ "biome.space_m.laythe_coast": {
+  "en": "Laythe Reef",
+  "origKey": "!",
+  "ru": "Laythe Reef"
+ },
+ "biome.space_m.laythe_islands": {
+  "en": "Laythe Islands",
+  "origKey": "!",
+  "ru": "Laythe Islands"
+ },
+ "biome.space_m.laythe_ocean": {
+  "en": "Sagan Sea",
+  "origKey": "!",
+  "ru": "Sagan Sea"
+ },
+ "biome.space_m.laythe_polar": {
+  "en": "Laythe Poles",
+  "origKey": "!",
+  "ru": "Laythe Poles"
+ },
+ "biome.space_m.minmus_basins": {
+  "en": "Minmus Basins",
+  "origKey": "!",
+  "ru": "Бассейны Минмуса"
+ },
+ "biome.space_m.minmus_hills": {
+  "en": "Minmus Hills",
+  "origKey": "!",
+  "ru": "Холмы Минмуса"
+ },
+ "biome.space_m.moho_basalt": {
+  "en": "Moho Basalt Deltas",
+  "origKey": "!",
+  "ru": "Базальтовые дельты Мохо"
+ },
+ "biome.space_m.moho_crag": {
+  "en": "Moho Crag",
+  "origKey": "!",
+  "ru": "Скалы Мохо"
+ },
+ "biome.space_m.moho_lava_sea": {
+  "en": "Moho Lava Sea",
+  "origKey": "!",
+  "ru": "Лавовое море Мохо"
+ },
+ "biome.space_m.moho_plateau": {
+  "en": "Moho Plateau",
+  "origKey": "!",
+  "ru": "Плато Мохо"
+ },
+ "biome.space_m.mun": {
+  "en": "Mun",
+  "origKey": "!",
+  "ru": "Мун"
+ },
+ "biome.space_m.orbit": {
+  "en": "Space",
+  "origKey": "!",
+  "ru": "Космос"
+ },
+ "biome.space_m.tekto_forest": {
+  "en": "Tekto Forest",
+  "origKey": "!",
+  "ru": "Tekto Forest"
+ },
+ "biome.space_m.tekto_halogen_hills": {
+  "en": "Halogen Hills",
+  "origKey": "!",
+  "ru": "Halogen Hills"
+ },
+ "biome.space_m.tekto_polyvinyl_plains": {
+  "en": "Polyvinyl Plains",
+  "origKey": "!",
+  "ru": "Polyvinyl Plains"
+ },
+ "biome.space_m.tekto_river": {
+  "en": "Tetrachloride River",
+  "origKey": "!",
+  "ru": "Tetrachloride River"
+ },
+ "biome.space_m.tekto_vinyl_sands": {
+  "en": "Vinyl Desert",
+  "origKey": "!",
+  "ru": "Vinyl Desert"
+ },
+ "biome.space_m.thatmo": {
+  "en": "Thatmo",
+  "origKey": "!",
+  "ru": "Thatmo"
+ },
+ "block.hbm_m.geysir_chlorine": {
+  "en": "Chlorine Geyser",
+  "origKey": "tile.geysir_chlorine.name",
+  "ru": "Хлорный гейзер"
+ },
+ "block.hbm_m.geysir_nether": {
+  "en": "Volcanic Geyser",
+  "origKey": "tile.geysir_nether.name",
+  "ru": "Вулканический гейзер"
+ },
+ "block.space_m.air_scrubber": {
+  "en": "CO2 Scrubber",
+  "origKey": "tile.air_scrubber.name",
+  "ru": "Скруббер"
+ },
+ "block.space_m.air_scrubber.desc": {
+  "en": "Captures CO2 generated within a sealed, pressurized room.",
+  "origKey": "tile.air_scrubber.desc",
+  "ru": "Собирает углекислый газ, образующийся в герметичном помещении с кислородом."
+ },
+ "block.space_m.air_vent": {
+  "en": "Air Vent",
+  "origKey": "tile.air_vent.name",
+  "ru": "Воздушный клапан"
+ },
+ "block.space_m.algae_film": {
+  "en": "Microgravity Algae Film",
+  "origKey": "tile.algae_film.name",
+  "ru": "Картридж с водорослями"
+ },
+ "block.space_m.algae_film.desc": {
+  "en": "Converts CO2 back into O2.$Only functions in orbit.",
+  "origKey": "tile.algae_film.desc",
+  "ru": "Преобразует углекислый газ обратно в жидкий кислород.$Работает только в невесомости."
+ },
+ "block.space_m.astroturf": {
+  "en": "Astroturf",
+  "origKey": "tile.astroturf.name",
+  "ru": "Астродёрн"
+ },
+ "block.space_m.atmosphere_editor": {
+  "en": "Atmosphere Editor",
+  "origKey": "tile.atmosphere_editor.name",
+  "ru": "Редактор атмосферы"
+ },
+ "block.space_m.bf_log": {
+  "en": "Balefire Log",
+  "origKey": "tile.bf_log.name",
+  "ru": "Жар-дерево"
+ },
+ "block.space_m.block_nickel": {
+  "en": "Block of Nickel",
+  "origKey": "tile.block_nickel.name",
+  "ru": "Никелевый блок"
+ },
+ "block.space_m.block_osmiridium": {
+  "en": "Block of Osmiridium",
+  "origKey": "tile.block_osmiridium.name",
+  "ru": "Осмиридиевый блок"
+ },
+ "block.space_m.bobblehead": {
+  "en": "Bobblehead",
+  "origKey": "tile.bobblehead.name",
+  "ru": "Болванчик"
+ },
+ "block.space_m.bromine_block": {
+  "en": "Alkyl Bromide",
+  "origKey": "tile.bromine_block.name",
+  "ru": "Смесь алкилбромидов"
+ },
+ "block.space_m.capacitor_complex": {
+  "en": "Wavefunction Capacitor (LEGACY)",
+  "origKey": "tile.capacitor_complex.name",
+  "ru": "Конденсатор на Волновой функции"
+ },
+ "block.space_m.carbonized_flesh_block": {
+  "en": "tile.carbonized_flesh_block.name",
+  "origKey": "!",
+  "ru": "tile.carbonized_flesh_block.name"
+ },
+ "block.space_m.ccl_block": {
+  "en": "CCL",
+  "origKey": "tile.ccl_block.name",
+  "ru": "CCL"
+ },
+ "block.space_m.charred_flesh_block": {
+  "en": "tile.charred_flesh_block.name",
+  "origKey": "!",
+  "ru": "tile.charred_flesh_block.name"
+ },
+ "block.space_m.cluster_aluminium_dres": {
+  "en": "Aluminium Ore Cluster",
+  "origKey": "tile.cluster_aluminium.name",
+  "ru": "Алюминиевый рудный кластер"
+ },
+ "block.space_m.cluster_aluminium_duna": {
+  "en": "Aluminium Ore Cluster",
+  "origKey": "tile.cluster_aluminium.name",
+  "ru": "Алюминиевый рудный кластер"
+ },
+ "block.space_m.cluster_aluminium_eve": {
+  "en": "Aluminium Ore Cluster",
+  "origKey": "tile.cluster_aluminium.name",
+  "ru": "Алюминиевый рудный кластер"
+ },
+ "block.space_m.cluster_aluminium_ike": {
+  "en": "Aluminium Ore Cluster",
+  "origKey": "tile.cluster_aluminium.name",
+  "ru": "Алюминиевый рудный кластер"
+ },
+ "block.space_m.cluster_aluminium_laythe": {
+  "en": "Aluminium Ore Cluster",
+  "origKey": "tile.cluster_aluminium.name",
+  "ru": "Алюминиевый рудный кластер"
+ },
+ "block.space_m.cluster_aluminium_minmus": {
+  "en": "Aluminium Ore Cluster",
+  "origKey": "tile.cluster_aluminium.name",
+  "ru": "Алюминиевый рудный кластер"
+ },
+ "block.space_m.cluster_aluminium_moho": {
+  "en": "Aluminium Ore Cluster",
+  "origKey": "tile.cluster_aluminium.name",
+  "ru": "Алюминиевый рудный кластер"
+ },
+ "block.space_m.cluster_aluminium_mun": {
+  "en": "Aluminium Ore Cluster",
+  "origKey": "tile.cluster_aluminium.name",
+  "ru": "Алюминиевый рудный кластер"
+ },
+ "block.space_m.cluster_aluminium_tekto": {
+  "en": "Aluminium Ore Cluster",
+  "origKey": "tile.cluster_aluminium.name",
+  "ru": "Алюминиевый рудный кластер"
+ },
+ "block.space_m.cluster_copper_dres": {
+  "en": "Copper Ore Cluster",
+  "origKey": "tile.cluster_copper.name",
+  "ru": "Медный рудный кластер"
+ },
+ "block.space_m.cluster_copper_duna": {
+  "en": "Copper Ore Cluster",
+  "origKey": "tile.cluster_copper.name",
+  "ru": "Медный рудный кластер"
+ },
+ "block.space_m.cluster_copper_eve": {
+  "en": "Copper Ore Cluster",
+  "origKey": "tile.cluster_copper.name",
+  "ru": "Медный рудный кластер"
+ },
+ "block.space_m.cluster_copper_ike": {
+  "en": "Copper Ore Cluster",
+  "origKey": "tile.cluster_copper.name",
+  "ru": "Медный рудный кластер"
+ },
+ "block.space_m.cluster_copper_laythe": {
+  "en": "Copper Ore Cluster",
+  "origKey": "tile.cluster_copper.name",
+  "ru": "Медный рудный кластер"
+ },
+ "block.space_m.cluster_copper_minmus": {
+  "en": "Copper Ore Cluster",
+  "origKey": "tile.cluster_copper.name",
+  "ru": "Медный рудный кластер"
+ },
+ "block.space_m.cluster_copper_moho": {
+  "en": "Copper Ore Cluster",
+  "origKey": "tile.cluster_copper.name",
+  "ru": "Медный рудный кластер"
+ },
+ "block.space_m.cluster_copper_mun": {
+  "en": "Copper Ore Cluster",
+  "origKey": "tile.cluster_copper.name",
+  "ru": "Медный рудный кластер"
+ },
+ "block.space_m.cluster_copper_tekto": {
+  "en": "Copper Ore Cluster",
+  "origKey": "tile.cluster_copper.name",
+  "ru": "Медный рудный кластер"
+ },
+ "block.space_m.cluster_iron_dres": {
+  "en": "Iron Ore Cluster",
+  "origKey": "tile.cluster_iron.name",
+  "ru": "Железорудный кластер"
+ },
+ "block.space_m.cluster_iron_duna": {
+  "en": "Iron Ore Cluster",
+  "origKey": "tile.cluster_iron.name",
+  "ru": "Железорудный кластер"
+ },
+ "block.space_m.cluster_iron_eve": {
+  "en": "Iron Ore Cluster",
+  "origKey": "tile.cluster_iron.name",
+  "ru": "Железорудный кластер"
+ },
+ "block.space_m.cluster_iron_ike": {
+  "en": "Iron Ore Cluster",
+  "origKey": "tile.cluster_iron.name",
+  "ru": "Железорудный кластер"
+ },
+ "block.space_m.cluster_iron_laythe": {
+  "en": "Iron Ore Cluster",
+  "origKey": "tile.cluster_iron.name",
+  "ru": "Железорудный кластер"
+ },
+ "block.space_m.cluster_iron_minmus": {
+  "en": "Iron Ore Cluster",
+  "origKey": "tile.cluster_iron.name",
+  "ru": "Железорудный кластер"
+ },
+ "block.space_m.cluster_iron_moho": {
+  "en": "Iron Ore Cluster",
+  "origKey": "tile.cluster_iron.name",
+  "ru": "Железорудный кластер"
+ },
+ "block.space_m.cluster_iron_mun": {
+  "en": "Iron Ore Cluster",
+  "origKey": "tile.cluster_iron.name",
+  "ru": "Железорудный кластер"
+ },
+ "block.space_m.cluster_iron_tekto": {
+  "en": "Iron Ore Cluster",
+  "origKey": "tile.cluster_iron.name",
+  "ru": "Железорудный кластер"
+ },
+ "block.space_m.cluster_titanium_dres": {
+  "en": "Titanium Ore Cluster",
+  "origKey": "tile.cluster_titanium.name",
+  "ru": "Титановый рудный кластер"
+ },
+ "block.space_m.cluster_titanium_duna": {
+  "en": "Titanium Ore Cluster",
+  "origKey": "tile.cluster_titanium.name",
+  "ru": "Титановый рудный кластер"
+ },
+ "block.space_m.cluster_titanium_eve": {
+  "en": "Titanium Ore Cluster",
+  "origKey": "tile.cluster_titanium.name",
+  "ru": "Титановый рудный кластер"
+ },
+ "block.space_m.cluster_titanium_ike": {
+  "en": "Titanium Ore Cluster",
+  "origKey": "tile.cluster_titanium.name",
+  "ru": "Титановый рудный кластер"
+ },
+ "block.space_m.cluster_titanium_laythe": {
+  "en": "Titanium Ore Cluster",
+  "origKey": "tile.cluster_titanium.name",
+  "ru": "Титановый рудный кластер"
+ },
+ "block.space_m.cluster_titanium_minmus": {
+  "en": "Titanium Ore Cluster",
+  "origKey": "tile.cluster_titanium.name",
+  "ru": "Титановый рудный кластер"
+ },
+ "block.space_m.cluster_titanium_moho": {
+  "en": "Titanium Ore Cluster",
+  "origKey": "tile.cluster_titanium.name",
+  "ru": "Титановый рудный кластер"
+ },
+ "block.space_m.cluster_titanium_mun": {
+  "en": "Titanium Ore Cluster",
+  "origKey": "tile.cluster_titanium.name",
+  "ru": "Титановый рудный кластер"
+ },
+ "block.space_m.cluster_titanium_tekto": {
+  "en": "Titanium Ore Cluster",
+  "origKey": "tile.cluster_titanium.name",
+  "ru": "Титановый рудный кластер"
+ },
+ "block.space_m.combat_drop": {
+  "en": "Combat Drop Pod",
+  "origKey": "tile.combat_drop.name",
+  "ru": "Боевая десантная капсула"
+ },
+ "block.space_m.crop_coffee": {
+  "en": "Coffee",
+  "origKey": "tile.crop_coffee.name",
+  "ru": "Кофе"
+ },
+ "block.space_m.crop_mint": {
+  "en": "Mint",
+  "origKey": "tile.crop_mint.name",
+  "ru": "Мята"
+ },
+ "block.space_m.crop_paraffin": {
+  "en": "Wax Crop",
+  "origKey": "tile.crop_paraffin.name",
+  "ru": "Wax Crop"
+ },
+ "block.space_m.crop_strawberry": {
+  "en": "Strawberries",
+  "origKey": "tile.crop_strawberry.name",
+  "ru": "Клубника"
+ },
+ "block.space_m.crop_tea": {
+  "en": "Tea",
+  "origKey": "tile.crop_tea.name",
+  "ru": "Чай"
+ },
+ "block.space_m.deco_stainless": {
+  "en": "Stainless Steel Deco Block",
+  "origKey": "tile.deco_stainless.name",
+  "ru": "Нержавеющий декоративный блок"
+ },
+ "block.space_m.det_salt": {
+  "en": "Salted Nuclear Charge",
+  "origKey": "tile.det_salt.name",
+  "ru": "Солёный ядерный заряд"
+ },
+ "block.space_m.dish_control": {
+  "en": "StarDar Remote Access Console",
+  "origKey": "tile.dish_control.name",
+  "ru": "Консоль удалённого доступа к радиотелескопу StarDar"
+ },
+ "block.space_m.dish_control.desc": {
+  "en": "Enables remote access to the StarDar.$Shift right click StarDar with reactor sensor to start linking.$Then shift right click the console to finish link.",
+  "origKey": "tile.dish_control.desc",
+  "ru": "Позволяет удалённо управлять радиотелескопом StarDar.$Чтобы начать связь - нажмите шифт + пкм дистанционным датчиком реактора по StarDar.$Затем сделайте тоже самое, но уже по консоли, чтобы завершить связь."
+ },
+ "block.space_m.dres_rock": {
+  "en": "Dres Rock",
+  "origKey": "tile.dres_rock.name",
+  "ru": "Камень Дреса"
+ },
+ "block.space_m.dry_ice": {
+  "en": "Dry Ice",
+  "origKey": "tile.dry_ice.name",
+  "ru": "Сухой лёд"
+ },
+ "block.space_m.dummy_beam": {
+  "en": "Integrated Lamp",
+  "origKey": "tile.dummy_beam.name",
+  "ru": "Integrated Lamp"
+ },
+ "block.space_m.duna_cobble": {
+  "en": "Duna Cobblestone",
+  "origKey": "tile.duna_cobble.name",
+  "ru": "Булыжник Дюны"
+ },
+ "block.space_m.duna_rock": {
+  "en": "Duna Rock",
+  "origKey": "tile.duna_rock.name",
+  "ru": "Камень Дюны"
+ },
+ "block.space_m.duna_sands": {
+  "en": "Duna Sand",
+  "origKey": "tile.duna_sands.name",
+  "ru": "Песок Дюны"
+ },
+ "block.space_m.dyson_converter_anatmogenesis": {
+  "en": "Dyson Anatmogenesis Terraformer",
+  "origKey": "tile.dyson_converter_anatmogenesis.name",
+  "ru": "Анатмогенезисный терраформер Дайсона"
+ },
+ "block.space_m.dyson_converter_he": {
+  "en": "Dyson Power Converter",
+  "origKey": "tile.dyson_converter_he.name",
+  "ru": "Энергетический конвертор Дайсона"
+ },
+ "block.space_m.dyson_converter_tu": {
+  "en": "Dyson Heat Converter",
+  "origKey": "tile.dyson_converter_tu.name",
+  "ru": "Нагреватель Дайсона"
+ },
+ "block.space_m.dyson_launcher": {
+  "en": "Dyson Spinlauncher",
+  "origKey": "tile.dyson_launcher.name",
+  "ru": "Пусковая установка SpinLaunch™"
+ },
+ "block.space_m.dyson_launcher.desc": {
+  "en": "Launches swarm members into solar orbit.$Swarm members decay over time, so continuous launching is required for upkeep.",
+  "origKey": "tile.dyson_launcher.desc",
+  "ru": "Запускает модули роя на солнечную орбиту.$Модули роя портятся со временем, необходимо$переодически запускать новые для поддержания количества."
+ },
+ "block.space_m.dyson_receiver": {
+  "en": "Dyson Receiver",
+  "origKey": "tile.dyson_receiver.name",
+  "ru": "Приёмник Дайсона"
+ },
+ "block.space_m.dyson_receiver.desc": {
+  "en": "Receives energy from a swarm and fires it as a beam.$Requires a relay satellite to operate at night.",
+  "origKey": "tile.dyson_receiver.desc",
+  "ru": "Принимает энергию от роя и выпускаеёт её в виде луча.$Требуется ретранслятор для работы ночью."
+ },
+ "block.space_m.eu_log": {
+  "en": "Anti-Mass Log",
+  "origKey": "tile.eu_log.name",
+  "ru": "Анти-масс дерево"
+ },
+ "block.space_m.eve_rock": {
+  "en": "Eve Rock",
+  "origKey": "tile.eve_rock.name",
+  "ru": "Камень Евы"
+ },
+ "block.space_m.eve_silt": {
+  "en": "Eve Silt",
+  "origKey": "tile.eve_silt.name",
+  "ru": "Грунт Евы"
+ },
+ "block.space_m.fence_gate": {
+  "en": "Chainlink Fence Gate",
+  "origKey": "tile.fence_gate.name",
+  "ru": "Проволочная калитка"
+ },
+ "block.space_m.ferric_clay": {
+  "en": "Ferric Clay",
+  "origKey": "tile.ferric_clay.name",
+  "ru": "Блок железистой глины"
+ },
+ "block.space_m.ff": {
+  "en": "tile.ff.name",
+  "origKey": "!",
+  "ru": "tile.ff.name"
+ },
+ "block.space_m.flesh_block": {
+  "en": "tile.flesh_block.name",
+  "origKey": "!",
+  "ru": "tile.flesh_block.name"
+ },
+ "block.space_m.furnace": {
+  "en": "Furnace",
+  "origKey": "!",
+  "ru": "Печь"
+ },
+ "block.space_m.gas_dock": {
+  "en": "Gas Giant Harvester",
+  "origKey": "tile.gas_dock.name",
+  "ru": "Станция газового комбайна"
+ },
+ "block.space_m.geysir_chloric": {
+  "en": "DCM Geysir",
+  "origKey": "tile.geysir_chloric.name",
+  "ru": "Дихлорметановый гейзер"
+ },
+ "block.space_m.geysir_electric": {
+  "en": "Discharge Geyser",
+  "origKey": "tile.geysir_electric.name",
+  "ru": "Сверхразрядный гейзер"
+ },
+ "block.space_m.geysir_volcanic": {
+  "en": "Volcanic Geyser",
+  "origKey": "tile.geysir_volcanic.name",
+  "ru": "Вулканический гейзер"
+ },
+ "block.space_m.hydrobay": {
+  "en": "Industrial Greenhouse",
+  "origKey": "tile.hydrobay.name",
+  "ru": "Промышленная теплица"
+ },
+ "block.space_m.hydrobay.desc": {
+  "en": "Converts CO2 -> O2 via continuous crop growth$Can grow any single block crops",
+  "origKey": "tile.hydrobay.desc",
+  "ru": "Преобразует CO2 -> O2 благодаря непрерывному росту урожая.$Может выращивать любые культуры размером в блок."
+ },
+ "block.space_m.ike_regolith": {
+  "en": "Ike Regolith",
+  "origKey": "tile.ike_regolith.name",
+  "ru": "Реголит Айка"
+ },
+ "block.space_m.ike_stone": {
+  "en": "Ike Stone",
+  "origKey": "tile.ike_stone.name",
+  "ru": "Камень Айка"
+ },
+ "block.space_m.lattice_log": {
+  "en": "Latticed Log",
+  "origKey": "tile.lattice_log.name",
+  "ru": "Решётчатое дерево"
+ },
+ "block.space_m.launch_pad_rocket": {
+  "en": "Rocket Launch Pad",
+  "origKey": "tile.launch_pad_rocket.name",
+  "ru": "Стартовая ракетная площадка"
+ },
+ "block.space_m.launch_pad_rocket.desc": {
+  "en": "Fuels and prepares a rocket constructed in the Vehicle Assembly Base for launch.",
+  "origKey": "tile.launch_pad_rocket.desc",
+  "ru": "Заправляет и подготавливает к запуску ракету,$сконструированную на станции сборки многоступенчатых ракет."
+ },
+ "block.space_m.launch_pad_rocket_tower": {
+  "en": "Rocket Launch Pad",
+  "origKey": "tile.launch_pad_rocket.name",
+  "ru": "Стартовая ракетная площадка"
+ },
+ "block.space_m.laythe_coral_block_brain": {
+  "en": "Block of Laythe Coral",
+  "origKey": "tile.laythe_coral_block.name",
+  "ru": "Блок кораллов Лейта"
+ },
+ "block.space_m.laythe_coral_block_bubble": {
+  "en": "Block of Laythe Coral",
+  "origKey": "tile.laythe_coral_block.name",
+  "ru": "Блок кораллов Лейта"
+ },
+ "block.space_m.laythe_coral_block_fire": {
+  "en": "Block of Laythe Coral",
+  "origKey": "tile.laythe_coral_block.name",
+  "ru": "Блок кораллов Лейта"
+ },
+ "block.space_m.laythe_coral_block_horn": {
+  "en": "Block of Laythe Coral",
+  "origKey": "tile.laythe_coral_block.name",
+  "ru": "Блок кораллов Лейта"
+ },
+ "block.space_m.laythe_coral_block_tube": {
+  "en": "Block of Laythe Coral",
+  "origKey": "tile.laythe_coral_block.name",
+  "ru": "Блок кораллов Лейта"
+ },
+ "block.space_m.laythe_coral_brain": {
+  "en": "Laythe Coral",
+  "origKey": "tile.laythe_coral.name",
+  "ru": "Коралл Лейта"
+ },
+ "block.space_m.laythe_coral_bubble": {
+  "en": "Laythe Coral",
+  "origKey": "tile.laythe_coral.name",
+  "ru": "Коралл Лейта"
+ },
+ "block.space_m.laythe_coral_fire": {
+  "en": "Laythe Coral",
+  "origKey": "tile.laythe_coral.name",
+  "ru": "Коралл Лейта"
+ },
+ "block.space_m.laythe_coral_horn": {
+  "en": "Laythe Coral",
+  "origKey": "tile.laythe_coral.name",
+  "ru": "Коралл Лейта"
+ },
+ "block.space_m.laythe_coral_tube": {
+  "en": "Laythe Coral",
+  "origKey": "tile.laythe_coral.name",
+  "ru": "Коралл Лейта"
+ },
+ "block.space_m.laythe_glowgrass": {
+  "en": "Laythe Glowgrass",
+  "origKey": "tile.laythe_glowgrass.name",
+  "ru": "Светящаяся трава Лейта"
+ },
+ "block.space_m.laythe_kelp": {
+  "en": "Laythe Kelp",
+  "origKey": "tile.laythe_kelp.name",
+  "ru": "Ламинария Лейта"
+ },
+ "block.space_m.laythe_root": {
+  "en": "Ancient Root",
+  "origKey": "tile.laythe_root.name",
+  "ru": "Ancient Root"
+ },
+ "block.space_m.laythe_seagrass": {
+  "en": "Laythe Seagrass",
+  "origKey": "tile.laythe_seagrass.name",
+  "ru": "Морская трава Лейта"
+ },
+ "block.space_m.laythe_silt": {
+  "en": "Laythe Silt",
+  "origKey": "tile.laythe_silt.name",
+  "ru": "Ил Лейта"
+ },
+ "block.space_m.lit_furnace": {
+  "en": "Furnace",
+  "origKey": "!",
+  "ru": "Печь"
+ },
+ "block.space_m.machine_alkylation": {
+  "en": "Alkylation Unit",
+  "origKey": "tile.machine_alkylation.name",
+  "ru": "Аппарат алкилирования"
+ },
+ "block.space_m.machine_atmo_emitter": {
+  "en": "Atmospheric Emitter",
+  "origKey": "tile.machine_atmo_emitter.name",
+  "ru": "Атмосферный источник"
+ },
+ "block.space_m.machine_atmo_tower": {
+  "en": "Atmospheric Liquefaction Tower",
+  "origKey": "tile.machine_atmo_tower.name",
+  "ru": "Башня сжижения воздуха"
+ },
+ "block.space_m.machine_atmo_vent": {
+  "en": "Atmospheric Compressor",
+  "origKey": "tile.machine_atmo_vent.name",
+  "ru": "Атмосферный компрессор"
+ },
+ "block.space_m.machine_cryo_distill": {
+  "en": "Cryogenic Distillation Machine",
+  "origKey": "tile.machine_cryo_distill.name",
+  "ru": "Криогенный дистиллятор"
+ },
+ "block.space_m.machine_drive_processor": {
+  "en": "Drive Processor",
+  "origKey": "tile.machine_drive_processor.name",
+  "ru": "Станция обработки сигналов"
+ },
+ "block.space_m.machine_htr3": {
+  "en": "LPW-3N Station Thruster",
+  "origKey": "tile.machine_htr3.name",
+  "ru": "Ракетный двигатель LPW-3N"
+ },
+ "block.space_m.machine_htr3.desc": {
+  "en": "Connect to a PWR that has control rods and Liquid Hydrogen coolant.",
+  "origKey": "tile.machine_htr3.desc",
+  "ru": "Connect to a PWR that has control rods and Liquid Hydrogen coolant."
+ },
+ "block.space_m.machine_htrf4": {
+  "en": "HTR-F4 Station Thruster (LEGACY)",
+  "origKey": "tile.machine_htrf4.name",
+  "ru": "Ракетный двигатель HTR-F4 (LEGACY)"
+ },
+ "block.space_m.machine_htrf4.desc": {
+  "en": "Connect Plasma Heater to inject fuel.",
+  "origKey": "tile.machine_htrf4.desc",
+  "ru": "Connect Plasma Heater to inject fuel."
+ },
+ "block.space_m.machine_htrf4neo": {
+  "en": "HTR-F4 NEO Station Thruster",
+  "origKey": "tile.machine_htrf4neo.name",
+  "ru": "Ракетный двигатель HTR-F4"
+ },
+ "block.space_m.machine_htrf4neo.desc": {
+  "en": "Connect a running Fusion Reactor Torus to provide thrust.",
+  "origKey": "tile.machine_htrf4neo.desc",
+  "ru": "Используется для орбитальных перелётов.$Для работы подключите к работающему$термоядерному реактору.$Требуются энергия и охлаждение!"
+ },
+ "block.space_m.machine_lpw2": {
+  "en": "LPW-2 Station Thruster",
+  "origKey": "tile.machine_lpw2.name",
+  "ru": "Ракетный двигатель LPW-2"
+ },
+ "block.space_m.machine_magma": {
+  "en": "Magma Drill",
+  "origKey": "tile.machine_magma.name",
+  "ru": "Магмовый бур"
+ },
+ "block.space_m.machine_magma.desc": {
+  "en": "Collects mineral-rich magma from highly-active volcanic planets and moons.",
+  "origKey": "tile.machine_magma.desc",
+  "ru": "Собирает обогащённую минералами магму$с высокативных вулканических планет и лун."
+ },
+ "block.space_m.machine_milk_reformer": {
+  "en": "Dairy Processing Tank",
+  "origKey": "tile.machine_milk_reformer.name",
+  "ru": "Молочный реформер"
+ },
+ "block.space_m.machine_radiator": {
+  "en": "Steam Radiator",
+  "origKey": "tile.machine_radiator.name",
+  "ru": "Паровой радиатор"
+ },
+ "block.space_m.machine_rocket_assembly": {
+  "en": "Vehicle Assembly Base (VAB)",
+  "origKey": "tile.machine_rocket_assembly.name",
+  "ru": "Станция сборки многоступенчатых ракет"
+ },
+ "block.space_m.machine_rocket_assembly.desc": {
+  "en": "Allows for the construction of multi-stage orbital rockets.$Each stage can travel to another body, provided it has enough fuel,$eg. a two stage rocket can travel to the Mun and back.",
+  "origKey": "tile.machine_rocket_assembly.desc",
+  "ru": "Позволяет создавать многоступенчатые ракеты.$Каждая ступень обеспечивает одноразовый полет к другой$планете при условии, что в ней достаточно топлива.$Пример: Двухступенчатая ракета может долететь$до Луны и обратно."
+ },
+ "block.space_m.machine_rocket_assembly_part": {
+  "en": "Vehicle Assembly Base (VAB)",
+  "origKey": "tile.machine_rocket_assembly.name",
+  "ru": "Станция сборки многоступенчатых ракет"
+ },
+ "block.space_m.machine_solar": {
+  "en": "Solar Panel",
+  "origKey": "tile.machine_solar.name",
+  "ru": "Солнечная панель"
+ },
+ "block.space_m.machine_stardar": {
+  "en": "StarDar",
+  "origKey": "tile.machine_stardar.name",
+  "ru": "Радиотелескоп \\\"StarDar\\\""
+ },
+ "block.space_m.machine_stardar.desc": {
+  "en": "An interplanetary receiver dish that can locate signals from planets$and discover safe landing zones.$Requires an empty Hard Drive to program.",
+  "origKey": "tile.machine_stardar.desc",
+  "ru": "Межпланетный радиотелескоп, который обнаруживает$сигналы с планет и устанавливает безопасные зоны посадки.$Для записи сигналов требуется пустой жёсткий диск."
+ },
+ "block.space_m.machine_vacuum_circuit": {
+  "en": "Vacuum Solderer",
+  "origKey": "tile.machine_vacuum_circuit.name",
+  "ru": "Вакуумный паяльный стол"
+ },
+ "block.space_m.machine_vacuum_circuit.desc": {
+  "en": "Requires a near vacuum to function",
+  "origKey": "tile.machine_vacuum_circuit.desc",
+  "ru": "Требуется практически полный вакуум для функционирования."
+ },
+ "block.space_m.machine_xenon_thruster": {
+  "en": "Xenon Station Thruster",
+  "origKey": "tile.machine_xenon_thruster.name",
+  "ru": "Ракетный двигатель XNM-1"
+ },
+ "block.space_m.mercury_block": {
+  "en": "Mercury",
+  "origKey": "tile.mercury_block.name",
+  "ru": "Ртуть"
+ },
+ "block.space_m.minmus_regolith": {
+  "en": "Minmus Regolith",
+  "origKey": "tile.minmus_regolith.name",
+  "ru": "Реголит Минмуса"
+ },
+ "block.space_m.minmus_smooth": {
+  "en": "Smooth Minmus Rock",
+  "origKey": "tile.minmus_smooth.name",
+  "ru": "Гладкий камень Минмуса"
+ },
+ "block.space_m.minmus_smooth.desc": {
+  "en": "It smells... refreshing?",
+  "origKey": "tile.minmus_smooth.desc",
+  "ru": "Он кажется... освежающим?"
+ },
+ "block.space_m.minmus_stone": {
+  "en": "Minmus Stone",
+  "origKey": "tile.minmus_stone.name",
+  "ru": "Камень Минмуса"
+ },
+ "block.space_m.moho_regolith": {
+  "en": "Moho Regolith",
+  "origKey": "tile.moho_regolith.name",
+  "ru": "Реголит Мохо"
+ },
+ "block.space_m.moho_stone": {
+  "en": "Moho Stone",
+  "origKey": "tile.moho_stone.name",
+  "ru": "Камень Мохо"
+ },
+ "block.space_m.moon_rock": {
+  "en": "Mun Rock",
+  "origKey": "tile.moon_rock.name",
+  "ru": "Лунный камень"
+ },
+ "block.space_m.nuke_antimatter": {
+  "en": "Antimatter Bomb",
+  "origKey": "tile.nuke_antimatter.name",
+  "ru": "Антиматериальная бомба"
+ },
+ "block.space_m.oil_barrel": {
+  "en": "tile.oil_barrel.name",
+  "origKey": "!",
+  "ru": "tile.oil_barrel.name"
+ },
+ "block.space_m.orbital_station": {
+  "en": "Orbital Station Core",
+  "origKey": "tile.orbital_station.name",
+  "ru": "Ядро орбитальной станции"
+ },
+ "block.space_m.orbital_station_computer": {
+  "en": "Orbital Station Computer",
+  "origKey": "tile.orbital_station_computer.name",
+  "ru": "Компьютер орбитальной станции"
+ },
+ "block.space_m.orbital_station_launcher": {
+  "en": "Orbital Station Launching Port",
+  "origKey": "tile.orbital_station_launcher.name",
+  "ru": "Орбитальный космодром"
+ },
+ "block.space_m.orbital_station_launcher.desc": {
+  "en": "Used for constructing and launching rockets from an orbital station.",
+  "origKey": "tile.orbital_station_launcher.desc",
+  "ru": "Позволяет создать и затем запустить ракету прямо со станции на орбите!"
+ },
+ "block.space_m.orbital_station_port": {
+  "en": "Orbital Station Port",
+  "origKey": "tile.orbital_station_port.name",
+  "ru": "Стыковочный порт орбитальной станции"
+ },
+ "block.space_m.ore_aluminium_dres": {
+  "en": "Aluminium-Bearing Ore",
+  "origKey": "tile.ore_aluminium.name",
+  "ru": "Алюминиевая руда"
+ },
+ "block.space_m.ore_aluminium_duna": {
+  "en": "Aluminium-Bearing Ore",
+  "origKey": "tile.ore_aluminium.name",
+  "ru": "Алюминиевая руда"
+ },
+ "block.space_m.ore_aluminium_eve": {
+  "en": "Aluminium-Bearing Ore",
+  "origKey": "tile.ore_aluminium.name",
+  "ru": "Алюминиевая руда"
+ },
+ "block.space_m.ore_aluminium_ike": {
+  "en": "Aluminium-Bearing Ore",
+  "origKey": "tile.ore_aluminium.name",
+  "ru": "Алюминиевая руда"
+ },
+ "block.space_m.ore_aluminium_laythe": {
+  "en": "Aluminium-Bearing Ore",
+  "origKey": "tile.ore_aluminium.name",
+  "ru": "Алюминиевая руда"
+ },
+ "block.space_m.ore_aluminium_minmus": {
+  "en": "Aluminium-Bearing Ore",
+  "origKey": "tile.ore_aluminium.name",
+  "ru": "Алюминиевая руда"
+ },
+ "block.space_m.ore_aluminium_moho": {
+  "en": "Aluminium-Bearing Ore",
+  "origKey": "tile.ore_aluminium.name",
+  "ru": "Алюминиевая руда"
+ },
+ "block.space_m.ore_aluminium_mun": {
+  "en": "Aluminium-Bearing Ore",
+  "origKey": "tile.ore_aluminium.name",
+  "ru": "Алюминиевая руда"
+ },
+ "block.space_m.ore_aluminium_tekto": {
+  "en": "Aluminium-Bearing Ore",
+  "origKey": "tile.ore_aluminium.name",
+  "ru": "Алюминиевая руда"
+ },
+ "block.space_m.ore_asbestos_ike": {
+  "en": "Asbestos Ore",
+  "origKey": "tile.ore_asbestos.name",
+  "ru": "Асбестовая руда"
+ },
+ "block.space_m.ore_asbestos_laythe": {
+  "en": "Asbestos Ore",
+  "origKey": "tile.ore_asbestos.name",
+  "ru": "Асбестовая руда"
+ },
+ "block.space_m.ore_australium_moho": {
+  "en": "Australian Ore",
+  "origKey": "tile.ore_australium.name",
+  "ru": "Австралиевая руда"
+ },
+ "block.space_m.ore_bedrock_oil_tekto": {
+  "en": "Bedrock Oil Deposit",
+  "origKey": "tile.ore_bedrock_oil.name",
+  "ru": "Бедроковый нефтяной пласт"
+ },
+ "block.space_m.ore_beryllium_dres": {
+  "en": "Beryllium Ore",
+  "origKey": "tile.ore_beryllium.name",
+  "ru": "Бериллиевая руда"
+ },
+ "block.space_m.ore_beryllium_duna": {
+  "en": "Beryllium Ore",
+  "origKey": "tile.ore_beryllium.name",
+  "ru": "Бериллиевая руда"
+ },
+ "block.space_m.ore_beryllium_eve": {
+  "en": "Beryllium Ore",
+  "origKey": "tile.ore_beryllium.name",
+  "ru": "Бериллиевая руда"
+ },
+ "block.space_m.ore_beryllium_ike": {
+  "en": "Beryllium Ore",
+  "origKey": "tile.ore_beryllium.name",
+  "ru": "Бериллиевая руда"
+ },
+ "block.space_m.ore_beryllium_laythe": {
+  "en": "Beryllium Ore",
+  "origKey": "tile.ore_beryllium.name",
+  "ru": "Бериллиевая руда"
+ },
+ "block.space_m.ore_beryllium_minmus": {
+  "en": "Beryllium Ore",
+  "origKey": "tile.ore_beryllium.name",
+  "ru": "Бериллиевая руда"
+ },
+ "block.space_m.ore_beryllium_moho": {
+  "en": "Beryllium Ore",
+  "origKey": "tile.ore_beryllium.name",
+  "ru": "Бериллиевая руда"
+ },
+ "block.space_m.ore_beryllium_mun": {
+  "en": "Beryllium Ore",
+  "origKey": "tile.ore_beryllium.name",
+  "ru": "Бериллиевая руда"
+ },
+ "block.space_m.ore_beryllium_tekto": {
+  "en": "Beryllium Ore",
+  "origKey": "tile.ore_beryllium.name",
+  "ru": "Бериллиевая руда"
+ },
+ "block.space_m.ore_brine_empty_ike": {
+  "en": "Empty Brine Deposit",
+  "origKey": "tile.ore_brine_empty.name",
+  "ru": "Пустой рудно-рассоловый карман"
+ },
+ "block.space_m.ore_brine_empty_minmus": {
+  "en": "Empty Brine Deposit",
+  "origKey": "tile.ore_brine_empty.name",
+  "ru": "Пустой рудно-рассоловый карман"
+ },
+ "block.space_m.ore_brine_empty_mun": {
+  "en": "Empty Brine Deposit",
+  "origKey": "tile.ore_brine_empty.name",
+  "ru": "Пустой рудно-рассоловый карман"
+ },
+ "block.space_m.ore_brine_ike": {
+  "en": "Brine Deposit",
+  "origKey": "tile.ore_brine.name",
+  "ru": "Рудно-рассоловый карман"
+ },
+ "block.space_m.ore_brine_minmus": {
+  "en": "Brine Deposit",
+  "origKey": "tile.ore_brine.name",
+  "ru": "Рудно-рассоловый карман"
+ },
+ "block.space_m.ore_brine_mun": {
+  "en": "Brine Deposit",
+  "origKey": "tile.ore_brine.name",
+  "ru": "Рудно-рассоловый карман"
+ },
+ "block.space_m.ore_cinnebar_dres": {
+  "en": "Cinnabar Ore",
+  "origKey": "tile.ore_cinnebar.name",
+  "ru": "Киноварная руда"
+ },
+ "block.space_m.ore_cinnebar_duna": {
+  "en": "Cinnabar Ore",
+  "origKey": "tile.ore_cinnebar.name",
+  "ru": "Киноварная руда"
+ },
+ "block.space_m.ore_cinnebar_eve": {
+  "en": "Cinnabar Ore",
+  "origKey": "tile.ore_cinnebar.name",
+  "ru": "Киноварная руда"
+ },
+ "block.space_m.ore_cinnebar_ike": {
+  "en": "Cinnabar Ore",
+  "origKey": "tile.ore_cinnebar.name",
+  "ru": "Киноварная руда"
+ },
+ "block.space_m.ore_cinnebar_laythe": {
+  "en": "Cinnabar Ore",
+  "origKey": "tile.ore_cinnebar.name",
+  "ru": "Киноварная руда"
+ },
+ "block.space_m.ore_cinnebar_minmus": {
+  "en": "Cinnabar Ore",
+  "origKey": "tile.ore_cinnebar.name",
+  "ru": "Киноварная руда"
+ },
+ "block.space_m.ore_cinnebar_moho": {
+  "en": "Cinnabar Ore",
+  "origKey": "tile.ore_cinnebar.name",
+  "ru": "Киноварная руда"
+ },
+ "block.space_m.ore_cinnebar_mun": {
+  "en": "Cinnabar Ore",
+  "origKey": "tile.ore_cinnebar.name",
+  "ru": "Киноварная руда"
+ },
+ "block.space_m.ore_cinnebar_tekto": {
+  "en": "Cinnabar Ore",
+  "origKey": "tile.ore_cinnebar.name",
+  "ru": "Киноварная руда"
+ },
+ "block.space_m.ore_cobalt_dres": {
+  "en": "Cobalt Ore",
+  "origKey": "tile.ore_cobalt.name",
+  "ru": "Кобальтовая руда"
+ },
+ "block.space_m.ore_cobalt_duna": {
+  "en": "Cobalt Ore",
+  "origKey": "tile.ore_cobalt.name",
+  "ru": "Кобальтовая руда"
+ },
+ "block.space_m.ore_cobalt_eve": {
+  "en": "Cobalt Ore",
+  "origKey": "tile.ore_cobalt.name",
+  "ru": "Кобальтовая руда"
+ },
+ "block.space_m.ore_cobalt_ike": {
+  "en": "Cobalt Ore",
+  "origKey": "tile.ore_cobalt.name",
+  "ru": "Кобальтовая руда"
+ },
+ "block.space_m.ore_cobalt_laythe": {
+  "en": "Cobalt Ore",
+  "origKey": "tile.ore_cobalt.name",
+  "ru": "Кобальтовая руда"
+ },
+ "block.space_m.ore_cobalt_minmus": {
+  "en": "Cobalt Ore",
+  "origKey": "tile.ore_cobalt.name",
+  "ru": "Кобальтовая руда"
+ },
+ "block.space_m.ore_cobalt_moho": {
+  "en": "Cobalt Ore",
+  "origKey": "tile.ore_cobalt.name",
+  "ru": "Кобальтовая руда"
+ },
+ "block.space_m.ore_cobalt_mun": {
+  "en": "Cobalt Ore",
+  "origKey": "tile.ore_cobalt.name",
+  "ru": "Кобальтовая руда"
+ },
+ "block.space_m.ore_cobalt_tekto": {
+  "en": "Cobalt Ore",
+  "origKey": "tile.ore_cobalt.name",
+  "ru": "Кобальтовая руда"
+ },
+ "block.space_m.ore_coltan_dres": {
+  "en": "Coltan Ore",
+  "origKey": "tile.ore_coltan.name",
+  "ru": "Колтановая руда"
+ },
+ "block.space_m.ore_coltan_ike": {
+  "en": "Coltan Ore",
+  "origKey": "tile.ore_coltan.name",
+  "ru": "Колтановая руда"
+ },
+ "block.space_m.ore_copper_dres": {
+  "en": "Copper Ore",
+  "origKey": "tile.ore_copper.name",
+  "ru": "Медная руда"
+ },
+ "block.space_m.ore_copper_duna": {
+  "en": "Copper Ore",
+  "origKey": "tile.ore_copper.name",
+  "ru": "Медная руда"
+ },
+ "block.space_m.ore_copper_eve": {
+  "en": "Copper Ore",
+  "origKey": "tile.ore_copper.name",
+  "ru": "Медная руда"
+ },
+ "block.space_m.ore_copper_ike": {
+  "en": "Copper Ore",
+  "origKey": "tile.ore_copper.name",
+  "ru": "Медная руда"
+ },
+ "block.space_m.ore_copper_laythe": {
+  "en": "Copper Ore",
+  "origKey": "tile.ore_copper.name",
+  "ru": "Медная руда"
+ },
+ "block.space_m.ore_copper_minmus": {
+  "en": "Copper Ore",
+  "origKey": "tile.ore_copper.name",
+  "ru": "Медная руда"
+ },
+ "block.space_m.ore_copper_moho": {
+  "en": "Copper Ore",
+  "origKey": "tile.ore_copper.name",
+  "ru": "Медная руда"
+ },
+ "block.space_m.ore_copper_mun": {
+  "en": "Copper Ore",
+  "origKey": "tile.ore_copper.name",
+  "ru": "Медная руда"
+ },
+ "block.space_m.ore_copper_tekto": {
+  "en": "Copper Ore",
+  "origKey": "tile.ore_copper.name",
+  "ru": "Медная руда"
+ },
+ "block.space_m.ore_diamond_dres": {
+  "en": "Diamond Ore",
+  "origKey": "tile.ore_diamond.name",
+  "ru": "Алмазная руда"
+ },
+ "block.space_m.ore_diamond_duna": {
+  "en": "Diamond Ore",
+  "origKey": "tile.ore_diamond.name",
+  "ru": "Алмазная руда"
+ },
+ "block.space_m.ore_diamond_eve": {
+  "en": "Diamond Ore",
+  "origKey": "tile.ore_diamond.name",
+  "ru": "Алмазная руда"
+ },
+ "block.space_m.ore_diamond_ike": {
+  "en": "Diamond Ore",
+  "origKey": "tile.ore_diamond.name",
+  "ru": "Алмазная руда"
+ },
+ "block.space_m.ore_diamond_minmus": {
+  "en": "Diamond Ore",
+  "origKey": "tile.ore_diamond.name",
+  "ru": "Алмазная руда"
+ },
+ "block.space_m.ore_diamond_moho": {
+  "en": "Diamond Ore",
+  "origKey": "tile.ore_diamond.name",
+  "ru": "Алмазная руда"
+ },
+ "block.space_m.ore_diamond_mun": {
+  "en": "Diamond Ore",
+  "origKey": "tile.ore_diamond.name",
+  "ru": "Алмазная руда"
+ },
+ "block.space_m.ore_diamond_tekto": {
+  "en": "Diamond Ore",
+  "origKey": "tile.ore_diamond.name",
+  "ru": "Алмазная руда"
+ },
+ "block.space_m.ore_fire_moho": {
+  "en": "Phosphorus Ore",
+  "origKey": "tile.ore_fire.name",
+  "ru": "Фосфорная руда"
+ },
+ "block.space_m.ore_fluorite_dres": {
+  "en": "Fluorite Ore",
+  "origKey": "tile.ore_fluorite.name",
+  "ru": "Флюоритовая руда"
+ },
+ "block.space_m.ore_fluorite_duna": {
+  "en": "Fluorite Ore",
+  "origKey": "tile.ore_fluorite.name",
+  "ru": "Флюоритовая руда"
+ },
+ "block.space_m.ore_fluorite_eve": {
+  "en": "Fluorite Ore",
+  "origKey": "tile.ore_fluorite.name",
+  "ru": "Флюоритовая руда"
+ },
+ "block.space_m.ore_fluorite_ike": {
+  "en": "Fluorite Ore",
+  "origKey": "tile.ore_fluorite.name",
+  "ru": "Флюоритовая руда"
+ },
+ "block.space_m.ore_fluorite_laythe": {
+  "en": "Fluorite Ore",
+  "origKey": "tile.ore_fluorite.name",
+  "ru": "Флюоритовая руда"
+ },
+ "block.space_m.ore_fluorite_minmus": {
+  "en": "Fluorite Ore",
+  "origKey": "tile.ore_fluorite.name",
+  "ru": "Флюоритовая руда"
+ },
+ "block.space_m.ore_fluorite_moho": {
+  "en": "Fluorite Ore",
+  "origKey": "tile.ore_fluorite.name",
+  "ru": "Флюоритовая руда"
+ },
+ "block.space_m.ore_fluorite_mun": {
+  "en": "Fluorite Ore",
+  "origKey": "tile.ore_fluorite.name",
+  "ru": "Флюоритовая руда"
+ },
+ "block.space_m.ore_fluorite_tekto": {
+  "en": "Fluorite Ore",
+  "origKey": "tile.ore_fluorite.name",
+  "ru": "Флюоритовая руда"
+ },
+ "block.space_m.ore_gas_empty_eve": {
+  "en": "Empty Natural Gas Deposit",
+  "origKey": "tile.ore_gas_empty.name",
+  "ru": "Пустой газовый карман"
+ },
+ "block.space_m.ore_gas_eve": {
+  "en": "Natural Gas Deposit",
+  "origKey": "tile.ore_gas.name",
+  "ru": "Газовый карман"
+ },
+ "block.space_m.ore_glowstone_moho": {
+  "en": "Glowstone Ore",
+  "origKey": "tile.ore_glowstone.name",
+  "ru": "Светящаяся руда"
+ },
+ "block.space_m.ore_gold_dres": {
+  "en": "Gold Ore",
+  "origKey": "tile.ore_gold.name",
+  "ru": "Золотая руда"
+ },
+ "block.space_m.ore_gold_duna": {
+  "en": "Gold Ore",
+  "origKey": "tile.ore_gold.name",
+  "ru": "Золотая руда"
+ },
+ "block.space_m.ore_gold_eve": {
+  "en": "Gold Ore",
+  "origKey": "tile.ore_gold.name",
+  "ru": "Золотая руда"
+ },
+ "block.space_m.ore_gold_ike": {
+  "en": "Gold Ore",
+  "origKey": "tile.ore_gold.name",
+  "ru": "Золотая руда"
+ },
+ "block.space_m.ore_gold_minmus": {
+  "en": "Gold Ore",
+  "origKey": "tile.ore_gold.name",
+  "ru": "Золотая руда"
+ },
+ "block.space_m.ore_gold_moho": {
+  "en": "Gold Ore",
+  "origKey": "tile.ore_gold.name",
+  "ru": "Золотая руда"
+ },
+ "block.space_m.ore_gold_mun": {
+  "en": "Gold Ore",
+  "origKey": "tile.ore_gold.name",
+  "ru": "Золотая руда"
+ },
+ "block.space_m.ore_gold_tekto": {
+  "en": "Gold Ore",
+  "origKey": "tile.ore_gold.name",
+  "ru": "Золотая руда"
+ },
+ "block.space_m.ore_iodine_eve": {
+  "en": "Iodine Ore",
+  "origKey": "tile.ore_iodine.name",
+  "ru": "Йодовая руда"
+ },
+ "block.space_m.ore_iron_dres": {
+  "en": "Iron Ore",
+  "origKey": "tile.ore_iron.name",
+  "ru": "Железная руда"
+ },
+ "block.space_m.ore_iron_duna": {
+  "en": "Iron Ore",
+  "origKey": "tile.ore_iron.name",
+  "ru": "Железная руда"
+ },
+ "block.space_m.ore_iron_eve": {
+  "en": "Iron Ore",
+  "origKey": "tile.ore_iron.name",
+  "ru": "Железная руда"
+ },
+ "block.space_m.ore_iron_ike": {
+  "en": "Iron Ore",
+  "origKey": "tile.ore_iron.name",
+  "ru": "Железная руда"
+ },
+ "block.space_m.ore_iron_minmus": {
+  "en": "Iron Ore",
+  "origKey": "tile.ore_iron.name",
+  "ru": "Железная руда"
+ },
+ "block.space_m.ore_iron_moho": {
+  "en": "Iron Ore",
+  "origKey": "tile.ore_iron.name",
+  "ru": "Железная руда"
+ },
+ "block.space_m.ore_iron_mun": {
+  "en": "Iron Ore",
+  "origKey": "tile.ore_iron.name",
+  "ru": "Железная руда"
+ },
+ "block.space_m.ore_iron_tekto": {
+  "en": "Iron Ore",
+  "origKey": "tile.ore_iron.name",
+  "ru": "Железная руда"
+ },
+ "block.space_m.ore_lanthanium_dres": {
+  "en": "Lanthanium Ore",
+  "origKey": "tile.ore_lanthanium.name",
+  "ru": "Лантановая руда"
+ },
+ "block.space_m.ore_lead_dres": {
+  "en": "Lead Ore",
+  "origKey": "tile.ore_lead.name",
+  "ru": "Свинцовая руда"
+ },
+ "block.space_m.ore_lead_duna": {
+  "en": "Lead Ore",
+  "origKey": "tile.ore_lead.name",
+  "ru": "Свинцовая руда"
+ },
+ "block.space_m.ore_lead_eve": {
+  "en": "Lead Ore",
+  "origKey": "tile.ore_lead.name",
+  "ru": "Свинцовая руда"
+ },
+ "block.space_m.ore_lead_ike": {
+  "en": "Lead Ore",
+  "origKey": "tile.ore_lead.name",
+  "ru": "Свинцовая руда"
+ },
+ "block.space_m.ore_lead_laythe": {
+  "en": "Lead Ore",
+  "origKey": "tile.ore_lead.name",
+  "ru": "Свинцовая руда"
+ },
+ "block.space_m.ore_lead_minmus": {
+  "en": "Lead Ore",
+  "origKey": "tile.ore_lead.name",
+  "ru": "Свинцовая руда"
+ },
+ "block.space_m.ore_lead_moho": {
+  "en": "Lead Ore",
+  "origKey": "tile.ore_lead.name",
+  "ru": "Свинцовая руда"
+ },
+ "block.space_m.ore_lead_mun": {
+  "en": "Lead Ore",
+  "origKey": "tile.ore_lead.name",
+  "ru": "Свинцовая руда"
+ },
+ "block.space_m.ore_lead_tekto": {
+  "en": "Lead Ore",
+  "origKey": "tile.ore_lead.name",
+  "ru": "Свинцовая руда"
+ },
+ "block.space_m.ore_lithium_ike": {
+  "en": "Lithium Ore",
+  "origKey": "tile.ore_lithium.name",
+  "ru": "Литиевая руда"
+ },
+ "block.space_m.ore_lithium_mun": {
+  "en": "Lithium Ore",
+  "origKey": "tile.ore_lithium.name",
+  "ru": "Литиевая руда"
+ },
+ "block.space_m.ore_mineral_ike": {
+  "en": "Rich Mineral Deposit",
+  "origKey": "tile.ore_mineral.name",
+  "ru": "Богатая минералами руда"
+ },
+ "block.space_m.ore_mineral_moho": {
+  "en": "Rich Mineral Deposit",
+  "origKey": "tile.ore_mineral.name",
+  "ru": "Богатая минералами руда"
+ },
+ "block.space_m.ore_nickel_dres": {
+  "en": "Nickel Ore",
+  "origKey": "tile.ore_nickel.name",
+  "ru": "Никелевая руда"
+ },
+ "block.space_m.ore_nickel_duna": {
+  "en": "Nickel Ore",
+  "origKey": "tile.ore_nickel.name",
+  "ru": "Никелевая руда"
+ },
+ "block.space_m.ore_nickel_eve": {
+  "en": "Nickel Ore",
+  "origKey": "tile.ore_nickel.name",
+  "ru": "Никелевая руда"
+ },
+ "block.space_m.ore_nickel_ike": {
+  "en": "Nickel Ore",
+  "origKey": "tile.ore_nickel.name",
+  "ru": "Никелевая руда"
+ },
+ "block.space_m.ore_nickel_kerbin": {
+  "en": "Nickel Ore",
+  "origKey": "tile.ore_nickel.name",
+  "ru": "Никелевая руда"
+ },
+ "block.space_m.ore_nickel_laythe": {
+  "en": "Nickel Ore",
+  "origKey": "tile.ore_nickel.name",
+  "ru": "Никелевая руда"
+ },
+ "block.space_m.ore_nickel_minmus": {
+  "en": "Nickel Ore",
+  "origKey": "tile.ore_nickel.name",
+  "ru": "Никелевая руда"
+ },
+ "block.space_m.ore_nickel_moho": {
+  "en": "Nickel Ore",
+  "origKey": "tile.ore_nickel.name",
+  "ru": "Никелевая руда"
+ },
+ "block.space_m.ore_nickel_mun": {
+  "en": "Nickel Ore",
+  "origKey": "tile.ore_nickel.name",
+  "ru": "Никелевая руда"
+ },
+ "block.space_m.ore_nickel_tekto": {
+  "en": "Nickel Ore",
+  "origKey": "tile.ore_nickel.name",
+  "ru": "Никелевая руда"
+ },
+ "block.space_m.ore_niobium_dres": {
+  "en": "Niobium Ore",
+  "origKey": "tile.ore_niobium.name",
+  "ru": "Ниобиевая руда"
+ },
+ "block.space_m.ore_niobium_eve": {
+  "en": "Niobium Ore",
+  "origKey": "tile.ore_niobium.name",
+  "ru": "Ниобиевая руда"
+ },
+ "block.space_m.ore_niter_dres": {
+  "en": "Niter Ore",
+  "origKey": "tile.ore_niter.name",
+  "ru": "Селитровая руда"
+ },
+ "block.space_m.ore_niter_duna": {
+  "en": "Niter Ore",
+  "origKey": "tile.ore_niter.name",
+  "ru": "Селитровая руда"
+ },
+ "block.space_m.ore_niter_eve": {
+  "en": "Niter Ore",
+  "origKey": "tile.ore_niter.name",
+  "ru": "Селитровая руда"
+ },
+ "block.space_m.ore_niter_ike": {
+  "en": "Niter Ore",
+  "origKey": "tile.ore_niter.name",
+  "ru": "Селитровая руда"
+ },
+ "block.space_m.ore_niter_laythe": {
+  "en": "Niter Ore",
+  "origKey": "tile.ore_niter.name",
+  "ru": "Селитровая руда"
+ },
+ "block.space_m.ore_niter_minmus": {
+  "en": "Niter Ore",
+  "origKey": "tile.ore_niter.name",
+  "ru": "Селитровая руда"
+ },
+ "block.space_m.ore_niter_moho": {
+  "en": "Niter Ore",
+  "origKey": "tile.ore_niter.name",
+  "ru": "Селитровая руда"
+ },
+ "block.space_m.ore_niter_mun": {
+  "en": "Niter Ore",
+  "origKey": "tile.ore_niter.name",
+  "ru": "Селитровая руда"
+ },
+ "block.space_m.ore_niter_tekto": {
+  "en": "Niter Ore",
+  "origKey": "tile.ore_niter.name",
+  "ru": "Селитровая руда"
+ },
+ "block.space_m.ore_oil_duna": {
+  "en": "Oil Deposit",
+  "origKey": "tile.ore_oil.name",
+  "ru": "Нефтяной карман"
+ },
+ "block.space_m.ore_oil_empty_duna": {
+  "en": "Empty Oil Deposit",
+  "origKey": "tile.ore_oil_empty.name",
+  "ru": "Пустой нефтяной карман"
+ },
+ "block.space_m.ore_oil_empty_laythe": {
+  "en": "Empty Oil Deposit",
+  "origKey": "tile.ore_oil_empty.name",
+  "ru": "Пустой нефтяной карман"
+ },
+ "block.space_m.ore_oil_laythe": {
+  "en": "Oil Deposit",
+  "origKey": "tile.ore_oil.name",
+  "ru": "Нефтяной карман"
+ },
+ "block.space_m.ore_quartz_mun": {
+  "en": "Quartz Ore",
+  "origKey": "tile.ore_quartz.name",
+  "ru": "Кварцевая руда"
+ },
+ "block.space_m.ore_rare_dres": {
+  "en": "Rare Earth Ore",
+  "origKey": "tile.ore_rare.name",
+  "ru": "Редкоземельная руда"
+ },
+ "block.space_m.ore_rare_duna": {
+  "en": "Rare Earth Ore",
+  "origKey": "tile.ore_rare.name",
+  "ru": "Редкоземельная руда"
+ },
+ "block.space_m.ore_rare_eve": {
+  "en": "Rare Earth Ore",
+  "origKey": "tile.ore_rare.name",
+  "ru": "Редкоземельная руда"
+ },
+ "block.space_m.ore_rare_ike": {
+  "en": "Rare Earth Ore",
+  "origKey": "tile.ore_rare.name",
+  "ru": "Редкоземельная руда"
+ },
+ "block.space_m.ore_rare_laythe": {
+  "en": "Rare Earth Ore",
+  "origKey": "tile.ore_rare.name",
+  "ru": "Редкоземельная руда"
+ },
+ "block.space_m.ore_rare_minmus": {
+  "en": "Rare Earth Ore",
+  "origKey": "tile.ore_rare.name",
+  "ru": "Редкоземельная руда"
+ },
+ "block.space_m.ore_rare_moho": {
+  "en": "Rare Earth Ore",
+  "origKey": "tile.ore_rare.name",
+  "ru": "Редкоземельная руда"
+ },
+ "block.space_m.ore_rare_mun": {
+  "en": "Rare Earth Ore",
+  "origKey": "tile.ore_rare.name",
+  "ru": "Редкоземельная руда"
+ },
+ "block.space_m.ore_rare_tekto": {
+  "en": "Rare Earth Ore",
+  "origKey": "tile.ore_rare.name",
+  "ru": "Редкоземельная руда"
+ },
+ "block.space_m.ore_redstone_dres": {
+  "en": "Redstone Ore",
+  "origKey": "tile.ore_redstone.name",
+  "ru": "Редстоуновая руда"
+ },
+ "block.space_m.ore_redstone_duna": {
+  "en": "Redstone Ore",
+  "origKey": "tile.ore_redstone.name",
+  "ru": "Редстоуновая руда"
+ },
+ "block.space_m.ore_redstone_eve": {
+  "en": "Redstone Ore",
+  "origKey": "tile.ore_redstone.name",
+  "ru": "Редстоуновая руда"
+ },
+ "block.space_m.ore_redstone_ike": {
+  "en": "Redstone Ore",
+  "origKey": "tile.ore_redstone.name",
+  "ru": "Редстоуновая руда"
+ },
+ "block.space_m.ore_redstone_minmus": {
+  "en": "Redstone Ore",
+  "origKey": "tile.ore_redstone.name",
+  "ru": "Редстоуновая руда"
+ },
+ "block.space_m.ore_redstone_moho": {
+  "en": "Redstone Ore",
+  "origKey": "tile.ore_redstone.name",
+  "ru": "Редстоуновая руда"
+ },
+ "block.space_m.ore_redstone_mun": {
+  "en": "Redstone Ore",
+  "origKey": "tile.ore_redstone.name",
+  "ru": "Редстоуновая руда"
+ },
+ "block.space_m.ore_redstone_tekto": {
+  "en": "Redstone Ore",
+  "origKey": "tile.ore_redstone.name",
+  "ru": "Редстоуновая руда"
+ },
+ "block.space_m.ore_schrabidium_eve": {
+  "en": "Schrabidium Ore",
+  "origKey": "tile.ore_schrabidium.name",
+  "ru": "Шрабидиевая руда"
+ },
+ "block.space_m.ore_shale_dres": {
+  "en": "Natural Gas Shale",
+  "origKey": "tile.ore_shale.name",
+  "ru": "Газовый карман"
+ },
+ "block.space_m.ore_shale_moho": {
+  "en": "Natural Gas Shale",
+  "origKey": "tile.ore_shale.name",
+  "ru": "Газовый карман"
+ },
+ "block.space_m.ore_shale_mun": {
+  "en": "Natural Gas Shale",
+  "origKey": "tile.ore_shale.name",
+  "ru": "Газовый карман"
+ },
+ "block.space_m.ore_sulfur_dres": {
+  "en": "Sulfur Ore",
+  "origKey": "tile.ore_sulfur.name",
+  "ru": "Серная руда"
+ },
+ "block.space_m.ore_sulfur_duna": {
+  "en": "Sulfur Ore",
+  "origKey": "tile.ore_sulfur.name",
+  "ru": "Серная руда"
+ },
+ "block.space_m.ore_sulfur_eve": {
+  "en": "Sulfur Ore",
+  "origKey": "tile.ore_sulfur.name",
+  "ru": "Серная руда"
+ },
+ "block.space_m.ore_sulfur_ike": {
+  "en": "Sulfur Ore",
+  "origKey": "tile.ore_sulfur.name",
+  "ru": "Серная руда"
+ },
+ "block.space_m.ore_sulfur_laythe": {
+  "en": "Sulfur Ore",
+  "origKey": "tile.ore_sulfur.name",
+  "ru": "Серная руда"
+ },
+ "block.space_m.ore_sulfur_minmus": {
+  "en": "Sulfur Ore",
+  "origKey": "tile.ore_sulfur.name",
+  "ru": "Серная руда"
+ },
+ "block.space_m.ore_sulfur_moho": {
+  "en": "Sulfur Ore",
+  "origKey": "tile.ore_sulfur.name",
+  "ru": "Серная руда"
+ },
+ "block.space_m.ore_sulfur_mun": {
+  "en": "Sulfur Ore",
+  "origKey": "tile.ore_sulfur.name",
+  "ru": "Серная руда"
+ },
+ "block.space_m.ore_sulfur_tekto": {
+  "en": "Sulfur Ore",
+  "origKey": "tile.ore_sulfur.name",
+  "ru": "Серная руда"
+ },
+ "block.space_m.ore_tekto_empty_tekto": {
+  "en": "Empty Tektonic Crude Deposit",
+  "origKey": "tile.ore_tekto_empty.name",
+  "ru": "Пустой нефтяной карман Текто"
+ },
+ "block.space_m.ore_tekto_tekto": {
+  "en": "Tektonic Crude Deposit",
+  "origKey": "tile.ore_tekto.name",
+  "ru": "Нефтяной карман Текто"
+ },
+ "block.space_m.ore_thorium_dres": {
+  "en": "Thorium Ore",
+  "origKey": "tile.ore_thorium.name",
+  "ru": "Ториевая руда"
+ },
+ "block.space_m.ore_thorium_duna": {
+  "en": "Thorium Ore",
+  "origKey": "tile.ore_thorium.name",
+  "ru": "Ториевая руда"
+ },
+ "block.space_m.ore_thorium_eve": {
+  "en": "Thorium Ore",
+  "origKey": "tile.ore_thorium.name",
+  "ru": "Ториевая руда"
+ },
+ "block.space_m.ore_thorium_ike": {
+  "en": "Thorium Ore",
+  "origKey": "tile.ore_thorium.name",
+  "ru": "Ториевая руда"
+ },
+ "block.space_m.ore_thorium_laythe": {
+  "en": "Thorium Ore",
+  "origKey": "tile.ore_thorium.name",
+  "ru": "Ториевая руда"
+ },
+ "block.space_m.ore_thorium_minmus": {
+  "en": "Thorium Ore",
+  "origKey": "tile.ore_thorium.name",
+  "ru": "Ториевая руда"
+ },
+ "block.space_m.ore_thorium_moho": {
+  "en": "Thorium Ore",
+  "origKey": "tile.ore_thorium.name",
+  "ru": "Ториевая руда"
+ },
+ "block.space_m.ore_thorium_mun": {
+  "en": "Thorium Ore",
+  "origKey": "tile.ore_thorium.name",
+  "ru": "Ториевая руда"
+ },
+ "block.space_m.ore_thorium_tekto": {
+  "en": "Thorium Ore",
+  "origKey": "tile.ore_thorium.name",
+  "ru": "Ториевая руда"
+ },
+ "block.space_m.ore_titanium_dres": {
+  "en": "Titanium Ore",
+  "origKey": "tile.ore_titanium.name",
+  "ru": "Титановая руда"
+ },
+ "block.space_m.ore_titanium_duna": {
+  "en": "Titanium Ore",
+  "origKey": "tile.ore_titanium.name",
+  "ru": "Титановая руда"
+ },
+ "block.space_m.ore_titanium_eve": {
+  "en": "Titanium Ore",
+  "origKey": "tile.ore_titanium.name",
+  "ru": "Титановая руда"
+ },
+ "block.space_m.ore_titanium_ike": {
+  "en": "Titanium Ore",
+  "origKey": "tile.ore_titanium.name",
+  "ru": "Титановая руда"
+ },
+ "block.space_m.ore_titanium_laythe": {
+  "en": "Titanium Ore",
+  "origKey": "tile.ore_titanium.name",
+  "ru": "Титановая руда"
+ },
+ "block.space_m.ore_titanium_minmus": {
+  "en": "Titanium Ore",
+  "origKey": "tile.ore_titanium.name",
+  "ru": "Титановая руда"
+ },
+ "block.space_m.ore_titanium_moho": {
+  "en": "Titanium Ore",
+  "origKey": "tile.ore_titanium.name",
+  "ru": "Титановая руда"
+ },
+ "block.space_m.ore_titanium_mun": {
+  "en": "Titanium Ore",
+  "origKey": "tile.ore_titanium.name",
+  "ru": "Титановая руда"
+ },
+ "block.space_m.ore_titanium_tekto": {
+  "en": "Titanium Ore",
+  "origKey": "tile.ore_titanium.name",
+  "ru": "Титановая руда"
+ },
+ "block.space_m.ore_tungsten_dres": {
+  "en": "Tungsten Ore",
+  "origKey": "tile.ore_tungsten.name",
+  "ru": "Вольфрамовая руда"
+ },
+ "block.space_m.ore_tungsten_duna": {
+  "en": "Tungsten Ore",
+  "origKey": "tile.ore_tungsten.name",
+  "ru": "Вольфрамовая руда"
+ },
+ "block.space_m.ore_tungsten_eve": {
+  "en": "Tungsten Ore",
+  "origKey": "tile.ore_tungsten.name",
+  "ru": "Вольфрамовая руда"
+ },
+ "block.space_m.ore_tungsten_ike": {
+  "en": "Tungsten Ore",
+  "origKey": "tile.ore_tungsten.name",
+  "ru": "Вольфрамовая руда"
+ },
+ "block.space_m.ore_tungsten_laythe": {
+  "en": "Tungsten Ore",
+  "origKey": "tile.ore_tungsten.name",
+  "ru": "Вольфрамовая руда"
+ },
+ "block.space_m.ore_tungsten_minmus": {
+  "en": "Tungsten Ore",
+  "origKey": "tile.ore_tungsten.name",
+  "ru": "Вольфрамовая руда"
+ },
+ "block.space_m.ore_tungsten_moho": {
+  "en": "Tungsten Ore",
+  "origKey": "tile.ore_tungsten.name",
+  "ru": "Вольфрамовая руда"
+ },
+ "block.space_m.ore_tungsten_mun": {
+  "en": "Tungsten Ore",
+  "origKey": "tile.ore_tungsten.name",
+  "ru": "Вольфрамовая руда"
+ },
+ "block.space_m.ore_tungsten_tekto": {
+  "en": "Tungsten Ore",
+  "origKey": "tile.ore_tungsten.name",
+  "ru": "Вольфрамовая руда"
+ },
+ "block.space_m.ore_uranium_dres": {
+  "en": "Uranium Ore",
+  "origKey": "tile.ore_uranium.name",
+  "ru": "Урановая руда"
+ },
+ "block.space_m.ore_uranium_duna": {
+  "en": "Uranium Ore",
+  "origKey": "tile.ore_uranium.name",
+  "ru": "Урановая руда"
+ },
+ "block.space_m.ore_uranium_eve": {
+  "en": "Uranium Ore",
+  "origKey": "tile.ore_uranium.name",
+  "ru": "Урановая руда"
+ },
+ "block.space_m.ore_uranium_ike": {
+  "en": "Uranium Ore",
+  "origKey": "tile.ore_uranium.name",
+  "ru": "Урановая руда"
+ },
+ "block.space_m.ore_uranium_laythe": {
+  "en": "Uranium Ore",
+  "origKey": "tile.ore_uranium.name",
+  "ru": "Урановая руда"
+ },
+ "block.space_m.ore_uranium_minmus": {
+  "en": "Uranium Ore",
+  "origKey": "tile.ore_uranium.name",
+  "ru": "Урановая руда"
+ },
+ "block.space_m.ore_uranium_moho": {
+  "en": "Uranium Ore",
+  "origKey": "tile.ore_uranium.name",
+  "ru": "Урановая руда"
+ },
+ "block.space_m.ore_uranium_mun": {
+  "en": "Uranium Ore",
+  "origKey": "tile.ore_uranium.name",
+  "ru": "Урановая руда"
+ },
+ "block.space_m.ore_uranium_tekto": {
+  "en": "Uranium Ore",
+  "origKey": "tile.ore_uranium.name",
+  "ru": "Урановая руда"
+ },
+ "block.space_m.ore_zinc_dres": {
+  "en": "Zinc Ore",
+  "origKey": "tile.ore_zinc.name",
+  "ru": "Цинковая руда"
+ },
+ "block.space_m.ore_zinc_duna": {
+  "en": "Zinc Ore",
+  "origKey": "tile.ore_zinc.name",
+  "ru": "Цинковая руда"
+ },
+ "block.space_m.ore_zinc_eve": {
+  "en": "Zinc Ore",
+  "origKey": "tile.ore_zinc.name",
+  "ru": "Цинковая руда"
+ },
+ "block.space_m.ore_zinc_ike": {
+  "en": "Zinc Ore",
+  "origKey": "tile.ore_zinc.name",
+  "ru": "Цинковая руда"
+ },
+ "block.space_m.ore_zinc_kerbin": {
+  "en": "Zinc Ore",
+  "origKey": "tile.ore_zinc.name",
+  "ru": "Цинковая руда"
+ },
+ "block.space_m.ore_zinc_laythe": {
+  "en": "Zinc Ore",
+  "origKey": "tile.ore_zinc.name",
+  "ru": "Цинковая руда"
+ },
+ "block.space_m.ore_zinc_minmus": {
+  "en": "Zinc Ore",
+  "origKey": "tile.ore_zinc.name",
+  "ru": "Цинковая руда"
+ },
+ "block.space_m.ore_zinc_moho": {
+  "en": "Zinc Ore",
+  "origKey": "tile.ore_zinc.name",
+  "ru": "Цинковая руда"
+ },
+ "block.space_m.ore_zinc_mun": {
+  "en": "Zinc Ore",
+  "origKey": "tile.ore_zinc.name",
+  "ru": "Цинковая руда"
+ },
+ "block.space_m.ore_zinc_tekto": {
+  "en": "Zinc Ore",
+  "origKey": "tile.ore_zinc.name",
+  "ru": "Цинковая руда"
+ },
+ "block.space_m.orrery": {
+  "en": "Orrery",
+  "origKey": "tile.orrery.name",
+  "ru": "Планетарий"
+ },
+ "block.space_m.pet_leaves": {
+  "en": "Plastic Leaves",
+  "origKey": "tile.pet_leaves.name",
+  "ru": "Пластиковые листья"
+ },
+ "block.space_m.plant_flower_mint": {
+  "en": "Wild Mint",
+  "origKey": "tile.plant_flower.mint.name",
+  "ru": "Дикая мята"
+ },
+ "block.space_m.plant_tall_laythe": {
+  "en": "Saltgrass",
+  "origKey": "tile.plant_tall_laythe.laythe.name",
+  "ru": "Высокая морская трава Лейта"
+ },
+ "block.space_m.plushie": {
+  "en": "%s Plushie",
+  "origKey": "tile.plushie.name",
+  "ru": "Плюшевая игрушка %s"
+ },
+ "block.space_m.primed_log": {
+  "en": "Primed Log",
+  "origKey": "tile.primed_log.name",
+  "ru": "Загрунтованное дерево"
+ },
+ "block.space_m.propulsion_creative": {
+  "en": "Creative Station Propulsion",
+  "origKey": "tile.propulsion_creative.name",
+  "ru": "Творческий орбитальный двигатель"
+ },
+ "block.space_m.pvc_log": {
+  "en": "PVC Log",
+  "origKey": "tile.pvc_log.name",
+  "ru": "ПВХ-бревно"
+ },
+ "block.space_m.pvc_planks": {
+  "en": "PVC Planks",
+  "origKey": "tile.pvc_planks.name",
+  "ru": "ПВХ-доски"
+ },
+ "block.space_m.rubber_farmland": {
+  "en": "Tekto Farmland",
+  "origKey": "tile.rubber_farmland.name",
+  "ru": "Пашня Текто"
+ },
+ "block.space_m.rubber_grass": {
+  "en": "Rubber Grass",
+  "origKey": "tile.rubber_grass.name",
+  "ru": "Резиновая трава Текто"
+ },
+ "block.space_m.rubber_leaves": {
+  "en": "Rubber Leaves",
+  "origKey": "tile.rubber_leaves.name",
+  "ru": "Резиновые листья"
+ },
+ "block.space_m.rubber_plant_fern": {
+  "en": "Short Rubber Plant",
+  "origKey": "tile.rubber_plant.name",
+  "ru": "Короткая травзина"
+ },
+ "block.space_m.rubber_plant_grass": {
+  "en": "Short Rubber Plant",
+  "origKey": "tile.rubber_plant.name",
+  "ru": "Короткая травзина"
+ },
+ "block.space_m.rubber_plant_shrub": {
+  "en": "Short Rubber Plant",
+  "origKey": "tile.rubber_plant.name",
+  "ru": "Короткая травзина"
+ },
+ "block.space_m.rubber_silt": {
+  "en": "Tekto Silt",
+  "origKey": "tile.rubber_silt.name",
+  "ru": "Грунт Текто"
+ },
+ "block.space_m.rubber_tall_bush": {
+  "en": "Tall Rubber Plant",
+  "origKey": "tile.rubber_tall.name",
+  "ru": "Высокая травзина"
+ },
+ "block.space_m.rubber_tall_cact": {
+  "en": "Tall Rubber Plant",
+  "origKey": "tile.rubber_tall.name",
+  "ru": "Высокая травзина"
+ },
+ "block.space_m.rubber_tall_flower": {
+  "en": "Tall Rubber Plant",
+  "origKey": "tile.rubber_tall.name",
+  "ru": "Высокая травзина"
+ },
+ "block.space_m.salted_fallout": {
+  "en": "Salted Fallout",
+  "origKey": "tile.salted_fallout.name",
+  "ru": "Salted Fallout"
+ },
+ "block.space_m.sapling_pvc": {
+  "en": "Plastic Sapling",
+  "origKey": "tile.sapling_pvc.name",
+  "ru": "Саженец пластикового дерева"
+ },
+ "block.space_m.sapling_vinyl": {
+  "en": "Vinyl Sapling",
+  "origKey": "tile.sapling_vinyl.name",
+  "ru": "Саженец винилового дерева"
+ },
+ "block.space_m.stalactite_flesh": {
+  "en": "Fleshy Spindles",
+  "origKey": "tile.stalactite.flesh.name",
+  "ru": "Свисающие волокна плоти"
+ },
+ "block.space_m.stalagmite_flesh": {
+  "en": "Fleshy Spindles",
+  "origKey": "tile.stalagmite.flesh.name",
+  "ru": "Растущие волокна плоти"
+ },
+ "block.space_m.stone_resource_calcium": {
+  "en": "Calcium",
+  "origKey": "tile.stone_resource.calcium.name",
+  "ru": "Кальцит"
+ },
+ "block.space_m.stone_resource_conglomerate": {
+  "en": "Conglomerate",
+  "origKey": "tile.stone_resource.conglomerate.name",
+  "ru": "Конгломерат"
+ },
+ "block.space_m.transporter_rocket": {
+  "en": "Rocket Transporter Pad",
+  "origKey": "tile.transporter_rocket.name",
+  "ru": "Станция ракетного транспортера"
+ },
+ "block.space_m.troll_disturber": {
+  "en": "tile.troll_disturber.name",
+  "origKey": "!",
+  "ru": "tile.troll_disturber.name"
+ },
+ "block.space_m.tumor": {
+  "en": "Fleshy Mass",
+  "origKey": "tile.tumor.name",
+  "ru": "Мясистая масса"
+ },
+ "block.space_m.vinyl_log": {
+  "en": "Hardened Vinyl Log",
+  "origKey": "tile.vinyl_log.name",
+  "ru": "Прочное виниловое бревно"
+ },
+ "block.space_m.vinyl_planks": {
+  "en": "Vinyl Planks",
+  "origKey": "tile.vinyl_planks.name",
+  "ru": "Виниловые доски"
+ },
+ "block.space_m.vinyl_sand": {
+  "en": "Vinyl Sand",
+  "origKey": "tile.vinyl_sand.name",
+  "ru": "Виниловый песок"
+ },
+ "block.space_m.vinyl_vine": {
+  "en": "Vinyl Vines",
+  "origKey": "tile.vinyl_vine.name",
+  "ru": "Виниловые лозы"
+ },
+ "block.space_m.war_controller": {
+  "en": "War Controller",
+  "origKey": "!",
+  "ru": "War Controller"
+ },
+ "body.bop": {
+  "en": "Bop",
+  "origKey": "body.bop",
+  "ru": "Боп"
+ },
+ "body.dres": {
+  "en": "Dres",
+  "origKey": "body.dres",
+  "ru": "Дрес"
+ },
+ "body.duna": {
+  "en": "Duna",
+  "origKey": "body.duna",
+  "ru": "Дюна"
+ },
+ "body.eeloo": {
+  "en": "Eeloo",
+  "origKey": "body.eeloo",
+  "ru": "Илу"
+ },
+ "body.eve": {
+  "en": "Eve",
+  "origKey": "body.eve",
+  "ru": "Ева"
+ },
+ "body.gilly": {
+  "en": "Gilly",
+  "origKey": "body.gilly",
+  "ru": "Гилли"
+ },
+ "body.hale": {
+  "en": "Hale",
+  "origKey": "body.hale",
+  "ru": "Хейл"
+ },
+ "body.ike": {
+  "en": "Ike",
+  "origKey": "body.ike",
+  "ru": "Айк"
+ },
+ "body.jool": {
+  "en": "Jool",
+  "origKey": "body.jool",
+  "ru": "Джул"
+ },
+ "body.karen": {
+  "en": "Karen",
+  "origKey": "body.karen",
+  "ru": "Карен"
+ },
+ "body.kerbin": {
+  "en": "Earth",
+  "origKey": "body.kerbin",
+  "ru": "Земля"
+ },
+ "body.kerbol": {
+  "en": "Kerbol",
+  "origKey": "body.kerbol",
+  "ru": "Кербол"
+ },
+ "body.laythe": {
+  "en": "Laythe",
+  "origKey": "body.laythe",
+  "ru": "Лейт"
+ },
+ "body.minmus": {
+  "en": "Minmus",
+  "origKey": "body.minmus",
+  "ru": "Минмус"
+ },
+ "body.moho": {
+  "en": "Moho",
+  "origKey": "body.moho",
+  "ru": "Мохо"
+ },
+ "body.mun": {
+  "en": "Mun",
+  "origKey": "body.mun",
+  "ru": "Луна"
+ },
+ "body.neidon": {
+  "en": "Neidon",
+  "origKey": "body.neidon",
+  "ru": "Нейдон"
+ },
+ "body.nissee": {
+  "en": "Nissee",
+  "origKey": "body.nissee",
+  "ru": "Нисси"
+ },
+ "body.ovok": {
+  "en": "Ovok",
+  "origKey": "body.ovok",
+  "ru": "Овок"
+ },
+ "body.plock": {
+  "en": "Plock",
+  "origKey": "body.plock",
+  "ru": "Плок"
+ },
+ "body.pol": {
+  "en": "Pol",
+  "origKey": "body.pol",
+  "ru": "Пол"
+ },
+ "body.polta": {
+  "en": "Polta",
+  "origKey": "body.polta",
+  "ru": "Полта"
+ },
+ "body.priax": {
+  "en": "Priax",
+  "origKey": "body.priax",
+  "ru": "Приакс"
+ },
+ "body.sarnus": {
+  "en": "Sarnus",
+  "origKey": "body.sarnus",
+  "ru": "Сарнус"
+ },
+ "body.slate": {
+  "en": "Slate",
+  "origKey": "body.slate",
+  "ru": "Слейт"
+ },
+ "body.tal": {
+  "en": "Tal",
+  "origKey": "body.tal",
+  "ru": "Тал"
+ },
+ "body.tekto": {
+  "en": "Tekto",
+  "origKey": "body.tekto",
+  "ru": "Текто"
+ },
+ "body.thatmo": {
+  "en": "Thatmo",
+  "origKey": "body.thatmo",
+  "ru": "Татмо"
+ },
+ "body.tylo": {
+  "en": "Tylo",
+  "origKey": "body.tylo",
+  "ru": "Тайло"
+ },
+ "body.urlum": {
+  "en": "Urlum",
+  "origKey": "body.urlum",
+  "ru": "Урлум"
+ },
+ "body.vall": {
+  "en": "Vall",
+  "origKey": "body.vall",
+  "ru": "Валл"
+ },
+ "body.wal": {
+  "en": "Wal",
+  "origKey": "body.wal",
+  "ru": "Вал"
+ },
+ "commands.station.drive_created": {
+  "en": "Drive created.",
+  "origKey": "commands.station.drive_created",
+  "ru": "Диск создан."
+ },
+ "commands.station.invalid_drive": {
+  "en": "Must be holding a valid station drive!",
+  "origKey": "commands.station.invalid_drive",
+  "ru": "Необходимо держать в руке диск с данными о станции!"
+ },
+ "commands.station.invalid_station": {
+  "en": "You must enter a station ID or name!",
+  "origKey": "commands.station.invalid_station",
+  "ru": "Необходимо ввести имя или ID станции!"
+ },
+ "commands.station.launched": {
+  "en": "Station core launched.",
+  "origKey": "commands.station.launched",
+  "ru": "Ядро станции запущено."
+ },
+ "commands.station.no_match": {
+  "en": "No station matching that ID or name!",
+  "origKey": "commands.station.no_match",
+  "ru": "Станции с таким именем или ID не существует!"
+ },
+ "commands.station.no_stations": {
+  "en": "No launched stations found!",
+  "origKey": "commands.station.no_stations",
+  "ru": "Станций не обнаружено!"
+ },
+ "commands.station.teleported": {
+  "en": "Teleported to station.",
+  "origKey": "commands.station.teleported",
+  "ru": "Телепортация на станцию..."
+ },
+ "container.cryoDistillator": {
+  "en": "Cryo-Distil",
+  "origKey": "container.cryoDistillator",
+  "ru": "Криогенный дистиллятор"
+ },
+ "container.dysonConverterAnatmogenesis": {
+  "en": "Dyson Anatmogenesis Terraformer",
+  "origKey": "!",
+  "ru": "Анатмогенезисный терраформер Дайсона"
+ },
+ "container.hydrobay": {
+  "en": "Greenhouse",
+  "origKey": "container.hydrobay",
+  "ru": "Теплица"
+ },
+ "container.machineDysonConverterHE": {
+  "en": "Dyson Power Converter",
+  "origKey": "!",
+  "ru": "Энергетический конвертор Дайсона"
+ },
+ "container.machineDysonConverterTU": {
+  "en": "Dyson Heat Converter",
+  "origKey": "!",
+  "ru": "Нагреватель Дайсона"
+ },
+ "container.machineDysonLauncher": {
+  "en": "Dyson Spinlauncher",
+  "origKey": "!",
+  "ru": "Пусковая установка SpinLaunch™"
+ },
+ "container.machineDysonReceiver": {
+  "en": "Dyson Receiver",
+  "origKey": "!",
+  "ru": "Приёмник Дайсона"
+ },
+ "container.machineStardar": {
+  "en": "StarDar",
+  "origKey": "!",
+  "ru": "Радиотелескоп \\\"StarDar\\\""
+ },
+ "container.machineVacuumCircuit": {
+  "en": "Vacuum",
+  "origKey": "container.machineVacuumCircuit",
+  "ru": "ВПС"
+ },
+ "container.nukeAntimatter": {
+  "en": "Antimatter Bomb",
+  "origKey": "container.nukeAntimatter",
+  "ru": "Антиматериальная бомба"
+ },
+ "container.warController": {
+  "en": "War Controller",
+  "origKey": "!",
+  "ru": "War Controller"
+ },
+ "crucible.arse": {
+  "en": "Gallium Arsenide Production",
+  "origKey": "crucible.arse",
+  "ru": "Производство арсенида галлия"
+ },
+ "crucible.hsss": {
+  "en": "Boosted High-Speed Steel Production",
+  "origKey": "crucible.hsss",
+  "ru": "Альтернативное производство высокоскоростной стали"
+ },
+ "crucible.stainless": {
+  "en": "Stainless Steel Production",
+  "origKey": "crucible.stainless",
+  "ru": "Производство нержавеющей стали"
+ },
+ "death.attack.nitan": {
+  "en": "%1$s was consumed by taint.",
+  "origKey": "death.attack.nitan",
+  "ru": "%1$s был поглощён заражением."
+ },
+ "death.attack.oxyprime": {
+  "en": "%1$s forgot their PLSS.",
+  "origKey": "death.attack.oxyprime",
+  "ru": "%1$s забыл нацепить PLSS."
+ },
+ "death.attack.run": {
+  "en": "%1$s atoned for their sins.",
+  "origKey": "death.attack.run",
+  "ru": "%1$s искупил свои грехи."
+ },
+ "effect.space_m.flashbang": {
+  "en": "Flashbang",
+  "origKey": "potion.hbm_flashbang",
+  "ru": "Светошумовая"
+ },
+ "effect.space_m.nitan": {
+  "en": "Ambrosia",
+  "origKey": "potion.hbm_nitan",
+  "ru": "Aмброзия"
+ },
+ "effect.space_m.run": {
+  "en": "GOD WATCHES YOU",
+  "origKey": "potion.hbm_run",
+  "ru": "БОГ НАБЛЮДАЕТ ЗА ВАМИ"
+ },
+ "effect.space_m.slippery": {
+  "en": "Butterfingers",
+  "origKey": "potion.hbm_slippery",
+  "ru": "Скольжение"
+ },
+ "entity.space_m.carpet_bomblet": {
+  "en": "Bomblet",
+  "origKey": "!",
+  "ru": "Бомбочка"
+ },
+ "entity.space_m.carpet_jet": {
+  "en": "Carpet Bomber",
+  "origKey": "!",
+  "ru": "Ковровый бомбардировщик"
+ },
+ "entity.space_m.entity_combat_pod": {
+  "en": "Combat Drop Pod",
+  "origKey": "!",
+  "ru": "Боевая десантная капсула"
+ },
+ "entity.space_m.entity_depthsquid": {
+  "en": "Depth Squid",
+  "origKey": "entity.hbm.entity_depthsquid.name",
+  "ru": "Глубинный кальмар"
+ },
+ "entity.space_m.entity_meme_ufo": {
+  "en": "Mini UFO",
+  "origKey": "entity.hbm.entity_meme_ufo.name",
+  "ru": "Мини-НЛО"
+ },
+ "entity.space_m.entity_micro_ufo": {
+  "en": "Macro UFO",
+  "origKey": "entity.hbm.entity_micro_ufo.name",
+  "ru": "Макро-НЛО"
+ },
+ "entity.space_m.entity_mob_flesh_creeper": {
+  "en": "Flesh Creeper",
+  "origKey": "entity.hbm.entity_mob_flesh_creeper.name",
+  "ru": "Мясной крипер"
+ },
+ "entity.space_m.entity_moon_cow": {
+  "en": "Mun Cow",
+  "origKey": "entity.hbm.entity_moon_cow.name",
+  "ru": "Лунная корова"
+ },
+ "entity.space_m.entity_ntm_bfa": {
+  "en": "Radioactive Angel",
+  "origKey": "entity.hbm.entity_ntm_bfa.name",
+  "ru": "Жар-Ангел"
+ },
+ "entity.space_m.entity_rideable_rocket": {
+  "en": "Rocket",
+  "origKey": "entity.hbm.entity_rideable_rocket.name",
+  "ru": "Ракета"
+ },
+ "entity.space_m.entity_rideable_rocket_dummy": {
+  "en": "Rocket",
+  "origKey": "entity.hbm.entity_rideable_rocket_dummy.name",
+  "ru": "Ракета"
+ },
+ "entity.space_m.entity_scrapfish": {
+  "en": "Scrapfish",
+  "origKey": "entity.hbm.entity_scrapfish.name",
+  "ru": "Металлоломорыба"
+ },
+ "entity.space_m.entity_scutterfish": {
+  "en": "Scutterfish",
+  "origKey": "entity.hbm.entity_scutterfish.name",
+  "ru": "Скаттер"
+ },
+ "entity.space_m.entity_scuttlecrab": {
+  "en": "Scuttlecrab",
+  "origKey": "entity.hbm.entity_scuttlecrab.name",
+  "ru": "Краб-бегун"
+ },
+ "entity.space_m.entity_siftereel": {
+  "en": "Sifter Eel",
+  "origKey": "entity.hbm.entity_siftereel.name",
+  "ru": "Угорь-просейщик"
+ },
+ "entity.space_m.entity_tankbot": {
+  "en": "Tankbot",
+  "origKey": "!",
+  "ru": "Танкбот"
+ },
+ "entity.space_m.entity_war_behemoth": {
+  "en": "War Behemoth",
+  "origKey": "!",
+  "ru": "Колосс войны"
+ },
+ "fluid.space_m.ammonia": {
+  "en": "Ammonia",
+  "origKey": "hbmfluid.ammonia",
+  "ru": "Аммиак"
+ },
+ "fluid.space_m.aqueous_copper": {
+  "en": "Aqueous Copper",
+  "origKey": "hbmfluid.aqueous_copper",
+  "ru": "Раствор меди"
+ },
+ "fluid.space_m.aqueous_nickel": {
+  "en": "Aqueous Nickel",
+  "origKey": "hbmfluid.aqueous_nickel",
+  "ru": "Раствор никеля"
+ },
+ "fluid.space_m.argon": {
+  "en": "Argon Gas",
+  "origKey": "hbmfluid.argon",
+  "ru": "Аргон"
+ },
+ "fluid.space_m.bloodgas": {
+  "en": "Blood Fuel",
+  "origKey": "hbmfluid.bloodgas",
+  "ru": "Кровавое топливо"
+ },
+ "fluid.space_m.brine": {
+  "en": "Brine",
+  "origKey": "hbmfluid.brine",
+  "ru": "Рудный рассол"
+ },
+ "fluid.space_m.bromine": {
+  "en": "Alkyl Bromide",
+  "origKey": "hbmfluid.bromine",
+  "ru": "Смесь алкилбромидов"
+ },
+ "fluid.space_m.cbenz": {
+  "en": "Chlorinated Benzenes",
+  "origKey": "hbmfluid.cbenz",
+  "ru": "Хлорированные бензолы"
+ },
+ "fluid.space_m.ccl": {
+  "en": "Carbon Tetrachloride",
+  "origKey": "hbmfluid.ccl",
+  "ru": "Тетрахлорметан"
+ },
+ "fluid.space_m.chloroethane": {
+  "en": "Chloroethane",
+  "origKey": "hbmfluid.chloroethane",
+  "ru": "Хлорэтан"
+ },
+ "fluid.space_m.chloromethane": {
+  "en": "Chloromethane",
+  "origKey": "hbmfluid.chloromethane",
+  "ru": "Хлорметан"
+ },
+ "fluid.space_m.cmilk": {
+  "en": "Condensed Milk",
+  "origKey": "hbmfluid.cmilk",
+  "ru": "Сгущённое молоко"
+ },
+ "fluid.space_m.coffee": {
+  "en": "Coffee",
+  "origKey": "hbmfluid.coffee",
+  "ru": "Кофе"
+ },
+ "fluid.space_m.conglomera": {
+  "en": "Conglomera",
+  "origKey": "hbmfluid.conglomera",
+  "ru": "Раствор конгломерата"
+ },
+ "fluid.space_m.coppersulfate": {
+  "en": "Copper Sulfate",
+  "origKey": "hbmfluid.coppersulfate",
+  "ru": "Медный купорос"
+ },
+ "fluid.space_m.cream": {
+  "en": "Heavy Whipping Cream",
+  "origKey": "hbmfluid.cream",
+  "ru": "Взбитые сливки"
+ },
+ "fluid.space_m.dicyanoacetylene": {
+  "en": "Dicyanoacetylene",
+  "origKey": "hbmfluid.dicyanoacetylene",
+  "ru": "Дицианоацетилен"
+ },
+ "fluid.space_m.dunaair": {
+  "en": "Duna Air",
+  "origKey": "hbmfluid.dunaair",
+  "ru": "Сжатый воздух (Дюна)"
+ },
+ "fluid.space_m.elbowgrease": {
+  "en": "Elbow Grease",
+  "origKey": "hbmfluid.elbowgrease",
+  "ru": "Локтевая смазка"
+ },
+ "fluid.space_m.emilk": {
+  "en": "Evaporated Milk",
+  "origKey": "hbmfluid.emilk",
+  "ru": "Сливки"
+ },
+ "fluid.space_m.eveair": {
+  "en": "Eve Air",
+  "origKey": "hbmfluid.eveair",
+  "ru": "Сжатый воздух (Ева)"
+ },
+ "fluid.space_m.fluorine": {
+  "en": "Fluorine",
+  "origKey": "hbmfluid.fluorine",
+  "ru": "Фтор"
+ },
+ "fluid.space_m.gas_watz": {
+  "en": "Gaseous Poisonous Mud",
+  "origKey": "hbmfluid.gas_watz",
+  "ru": "Газообразные токсичные отходы"
+ },
+ "fluid.space_m.gaseous_plutonium_bromide": {
+  "en": "Gaseous Plutonium Bromide",
+  "origKey": "hbmfluid.gaseous_plutonium_bromide",
+  "ru": "Газообразный бромид плутония"
+ },
+ "fluid.space_m.gaseous_schrabidium_bromide": {
+  "en": "Gaseous Schrabidium Bromide",
+  "origKey": "hbmfluid.gaseous_schrabidium_bromide",
+  "ru": "Газообразный бромид шрабидия"
+ },
+ "fluid.space_m.gaseous_thorium_bromide": {
+  "en": "Gaseous Thorium Bromide",
+  "origKey": "hbmfluid.gaseous_thorium_bromide",
+  "ru": "Газообразный бромид тория"
+ },
+ "fluid.space_m.gaseous_uranium_bromide": {
+  "en": "Gaseous Uranium Bromide",
+  "origKey": "hbmfluid.gaseous_uranium_bromide",
+  "ru": "Газообразный бромид урана"
+ },
+ "fluid.space_m.halolight": {
+  "en": "Light Halocarbons",
+  "origKey": "hbmfluid.halolight",
+  "ru": "Лёгкие галогенуглеводороды"
+ },
+ "fluid.space_m.hcl": {
+  "en": "Hydrochloric Acid",
+  "origKey": "hbmfluid.hcl",
+  "ru": "Соляная кислота"
+ },
+ "fluid.space_m.hgas": {
+  "en": "Halide Gas",
+  "origKey": "hbmfluid.hgas",
+  "ru": "Галогенный газ"
+ },
+ "fluid.space_m.honey": {
+  "en": "Honey",
+  "origKey": "hbmfluid.honey",
+  "ru": "Мёд"
+ },
+ "fluid.space_m.htco4": {
+  "en": "Pertechnetic Acid",
+  "origKey": "hbmfluid.htco4",
+  "ru": "Технециевая кислота"
+ },
+ "fluid.space_m.hydrazine": {
+  "en": "Hydrazine",
+  "origKey": "hbmfluid.hydrazine",
+  "ru": "Гидразин"
+ },
+ "fluid.space_m.joolgas": {
+  "en": "Jool Air",
+  "origKey": "hbmfluid.joolgas",
+  "ru": "Сжатый газ (Джул)"
+ },
+ "fluid.space_m.kmno4": {
+  "en": "Potassium Permanganate Solution",
+  "origKey": "hbmfluid.kmno4",
+  "ru": "Раствор перманганата калия"
+ },
+ "fluid.space_m.krypton": {
+  "en": "Krypton Gas",
+  "origKey": "hbmfluid.krypton",
+  "ru": "Криптон"
+ },
+ "fluid.space_m.lithcarbonate": {
+  "en": "Lithium Bicarbonate Aerosol",
+  "origKey": "hbmfluid.lithcarbonate",
+  "ru": "Бикарбонат лития"
+ },
+ "fluid.space_m.lithydro": {
+  "en": "Lithium Hydroxide Aerosol",
+  "origKey": "hbmfluid.lithydro",
+  "ru": "Гидроксид лития"
+ },
+ "fluid.space_m.magma": {
+  "en": "Magma",
+  "origKey": "hbmfluid.magma",
+  "ru": "Magma"
+ },
+ "fluid.space_m.mercury_fluid": {
+  "en": "Mercury",
+  "origKey": "tile.mercury_block.name",
+  "ru": "Ртуть"
+ },
+ "fluid.space_m.methanol": {
+  "en": "Methanol",
+  "origKey": "hbmfluid.methanol",
+  "ru": "Метанол"
+ },
+ "fluid.space_m.milk": {
+  "en": "Milk",
+  "origKey": "hbmfluid.milk",
+  "ru": "Молоко"
+ },
+ "fluid.space_m.minsol": {
+  "en": "Mineral Slurry",
+  "origKey": "hbmfluid.minsol",
+  "ru": "Минеральный шлам"
+ },
+ "fluid.space_m.neon": {
+  "en": "Neon Gas",
+  "origKey": "hbmfluid.neon",
+  "ru": "Неон"
+ },
+ "fluid.space_m.ngas": {
+  "en": "Neidon Air",
+  "origKey": "hbmfluid.ngas",
+  "ru": "Сжатый газ (Нейдон)"
+ },
+ "fluid.space_m.nitrogen": {
+  "en": "Liquid Nitrogen",
+  "origKey": "hbmfluid.nitrogen",
+  "ru": "Жидкий азот"
+ },
+ "fluid.space_m.nmass": {
+  "en": "N-MASS(II) Driver Fuel",
+  "origKey": "hbmfluid.nmass",
+  "ru": "N-Масс(II) Варп топливо"
+ },
+ "fluid.space_m.nmasstetranol": {
+  "en": "N-MASS(III) Tetrahexaethanol",
+  "origKey": "hbmfluid.nmasstetranol",
+  "ru": "N-Масс(III) Тетрагексаэтанол"
+ },
+ "fluid.space_m.polythylene": {
+  "en": "Polyethylene",
+  "origKey": "hbmfluid.polythylene",
+  "ru": "Полиэтилен"
+ },
+ "fluid.space_m.sarnusgas": {
+  "en": "Sarnus Air",
+  "origKey": "hbmfluid.sarnusgas",
+  "ru": "Сжатый газ (Сарнус)"
+ },
+ "fluid.space_m.scutterblood": {
+  "en": "Scutterblood",
+  "origKey": "hbmfluid.scutterblood",
+  "ru": "Кровь скаттера"
+ },
+ "fluid.space_m.smilk": {
+  "en": "Strawberry Milk",
+  "origKey": "hbmfluid.smilk",
+  "ru": "Клубничное молоко"
+ },
+ "fluid.space_m.superheated_hydrogen": {
+  "en": "Superheated Hydrogen",
+  "origKey": "hbmfluid.superheated_hydrogen",
+  "ru": "Перегретый жидкий водород"
+ },
+ "fluid.space_m.tcrude": {
+  "en": "Tektonic Crude",
+  "origKey": "hbmfluid.tcrude",
+  "ru": "Неочищенная нефть Текто"
+ },
+ "fluid.space_m.tea": {
+  "en": "Tea",
+  "origKey": "hbmfluid.tea",
+  "ru": "Чай"
+ },
+ "fluid.space_m.tektoair": {
+  "en": "Tekto Air",
+  "origKey": "hbmfluid.tektoair",
+  "ru": "Сжатый воздух (Текто)"
+ },
+ "fluid.space_m.thorium_bromide": {
+  "en": "Thorium Bromide",
+  "origKey": "hbmfluid.thorium_bromide",
+  "ru": "Бромид тория"
+ },
+ "fluid.space_m.ugas": {
+  "en": "Urlum Air",
+  "origKey": "hbmfluid.ugas",
+  "ru": "Сжатый газ (Урлум)"
+ },
+ "fluid.space_m.uranium_bromide": {
+  "en": "Uranium Bromide",
+  "origKey": "hbmfluid.uranium_bromide",
+  "ru": "Бромид урана"
+ },
+ "fluid.space_m.vinyl": {
+  "en": "Vinyl Chloride",
+  "origKey": "hbmfluid.vinyl",
+  "ru": "Винилхлорид"
+ },
+ "geiger.playerAct": {
+  "en": "Player radioactivity:",
+  "origKey": "geiger.playerAct",
+  "ru": "Радиоактивность игрока:"
+ },
+ "generator.space_m.martian": {
+  "en": "The Martian",
+  "origKey": "generator.martian",
+  "ru": "Марсианин"
+ },
+ "gui.sat.settings.label.orbital_phase": {
+  "en": "Orbital phase",
+  "origKey": "gui.sat.settings.label.orbital_phase",
+  "ru": "Orbital phase"
+ },
+ "gui.sat.settings.tooltip.owner_assign": {
+  "en": "Click to assign yourself as satellite owner",
+  "origKey": "gui.sat.settings.tooltip.owner_assign",
+  "ru": "Click to assign yourself as satellite owner"
+ },
+ "gui.sat.settings.tooltip.scroll_altitude": {
+  "en": "Scroll with your mouse wheel to change altitude",
+  "origKey": "gui.sat.settings.tooltip.scroll_altitude",
+  "ru": "Scroll with your mouse wheel to change altitude"
+ },
+ "gui.sat.settings.tooltip.scroll_blink": {
+  "en": "Scroll with your mouse wheel to change blink time",
+  "origKey": "gui.sat.settings.tooltip.scroll_blink",
+  "ru": "Scroll with your mouse wheel to change blink time"
+ },
+ "gui.sat.settings.tooltip.scroll_inclination": {
+  "en": "Scroll with your mouse wheel to change inclination",
+  "origKey": "gui.sat.settings.tooltip.scroll_inclination",
+  "ru": "Scroll with your mouse wheel to change inclination"
+ },
+ "gui.sat.settings.tooltip.scroll_phase": {
+  "en": "Scroll with your mouse wheel to change orbital phase",
+  "origKey": "gui.sat.settings.tooltip.scroll_phase",
+  "ru": "Scroll with your mouse wheel to change orbital phase"
+ },
+ "gui.sat.settings.tooltip.scroll_speed": {
+  "en": "Scroll with your mouse wheel to change speed",
+  "origKey": "gui.sat.settings.tooltip.scroll_speed",
+  "ru": "Scroll with your mouse wheel to change speed"
+ },
+ "gui.sat.settings.tooltip.switch_settings_list": {
+  "en": "Switch settings list",
+  "origKey": "gui.sat.settings.tooltip.switch_settings_list",
+  "ru": "Switch settings list"
+ },
+ "gui.sat.settings.unit.km": {
+  "en": "km",
+  "origKey": "gui.sat.settings.unit.km",
+  "ru": "km"
+ },
+ "gui.sat.settings.unit.km_per_second": {
+  "en": "km/s",
+  "origKey": "gui.sat.settings.unit.km_per_second",
+  "ru": "km/s"
+ },
+ "gui.sat.settings.unit.seconds": {
+  "en": "s",
+  "origKey": "gui.sat.settings.unit.seconds",
+  "ru": "s"
+ },
+ "gui.stardar.body.unknown": {
+  "en": "Unknown",
+  "origKey": "gui.stardar.body.unknown",
+  "ru": "Неизвестно"
+ },
+ "gui.stardar.label.cant_land": {
+  "en": "Can't land here!",
+  "origKey": "gui.stardar.label.cant_land",
+  "ru": "Здесь нельзя приземлиться!"
+ },
+ "gui.stardar.label.click_again_land": {
+  "en": "Click again to land",
+  "origKey": "gui.stardar.label.click_again_land",
+  "ru": "Нажмите еще раз для посадки"
+ },
+ "gui.stardar.label.click_body_focus": {
+  "en": "Click body to focus",
+  "origKey": "gui.stardar.label.click_body_focus",
+  "ru": "Нажмите на тело, чтобы сфокусироваться"
+ },
+ "gui.stardar.label.drag_map": {
+  "en": "Drag to move map",
+  "origKey": "gui.stardar.label.drag_map",
+  "ru": "Перетаскивайте для перемещения карты"
+ },
+ "gui.stardar.label.focus_body": {
+  "en": "Focus: %s",
+  "origKey": "gui.stardar.label.focus_body",
+  "ru": "Фокус: %s"
+ },
+ "gui.stardar.label.focus_satellite": {
+  "en": "Focus: Satellite",
+  "origKey": "gui.stardar.label.focus_satellite",
+  "ru": "Фокус: спутник"
+ },
+ "gui.stardar.label.insert_drive": {
+  "en": "Insert drive",
+  "origKey": "gui.stardar.label.insert_drive",
+  "ru": "Вставьте диск"
+ },
+ "gui.stardar.label.loading_surface_map": {
+  "en": "Loading surface map...",
+  "origKey": "gui.stardar.label.loading_surface_map",
+  "ru": "Загрузка карты поверхности..."
+ },
+ "gui.stardar.label.select_landing_zone": {
+  "en": "Select landing zone",
+  "origKey": "gui.stardar.label.select_landing_zone",
+  "ru": "Выберите зону посадки"
+ },
+ "gui.stardar.label.target_altitude": {
+  "en": "Target altitude: %s",
+  "origKey": "gui.stardar.label.target_altitude",
+  "ru": "Целевая высота: %s"
+ },
+ "gui.stardar.label.unfocus_hint": {
+  "en": "Right click to unfocus",
+  "origKey": "gui.stardar.label.unfocus_hint",
+  "ru": "ПКМ, чтобы снять фокус"
+ },
+ "gui.stardar.label.valid_location": {
+  "en": "Valid location",
+  "origKey": "gui.stardar.label.valid_location",
+  "ru": "Подходящее место"
+ },
+ "gui.stardar.landing.area_not_flat": {
+  "en": "Area not flat",
+  "origKey": "gui.stardar.landing.area_not_flat",
+  "ru": "Участок неровный"
+ },
+ "gui.stardar.landing.no_heightmap": {
+  "en": "No heightmap",
+  "origKey": "gui.stardar.landing.no_heightmap",
+  "ru": "Нет карты высот"
+ },
+ "gui.stardar.landing.outside_bounds": {
+  "en": "Outside bounds",
+  "origKey": "gui.stardar.landing.outside_bounds",
+  "ru": "Вне границ"
+ },
+ "gui.stardar.tooltip.focus_current_body": {
+  "en": "Focus current body",
+  "origKey": "gui.stardar.tooltip.focus_current_body",
+  "ru": "Сфокусироваться на текущей планете"
+ },
+ "gui.stardar.tooltip.program_current_body": {
+  "en": "Program current body into drive",
+  "origKey": "gui.stardar.tooltip.program_current_body",
+  "ru": "Записать текущую планету на диск"
+ },
+ "gui.stardar.tooltip.program_new_station": {
+  "en": "Program new orbital station into drive",
+  "origKey": "gui.stardar.tooltip.program_new_station",
+  "ru": "Записать новую орбитальную станцию на диск"
+ },
+ "hbmmat.australium": {
+  "en": "Australium",
+  "origKey": "hbmmat.australium",
+  "ru": "Австралий"
+ },
+ "hbmmat.ayerite": {
+  "en": "Ayerite",
+  "origKey": "hbmmat.ayerite",
+  "ru": "Айерит"
+ },
+ "hbmmat.bromine": {
+  "en": "Bromine",
+  "origKey": "hbmmat.bromine",
+  "ru": "Бром"
+ },
+ "hbmmat.conglomerate": {
+  "en": "Conglomerate",
+  "origKey": "hbmmat.conglomerate",
+  "ru": "Конгломерат"
+ },
+ "hbmmat.gallium": {
+  "en": "Gallium",
+  "origKey": "hbmmat.gallium",
+  "ru": "Галлий"
+ },
+ "hbmmat.galliumarsenide": {
+  "en": "Gallium Arsenide",
+  "origKey": "hbmmat.galliumarsenide",
+  "ru": "Арсенид галлия"
+ },
+ "hbmmat.glowstone": {
+  "en": "Glowstone",
+  "origKey": "hbmmat.glowstone",
+  "ru": "Светящийся камень"
+ },
+ "hbmmat.hafnium": {
+  "en": "Hafnium",
+  "origKey": "hbmmat.hafnium",
+  "ru": "Гафний"
+ },
+ "hbmmat.iodine": {
+  "en": "Iodine",
+  "origKey": "hbmmat.iodine",
+  "ru": "Йод"
+ },
+ "hbmmat.iridium": {
+  "en": "Iridium",
+  "origKey": "hbmmat.iridium",
+  "ru": "Иридий"
+ },
+ "hbmmat.netherquartz": {
+  "en": "Quartz",
+  "origKey": "hbmmat.netherquartz",
+  "ru": "Кварц"
+ },
+ "hbmmat.nickel": {
+  "en": "Nickel",
+  "origKey": "hbmmat.nickel",
+  "ru": "Никель"
+ },
+ "hbmmat.nickelpure": {
+  "en": "Nickel",
+  "origKey": "hbmmat.nickelpure",
+  "ru": "Никель"
+ },
+ "hbmmat.richmagma": {
+  "en": "Mineral-Rich Magma",
+  "origKey": "hbmmat.richmagma",
+  "ru": "Обогащённая минералами магма"
+ },
+ "hbmmat.semtex": {
+  "en": "Semtex",
+  "origKey": "hbmmat.semtex",
+  "ru": "Semtex"
+ },
+ "hbmmat.stainlesssteel": {
+  "en": "Stainless Steel",
+  "origKey": "hbmmat.stainlesssteel",
+  "ru": "Нержавеющая сталь"
+ },
+ "hbmmat.tasmanite": {
+  "en": "Tasmanite",
+  "origKey": "hbmmat.tasmanite",
+  "ru": "Тасманит"
+ },
+ "hbmmat.zinc": {
+  "en": "Zinc",
+  "origKey": "hbmmat.zinc",
+  "ru": "Цинк"
+ },
+ "info.corrosion": {
+  "en": "My suit is melting.",
+  "origKey": "info.corrosion",
+  "ru": "Мой костюм плавится."
+ },
+ "info.orbitfall": {
+  "en": "I'm going to fall.",
+  "origKey": "info.orbitfall",
+  "ru": "Я сейчас упаду с орбиты."
+ },
+ "item.custom_missile_part.fuel.any": {
+  "en": "Any Liquid Fuel",
+  "origKey": "item.custom_missile_part.fuel.any",
+  "ru": "Any Liquid Fuel"
+ },
+ "item.custom_missile_part.fuel.balefire": {
+  "en": "BF Rocket Fuel / Peroxide",
+  "origKey": "item.custom_missile_part.fuel.balefire",
+  "ru": "BF Rocket Fuel / Peroxide"
+ },
+ "item.custom_missile_part.fuel.hydrazine": {
+  "en": "Hydrazine",
+  "origKey": "item.custom_missile_part.fuel.hydrazine",
+  "ru": "Hydrazine"
+ },
+ "item.custom_missile_part.fuel.hydrogen": {
+  "en": "Hydrogen / Oxygen",
+  "origKey": "item.custom_missile_part.fuel.hydrogen",
+  "ru": "Hydrogen / Oxygen"
+ },
+ "item.custom_missile_part.fuel.kerolox": {
+  "en": "Kerosene / Oxygen",
+  "origKey": "item.custom_missile_part.fuel.kerolox",
+  "ru": "Kerosene / Oxygen"
+ },
+ "item.custom_missile_part.fuel.kerosene": {
+  "en": "Kerosene / Peroxide",
+  "origKey": "item.custom_missile_part.fuel.kerosene",
+  "ru": "Kerosene / Peroxide"
+ },
+ "item.custom_missile_part.fuel.methalox": {
+  "en": "Natural Gas / Oxygen",
+  "origKey": "item.custom_missile_part.fuel.methalox",
+  "ru": "Natural Gas / Oxygen"
+ },
+ "item.custom_missile_part.fuel.solid": {
+  "en": "Solid Fuel",
+  "origKey": "item.custom_missile_part.fuel.solid",
+  "ru": "Solid Fuel"
+ },
+ "item.custom_missile_part.fuel.xenon": {
+  "en": "Xenon Gas",
+  "origKey": "item.custom_missile_part.fuel.xenon",
+  "ru": "Xenon Gas"
+ },
+ "item.hard_drive_full.orbit.desc": {
+  "en": "Can be used on a block to recall$a drop pod from an orbiting station.",
+  "origKey": "item.hard_drive_full.orbit.desc",
+  "ru": "Может быть использован по блоку для$установки точки посадки десантной капсулы$с орбитальной станции."
+ },
+ "item.hard_drive_full.surface.desc": {
+  "en": "Can be used on a block to modify$the selected landing coordinates.",
+  "origKey": "item.hard_drive_full.surface.desc",
+  "ru": "Может быть использован по блоку для$изменения координат посадки."
+ },
+ "item.hbm_m.bedrock_ore.type.hazard.name": {
+  "en": "Hazardous Waste",
+  "origKey": "item.bedrock_ore.type.hazard.name",
+  "ru": "Токсичная"
+ },
+ "item.hbm_m.bedrock_ore.type.plastic.name": {
+  "en": "Plastic",
+  "origKey": "item.bedrock_ore.type.plastic.name",
+  "ru": "Пластиковая"
+ },
+ "item.hbm_m.bedrock_ore.type.schrabidic.name": {
+  "en": "Schrabidic",
+  "origKey": "item.bedrock_ore.type.schrabidic.name",
+  "ru": "Шрабидиевая"
+ },
+ "item.hbm_m.oil_detector.bullseye_brine": {
+  "en": "Brine deposit directly below!",
+  "origKey": "item.oil_detector.bullseye_brine",
+  "ru": "Рудно-рассоловый резервуар прямо снизу!"
+ },
+ "item.hbm_m.oil_detector.bullseye_gas": {
+  "en": "Natural gas deposit directly below!",
+  "origKey": "item.oil_detector.bullseye_gas",
+  "ru": "Газовый резервуар прямо снизу!"
+ },
+ "item.hbm_m.oil_detector.detected_brine": {
+  "en": "Brine deposit detected nearby.",
+  "origKey": "item.oil_detector.detected_brine",
+  "ru": "Поблизости обнаружен резервуар рудного рассола."
+ },
+ "item.hbm_m.oil_detector.detected_gas": {
+  "en": "Natural gas detected nearby.",
+  "origKey": "item.oil_detector.detected_gas",
+  "ru": "Поблизости обнаружен резервуар газа."
+ },
+ "item.hbm_m.strawberry": {
+  "en": "Strawberry",
+  "origKey": "item.strawberry.name",
+  "ru": "Клубника"
+ },
+ "item.missile.part.isp": {
+  "en": "ISP",
+  "origKey": "item.missile.part.isp",
+  "ru": "ISP"
+ },
+ "item.missile.part.mass": {
+  "en": "Mass",
+  "origKey": "item.missile.part.mass",
+  "ru": "Mass"
+ },
+ "item.missile.part.thrust": {
+  "en": "Thrust",
+  "origKey": "item.missile.part.thrust",
+  "ru": "Thrust"
+ },
+ "item.sat.desc.altitude": {
+  "en": "Satellite altitude",
+  "origKey": "item.sat.desc.altitude",
+  "ru": "Satellite altitude"
+ },
+ "item.sat.desc.color": {
+  "en": "Satellite color",
+  "origKey": "item.sat.desc.color",
+  "ru": "Satellite color"
+ },
+ "item.sat.desc.deploy_orbit": {
+  "en": "Interact to deploy into orbit",
+  "origKey": "item.sat.desc.deploy_orbit",
+  "ru": "Interact to deploy into orbit"
+ },
+ "item.sat.desc.dyson_relay": {
+  "en": "Allows a Dyson Receiver to function at night",
+  "origKey": "item.sat.desc.dyson_relay",
+  "ru": "Allows a Dyson Receiver to function at night"
+ },
+ "item.sat.desc.foeq": {
+  "en": "Gives you an achievement. That's it.",
+  "origKey": "item.sat.desc.foeq",
+  "ru": "Gives you an achievement. That's it."
+ },
+ "item.sat.desc.frequency": {
+  "en": "Satellite frequency",
+  "origKey": "item.sat.desc.frequency",
+  "ru": "Satellite frequency"
+ },
+ "item.sat.desc.gerald.melter": {
+  "en": "Melter of CPUs, bane of every server owner.",
+  "origKey": "item.sat.desc.gerald.melter",
+  "ru": "Melter of CPUs, bane of every server owner."
+ },
+ "item.sat.desc.gerald.orbital_module": {
+  "en": "Requires orbital module.",
+  "origKey": "item.sat.desc.gerald.orbital_module",
+  "ru": "Requires orbital module."
+ },
+ "item.sat.desc.gerald.single_use": {
+  "en": "Single use.",
+  "origKey": "item.sat.desc.gerald.single_use",
+  "ru": "Single use."
+ },
+ "item.sat.desc.inclination": {
+  "en": "Satellite inclination",
+  "origKey": "item.sat.desc.inclination",
+  "ru": "Satellite inclination"
+ },
+ "item.sat.desc.laser": {
+  "en": "Allows to summon lasers with a 15 second cooldown.",
+  "origKey": "item.sat.desc.laser",
+  "ru": "Allows to summon lasers with a 15 second cooldown."
+ },
+ "item.sat.desc.launch_by_hand": {
+  "en": "Can be launched by hand from an orbital station",
+  "origKey": "item.sat.desc.launch_by_hand",
+  "ru": "Can be launched by hand from an orbital station"
+ },
+ "item.sat.desc.lunar_miner": {
+  "en": "Mines moon turf to deliver it to a cargo landing pad.",
+  "origKey": "item.sat.desc.lunar_miner",
+  "ru": "Mines moon turf to deliver it to a cargo landing pad."
+ },
+ "item.sat.desc.mapper": {
+  "en": "Displays currently loaded chunks.",
+  "origKey": "item.sat.desc.mapper",
+  "ru": "Displays currently loaded chunks."
+ },
+ "item.sat.desc.miner": {
+  "en": "Will deliver ore powders to a cargo landing pad.",
+  "origKey": "item.sat.desc.miner",
+  "ru": "Will deliver ore powders to a cargo landing pad."
+ },
+ "item.sat.desc.owner": {
+  "en": "Satellite owner",
+  "origKey": "item.sat.desc.owner",
+  "ru": "Satellite owner"
+ },
+ "item.sat.desc.phase": {
+  "en": "Orbital phase",
+  "origKey": "item.sat.desc.phase",
+  "ru": "Orbital phase"
+ },
+ "item.sat.desc.radar": {
+  "en": "Shows a map of active entities.",
+  "origKey": "item.sat.desc.radar",
+  "ru": "Shows a map of active entities."
+ },
+ "item.sat.desc.resonator": {
+  "en": "Allows for teleportation with no cooldown.",
+  "origKey": "item.sat.desc.resonator",
+  "ru": "Allows for teleportation with no cooldown."
+ },
+ "item.sat.desc.scanner": {
+  "en": "Creates a topdown map of underground ores.",
+  "origKey": "item.sat.desc.scanner",
+  "ru": "Creates a topdown map of underground ores."
+ },
+ "item.sat.desc.speed": {
+  "en": "Satellite speed",
+  "origKey": "item.sat.desc.speed",
+  "ru": "Satellite speed"
+ },
+ "item.sat.desc.war": {
+  "en": "Single shot railcannon designed to be used on other planets",
+  "origKey": "item.sat.desc.war",
+  "ru": "Single shot railcannon designed to be used on other planets"
+ },
+ "item.space_m.aero": {
+  "en": "Avionics Circuit Board",
+  "origKey": "item.circuit.aero.name",
+  "ru": "Плата авионики"
+ },
+ "item.space_m.ammonium_nitrate": {
+  "en": "Ammonium Nitrate",
+  "origKey": "item.ammonium_nitrate.name",
+  "ru": "Нитрат аммония"
+ },
+ "item.space_m.animan": {
+  "en": "Problematic Meal",
+  "origKey": "item.animan.name",
+  "ru": "Проблематичное блюдо"
+ },
+ "item.space_m.animan.desc": {
+  "en": "You shall face the iron will of divinity",
+  "origKey": "item.animan.desc",
+  "ru": "Ты столкнешься лицом к лицу с железной волей божества."
+ },
+ "item.space_m.atmosphere_scanner": {
+  "en": "Atmosphere Scanner",
+  "origKey": "item.atmosphere_scanner.name",
+  "ru": "Анализатор атмосферы"
+ },
+ "item.space_m.avionics": {
+  "en": "Astrionics Unit",
+  "origKey": "item.circuit.avionics.name",
+  "ru": "Блок астрионики"
+ },
+ "item.space_m.ball_ferric_clay": {
+  "en": "Ferric Clay",
+  "origKey": "item.ball_ferric_clay.name",
+  "ru": "Железистая глина"
+ },
+ "item.space_m.bean_raw": {
+  "en": "Raw Coffee Bean",
+  "origKey": "item.bean_raw.name",
+  "ru": "Сырое кофейное зерно"
+ },
+ "item.space_m.bean_roast": {
+  "en": "Roasted Coffee Bean",
+  "origKey": "item.bean_roast.name",
+  "ru": "Жареное кофейное зерно"
+ },
+ "item.space_m.beryllium_mirror": {
+  "en": "Beryllium Mirror",
+  "origKey": "item.beryllium_mirror.name",
+  "ru": "Бериллиевое зеркало"
+ },
+ "item.space_m.billet_bk247": {
+  "en": "Berkelium-247 Billet",
+  "origKey": "item.billet_bk247.name",
+  "ru": "Заготовка берклия-247"
+ },
+ "item.space_m.billet_cf251": {
+  "en": "Californium-251 Billet",
+  "origKey": "item.billet_cf251.name",
+  "ru": "Заготовка калифорния-251"
+ },
+ "item.space_m.billet_cf252": {
+  "en": "Californium-252 Billet",
+  "origKey": "item.billet_cf252.name",
+  "ru": "Заготовка калифорния-252"
+ },
+ "item.space_m.billet_cm242": {
+  "en": "Curium-242 Billet",
+  "origKey": "item.billet_cm242.name",
+  "ru": "Заготовка кюрия-242"
+ },
+ "item.space_m.billet_cm243": {
+  "en": "Curium-243 Billet",
+  "origKey": "item.billet_cm243.name",
+  "ru": "Заготовка кюрия-243"
+ },
+ "item.space_m.billet_cm244": {
+  "en": "Curium-244 Billet",
+  "origKey": "item.billet_cm244.name",
+  "ru": "Заготовка кюрия-244"
+ },
+ "item.space_m.billet_cm245": {
+  "en": "Curium-245 Billet",
+  "origKey": "item.billet_cm245.name",
+  "ru": "Заготовка кюрия-245"
+ },
+ "item.space_m.billet_cm246": {
+  "en": "Curium-246 Billet",
+  "origKey": "item.billet_cm246.name",
+  "ru": "Заготовка кюрия-246"
+ },
+ "item.space_m.billet_cm247": {
+  "en": "Curium-247 Billet",
+  "origKey": "item.billet_cm247.name",
+  "ru": "Заготовка кюрия-247"
+ },
+ "item.space_m.billet_cm_fuel": {
+  "en": "Curium Fuel Billet",
+  "origKey": "item.billet_cm_fuel.name",
+  "ru": "Заготовка кюриевого топлива"
+ },
+ "item.space_m.billet_cm_mix": {
+  "en": "Reactor-Grade Curium Billet",
+  "origKey": "item.billet_cm_mix.name",
+  "ru": "Заготовка кюрия реакторного качества"
+ },
+ "item.space_m.billet_cn989": {
+  "en": "Chinesium-989 Billet",
+  "origKey": "item.billet_cn989.name",
+  "ru": "Заготовка китаёзиума-989"
+ },
+ "item.space_m.billet_es253": {
+  "en": "Einsteinium-253 Billet",
+  "origKey": "item.billet_es253.name",
+  "ru": "Заготовка эйнштейния-253"
+ },
+ "item.space_m.billet_gaas": {
+  "en": "Gallium Arsenide Billet",
+  "origKey": "item.billet_gaas.name",
+  "ru": "Заготовка арсенида галлия"
+ },
+ "item.space_m.billet_menthol": {
+  "en": "Menthol Billet",
+  "origKey": "item.billet_menthol.name",
+  "ru": "Заготовка ментола"
+ },
+ "item.space_m.billet_red_copper": {
+  "en": "Minecraft Grade Copper Billet",
+  "origKey": "item.billet_red_copper.name",
+  "ru": "Заготовка красной меди"
+ },
+ "item.space_m.blade_syngas": {
+  "en": "Stainless Steel Blades",
+  "origKey": "item.blade_syngas.name",
+  "ru": "Нержавеющая лопасть"
+ },
+ "item.space_m.bottle_honey": {
+  "en": "Bottle of Honey",
+  "origKey": "item.bottle_honey.name",
+  "ru": "Пузырёк мёда"
+ },
+ "item.space_m.bucket_bromine": {
+  "en": "Bucket of Alkyl Bromide",
+  "origKey": "item.bucket_bromine.name",
+  "ru": "Ведро смеси алкилбромидов"
+ },
+ "item.space_m.bucket_ccl": {
+  "en": "Carbon Tetrachloride Bucket",
+  "origKey": "item.bucket_ccl.name",
+  "ru": "Ведро тетрахлорметана"
+ },
+ "item.space_m.bucket_mercury": {
+  "en": "Bucket of Mercury",
+  "origKey": "item.bucket_mercury.name",
+  "ru": "Ведро ртути"
+ },
+ "item.space_m.butter": {
+  "en": "Butter",
+  "origKey": "item.butter.name",
+  "ru": "Сливочное масло"
+ },
+ "item.space_m.butter_sword": {
+  "en": "Butter Sword",
+  "origKey": "!",
+  "ru": "Масляный меч"
+ },
+ "item.space_m.capacitor_lanthanium": {
+  "en": "Lanthanium Capacitor",
+  "origKey": "item.circuit.capacitor_lanthanium.name",
+  "ru": "Лантановый конденсатор"
+ },
+ "item.space_m.cassette_ducc": {
+  "en": "Siren Track",
+  "origKey": "item.siren_track.name",
+  "ru": "Трек сирены"
+ },
+ "item.space_m.cassette_xbox_live": {
+  "en": "Siren Track",
+  "origKey": "item.siren_track.name",
+  "ru": "Трек сирены"
+ },
+ "item.space_m.chocolate_mint_billet": {
+  "en": "Mint Slice",
+  "origKey": "item.chocolate_mint_billet.name",
+  "ru": "Мятное печенье"
+ },
+ "item.space_m.chunk_ore_pentlandite": {
+  "en": "Pentlandite Chunk",
+  "origKey": "item.chunk_ore.pentlandite.name",
+  "ru": "Кусок пентландита"
+ },
+ "item.space_m.clump_hydrochloric": {
+  "en": "Chloride Minerals",
+  "origKey": "item.clump_hydrochloric.name",
+  "ru": "Хлорированные очищенные минералы"
+ },
+ "item.space_m.clump_nitric": {
+  "en": "Nitride Minerals",
+  "origKey": "item.clump_nitric.name",
+  "ru": "Азотированные минералы"
+ },
+ "item.space_m.clump_peroxide": {
+  "en": "Acidized Minerals",
+  "origKey": "item.clump_peroxide.name",
+  "ru": "Очищенные минералы"
+ },
+ "item.space_m.clump_schrabidic": {
+  "en": "Schrabidic Minerals",
+  "origKey": "item.clump_schrabidic.name",
+  "ru": "Сверхглубоко очищенные минералы"
+ },
+ "item.space_m.clump_solvent": {
+  "en": "Solvent Minerals",
+  "origKey": "item.clump_solvent.name",
+  "ru": "Глубоко очищенные минералы"
+ },
+ "item.space_m.clump_sulfuric": {
+  "en": "Sulfuric Minerals",
+  "origKey": "item.clump_sulfuric.name",
+  "ru": "Промытые минералы"
+ },
+ "item.space_m.cmug_empty": {
+  "en": "Empty Mug",
+  "origKey": "item.cmug_empty.name",
+  "ru": "Пустая кружка"
+ },
+ "item.space_m.coin_airliner": {
+  "en": "Airliner Coin",
+  "origKey": "item.coin_airliner.name",
+  "ru": "Монета Гражданский самолёт"
+ },
+ "item.space_m.core_angel": {
+  "en": "Angelic Core",
+  "origKey": "item.core_angel.name",
+  "ru": "Ангельское жар-ядро"
+ },
+ "item.space_m.crystal_cleaned": {
+  "en": "Cleaned Mineral Crystals",
+  "origKey": "item.crystal_cleaned.name",
+  "ru": "Очищенные кристаллизованные минералы"
+ },
+ "item.space_m.crystal_mineral": {
+  "en": "Mineral Crystals",
+  "origKey": "item.crystal_mineral.name",
+  "ru": "Кристаллизованные минералы"
+ },
+ "item.space_m.crystal_nickel": {
+  "en": "Nickel Crystals",
+  "origKey": "item.crystal_nickel.name",
+  "ru": "Кристаллизованный никель"
+ },
+ "item.space_m.crystal_niobium": {
+  "en": "Niobium Crystals",
+  "origKey": "item.crystal_niobium.name",
+  "ru": "Кристаллизованный ниобий"
+ },
+ "item.space_m.crystal_zinc": {
+  "en": "Zinc Crystal",
+  "origKey": "item.crystal_zinc.name",
+  "ru": "Кристаллизованный цинк"
+ },
+ "item.space_m.depthsquid_spawn_egg": {
+  "en": "Spawn Depth Squid",
+  "origKey": "!",
+  "ru": "Призвать: Глубинный кальмар"
+ },
+ "item.space_m.divine_shard": {
+  "en": "Divine Shard",
+  "origKey": "item.divine_shard.name",
+  "ru": "Божественный осколок"
+ },
+ "item.space_m.entity_meme_ufo_spawn_egg": {
+  "en": "Mini UFO Spawn Egg",
+  "origKey": "!",
+  "ru": "Яйцо призыва мини-НЛО"
+ },
+ "item.space_m.entity_war_behemoth_spawn_egg": {
+  "en": "War Behemoth Spawn Egg",
+  "origKey": "!",
+  "ru": "Яйцо призыва колосса войны"
+ },
+ "item.space_m.fence_gate": {
+  "en": "Chainlink Fence Gate",
+  "origKey": "item.fence_gate.name",
+  "ru": "Проволочная калитка"
+ },
+ "item.space_m.flask_infusion_nitan": {
+  "en": "NITAN© Ambrosia",
+  "origKey": "item.flask_infusion.nitan.name",
+  "ru": "Амброзия NITAN©"
+ },
+ "item.space_m.flask_infusion_nitan.desc": {
+  "en": "Painkiller for medical and recreational use only.",
+  "origKey": "item.flask_infusion.nitan.desc",
+  "ru": "Болеутоляющее исключительно для медицинского или развлекательного использования."
+ },
+ "item.space_m.flesh": {
+  "en": "Flesh",
+  "origKey": "item.flesh.name",
+  "ru": "Плоть"
+ },
+ "item.space_m.flesh_burger": {
+  "en": "Flesh Burger",
+  "origKey": "item.flesh_burger.name",
+  "ru": "Флэшбургер"
+ },
+ "item.space_m.flesh_burger.desc": {
+  "en": "juicy!.",
+  "origKey": "item.flesh_burger.desc",
+  "ru": "juicy!."
+ },
+ "item.space_m.flesh_creeper_spawn_egg": {
+  "en": "Spawn Flesh Creeper",
+  "origKey": "!",
+  "ru": "Призвать: Мясной крипер"
+ },
+ "item.space_m.flesh_wafer": {
+  "en": "Flesh Patty",
+  "origKey": "item.flesh_wafer.name",
+  "ru": "Заготовка котлеты из плоти"
+ },
+ "item.space_m.flippers": {
+  "en": "Flippers",
+  "origKey": "item.flippers.name",
+  "ru": "Ласты"
+ },
+ "item.space_m.flour": {
+  "en": "Flour",
+  "origKey": "item.flour.name",
+  "ru": "Мука"
+ },
+ "item.space_m.gaas": {
+  "en": "Printed GaAs Wafer",
+  "origKey": "item.circuit.gaas.name",
+  "ru": "Отпечатанная пластина из арсенида галлия"
+ },
+ "item.space_m.gaschip": {
+  "en": "GaAs Microchip",
+  "origKey": "item.circuit.gaschip.name",
+  "ru": "Микрочип из арсенида галлия"
+ },
+ "item.space_m.glass_empty": {
+  "en": "Empty Glass",
+  "origKey": "item.glass_empty.name",
+  "ru": "Пустой стакан"
+ },
+ "item.space_m.glass_smilk": {
+  "en": "Strawberry Milk Glass",
+  "origKey": "item.glass_smilk.name",
+  "ru": "Стакан клубничного молока"
+ },
+ "item.space_m.grilled_flesh": {
+  "en": "Grilled Flesh Patty",
+  "origKey": "item.grilled_flesh.name",
+  "ru": "Жареная котлета из плоти"
+ },
+ "item.space_m.hard_drive": {
+  "en": "Empty Hard Drive",
+  "origKey": "item.hard_drive.name",
+  "ru": "Пустой жёсткий диск"
+ },
+ "item.space_m.hard_drive_full": {
+  "en": "Hard Drive",
+  "origKey": "item.hard_drive_full.name",
+  "ru": "Жёсткий диск"
+ },
+ "item.space_m.heavy_boots": {
+  "en": "Occasionally Heavy Boots",
+  "origKey": "item.heavy_boots.name",
+  "ru": "Ботинки управляемой гравитации"
+ },
+ "item.space_m.hfchip": {
+  "en": "Hafnium Microchip",
+  "origKey": "item.circuit.hfchip.name",
+  "ru": "Гафниевый микрочип"
+ },
+ "item.space_m.ingot_australium_greater": {
+  "en": "Greater Australium Ingot",
+  "origKey": "item.ingot_australium_greater.name",
+  "ru": "Слиток высшего австралия"
+ },
+ "item.space_m.ingot_australium_lesser": {
+  "en": "Lesser Australium Ingot",
+  "origKey": "item.ingot_australium_lesser.name",
+  "ru": "Слиток низшего австралия"
+ },
+ "item.space_m.ingot_bk247": {
+  "en": "Berkelium-247 Ingot",
+  "origKey": "item.ingot_bk247.name",
+  "ru": "Слиток берклия-247"
+ },
+ "item.space_m.ingot_cf251": {
+  "en": "Californium-251 Ingot",
+  "origKey": "item.ingot_cf251.name",
+  "ru": "Слиток калифорния-251"
+ },
+ "item.space_m.ingot_cf252": {
+  "en": "Californium-252 Ingot",
+  "origKey": "item.ingot_cf252.name",
+  "ru": "Слиток калифорния-252"
+ },
+ "item.space_m.ingot_cm242": {
+  "en": "Curium-242 Ingot",
+  "origKey": "item.ingot_cm242.name",
+  "ru": "Слиток кюрия-242"
+ },
+ "item.space_m.ingot_cm243": {
+  "en": "Curium-243 Ingot",
+  "origKey": "item.ingot_cm243.name",
+  "ru": "Слиток кюрия-243"
+ },
+ "item.space_m.ingot_cm244": {
+  "en": "Curium-244 Ingot",
+  "origKey": "item.ingot_cm244.name",
+  "ru": "Слиток кюрия-244"
+ },
+ "item.space_m.ingot_cm245": {
+  "en": "Curium-245 Ingot",
+  "origKey": "item.ingot_cm245.name",
+  "ru": "Слиток кюрия-245"
+ },
+ "item.space_m.ingot_cm246": {
+  "en": "Curium-246 Ingot",
+  "origKey": "item.ingot_cm246.name",
+  "ru": "Слиток кюрия-246"
+ },
+ "item.space_m.ingot_cm247": {
+  "en": "Curium-247 Ingot",
+  "origKey": "item.ingot_cm247.name",
+  "ru": "Слиток кюрия-247"
+ },
+ "item.space_m.ingot_cm_fuel": {
+  "en": "Ingot of Curium Fuel",
+  "origKey": "item.ingot_cm_fuel.name",
+  "ru": "Слиток кюриевого топлива"
+ },
+ "item.space_m.ingot_cm_mix": {
+  "en": "Reactor-Grade Curium Ingot",
+  "origKey": "item.ingot_cm_mix.name",
+  "ru": "Слиток кюрия реакторного качества"
+ },
+ "item.space_m.ingot_cn989": {
+  "en": "Chinesium-989 Ingot",
+  "origKey": "item.ingot_cn989.name",
+  "ru": "Слиток китаёзиума-989"
+ },
+ "item.space_m.ingot_es253": {
+  "en": "Einsteinium-253 Ingot",
+  "origKey": "item.ingot_es253.name",
+  "ru": "Слиток эйнштейния-253"
+ },
+ "item.space_m.ingot_es255": {
+  "en": "Einstenium-255 Ingot",
+  "origKey": "item.ingot_es255.name",
+  "ru": "Слиток эйнштейния-255"
+ },
+ "item.space_m.ingot_gaas": {
+  "en": "Gallium Arsenide Ingot",
+  "origKey": "item.ingot_gaas.name",
+  "ru": "Слиток арсенида галлия"
+ },
+ "item.space_m.ingot_gallium": {
+  "en": "Gallium Ingot",
+  "origKey": "item.ingot_gallium.name",
+  "ru": "Галлиевый слиток"
+ },
+ "item.space_m.ingot_gwenium": {
+  "en": "Gwenium Ingot",
+  "origKey": "item.ingot_gwenium.name",
+  "ru": "Гвениумовый слиток"
+ },
+ "item.space_m.ingot_hafnium": {
+  "en": "Hafnium Ingot",
+  "origKey": "item.ingot_hafnium.name",
+  "ru": "Гафниевый слиток"
+ },
+ "item.space_m.ingot_iridium": {
+  "en": "Iridium Ingot",
+  "origKey": "item.ingot_iridium.name",
+  "ru": "Иридиевый слиток"
+ },
+ "item.space_m.ingot_magma": {
+  "en": "Vulcanite Ingot",
+  "origKey": "item.ingot_magma.name",
+  "ru": "Вулканитовый слиток"
+ },
+ "item.space_m.ingot_menthol": {
+  "en": "Menthol Crystals",
+  "origKey": "item.ingot_menthol.name",
+  "ru": "Ментоловые кристаллы"
+ },
+ "item.space_m.ingot_nickel": {
+  "en": "Nickel Ingot",
+  "origKey": "item.ingot_nickel.name",
+  "ru": "Никелевый слиток"
+ },
+ "item.space_m.ingot_palladium": {
+  "en": "Palladium Ingot",
+  "origKey": "item.ingot_palladium.name",
+  "ru": "Палладиевый слиток"
+ },
+ "item.space_m.ingot_stainless": {
+  "en": "Stainless Steel Ingot",
+  "origKey": "item.ingot_stainless.name",
+  "ru": "Слиток нержавеющей стали"
+ },
+ "item.space_m.ingot_tt": {
+  "en": "Techtactium Ingot",
+  "origKey": "item.ingot_tt.name",
+  "ru": "Техктактиумовый слиток"
+ },
+ "item.space_m.ingot_ttas": {
+  "en": "Techtactium Arsenide Ingot",
+  "origKey": "item.ingot_ttas.name",
+  "ru": "Слиток арсенида техтактиния"
+ },
+ "item.space_m.ingot_zinc": {
+  "en": "Zinc Ingot",
+  "origKey": "item.ingot_zinc.name",
+  "ru": "Цинковый слиток"
+ },
+ "item.space_m.insert_cmb": {
+  "en": "CMB Insert",
+  "origKey": "item.insert_cmb.name",
+  "ru": "Бронепластина из стали Альянса"
+ },
+ "item.space_m.item_expensive_astro": {
+  "en": "Astronavigation Unit",
+  "origKey": "item.item_expensive.astro.name",
+  "ru": "Astronavigation Unit"
+ },
+ "item.space_m.item_expensive_avionics": {
+  "en": "SAS Module",
+  "origKey": "item.item_expensive.avionics.name",
+  "ru": "Модуль САС"
+ },
+ "item.space_m.item_expensive_stainless_beam": {
+  "en": "Stainless Structural Beam",
+  "origKey": "item.item_expensive.stainless_beam.name",
+  "ru": "Нержавающая структурная балка"
+ },
+ "item.space_m.laser_crystal_iron": {
+  "en": "Iron-Arsenide BF Laser Crystal",
+  "origKey": "item.laser_crystal_iron.name",
+  "ru": "Железо-Арсенидовый жар-кристалл"
+ },
+ "item.space_m.laser_crystal_iron.desc": {
+  "en": "Gallium Arsenide wrapped Iron Core with Balefire Center",
+  "origKey": "item.laser_crystal_iron.desc",
+  "ru": "Железное ядро с жар-сердцевиной, обёрнутое арсенидом галлия."
+ },
+ "item.space_m.leaf_pet": {
+  "en": "Plastic Leaves",
+  "origKey": "item.pet_leaves.name",
+  "ru": "Пластиковые листья"
+ },
+ "item.space_m.leaf_rubber": {
+  "en": "Rubber Leaves",
+  "origKey": "item.rubber_leaves.name",
+  "ru": "Резиновые листья"
+ },
+ "item.space_m.lox_tank": {
+  "en": "Oxygen Tank",
+  "origKey": "item.lox_tank.name",
+  "ru": "Резервный кислородный бак PLSS"
+ },
+ "item.space_m.micro_ufo_spawn_egg": {
+  "en": "Spawn Macro UFO",
+  "origKey": "!",
+  "ru": "Призвать: Макро-НЛО"
+ },
+ "item.space_m.min_cream": {
+  "en": "Minmus Mint Ice Cream",
+  "origKey": "item.min_cream.name",
+  "ru": "Мятное мороженое (Прямиком с Минмуса!)"
+ },
+ "item.space_m.mineral_dust": {
+  "en": "Mineral Dust",
+  "origKey": "item.mineral_dust.name",
+  "ru": "Смесь минералов"
+ },
+ "item.space_m.mint_leaves": {
+  "en": "Mint Leaves",
+  "origKey": "item.mint_leaves.name",
+  "ru": "Листья мяты"
+ },
+ "item.space_m.molychip": {
+  "en": "Molysite-Etched Microchip",
+  "origKey": "item.circuit.molychip.name",
+  "ru": "Молизитовый микрочип"
+ },
+ "item.space_m.moon_cow_spawn_egg": {
+  "en": "Spawn Mun Cow",
+  "origKey": "!",
+  "ru": "Призвать: Лунная корова"
+ },
+ "item.space_m.mp_fuselage_10_hydrazine": {
+  "en": "Size 10 Hydrazine Fuselage",
+  "origKey": "item.mp_fuselage_10_hydrazine.name",
+  "ru": "Гидразиновый фюзеляж 10-го размера"
+ },
+ "item.space_m.mp_fuselage_20_hydrazine": {
+  "en": "Size 20 Hydrazine Fuselage",
+  "origKey": "item.mp_fuselage_20_hydrazine.name",
+  "ru": "Гидразиновый фюзеляж 20-го размера"
+ },
+ "item.space_m.mp_thruster_10_hydrazine": {
+  "en": "Size 10 Hydrazine Thruster",
+  "origKey": "item.mp_thruster_10_hydrazine.name",
+  "ru": "Гидразиновый ракетный двигатель 10-го размера"
+ },
+ "item.space_m.mp_thruster_20_hydrazine": {
+  "en": "Size 20 Hydrazine Thruster",
+  "origKey": "item.mp_thruster_20_hydrazine.name",
+  "ru": "Гидразиновый ракетный двигатель 20-го размера"
+ },
+ "item.space_m.mp_thruster_20_hydrogen": {
+  "en": "Size 20 Hydrolox Thruster",
+  "origKey": "item.mp_thruster_20_hydrogen.name",
+  "ru": "Водородный ракетный двигатель 20-го размера"
+ },
+ "item.space_m.mp_thruster_20_hydrogen_dual": {
+  "en": "Size 20 Hydrolox Twin Thrusters",
+  "origKey": "item.mp_thruster_20_hydrogen_dual.name",
+  "ru": "Спаренные водородные ракетные двигатели 20-го размера"
+ },
+ "item.space_m.mp_thruster_20_hydrogen_triple": {
+  "en": "Size 20 Hydrolox Triple Thrusters",
+  "origKey": "item.mp_thruster_20_hydrogen_triple.name",
+  "ru": "Строенные водородные ракетные двигатели 20-го размера"
+ },
+ "item.space_m.mp_thruster_20_methalox": {
+  "en": "Size 20 Methalox Thruster",
+  "origKey": "item.mp_thruster_20_methalox.name",
+  "ru": "Газовый ракетный двигатель 20-го размера"
+ },
+ "item.space_m.mp_thruster_20_methalox_dual": {
+  "en": "Size 20 Methalox Twin Thrusters",
+  "origKey": "item.mp_thruster_20_methalox_dual.name",
+  "ru": "Спаренные газовые ракетные двигатели 20-го размера"
+ },
+ "item.space_m.mp_thruster_20_methalox_triple": {
+  "en": "Size 20 Methalox Triple Thrusters",
+  "origKey": "item.mp_thruster_20_methalox_triple.name",
+  "ru": "Строенные газовые ракетные двигатели 20-го размера"
+ },
+ "item.space_m.nickel_salts": {
+  "en": "Nickel Salts",
+  "origKey": "item.nickel_salts.name",
+  "ru": "Соли никеля"
+ },
+ "item.space_m.ntm_bfa_spawn_egg": {
+  "en": "Spawn Radioactive Angel",
+  "origKey": "!",
+  "ru": "Призвать: Жар-Ангел"
+ },
+ "item.space_m.nugget_bk247": {
+  "en": "Berkelium-247 Nugget",
+  "origKey": "item.nugget_bk247.name",
+  "ru": "Самородок берклия-247"
+ },
+ "item.space_m.nugget_cf251": {
+  "en": "Californium-251 Nugget",
+  "origKey": "item.nugget_cf251.name",
+  "ru": "Самородок калифорния-251"
+ },
+ "item.space_m.nugget_cf252": {
+  "en": "Californium-252 Nugget",
+  "origKey": "item.nugget_cf252.name",
+  "ru": "Самородок калифорния-252"
+ },
+ "item.space_m.nugget_cm242": {
+  "en": "Curium-242 Nugget",
+  "origKey": "item.nugget_cm242.name",
+  "ru": "Самородок кюрия-242"
+ },
+ "item.space_m.nugget_cm243": {
+  "en": "Curium-243 Nugget",
+  "origKey": "item.nugget_cm243.name",
+  "ru": "Самородок кюрия-243"
+ },
+ "item.space_m.nugget_cm244": {
+  "en": "Curium-244 Nugget",
+  "origKey": "item.nugget_cm244.name",
+  "ru": "Самородок кюрия-244"
+ },
+ "item.space_m.nugget_cm245": {
+  "en": "Curium-245 Nugget",
+  "origKey": "item.nugget_cm245.name",
+  "ru": "Самородок кюрия-245"
+ },
+ "item.space_m.nugget_cm246": {
+  "en": "Curium-246 Nugget",
+  "origKey": "item.nugget_cm246.name",
+  "ru": "Самородок кюрия-246"
+ },
+ "item.space_m.nugget_cm247": {
+  "en": "Curium-247 Nugget",
+  "origKey": "item.nugget_cm247.name",
+  "ru": "Самородок кюрия-247"
+ },
+ "item.space_m.nugget_cm_fuel": {
+  "en": "Nugget of Curium Fuel",
+  "origKey": "item.nugget_cm_fuel.name",
+  "ru": "Самородок кюриевого топлива"
+ },
+ "item.space_m.nugget_cm_mix": {
+  "en": "Reactor-Grade Curium Nugget",
+  "origKey": "item.nugget_cm_mix.name",
+  "ru": "Самородок кюрия реакторного качества"
+ },
+ "item.space_m.nugget_cn989": {
+  "en": "Chinesium-989 Nugget",
+  "origKey": "item.nugget_cn989.name",
+  "ru": "Самородок китаёзиума-989"
+ },
+ "item.space_m.nugget_es253": {
+  "en": "Einsteinium-253 Nugget",
+  "origKey": "item.nugget_es253.name",
+  "ru": "Самородок эйнштейния-253"
+ },
+ "item.space_m.nugget_gaas": {
+  "en": "Gallium Arsenide Nugget",
+  "origKey": "item.nugget_gaas.name",
+  "ru": "Самородок арсенида галлия"
+ },
+ "item.space_m.nugget_gallium": {
+  "en": "Gallium Nugget",
+  "origKey": "item.nugget_gallium.name",
+  "ru": "Галлиевый самородок"
+ },
+ "item.space_m.nugget_hafnium": {
+  "en": "Hafnium Nugget",
+  "origKey": "item.nugget_hafnium.name",
+  "ru": "Гафниевый самородок"
+ },
+ "item.space_m.nugget_lanthanium": {
+  "en": "Semi-Stable Lanthanium Nugget",
+  "origKey": "item.nugget_lanthanium.name",
+  "ru": "Полустабильный самородок лантана"
+ },
+ "item.space_m.nugget_menthol": {
+  "en": "Menthol Nugget",
+  "origKey": "item.nugget_menthol.name",
+  "ru": "Кусочек ментола"
+ },
+ "item.space_m.nugget_nickel": {
+  "en": "Nickel Nugget",
+  "origKey": "item.nugget_nickel.name",
+  "ru": "Никелевый самородок"
+ },
+ "item.space_m.nugget_zinc": {
+  "en": "Zinc Nugget",
+  "origKey": "item.nugget_zinc.name",
+  "ru": "Цинковый самородок"
+ },
+ "item.space_m.ore_byproduct_b_arsenic": {
+  "en": "Crystalline Arsenic Fragment",
+  "origKey": "item.ore_byproduct.b_arsenic.name",
+  "ru": "Мышьяковый побочный продукт"
+ },
+ "item.space_m.ore_byproduct_b_strontium": {
+  "en": "Crystalline Strontium Fragment",
+  "origKey": "!",
+  "ru": "Кристаллический фрагмент стронция"
+ },
+ "item.space_m.oxy_pinwheel": {
+  "en": "Oxygen Pinwheel",
+  "origKey": "item.oxy_pinwheel.name",
+  "ru": "Кислородная вертушка"
+ },
+ "item.space_m.oxy_plss": {
+  "en": "PLSS",
+  "origKey": "item.oxy_plss.name",
+  "ru": "PLSS"
+ },
+ "item.space_m.paraffin_seeds": {
+  "en": "Chlorinated Seeds",
+  "origKey": "item.paraffin_seeds.name",
+  "ru": "Хлорированные семена"
+ },
+ "item.space_m.pellet_rtg_cf251": {
+  "en": "Californium-251 RTG Pellet",
+  "origKey": "item.pellet_rtg_cf251.name",
+  "ru": "РИТЭГ-пеллета из калифорния-251"
+ },
+ "item.space_m.pellet_rtg_cf251.desc": {
+  "en": "Known to the state of California to cause cancer",
+  "origKey": "item.pellet_rtg_cf251.desc",
+  "ru": "В штате Калифорния известно, что он вызывает рак."
+ },
+ "item.space_m.pellet_rtg_cf252": {
+  "en": "Californium-252 RTG Pellet",
+  "origKey": "item.pellet_rtg_cf252.name",
+  "ru": "РИТЭГ-пеллета из калифорния-252"
+ },
+ "item.space_m.pellet_rtg_cf252.desc": {
+  "en": "Ionizing",
+  "origKey": "item.pellet_rtg_cf252.desc",
+  "ru": "Ионизирующий"
+ },
+ "item.space_m.pellet_rtg_depleted_americium": {
+  "en": "Decayed Americium RTG Pellet",
+  "origKey": "item.pellet_rtg_depleted.americium.name",
+  "ru": "Decayed Americium RTG Pellet"
+ },
+ "item.space_m.pet_leaves": {
+  "en": "Plastic Leaves",
+  "origKey": "item.pet_leaves.name",
+  "ru": "Пластиковые листья"
+ },
+ "item.space_m.plate_cast_stainless": {
+  "en": "Cast Stainless Steel Plate",
+  "origKey": "!",
+  "ru": "Литая пластина (Нержавеющая сталь)"
+ },
+ "item.space_m.plate_cn989": {
+  "en": "Chinesium-989 Plate",
+  "origKey": "item.plate_cn989.name",
+  "ru": "Пластина китаёзиума-989"
+ },
+ "item.space_m.plate_nickel": {
+  "en": "Nickel Plate",
+  "origKey": "item.plate_nickel.name",
+  "ru": "Никелевая пластина"
+ },
+ "item.space_m.plate_stainless": {
+  "en": "Stainless Steel Plate",
+  "origKey": "item.plate_stainless.name",
+  "ru": "Пластина нержавеющей стали"
+ },
+ "item.space_m.plate_welded_stainless": {
+  "en": "Welded Stainless Steel Plate",
+  "origKey": "!",
+  "ru": "Сваренная пластина (Нержавеющая сталь)"
+ },
+ "item.space_m.powder_cn989": {
+  "en": "Chinesium-989 Powder",
+  "origKey": "item.powder_cn989.name",
+  "ru": "Порошок китаёзиума-989"
+ },
+ "item.space_m.powder_coffee": {
+  "en": "Ground Coffee",
+  "origKey": "item.powder_coffee.name",
+  "ru": "Молотый кофе"
+ },
+ "item.space_m.powder_coke_coal": {
+  "en": "Coal Coke Powder",
+  "origKey": "item.powder_coke.coal.name",
+  "ru": "Порошок угольного кокса"
+ },
+ "item.space_m.powder_coke_lignite": {
+  "en": "Lignite Coke Powder",
+  "origKey": "item.powder_coke.lignite.name",
+  "ru": "Порошок бурого кокса"
+ },
+ "item.space_m.powder_coke_petroleum": {
+  "en": "Petroleum Coke Powder",
+  "origKey": "item.powder_coke.petroleum.name",
+  "ru": "Порошок нефтяного кокса"
+ },
+ "item.space_m.powder_gallium": {
+  "en": "Gallium Powder",
+  "origKey": "item.powder_gallium.name",
+  "ru": "Галлиевый порошок"
+ },
+ "item.space_m.powder_gallium_tiny": {
+  "en": "Tiny Pile of Gallium Powder",
+  "origKey": "item.powder_gallium_tiny.name",
+  "ru": "Кучка галливого порошка"
+ },
+ "item.space_m.powder_nickel": {
+  "en": "Nickel Powder",
+  "origKey": "item.powder_nickel.name",
+  "ru": "Никелевый порошок"
+ },
+ "item.space_m.powder_pvc": {
+  "en": "PVC Powder",
+  "origKey": "item.powder_pvc.name",
+  "ru": "ПВХ-порошок"
+ },
+ "item.space_m.powder_rubber": {
+  "en": "Rubber Powder",
+  "origKey": "item.powder_rubber.name",
+  "ru": "Резиновый порошок"
+ },
+ "item.space_m.powder_wd2004": {
+  "en": "Woodemium-2004-Anti-mass Lattice Powder",
+  "origKey": "item.powder_wd2004.name",
+  "ru": "Порошок решётчатого анти-масс древесиума-2004"
+ },
+ "item.space_m.powder_wd2004_tiny": {
+  "en": "Tiny Pile Of Woodemium-2004-Anti-mass Lattice Powder",
+  "origKey": "item.powder_wd2004_tiny.name",
+  "ru": "Кучка порошка решётчатого анти-масс древесиума-2004"
+ },
+ "item.space_m.powder_zinc": {
+  "en": "Zinc Powder",
+  "origKey": "item.powder_zinc.name",
+  "ru": "Цинковый порошок"
+ },
+ "item.space_m.processt1": {
+  "en": "Drive Processor (Tier 1)",
+  "origKey": "item.circuit.processt1.name",
+  "ru": "Процессор обработки 1-го уровня"
+ },
+ "item.space_m.processt2": {
+  "en": "Drive Processor (Tier 2)",
+  "origKey": "item.circuit.processt2.name",
+  "ru": "Процессор обработки 2-го уровня"
+ },
+ "item.space_m.processt3": {
+  "en": "Drive Processor (Tier 3)",
+  "origKey": "item.circuit.processt3.name",
+  "ru": "Процессор обработки 3-го уровня"
+ },
+ "item.space_m.rag_blood": {
+  "en": "Blood-Soaked Rag",
+  "origKey": "item.rag_blood.name",
+  "ru": "Пропитанная кровью тряпка"
+ },
+ "item.space_m.rbmk_fuel_bk247": {
+  "en": "BK-247 RBMK Fuel Rod",
+  "origKey": "item.rbmk_fuel_bk247.name",
+  "ru": "Высокообогащенный берклиевый-247 топливный стержень РБМК"
+ },
+ "item.space_m.rbmk_fuel_hecm": {
+  "en": "HECm RBMK Fuel Rod",
+  "origKey": "item.rbmk_fuel_hecm.name",
+  "ru": "Высокообогащенный кюриевый-245 топливный стержень РБМК"
+ },
+ "item.space_m.rbmk_fuel_lecm": {
+  "en": "LECm RBMK Fuel Rod",
+  "origKey": "item.rbmk_fuel_lecm.name",
+  "ru": "Низкообогащенный кюриевый-245 топливный стержень РБМК"
+ },
+ "item.space_m.rbmk_fuel_mecm": {
+  "en": "MECm RBMK Fuel Rod",
+  "origKey": "item.rbmk_fuel_mecm.name",
+  "ru": "Среднеобогащенный кюриевый-245 топливный стержень РБМК"
+ },
+ "item.space_m.rbmk_pellet_bk247": {
+  "en": "BK-247 Fuel Pellet",
+  "origKey": "item.rbmk_pellet_bk247.name",
+  "ru": "Высокообогащенная берклиевая-247 топливная пеллета"
+ },
+ "item.space_m.rbmk_pellet_hecm": {
+  "en": "HECm Fuel pellet",
+  "origKey": "item.rbmk_pellet_hecm.name",
+  "ru": "Высокообогащенная кюриевая-245 топливная пеллета"
+ },
+ "item.space_m.rbmk_pellet_lecm": {
+  "en": "LECm Fuel pellet",
+  "origKey": "item.rbmk_pellet_lecm.name",
+  "ru": "Низкообогащенная кюриевая-245 топливная пеллета"
+ },
+ "item.space_m.rbmk_pellet_mecm": {
+  "en": "MECm Fuel pellet",
+  "origKey": "item.rbmk_pellet_mecm.name",
+  "ru": "Среднеобогащенная кюриевая-245 топливная пеллета"
+ },
+ "item.space_m.record_el": {
+  "en": "Music Disc",
+  "origKey": "!",
+  "ru": "Пластинка"
+ },
+ "item.space_m.record_el.desc": {
+  "en": "DUODEC - Ethereal",
+  "origKey": "item.record.el.desc",
+  "ru": "DUODEC - Ethereal"
+ },
+ "item.space_m.record_gp": {
+  "en": "Music Disc",
+  "origKey": "!",
+  "ru": "Пластинка"
+ },
+ "item.space_m.record_gp.desc": {
+  "en": "DUODEC - Goop",
+  "origKey": "item.record.gp.desc",
+  "ru": "DUODEC - Goop"
+ },
+ "item.space_m.record_gs": {
+  "en": "Music Disc",
+  "origKey": "!",
+  "ru": "Пластинка"
+ },
+ "item.space_m.record_gs.desc": {
+  "en": "DUODEC - GODSPEEEEEEEEEEEEEED",
+  "origKey": "item.record.gs.desc",
+  "ru": "DUODEC - GODSPEEEEEEEEEEEEEED"
+ },
+ "item.space_m.rocket_custom": {
+  "en": "Orbital Rocket",
+  "origKey": "item.rocket_custom.name",
+  "ru": "Орбитальная ракета"
+ },
+ "item.space_m.rp_c_20": {
+  "en": "Landing Capsule",
+  "origKey": "item.rp_c_20.name",
+  "ru": "Посадочная капсула"
+ },
+ "item.space_m.rp_f_20_1": {
+  "en": "Size 20 1m Liquid Fuel Fuselage",
+  "origKey": "item.rp_f_20_1.name",
+  "ru": "1-метровый топливный бак 20-го размера"
+ },
+ "item.space_m.rp_f_20_12": {
+  "en": "Size 20 12m Liquid Fuel Fuselage",
+  "origKey": "item.rp_f_20_12.name",
+  "ru": "12-метровый топливный бак 20-го размера"
+ },
+ "item.space_m.rp_f_20_3": {
+  "en": "Size 20 3m Liquid Fuel Fuselage",
+  "origKey": "item.rp_f_20_3.name",
+  "ru": "3-метровый топливный бак 20-го размера"
+ },
+ "item.space_m.rp_f_20_6": {
+  "en": "Size 20 6m Liquid Fuel Fuselage",
+  "origKey": "item.rp_f_20_6.name",
+  "ru": "6-метровый топливный бак 20-го размера"
+ },
+ "item.space_m.rp_l_20": {
+  "en": "Landing Legs",
+  "origKey": "item.rp_l_20.name",
+  "ru": "Посадочные опоры"
+ },
+ "item.space_m.rp_pod_20": {
+  "en": "Drop Pod",
+  "origKey": "item.rp_pod_20.name",
+  "ru": "Десантная капсула"
+ },
+ "item.space_m.rp_sc_20": {
+  "en": "Orbital Station",
+  "origKey": "item.rp_sc_20.name",
+  "ru": "Модуль создания орбитальной станции"
+ },
+ "item.space_m.rubber_leaves": {
+  "en": "Rubber Leaves",
+  "origKey": "item.rubber_leaves.name",
+  "ru": "Резиновые листья"
+ },
+ "item.space_m.s_cream": {
+  "en": "Strawberry Ice Cream",
+  "origKey": "item.s_cream.name",
+  "ru": "Клубничное мороженое"
+ },
+ "item.space_m.saltleaf": {
+  "en": "Saltleaf",
+  "origKey": "item.saltleaf.name",
+  "ru": "Солёный лист"
+ },
+ "item.space_m.sat_detector": {
+  "en": "Wideband Radio Emission Detector Satellite",
+  "origKey": "item.sat_detector.name",
+  "ru": "Wideband Radio Emission Detector Satellite"
+ },
+ "item.space_m.sat_dyson_relay": {
+  "en": "Satellite Dyson Relay",
+  "origKey": "item.sat_dyson_relay.name",
+  "ru": "Ретранслятор Роя Дайсона"
+ },
+ "item.space_m.sat_precision_laser": {
+  "en": "Orbital Precision Laser",
+  "origKey": "item.sat_precision_laser.name",
+  "ru": "Orbital Precision Laser"
+ },
+ "item.space_m.sat_ray_scan": {
+  "en": "Narrowband Emission Scanning Satellite",
+  "origKey": "item.sat_ray_scan.name",
+  "ru": "Narrowband Emission Scanning Satellite"
+ },
+ "item.space_m.scrapfish_spawn_egg": {
+  "en": "Spawn Scrapfish",
+  "origKey": "!",
+  "ru": "Призвать: Металлоломорыба"
+ },
+ "item.space_m.scutterfish_spawn_egg": {
+  "en": "Spawn Scutterfish",
+  "origKey": "!",
+  "ru": "Призвать: Скаттер"
+ },
+ "item.space_m.scuttertail": {
+  "en": "Scuttertail",
+  "origKey": "item.scuttertail.name",
+  "ru": "Хвост скаттера"
+ },
+ "item.space_m.scuttlecrab_spawn_egg": {
+  "en": "Spawn Scuttlecrab",
+  "origKey": "!",
+  "ru": "Призвать: Краб-бегун"
+ },
+ "item.space_m.siftereel_spawn_egg": {
+  "en": "Spawn Sifter Eel",
+  "origKey": "!",
+  "ru": "Призвать: Угорь-просейщик"
+ },
+ "item.space_m.spawn_angel": {
+  "en": "Spawn Radioactive Angel",
+  "origKey": "item.spawn_angel.name",
+  "ru": "Жар-Ангел"
+ },
+ "item.space_m.stick_pvc": {
+  "en": "PVC Stick",
+  "origKey": "item.stick_pvc.name",
+  "ru": "ПВХ-стержень"
+ },
+ "item.space_m.stick_vinyl": {
+  "en": "Vinyl Stick",
+  "origKey": "item.stick_vinyl.name",
+  "ru": "Виниловый стержень"
+ },
+ "item.space_m.swarm_member": {
+  "en": "Dyson Swarm Member",
+  "origKey": "item.swarm_member.name",
+  "ru": "Модуль Роя Дайсона"
+ },
+ "item.space_m.tankbot_spawn_egg": {
+  "en": "Spawn Tankbot",
+  "origKey": "!",
+  "ru": "Призвать: Танкбот"
+ },
+ "item.space_m.tea_leaf": {
+  "en": "Tea Leaf",
+  "origKey": "item.tea_leaf.name",
+  "ru": "Чайный лист"
+ },
+ "item.space_m.teacup": {
+  "en": "Cup of Tea",
+  "origKey": "item.teacup.name",
+  "ru": "Чай"
+ },
+ "item.space_m.teacup_empty": {
+  "en": "Empty Teacup",
+  "origKey": "item.teacup_empty.name",
+  "ru": "Пустая чашка"
+ },
+ "item.space_m.teaseeds": {
+  "en": "Tea Seeds",
+  "origKey": "item.teaseeds.name",
+  "ru": "Семена чая"
+ },
+ "item.space_m.transporter_linker": {
+  "en": "Transporter Pad Linker",
+  "origKey": "item.transporter_linker.name",
+  "ru": "Соединитель ракетного транспортера"
+ },
+ "item.space_m.turbine_syngas": {
+  "en": "Stainless Steel Turbine Blades",
+  "origKey": "item.turbine_syngas.name",
+  "ru": "Нержавеющие лопасти"
+ },
+ "item.space_m.v1": {
+  "en": "V1",
+  "origKey": "item.v1.name",
+  "ru": "V1"
+ },
+ "item.space_m.wand_time": {
+  "en": "Time Wand",
+  "origKey": "item.wand_time.name",
+  "ru": "Палочка контроля над временем"
+ },
+ "item.space_m.watz_pellet_amf": {
+  "en": "Americium Watz Pellet (Fuel)",
+  "origKey": "item.watz_pellet.amf.name",
+  "ru": "Ватцз-пеллета из америция"
+ },
+ "item.space_m.watz_pellet_amrg": {
+  "en": "Americium Watz Pellet (Reactor Grade)",
+  "origKey": "item.watz_pellet.amrg.name",
+  "ru": "Ватцз-пеллета из среднообогащеного америция"
+ },
+ "item.space_m.watz_pellet_bk247": {
+  "en": "Berkelium-247 Watz Pellet",
+  "origKey": "item.watz_pellet.bk247.name",
+  "ru": "Ватцз-пеллета из берклия-247"
+ },
+ "item.space_m.watz_pellet_cf251": {
+  "en": "Californium-251 Watz Pellet",
+  "origKey": "item.watz_pellet.cf251.name",
+  "ru": "Ватцз-пеллета из среднеобогащеного калифорния"
+ },
+ "item.space_m.watz_pellet_cf252": {
+  "en": "Californium-252 Watz Pellet",
+  "origKey": "item.watz_pellet.cf252.name",
+  "ru": "Ватцз-пеллета из высокообогащеного калифорния"
+ },
+ "item.space_m.watz_pellet_cmf": {
+  "en": "Curium Watz Pellet (Fuel)",
+  "origKey": "item.watz_pellet.cmf.name",
+  "ru": "Ватцз-пеллета из топливного кюрия"
+ },
+ "item.space_m.watz_pellet_cmrg": {
+  "en": "Curium Watz Pellet (Reactor-Grade)",
+  "origKey": "item.watz_pellet.cmrg.name",
+  "ru": "Ватцз-пеллета из среднеобогащеного кюрия"
+ },
+ "item.space_m.watz_pellet_depleted_amf": {
+  "en": "Americium Watz Pellet (Fuel) (Depleted)",
+  "origKey": "item.watz_pellet_depleted.amf.name",
+  "ru": "Ватцз-пеллета из америция (Обедненная)"
+ },
+ "item.space_m.watz_pellet_depleted_amrg": {
+  "en": "Americium Watz Pellet (Reactor-Grade) (Depleted)",
+  "origKey": "item.watz_pellet_depleted.amrg.name",
+  "ru": "Ватцз-пеллета из среднообогащеного америция (Обедненная)"
+ },
+ "item.space_m.watz_pellet_depleted_bk247": {
+  "en": "Berkelium-247 Watz Pellet (Depleted)",
+  "origKey": "item.watz_pellet_depleted.bk247.name",
+  "ru": "Ватцз-пеллета из берклия-247 (Обедненная)"
+ },
+ "item.space_m.watz_pellet_depleted_cf251": {
+  "en": "Californium-251 Watz Pellet (Depleted)",
+  "origKey": "item.watz_pellet_depleted.cf251.name",
+  "ru": "Ватцз-пеллета из среднеобогащеного калифорния (Обедненная)"
+ },
+ "item.space_m.watz_pellet_depleted_cf252": {
+  "en": "Californium-252 Watz Pellet (Depleted)",
+  "origKey": "item.watz_pellet_depleted.cf252.name",
+  "ru": "Ватцз-пеллета из высокообогащеного калифорния (Обедненная)"
+ },
+ "item.space_m.watz_pellet_depleted_cmf": {
+  "en": "Curium Watz Pellet (Fuel) (Depleted)",
+  "origKey": "item.watz_pellet_depleted.cmf.name",
+  "ru": "Ватцз-пеллета из топливного кюрия (Обедненная)"
+ },
+ "item.space_m.watz_pellet_depleted_cmrg": {
+  "en": "Curium Watz Pellet (Reactor-Grade) (Depleted)",
+  "origKey": "item.watz_pellet_depleted.cmrg.name",
+  "ru": "Ватцз-пеллета из среднеобогащеного кюрия (Обедненная)"
+ },
+ "item.space_m.watz_pellet_depleted_es253": {
+  "en": "Einsteinium-253 Watz Pellet (Depleted)",
+  "origKey": "item.watz_pellet_depleted.es253.name",
+  "ru": "Ватцз-пеллета из эйнштейния-253 (Обедненная)"
+ },
+ "item.space_m.watz_pellet_depleted_pu241": {
+  "en": "Plutonium-241 Watz Pellet (Depleted)",
+  "origKey": "item.watz_pellet_depleted.pu241.name",
+  "ru": "Ватцз-пелллета из плутония-241 (Обедненная)"
+ },
+ "item.space_m.watz_pellet_es253": {
+  "en": "Einsteinium-253 Watz Pellet",
+  "origKey": "item.watz_pellet.es253.name",
+  "ru": "Ватцз-пеллета из эйнштейния-253"
+ },
+ "item.space_m.watz_pellet_pu241": {
+  "en": "Plutonium-241 Watz Pellet",
+  "origKey": "item.watz_pellet.pu241.name",
+  "ru": "Ватцз-пеллета из плутония-241"
+ },
+ "item.space_m.wire_zinc": {
+  "en": "Zinc Wire",
+  "origKey": "!",
+  "ru": "Провод (Цинк)"
+ },
+ "item.space_m.woodemium_briquette": {
+  "en": "Balefire Infused Woodemium Briquette",
+  "origKey": "item.woodemium_briquette.name",
+  "ru": "Брикет жар-древесины"
+ },
+ "item.warhead.desc.apollo": {
+  "en": "Capsule",
+  "origKey": "item.warhead.desc.apollo",
+  "ru": "Capsule"
+ },
+ "item.warhead.desc.satellite": {
+  "en": "Satellite",
+  "origKey": "item.warhead.desc.satellite",
+  "ru": "Satellite"
+ },
+ "itemGroup.space_m.ntm_space_tab": {
+  "en": "NTM Space",
+  "origKey": "!",
+  "ru": "NTM Космос"
+ },
+ "pseudofluid.hbm_m.minsol": {
+  "en": "Heavy Mineral Slurry",
+  "origKey": "hbmpseudofluid.minsol",
+  "ru": "Тяжёлый минеральный шлам"
+ },
+ "pseudofluid.hbm_m.minsolsep": {
+  "en": "Seperated Mineral Slurry",
+  "origKey": "hbmpseudofluid.minsolsep",
+  "ru": "Отделённый минеральный шлам"
+ },
+ "station.disengage": {
+  "en": "Disengaging engines",
+  "origKey": "station.disengage",
+  "ru": "Выключение двигателей"
+ },
+ "station.emptyRocket": {
+  "en": "Rocket needs fuel",
+  "origKey": "station.emptyRocket",
+  "ru": "Требуется топливо!"
+ },
+ "station.engage": {
+  "en": "Engaging engines for burn to",
+  "origKey": "station.engage",
+  "ru": "Включение двигателей"
+ },
+ "station.enterRocket": {
+  "en": "Interact to enter docked rocket",
+  "origKey": "station.enterRocket",
+  "ru": "Нажмите, чтобы войти в пристыкованную капсулу"
+ },
+ "station.insertDrive": {
+  "en": "Insert a drive to begin journey",
+  "origKey": "station.insertDrive",
+  "ru": "Вставьте жёсткий диск, чтобы начать путешествие"
+ },
+ "station.interactDrive": {
+  "en": "Interact to remove drive",
+  "origKey": "station.interactDrive",
+  "ru": "Нажмите, чтобы извлечь жёсткий диск"
+ },
+ "station.occupiedRocket": {
+  "en": "Rocket is occupied",
+  "origKey": "station.occupiedRocket",
+  "ru": "Капсула занята"
+ },
+ "station.placeRocket": {
+  "en": "Interact to place held rocket",
+  "origKey": "station.placeRocket",
+  "ru": "Нажмите, чтобы разместить удерживаемую капсулу"
+ },
+ "station.progress": {
+  "en": "Progress",
+  "origKey": "station.progress",
+  "ru": "Прогресс"
+ },
+ "station.removeDrive": {
+  "en": "Remove drive to continue",
+  "origKey": "station.removeDrive",
+  "ru": "Извлеките жёсткий диск, чтобы продолжить"
+ },
+ "station.removeRocket": {
+  "en": "Interact to remove docked rocket",
+  "origKey": "station.removeRocket",
+  "ru": "Нажмите, чтобы удалить пристыкованную капсулу"
+ },
+ "station.retrieveRocket": {
+  "en": "Interact to retrieve stored rockets",
+  "origKey": "station.retrieveRocket",
+  "ru": "Нажмите, чтобы извлечь накопленные ракеты"
+ },
+ "station.travelling": {
+  "en": "Travelling to",
+  "origKey": "station.travelling",
+  "ru": "Точка назначения"
+ },
+ "trait.confusion": {
+  "en": "Autism",
+  "origKey": "trait.confusion",
+  "ru": "Аутизм"
+ },
+ "trait.neutron": {
+  "en": "Neutron Radiation",
+  "origKey": "trait.neutron",
+  "ru": "Нейтронная радиация"
+ }
+}

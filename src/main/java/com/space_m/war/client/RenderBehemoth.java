@@ -4,8 +4,10 @@ import org.jetbrains.annotations.NotNull;
 
 import com.hbm_m.client.render.SimpleObjModel;
 import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Axis;
 import com.space_m.SpaceMod;
+import com.space_m.entity.mob.client.SpaceMobVbos;
 import com.space_m.war.EntityWarBehemoth;
 
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -101,12 +103,12 @@ public class RenderBehemoth extends EntityRenderer<EntityWarBehemoth> {
         ps.translate(0, 8.6F, 0.5F);
         ps.mulPose(Axis.XP.rotationDegrees(-behemoth.renderPitch)); // Apply pitch rotation
         ps.translate(0, -8.7F, -0.5F);
-        part("body", BODY, ps, buffers, light, overlay);
-        part("hatch1", BODY, ps, buffers, light, overlay);
-        part("hatch2", BODY, ps, buffers, light, overlay);
-        part("gun", BODY, ps, buffers, light, overlay);
-        part("helmet", HELMET, ps, buffers, light, overlay);
-        part("eye", EYE, ps, buffers, light, overlay);
+        part("body", BODY, ps, buffers, light, overlay, behemoth);
+        part("hatch1", BODY, ps, buffers, light, overlay, behemoth);
+        part("hatch2", BODY, ps, buffers, light, overlay, behemoth);
+        part("gun", BODY, ps, buffers, light, overlay, behemoth);
+        part("helmet", HELMET, ps, buffers, light, overlay, behemoth);
+        part("eye", EYE, ps, buffers, light, overlay, behemoth);
         ps.popPose();
 
         double stepHeight = 5.5;
@@ -125,17 +127,17 @@ public class RenderBehemoth extends EntityRenderer<EntityWarBehemoth> {
         rightFootY = Math.max(rightFootY, 7.0);
 
         ps.pushPose(); // RIGHT LEG MATRIX START
-        renderLegIK("right", rightFootX, rightFootY, rightFootZ, ps, buffers, light, overlay);
+        renderLegIK("right", rightFootX, rightFootY, rightFootZ, ps, buffers, light, overlay, behemoth);
         ps.popPose(); // RIGHT LEG MATRIX END
 
         ps.pushPose(); // LEFT LEG MATRIX START
-        renderLegIK("left", leftFootX, leftFootY, leftFootZ, ps, buffers, light, overlay);
+        renderLegIK("left", leftFootX, leftFootY, leftFootZ, ps, buffers, light, overlay, behemoth);
         ps.popPose(); // LEFT LEG MATRIX END
 
         ps.popPose();
     }
 
-    private void renderLegIK(String leg, double targetFootX, double targetFootY, double targetFootZ, PoseStack ps, MultiBufferSource buffers, int light, int overlay) {
+    private void renderLegIK(String leg, double targetFootX, double targetFootY, double targetFootZ, PoseStack ps, MultiBufferSource buffers, int light, int overlay, EntityWarBehemoth behemoth) {
         // Calculate leg IK based on the target foot position
         double thighLength = 6.0;
         double shinLength = 8.0;
@@ -152,7 +154,7 @@ public class RenderBehemoth extends EntityRenderer<EntityWarBehemoth> {
         ps.translate(0, 8.5F, 0.5F);
         ps.mulPose(Axis.XP.rotationDegrees((float) (hipAngle * (180.0 / Math.PI))));
         ps.translate(0, -8.6F, -0.5F);
-        part(leg.equals("right") ? "hip_right" : "hip_left", HIP, ps, buffers, light, overlay);
+        part(leg.equals("right") ? "hip_right" : "hip_left", HIP, ps, buffers, light, overlay, behemoth);
         ps.translate(0, 8.6F, 0.5F);
 
         ps.pushPose(); // KNEE MATRIX START
@@ -160,20 +162,22 @@ public class RenderBehemoth extends EntityRenderer<EntityWarBehemoth> {
         ps.mulPose(Axis.XP.rotationDegrees((float) (kneeAngle * (180.0 / Math.PI)))); // Knee rotation
 
         ps.translate(0, -6.7F, -0.5F);
-        part(leg.equals("right") ? "knee_right" : "knee_left", KNEE, ps, buffers, light, overlay);
+        part(leg.equals("right") ? "knee_right" : "knee_left", KNEE, ps, buffers, light, overlay, behemoth);
         ps.translate(0, 6.7F, 0.5F);
 
         ps.translate(0, -5.6F, 0F);
         ps.mulPose(Axis.XP.rotationDegrees((float) (cosKneeAngle * (-90.0 / Math.PI))));
         ps.translate(0, -1F, -0.5F);
-        part(leg.equals("right") ? "leg_right" : "leg_left", LEG, ps, buffers, light, overlay);
+        part(leg.equals("right") ? "leg_right" : "leg_left", LEG, ps, buffers, light, overlay, behemoth);
 
         ps.translate(0, 1F, 0.5F);
         ps.popPose(); // KNEE MATRIX END
     }
 
-    private static void part(String name, ResourceLocation tex, PoseStack ps, MultiBufferSource buffers, int light, int overlay) {
-        BEHEMOTH.renderPartEntity(name, ps, buffers.getBuffer(RenderType.entityCutoutNoCull(tex)), light, overlay, 1F, 1F, 1F, 1F);
+    private static void part(String name, ResourceLocation tex, PoseStack ps, MultiBufferSource buffers, int light, int overlay, EntityWarBehemoth behemoth) {
+        net.minecraft.core.BlockPos pos = behemoth != null ? behemoth.blockPosition() : net.minecraft.core.BlockPos.ZERO;
+        VertexConsumer vc = buffers.getBuffer(RenderType.entityCutoutNoCull(tex));
+        SpaceMobVbos.renderPart(BEHEMOTH, name, tex, ps, vc, light, overlay, pos, buffers, 1F, 1F, 1F, 1F);
     }
 
     @Override

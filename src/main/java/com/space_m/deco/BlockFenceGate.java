@@ -67,7 +67,7 @@ public class BlockFenceGate extends DoorBlock {
     //?} else {
     /*@Override
     protected net.minecraft.world.ItemInteractionResult useItemOn(net.minecraft.world.item.ItemStack held, BlockState state, Level world, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
-        return com.hbm_m.platform.BlockUseHooks.item(spaceUse(state, world, pos, player));
+        return com.hbm_m.platform.BlockHooks.useItemResult(spaceUse(state, world, pos, player));
     }
     @Override
     protected InteractionResult useWithoutItem(BlockState state, Level world, BlockPos pos, Player player, BlockHitResult hit) {

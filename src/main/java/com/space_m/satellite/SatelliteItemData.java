@@ -1,6 +1,6 @@
 package com.space_m.satellite;
 
-import com.hbm_m.platform.PlatformHooks;
+import com.hbm_m.platform.StackNbt;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.item.ItemStack;
@@ -36,13 +36,13 @@ public final class SatelliteItemData {
     public static void ensureItemData(ItemStack stack) {
         if (stack == null || stack.isEmpty()) return;
         SatelliteOrbit o = read(stack);
-        PlatformHooks.editItemTag(stack, o::writeToNBT);
+        StackNbt.edit(stack, o::writeToNBT);
     }
 
     /** Alle Werte des Stapels (fehlende = Standard/registrierte Farbe). */
     public static SatelliteOrbit read(ItemStack stack) {
         SatelliteOrbit o = new SatelliteOrbit();
-        CompoundTag nbt = stack == null ? null : PlatformHooks.getItemTag(stack);
+        CompoundTag nbt = stack == null ? null : StackNbt.read(stack);
         float[] color = SpaceSatelliteRegistry.getRegisteredColorOrDefault(stack == null ? null : stack.getItem());
         if (nbt == null) nbt = new CompoundTag();
         o.readFromNBT(nbt, color);
@@ -68,23 +68,23 @@ public final class SatelliteItemData {
     public static boolean isBlinking(ItemStack stack) { return read(stack).isBlinking; }
 
     public static void setInclination(ItemStack stack, float inclination) {
-        PlatformHooks.editItemTag(stack, t -> t.putFloat("satInclination", inclination));
+        StackNbt.edit(stack, t -> t.putFloat("satInclination", inclination));
     }
 
     public static void setAltitude(ItemStack stack, float altitude) {
-        PlatformHooks.editItemTag(stack, t -> t.putFloat("satAltitude", altitude));
+        StackNbt.edit(stack, t -> t.putFloat("satAltitude", altitude));
     }
 
     public static void setPhaseOffset(ItemStack stack, float phaseOffset) {
-        PlatformHooks.editItemTag(stack, t -> t.putFloat("satPhaseOffset", SatelliteOrbit.normalizePhaseOffset(phaseOffset)));
+        StackNbt.edit(stack, t -> t.putFloat("satPhaseOffset", SatelliteOrbit.normalizePhaseOffset(phaseOffset)));
     }
 
     public static void setOwner(ItemStack stack, String owner) {
-        PlatformHooks.editItemTag(stack, t -> t.putString("satOwner", owner));
+        StackNbt.edit(stack, t -> t.putString("satOwner", owner));
     }
 
     public static void setColor(ItemStack stack, float r, float g, float b) {
-        PlatformHooks.editItemTag(stack, t -> {
+        StackNbt.edit(stack, t -> {
             t.putFloat("satColorR", r);
             t.putFloat("satColorG", g);
             t.putFloat("satColorB", b);
@@ -92,10 +92,10 @@ public final class SatelliteItemData {
     }
 
     public static void setBlinking(ItemStack stack, boolean isBlinking) {
-        PlatformHooks.editItemTag(stack, t -> t.putBoolean("satIsBlinking", isBlinking));
+        StackNbt.edit(stack, t -> t.putBoolean("satIsBlinking", isBlinking));
     }
 
     public static void setBlinkPeriod(ItemStack stack, float blinkPeriod) {
-        PlatformHooks.editItemTag(stack, t -> t.putFloat("satBlink", SatelliteOrbit.clampBlinkPeriod(blinkPeriod)));
+        StackNbt.edit(stack, t -> t.putFloat("satBlink", SatelliteOrbit.clampBlinkPeriod(blinkPeriod)));
     }
 }

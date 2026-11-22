@@ -6,7 +6,8 @@ import org.jetbrains.annotations.Nullable;
 
 import com.hbm_m.explosion.ExplosionLarge;
 import com.hbm_m.item.ISatChip;
-import com.hbm_m.platform.PlatformHooks;
+import com.hbm_m.platform.MobHooks;
+import com.hbm_m.platform.StackNbt;
 import com.hbm_m.satellite.SatelliteManager;
 import com.hbm_m.sound.HbmSoundsNT;
 import com.hbm_m.util.ParticleUtil;
@@ -283,7 +284,7 @@ public class EntityRideableRocket extends Entity implements CelestialMount, INav
                     // Original: Erfolg achDriveFail, wenn das Laufwerk nicht kopiert wurde (R9-B: space_m:drive_fail)
                     if (thrower instanceof net.minecraft.server.level.ServerPlayer player && !player.isCreative()
                             && !ItemVOTVdrive.wasCopied(navDrive)) {
-                        com.hbm_m.platform.PlatformHooks.awardAdvancementIfEligible(player, com.space_m.SpaceMod.id("drive_fail"), true);
+                        MobHooks.awardAdvancementIfEligible(player, com.space_m.SpaceMod.id("drive_fail"), true);
                     }
                 }
 
@@ -578,7 +579,7 @@ public class EntityRideableRocket extends Entity implements CelestialMount, INav
                 if (!fluid.isEmpty()) setState(RocketState.TIPPING);
                 if (fluid.is(net.minecraft.tags.FluidTags.LAVA)) {
                     // setOnFireFromLava
-                    PlatformHooks.setSecondsOnFire(this, 15);
+                    MobHooks.setSecondsOnFire(this, 15);
                     willExplode = true;
                 }
             }
@@ -1144,7 +1145,7 @@ public class EntityRideableRocket extends Entity implements CelestialMount, INav
         setRocket(RocketStruct.readFromNBT(nbt.getCompound("rocket")));
 
         if (nbt.contains("drive")) {
-            navDrive = PlatformHooks.itemStackOf(nbt.getCompound("drive"), level().registryAccess());
+            navDrive = StackNbt.parse(nbt.getCompound("drive"), level().registryAccess());
         } else {
             navDrive = ItemStack.EMPTY;
         }
@@ -1179,7 +1180,7 @@ public class EntityRideableRocket extends Entity implements CelestialMount, INav
         nbt.put("rocket", rocketTag);
 
         if (!navDrive.isEmpty()) {
-            nbt.put("drive", PlatformHooks.saveItemStack(navDrive, new CompoundTag(), level().registryAccess()));
+            nbt.put("drive", StackNbt.saveNew(navDrive, level().registryAccess()));
         }
 
         nbt.putInt("freq", satFreq);
@@ -1201,7 +1202,7 @@ public class EntityRideableRocket extends Entity implements CelestialMount, INav
     /** Original {@code SatelliteBase.getInclination/...} des Stacks: alle "sat*"-Schluessel. */
     private static CompoundTag extractSatData(ItemStack stack) {
         CompoundTag out = new CompoundTag();
-        CompoundTag tag = PlatformHooks.getItemTag(stack);
+        CompoundTag tag = StackNbt.read(stack);
         if (tag == null) return out;
         for (String key : tag.getAllKeys()) {
             if (key.startsWith("sat")) {
@@ -1215,7 +1216,7 @@ public class EntityRideableRocket extends Entity implements CelestialMount, INav
     /** Original {@code applySatData}. */
     private void applySatData(ItemStack stack) {
         if (satData.isEmpty()) return;
-        PlatformHooks.editItemTag(stack, t -> {
+        StackNbt.edit(stack, t -> {
             for (String key : satData.getAllKeys()) {
                 Tag value = satData.get(key);
                 if (value != null) t.put(key, value.copy());
