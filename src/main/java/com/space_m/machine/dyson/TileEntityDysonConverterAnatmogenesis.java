@@ -131,8 +131,8 @@ public class TileEntityDysonConverterAnatmogenesis extends BaseMachineBlockEntit
     }
 
     @Override
-    protected void applyClientUpdate(@NotNull CompoundTag nbt) {
-        super.applyClientUpdate(nbt);
+    protected void applyClientUpdate(@NotNull CompoundTag nbt, @Nullable net.minecraft.core.HolderLookup.Provider registries) {
+        super.applyClientUpdate(nbt, registries);
         isConverting = nbt.getBoolean("s_converting");
         gasProduced = nbt.getLong("s_gasProduced");
     }

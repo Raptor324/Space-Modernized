@@ -1,14 +1,14 @@
 {
-  "type": "hbm_m:electrolysis_fluid",
+  "type": "hbm_m:electrolyser_fluid",
   "input": {
     "fluid": "space_m:brine",
     "amount": 400
   },
-  "output1": {
+  "output_a": {
     "fluid": "hbm_m:hydrogen",
     "amount": 200
   },
-  "output2": {
+  "output_b": {
     "fluid": "hbm_m:oxygen",
     "amount": 200
   },

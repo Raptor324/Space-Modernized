@@ -289,8 +289,8 @@ public class TileEntityDysonLauncher extends BaseMachineBlockEntity {
     }
 
     @Override
-    protected void applyClientUpdate(@NotNull CompoundTag nbt) {
-        super.applyClientUpdate(nbt);
+    protected void applyClientUpdate(@NotNull CompoundTag nbt, @Nullable net.minecraft.core.HolderLookup.Provider registries) {
+        super.applyClientUpdate(nbt, registries);
         swarmId = nbt.getInt("s_swarmId");
         isOperating = nbt.getBoolean("s_operating");
         swarmCount = nbt.getInt("s_swarmCount");

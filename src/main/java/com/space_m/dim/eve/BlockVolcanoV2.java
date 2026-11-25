@@ -144,7 +144,7 @@ public class BlockVolcanoV2 extends BaseEntityBlock {
         }
 
         @Override
-        protected void applyClientUpdate(@NotNull CompoundTag tag) {
+        protected void applyClientUpdate(@NotNull CompoundTag tag, @Nullable HolderLookup.Provider registries) {
             if (tag.contains("charge")) chargetime = tag.getInt("charge");
         }
 

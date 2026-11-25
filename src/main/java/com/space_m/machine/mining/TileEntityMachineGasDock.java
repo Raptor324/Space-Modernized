@@ -12,6 +12,9 @@ import com.hbm_m.util.ParticleUtil;
 import com.space_m.celestial.CelestialBody;
 import com.space_m.machine.chem.ChemUtil;
 
+import dev.architectury.utils.Env;
+import dev.architectury.utils.EnvExecutor;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -110,7 +113,8 @@ public class TileEntityMachineGasDock extends BaseMachineBlockEntity implements 
                 ParticleUtil.spawnGasFlame(level, x, y + 0.5 + be.launchTicks, z, 0.0, -1.0, 0.0);
 
                 if (be.launchTicks < 10) {
-                    com.space_m.machine.mining.client.MiningClientEffects.shock(level, x, y, z, 1 + level.random.nextInt(3), 1 + level.random.nextGaussian());
+                    EnvExecutor.runInEnv(Env.CLIENT, () -> () -> com.space_m.machine.mining.client.MiningClientEffects.shock(
+                            level, x, y, z, 1 + level.random.nextInt(3), 1 + level.random.nextGaussian()));
                 }
             }
         }

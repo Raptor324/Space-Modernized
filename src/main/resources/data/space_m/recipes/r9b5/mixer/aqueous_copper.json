@@ -1,18 +1,16 @@
 {
   "type": "hbm_m:mixer",
-  "output": {
-    "fluid": "space_m:aqueous_copper",
-    "amount": 1000
-  },
-  "duration": 80,
-  "input1": {
+  "input_a": {
     "fluid": "space_m:brine",
     "amount": 250
   },
   "solid": {
-    "ingredient": {
-      "item": "hbm_m:malachite_chunk"
-    },
+    "item": "hbm_m:malachite_chunk",
     "count": 1
-  }
+  },
+  "output": {
+    "fluid": "space_m:aqueous_copper",
+    "amount": 1000
+  },
+  "duration": 80
 }

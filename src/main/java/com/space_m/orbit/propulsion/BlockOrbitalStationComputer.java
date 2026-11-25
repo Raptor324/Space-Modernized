@@ -19,8 +19,9 @@ import com.space_m.orbit.OrbitalStation.StationState;
 import com.space_m.rocket.ItemVOTVdrive;
 
 import dev.architectury.registry.menu.MenuRegistry;
+import dev.architectury.utils.Env;
+import dev.architectury.utils.EnvExecutor;
 import net.minecraft.ChatFormatting;
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -176,8 +177,9 @@ public class BlockOrbitalStationComputer extends DummyableMachineBlock implement
             text.add(Component.translatable("station.progress").append(": ").withStyle(ChatFormatting.AQUA)
                     .append(Component.literal(Math.round(progress * 100) + "%").withStyle(ChatFormatting.RESET)));
         } else if (computer.hasDrive) {
-            Player player = (Player) (Object) Minecraft.getInstance().player; // R6-A: ueber Object, sonst laedt der Verifier LocalPlayer auf dem Server
-            if (player != null && !player.getMainHandItem().isEmpty()) {
+            boolean[] hasHandItem = new boolean[1];
+            EnvExecutor.runInEnv(Env.CLIENT, () -> () -> hasHandItem[0] = com.space_m.orbit.propulsion.client.PropulsionClientEffects.hasMainHandItem());
+            if (hasHandItem[0]) {
                 text.add(Component.translatable("station.removeDrive"));
             } else {
                 text.add(Component.translatable("station.interactDrive"));

@@ -7,15 +7,14 @@ import org.jetbrains.annotations.Nullable;
 import com.hbm_m.block.machines.DummyableMachineBlock;
 import com.hbm_m.interfaces.ILookOverlay;
 
-import net.minecraft.client.Minecraft;
+import dev.architectury.utils.Env;
+import dev.architectury.utils.EnvExecutor;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.phys.HitResult;
 
 /**
  * Gemeinsamer Teil der Triebwerks-Bloecke (Original {@code BlockDummyable implements ILookOverlay}): TESR-Darstellung,
@@ -53,9 +52,10 @@ public abstract class StationThrusterBlock extends DummyableMachineBlock impleme
     /** Original im {@code printHook}: {@code world.getTileEntity(x, y, z) instanceof TileEntityProxyCombo}; liefert die Zelle oder null. */
     @Nullable
     protected BlockPos lookedAtPort(BlockPos core, BlockState state) {
-        HitResult hit = Minecraft.getInstance().hitResult;
-        if (!(hit instanceof BlockHitResult bhr) || hit.getType() != HitResult.Type.BLOCK) return null;
-        BlockPos looked = bhr.getBlockPos();
+        BlockPos[] lookedHolder = new BlockPos[1];
+        EnvExecutor.runInEnv(Env.CLIENT, () -> () -> lookedHolder[0] = com.space_m.orbit.propulsion.client.PropulsionClientEffects.lookedAtBlock());
+        BlockPos looked = lookedHolder[0];
+        if (looked == null) return null;
         Direction dir = PropulsionUtil.dir(state);
         Direction rot = PropulsionUtil.rot(dir);
         for (int[] e : extras()) {

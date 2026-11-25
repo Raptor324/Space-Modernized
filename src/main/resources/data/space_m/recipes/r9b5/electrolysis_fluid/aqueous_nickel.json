@@ -1,5 +1,5 @@
 {
-  "type": "hbm_m:electrolysis_fluid",
+  "type": "hbm_m:electrolyser_fluid",
   "input": {
     "fluid": "space_m:aqueous_nickel",
     "amount": 300

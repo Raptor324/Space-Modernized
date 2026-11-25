@@ -17,15 +17,11 @@ import com.space_m.machine.chem.recipe.VacuumCircuitRecipe;
 import dev.architectury.fluid.FluidStack;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
-import mezz.jei.api.gui.ingredient.IRecipeSlotsView;
 import mezz.jei.api.helpers.IGuiHelper;
 import mezz.jei.api.recipe.RecipeType;
 import mezz.jei.api.registration.IRecipeCatalystRegistration;
 import mezz.jei.api.registration.IRecipeCategoryRegistration;
 import mezz.jei.api.registration.IRecipeRegistration;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.Font;
-import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
@@ -73,7 +69,7 @@ public class ChemJeiPlugin implements IModPlugin {
 
     @Override
     public void registerRecipes(IRecipeRegistration registration) {
-        Level level = Minecraft.getInstance().level;
+        Level level = VacuumCircuitCategory.clientLevel();
 
         // AlkylationRecipes.getRecipes(): ohne Saeure nur der Eingang
         List<Entry> alky = new ArrayList<>();
@@ -118,28 +114,5 @@ public class ChemJeiPlugin implements IModPlugin {
         registration.addRecipeCatalyst(new ItemStack(ChemMachines.MACHINE_CRYO_DISTILL.get()), CRYO);
         registration.addRecipeCatalyst(new ItemStack(ChemMachines.MACHINE_VACUUM_CIRCUIT.get()), VACUUM_CIRCUIT);
         registration.addRecipeCatalyst(new ItemStack(ChemMachines.MACHINE_MILK_REFORMER.get()), DAIRY);
-    }
-
-    /** {@code VacuumCircuitHandler.drawExtras}: Dauer und Verbrauch rechtsbuendig bei x 160, y 43/55. */
-    static class VacuumCircuitCategory extends NeiUniversalJeiCategory {
-
-        static final java.util.Map<Entry, VacuumCircuitRecipe> INFO = new java.util.IdentityHashMap<>();
-
-        VacuumCircuitCategory(IGuiHelper gui) {
-            super(gui, VACUUM_CIRCUIT, Component.literal("Vacuum Solderer"), new ItemStack(ChemMachines.MACHINE_VACUUM_CIRCUIT.get()));
-        }
-
-        @Override
-        public void draw(Entry recipe, IRecipeSlotsView slots, GuiGraphics g, double mouseX, double mouseY) {
-            super.draw(recipe, slots, g, mouseX, mouseY);
-            VacuumCircuitRecipe sol = INFO.get(recipe);
-            if (sol == null) return;
-            Font font = Minecraft.getInstance().font;
-            String duration = String.format(java.util.Locale.US, "%,d", sol.duration) + " ticks";
-            String consumption = String.format(java.util.Locale.US, "%,d", sol.consumption) + " HE/t";
-            int side = 160;
-            g.drawString(font, duration, side - font.width(duration), 43, 0x404040, false);
-            g.drawString(font, consumption, side - font.width(consumption), 55, 0x404040, false);
-        }
     }
 }

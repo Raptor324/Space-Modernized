@@ -13,6 +13,9 @@ import com.space_m.celestial.CelestialBody;
 import com.space_m.celestial.SolarSystem;
 import com.space_m.fluid.trait.FT_Rocket;
 
+import dev.architectury.utils.Env;
+import dev.architectury.utils.EnvExecutor;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -76,7 +79,8 @@ public class TransporterRocketBlockEntity extends TransporterBlockEntityBase {
             ParticleUtil.spawnGasFlame(level, x, y + 0.5 + launchTicks, z, 0.0, -1.0, 0.0);
 
             if (launchTicks < 10) {
-                TransportClientEffects.shock(level, x, y, z, 1 + level.random.nextInt(3), 1 + level.random.nextGaussian());
+                EnvExecutor.runInEnv(Env.CLIENT, () -> () -> TransportClientEffects.shock(
+                        level, x, y, z, 1 + level.random.nextInt(3), 1 + level.random.nextGaussian()));
             }
         }
     }

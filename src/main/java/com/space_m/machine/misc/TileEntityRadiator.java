@@ -121,8 +121,8 @@ public class TileEntityRadiator extends BaseMachineBlockEntity implements IFluid
     }
 
     @Override
-    protected void applyClientUpdate(CompoundTag nbt) {
-        super.applyClientUpdate(nbt);
+    protected void applyClientUpdate(CompoundTag nbt, @Nullable net.minecraft.core.HolderLookup.Provider registries) {
+        super.applyClientUpdate(nbt, registries);
         waterTimer = nbt.getByte("s_waterTimer");
     }
 

@@ -10,6 +10,9 @@ import com.hbm_m.interfaces.ILookOverlay;
 import com.hbm_m.util.BobMathUtil;
 import com.space_m.blockentity.SpaceBlockEntities;
 
+import dev.architectury.utils.Env;
+import dev.architectury.utils.EnvExecutor;
+
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -98,7 +101,8 @@ public class BlockAlgaeFilm extends BaseEntityBlock implements ILookOverlay {
                 .append(FluidLocalization.nameFromFluidId(BuiltInRegistries.FLUID.getKey(film.tanks[1].getTankType())))
                 .append(": " + film.tanks[1].getFill() + "/" + film.tanks[1].getMaxFill() + "mB"));
 
-        LookOverlayText.print(guiGraphics, Component.translatable(getDescriptionId()), 0xffff00, 0x404000, text);
+        EnvExecutor.runInEnv(Env.CLIENT, () -> () -> com.space_m.lifesupport.client.LookOverlayText.print(
+                guiGraphics, Component.translatable(getDescriptionId()), 0xffff00, 0x404000, text));
     }
 
     /** Original {@code addInformation}: {@code addStandardInfo} (Umschalttaste zeigt {@code .desc}). */

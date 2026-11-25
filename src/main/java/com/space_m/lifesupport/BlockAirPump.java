@@ -17,6 +17,9 @@ import com.space_m.blockentity.SpaceBlockEntities;
 import com.space_m.celestial.trait.CBT_Atmosphere;
 import com.space_m.celestial.trait.CBT_Atmosphere.FluidEntry;
 
+import dev.architectury.utils.Env;
+import dev.architectury.utils.EnvExecutor;
+
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -112,7 +115,8 @@ public class BlockAirPump extends BaseEntityBlock implements ILookOverlay, IBloc
             text.add(Component.translatable("atmosphere.recycling").withStyle(ChatFormatting.GREEN));
         }
 
-        LookOverlayText.print(guiGraphics, Component.translatable(getDescriptionId()), 0xffff00, 0x404000, text);
+        EnvExecutor.runInEnv(Env.CLIENT, () -> () -> com.space_m.lifesupport.client.LookOverlayText.print(
+                guiGraphics, Component.translatable(getDescriptionId()), 0xffff00, 0x404000, text));
     }
 
     //? if < 1.21.1 {

@@ -6,6 +6,9 @@ import org.jetbrains.annotations.Nullable;
 
 import com.space_m.dim.tekto.TektoBlocks;
 
+import dev.architectury.utils.Env;
+import dev.architectury.utils.EnvExecutor;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.sounds.SoundEvents;
@@ -68,7 +71,7 @@ public class BlockGeysierDCM extends Block implements EntityBlock {
             data.putDouble("moZ", 0);
             data.putInt("maxAge", 100 + level.random.nextInt(20));
             data.putInt("color", 0xA4D7DD);
-            com.hbm_m.particle.helper.ParticleEffectClient.effectNT(data);
+            EnvExecutor.runInEnv(Env.CLIENT, () -> () -> com.hbm_m.particle.helper.ParticleEffectClient.effectNT(data));
         }
 
         void serverTick() {

@@ -15,6 +15,9 @@ import com.space_m.blockentity.SpaceBlockEntities;
 import com.space_m.celestial.CelestialFluids;
 import com.space_m.celestial.trait.CBT_Atmosphere;
 
+import dev.architectury.utils.Env;
+import dev.architectury.utils.EnvExecutor;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -88,7 +91,7 @@ public class TileEntityAirPump extends BaseMachineBlockEntity implements IFluidS
             data.putDouble("posZ", worldPosition.getZ() + 0.5 + level.random.nextDouble() - 0.5);
             data.putDouble("posY", worldPosition.getY() + 1);
 
-            com.hbm_m.particle.helper.ParticleEffectClient.effectNT(data);
+            EnvExecutor.runInEnv(Env.CLIENT, () -> () -> com.hbm_m.particle.helper.ParticleEffectClient.effectNT(data));
         }
     }
 

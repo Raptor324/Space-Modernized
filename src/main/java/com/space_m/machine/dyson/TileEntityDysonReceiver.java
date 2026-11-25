@@ -199,8 +199,8 @@ public class TileEntityDysonReceiver extends BaseMachineBlockEntity {
     }
 
     @Override
-    protected void applyClientUpdate(@NotNull CompoundTag nbt) {
-        super.applyClientUpdate(nbt);
+    protected void applyClientUpdate(@NotNull CompoundTag nbt, @Nullable net.minecraft.core.HolderLookup.Provider registries) {
+        super.applyClientUpdate(nbt, registries);
         isReceiving = nbt.getBoolean("s_receiving");
         swarmId = nbt.getInt("s_swarmId");
         swarmCount = nbt.getInt("s_swarmCount");

@@ -1,4 +1,4 @@
-package com.space_m.lifesupport;
+package com.space_m.lifesupport.client;
 
 import java.util.List;
 
@@ -14,11 +14,11 @@ import net.minecraft.world.level.GameType;
  * bleiben erhalten, z.B. rotes {@code "<- "} vor weissem Tanknamen wie im Original {@code EnumChatFormatting.RESET}).
  * Nur Client.
  */
-final class LookOverlayText {
+public final class LookOverlayText {
 
     private LookOverlayText() {}
 
-    static void print(GuiGraphics guiGraphics, Component title, int titleCol, int bgCol, List<Component> text) {
+    public static void print(GuiGraphics guiGraphics, Component title, int titleCol, int bgCol, List<Component> text) {
         Minecraft mc = Minecraft.getInstance();
         Options options = mc.options;
         if (!options.getCameraType().isFirstPerson()) return;

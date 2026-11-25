@@ -13,6 +13,8 @@ import com.space_m.rocket.ItemCustomRocket;
 import com.space_m.rocket.RocketStruct;
 import com.space_m.rocket.SpaceRocketItems;
 
+import dev.architectury.utils.Env;
+import dev.architectury.utils.EnvExecutor;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
@@ -194,7 +196,7 @@ public class BlockOrbitalStation extends DummyableMachineBlock implements ILookO
     /** Blick-Overlay (Original {@code printHook}), Client-Teil in {@code StationOverlay}. */
     @Override
     public void printHook(GuiGraphics g, Level world, BlockPos pos) {
-        com.space_m.orbit.client.StationOverlay.print(this, g, world, pos);
+        EnvExecutor.runInEnv(Env.CLIENT, () -> () -> com.space_m.orbit.client.StationOverlay.print(this, g, world, pos));
     }
 
     //? if >1.20.1 {

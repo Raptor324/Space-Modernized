@@ -11,6 +11,8 @@ import com.hbm_m.multiblock.DummyableStructureBuilder;
 import com.hbm_m.multiblock.MultiblockStructureHelper;
 
 import dev.architectury.registry.menu.MenuRegistry;
+import dev.architectury.utils.Env;
+import dev.architectury.utils.EnvExecutor;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -101,7 +103,9 @@ public class MachineCryoDistill extends DummyableMachineBlock implements ILookOv
     @Override
     public void printHook(GuiGraphics g, Level world, BlockPos pos) {
         if (!(world.getBlockEntity(pos) instanceof TileEntityMachineCryoDistill distill)) return;
-        BlockPos hit = com.space_m.machine.chem.client.ChemClientUtil.lookedAtBlock();
+        BlockPos[] hitHolder = new BlockPos[1];
+        EnvExecutor.runInEnv(Env.CLIENT, () -> () -> hitHolder[0] = com.space_m.machine.chem.client.ChemClientUtil.lookedAtBlock());
+        BlockPos hit = hitHolder[0];
         if (hit == null) return;
 
         Direction dir = ChemUtil.dir(distill.getBlockState());

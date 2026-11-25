@@ -20,7 +20,10 @@ import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
 
 /**
@@ -131,5 +134,17 @@ public final class PropulsionClientEffects {
                 this.volume = (float) Math.max(0D, 1D - d / RANGE);
             }
         };
+    }
+
+    @org.jetbrains.annotations.Nullable
+    public static BlockPos lookedAtBlock() {
+        HitResult hit = Minecraft.getInstance().hitResult;
+        if (!(hit instanceof BlockHitResult bhr) || hit.getType() != HitResult.Type.BLOCK) return null;
+        return bhr.getBlockPos();
+    }
+
+    public static boolean hasMainHandItem() {
+        Player player = Minecraft.getInstance().player;
+        return player != null && !player.getMainHandItem().isEmpty();
     }
 }
